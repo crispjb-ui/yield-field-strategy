@@ -2,12 +2,10 @@
 
 Principle: read-only first, signing last. No private key touches this repo.
 
-## Phase 0 — Unblock (owner action, today)
-Allow these hosts in the cloud environment's network settings (Limited level,
-Allowed domains): `yieldfields.fun`, `opensea.io`, `api.opensea.io`,
-`robinhoodchain.blockscout.com`, `rpc.mainnet.chain.robinhood.com`,
-`x.com`, `api.coingecko.com`. Then re-run the docs read and fill
-`config/mechanics.yaml`.
+## Phase 0 — Unblock (done 2026-10-30)
+Docs, OpenSea API and the RPC are reachable through the session proxy.
+Blockscout answers scripts with a Cloudflare challenge: all chain reads go
+through `yf/rpc.py` (verified against the deed contract).
 
 ## Phase 1 — Observe (built in this repo, runs today where hosts allow)
 | Module | Does | Needs |
@@ -20,8 +18,23 @@ Allowed domains): `yieldfields.fun`, `opensea.io`, `api.opensea.io`,
 | `yf/cli.py` | `market`, `positions`, `roi`, `watch` (poll + threshold alerts, JSONL snapshots) | — |
 
 Scheduling: a Claude Code Remote scheduled task (fresh session, every 4–6 h)
-runs `python -m yf.cli watch --once` and reports deviations. Set up after
-Phase 0.
+runs `python -m yf.cli watch --once` and reports deviations.
+
+**Stage One specific (build next, before staking opens):**
+1. **Claim-cadence monitor.** Storage caps at 72 h; a deck that is full earns
+   nothing. Alert at 60 h since the last claim tx from the owner wallet
+   (read via RPC: staking contract events once its address is published).
+   Until then, a fixed 60 h scheduled reminder.
+2. **Output-rate derivation.** From two consecutive claims, compute Fert units
+   per day for Fertility 6 and write `deed.output_per_cycle`. This single
+   number turns every deed-yield question into arithmetic.
+3. **Fert market tape.** Once the items contract is published: poll OpenSea
+   events for the Fertilizer token id, record each sale (price, qty, buyer),
+   maintain a 24 h VWAP in ETH. Feeds `fert_deed_yield()`.
+4. **Deed-floor by tier.** Extend `market` to pull best listings per Tier
+   trait (needs API key) so the tier relative-value table updates itself.
+5. **Burn-vs-sell.** Once staking contract ABI is known: read Root Cellar per
+   deed and Silo balance; run `burn_vs_sell()` each poll; alert when it flips.
 
 ## Phase 2 — Model (after docs are read)
 1. Encode every mechanic in `mechanics.yaml` with the docs URL.
@@ -31,10 +44,13 @@ Phase 0.
 4. Backtest the §3 rules of the strategy against the first two weeks of
    on-chain data before scaling capital.
 
-## Phase 3 — Act (only if deed loop needs per-cycle actions)
-1. Dedicated hot wallet holding gas only; deeds stay in the cold wallet and
-   are **delegated** if the game supports delegation (Q21); otherwise the
-   hot wallet holds the deeds and nothing else.
+## Phase 3 — Act (the deed loop DOES need per-cycle actions: a claim every ≤72 h)
+1. Check the published staking ABI for an operator/claimer role. If one
+   exists: deeds stay in the cold wallet, a hot wallet holding gas only
+   claims. If none: a dedicated hot wallet holds the 3 deeds (staked, so the
+   staking contract custodies them; the hot key can only claim, unstake,
+   burn) and nothing else. Owner decides (open question 15). Manual claiming
+   every 2.5 days is viable for 3 deeds; automation matters at scale.
 2. A signer service outside this repo (local machine or a locked-down VM)
    with: cycle scheduler, dry-run simulation via `eth_call` before every
    send, max-gas cap, daily tx-count cap, and a kill switch file.

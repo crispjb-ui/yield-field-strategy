@@ -1,13 +1,48 @@
 # Verified Facts Ledger
 
-Last updated: 2026-10-30. Confidence scale: **A** = official source or ≥2
+Last updated: 2026-10-30 (docs read directly; full text snapshot in `docs/source/`). Confidence scale: **A** = official source or ≥2
 independent reports agree; **B** = single secondary report; **C** = unverified /
 lookalike / third-party claim. Primary sources (yieldfields.fun, opensea.io,
 x.com, blockscout) could not be fetched from the build session; everything
 below came through search-engine summaries of those pages. Re-verify A/B items
 against the docs directly before acting.
 
-## Project
+## From the official docs (grade A — read directly 2026-10-30, every page "Updated 30 Oct 2026")
+
+Source pages: `https://yieldfields.fun/docs/<section>/<page>`. Docs state all numbers are subject to change with notice.
+
+| Fact | Page |
+|---|---|
+| Stage One (live first): deed staking, Fert Deck, Fertilizer, export. Then farming + `$YIELD` + Farmers Co-op. Then deed rewards, Silo, burns. **No dates published.** | getting-started/whats-coming |
+| **Fertility by tier: Common 5 (Meadow), Rare 6 (Frost), Epic 7 (Blight), Legendary 8 (Radiant), Mythic 9 (Astral).** Same Fertility within a tier. Mythic = 1.8× Common. Art is cosmetic. | deed-gameplay/founding-deeds |
+| Fertility sets: Fert Deck output (now); Root Cellar share, claim-fee rebate share, Windfall share, one classified use (later) | founding-deeds |
+| Deed contract `0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a`, ERC-721C, 5% royalty to project treasury (not team) | reference/official-links-and-contracts |
+| Staking: free (gas), many deeds per tx, stake+build in one step. Staked deed cannot be sold. **Unstaking destroys the structure.** Unstake blocked while game paused. | deed-gameplay/staking-and-the-fert-deck |
+| Fert Deck: 0.01 ETH at launch (may change), fee stays in staking contract as Root Cellars. 1 structure per deed. Output scales with Fertility. **Storage = 3 days of production; deck stops when full.** Partial progress carries. | staking-and-the-fert-deck |
+| **Fert output rate per Fertility point: NOT PUBLISHED.** | — |
+| Fertilizer: each cuts 25% of total grow time, max 2 per crop (50%); one with <25% left ripens instantly; consumed on use; never expires; ERC-1155C, 5% royalty; export to wallet → trade on OpenSea → import to use. Export live at staking launch. | deed-gameplay/fertilizer |
+| Root Cellar: per-deed ETH pot in the staking contract, funded by build fees now and a share of `$YIELD` taxes later; share by Fertility; **collected only by burning a staked deed**; no set amount. | deed-gameplay/the-root-cellar |
+| Silo: `$YIELD` pot funded by a ███% claim fee on deed rewards; Windfall = tier-set share (███% each, redacted) of the Silo on burn; burns sequential; min-payout guard; **burn is permanent**. | deed-gameplay/the-silo-and-the-windfall |
+| Seed packs (Bronze→Diamond), ETH prices redacted; same odds in every pack; 6 seed rarities with redacted odds and worth-multiples; Common worth < pack; **"splitting ETH across lots of small packs never beats 1 bigger pack"**; drand randomness; seeds tradeable. | farming-and-yield/seeds-and-crops |
+| Farm plot: free fixed grid of slots per wallet, no expansions, no deed needed; grow ███–███ h; rarer = longer, bigger pack = faster; ripe crops never wilt. | farming-and-yield/growing-and-selling |
+| Selling: Farmer pays ███% in `$YIELD` (executes a buy on the official pool, skips buy tax, lower dues); Broker pays ███% in ETH **from Cornhub pack-sale ETH**. Farmer→sell-`$YIELD` nets less than Broker. | growing-and-selling |
+| `$YIELD`: ERC-20, fixed supply (redacted), 0% team, one official Uniswap v4 pool (URC-5, copycat pools blocked), buy/sell tax redacted with hard-coded caps, dynamic sell tax during heavy net selling, decaying launch buy tax. Taxes → Farmers Co-op + Root Cellars + small team cut. | farming-and-yield/yield |
+| Farmers Co-op: funded by Co-op Dues on every crop sale + tax share + future Fert Deck boost fees; seeded with ████ on farming day 1; rules unpublished; "some of it may never come back out". | the-farmers-co-op/* |
+| Team revenue: share of mint + small cut of regular taxes only. | reference/fees-and-risks |
+| **Governance: team multisig, changes immediate, no timelock; contracts upgradeable incl. deed staking ("updates apply to staked deeds too"); external audit planned, not done; team manages the LP and "can add, remove or rebalance it".** Staking contract cannot move a staked deed. | fees-and-risks |
+| Classified: truffles ("something in the soil"), the volume-incentive mechanism, an extra deed reward stream, Fert Deck boosts, new structures. | classified, flywheels |
+| Official: `yieldfields.fun`, `@YieldFields_RH`, `discord.gg/onchainheroes`. Everything else is a scam per the docs. Earlier "weather / weekly leaderboard" claims came from lookalike sites and are **not in the docs**. | official-links-and-contracts |
+
+## Live API checks (2026-10-30)
+
+| Fact | Source |
+|---|---|
+| RPC `eth_chainId` = 4663; deed contract `name()` = "Yield Field Deeds", `totalSupply()` = 3333 | `rpc.mainnet.chain.robinhood.com` via `yf/rpc.py` |
+| OpenSea chain slug = `robinhood`; collection `safelist_status: verified`; fees: 1.0% OpenSea + 5.0% creator → **6% total exit fee** (earlier 7.5% assumption corrected) | `api.opensea.io/api/v2/collections/yield-field-deeds` |
+| Stats: floor 0.875 ETH, 1,208 owners, 1,341 sales / 1,386 ETH total; 24h 39 sales / 38.8 ETH; 7d 171 sales / 174 ETH | `/collections/yield-field-deeds/stats` (no API key needed) |
+| Blockscout explorer returns a Cloudflare challenge to scripts | — |
+
+## Project (secondary sources, pre-docs)
 
 | Fact | Conf | Source |
 |---|---|---|
@@ -73,8 +108,7 @@ against the docs directly before acting.
 
 ## Owner position (resolved 2026-10-30)
 
-Three deeds minted at **0.1 ETH each via whitelist allocation** (owner
-statement). Public Dutch auction cleared at 0.999688 ETH; WL price was a
+Three **Rare (Frost, Fertility 6)** deeds minted at **0.1 ETH each via whitelist** (owner statement). Public Dutch auction cleared at 0.999688 ETH; WL price was a
 separate tier (coverage noted WL pricing was "not yet clear"). Total basis
-0.3 ETH. At a 0.879 ETH floor net of 7.5% fees: ~2.44 ETH exit value, ~+713%.
+0.3 ETH. At the 0.96 ETH Rare floor net of 6% fees: ~2.71 ETH exit value, ~+800%.
 All three are **Tier = Rare, Biome = Snow**. Token IDs still unrecorded (Q24).

@@ -37,9 +37,11 @@ def seed_roi(mech: dict, fert_mult: float = 1.0, yield_eth: float | None = None,
              price_haircut: float = 0.0) -> list[SeedResult]:
     """Per-seed ROI in $YIELD terms. `price_haircut` (0..1) shrinks harvest
     value to stress-test token price decay between plant and sell."""
-    seeds = _req(mech, "seeds")
+    seeds = mech.get("seeds")
+    if isinstance(seeds, dict):          # docs-shaped block: per-seed list lives under seeds.list
+        seeds = seeds.get("list")
     if not seeds:
-        raise MissingMechanics("mechanics.yaml: 'seeds' is empty (Q8)")
+        raise MissingMechanics("mechanics.yaml: 'seeds.list' is empty — pack prices/odds are redacted until farming opens")
     out = []
     for s in seeds:
         for k in ("name", "cost_yield", "grow_hours", "harvest_yield"):
@@ -133,7 +135,7 @@ def tier_relative_value(tiers: dict, base: str = "Common") -> dict:
     return out
 
 
-def swap_breakeven(sell_tier: dict, buy_tier: dict, n_sell: int, fee_pct: float = 7.5) -> dict:
+def swap_breakeven(sell_tier: dict, buy_tier: dict, n_sell: int, fee_pct: float = 6.0) -> dict:
     """Selling n deeds of one tier to buy another: how many you get and the
     utility multiple the bought tier must carry to break even on output."""
     proceeds = n_sell * sell_tier["floor_eth"] * (1 - fee_pct / 100)
@@ -142,3 +144,46 @@ def swap_breakeven(sell_tier: dict, buy_tier: dict, n_sell: int, fee_pct: float 
     req = (n_sell * sell_tier.get("multiplier", 1) / n_buy) if n_buy else None
     return {"proceeds_eth": proceeds, "n_buy": n_buy, "leftover_eth": leftover,
             "required_multiplier_ratio": req}
+
+
+def seed_pack_ev(pack_price_eth: float, rarities: dict, payout_pct: float, dues_pct: float = 0.0) -> dict:
+    """Expected ETH back per pack. rarities = {name: {p: prob, worth_x: multiple of pack price}}.
+    payout_pct = Broker (ETH) or Farmer ($YIELD) payout % of crop value. All inputs from the docs
+    once published; refuses on nulls."""
+    tot_p = 0.0; ev_x = 0.0
+    for name, r in rarities.items():
+        if r.get("p") is None or r.get("worth_x") is None:
+            raise MissingMechanics(f"seeds.rarities['{name}'] p/worth_x is null (Q8) — farming not yet live")
+        tot_p += r["p"]; ev_x += r["p"] * r["worth_x"]
+    if abs(tot_p - 1.0) > 1e-6 and abs(tot_p - 100.0) > 1e-6:
+        raise ValueError("rarity probabilities must sum to 1 (or 100)")
+    if tot_p > 1.5:
+        ev_x /= 100.0
+    gross = ev_x * pack_price_eth
+    net = gross * payout_pct / 100 * (1 - dues_pct / 100)
+    return {"ev_crop_value_eth": gross, "ev_payout_eth": net, "ev_ratio": net / pack_price_eth,
+            "house_edge_pct": (1 - net / pack_price_eth) * 100}
+
+
+def burn_vs_sell(root_cellar_eth: float, silo_yield: float, windfall_pct: float, yield_eth: float,
+                 tier_floor_eth: float, fee_pct: float = 6.0, rebuild_eth: float = 0.01) -> dict:
+    """Burn pays Root Cellar (ETH) + Windfall (share of Silo, in $YIELD). Sell pays floor net of fees
+    (and requires unstaking, which destroys the Fert Deck). Positive edge → burn."""
+    burn = root_cellar_eth + silo_yield * windfall_pct / 100 * yield_eth
+    sell = tier_floor_eth * (1 - fee_pct / 100)
+    return {"burn_value_eth": burn, "sell_value_eth": sell, "burn_minus_sell_eth": burn - sell,
+            "burn_if": burn > sell}
+
+
+def fert_deed_yield(fert_units_per_day: float, fert_price_eth: float, tier_floor_eth: float,
+                    fertility: int, base_fertility: int = 5, royalty_pct: float = 5.0,
+                    opensea_fee_pct: float = 1.0, gas_eth_per_claim: float = 0.0,
+                    claims_per_day: float = 1 / 2.5) -> dict:
+    """Stage One coupon: Fert Deck output sold on OpenSea. fert_units_per_day is the COMMON (Fertility 5)
+    rate observed in-app; output scales linearly with Fertility (docs)."""
+    units = fert_units_per_day * fertility / base_fertility
+    gross = units * fert_price_eth
+    net = gross * (1 - (royalty_pct + opensea_fee_pct) / 100) - gas_eth_per_claim * claims_per_day
+    return {"units_per_day": units, "net_eth_per_day": net,
+            "payback_days": (tier_floor_eth / net) if net > 0 else None,
+            "annualized_pct": (net * 365 / tier_floor_eth * 100) if net > 0 else None}

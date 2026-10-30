@@ -1,54 +1,104 @@
-# Game-mechanics parameters. ALL null until quoted from yieldfields.fun/docs.
-# Each key maps to a numbered question in docs/04_OPEN_QUESTIONS.md.
-# The ROI model (yf/roi.py) refuses to run while any required key is null.
+# Game-mechanics parameters. Source: https://yieldfields.fun/docs (all pages "Updated 30 Oct 2026").
+# null = redacted in the docs (███) or not yet published. The docs state every number is subject to change.
+source_url: https://yieldfields.fun/docs
+as_of: "2026-10-30"
+stage: 1                    # Stage One = staking + Fert Deck + Fertilizer + export. Farming/$YIELD/deed rewards later. No dates published.
 
-source_url: null            # docs page(s) these numbers were read from
-as_of: null                 # date read
+token:                      # /docs/farming-and-yield/yield
+  address: null             # published at launch
+  max_supply: null          # redacted; fixed, minted once
+  team_allocation_pct: 0
+  emission_model: fixed_supply_distributed   # earned via Farmer sales, deed rewards, Windfalls, classified
+  buy_tax_pct: null         # redacted; hard-coded caps
+  sell_tax_pct: null        # redacted; rises during heavy net selling, eases back
+  launch_buy_tax: true      # high at open, decays to normal; goes to team-set wallet, 100% back into game
+  tax_split: [farmers_coop, root_cellars, small_team_cut]
+  dex: uniswap_v4_single_official_pool_URC5
+  lp_control: team_managed  # "can add, remove or rebalance"
+  no_lp_fee: true
 
-token:                      # Q14-19
-  address: null
-  max_supply: null
-  emission_model: null      # "fixed_pool_split" | "per_player" | "treasury_funded" | other
-  emissions_per_day: null   # total $YIELD/day entering circulation, if fixed
-  sinks: []                 # e.g. ["seed_purchase_burn_50pct", "fert_purchase"]
-  tax_pct: null
-  liquidity_usd: null
-  dex: null
-
-deed:                       # Q1-7
-  tiers:                    # counts verified from OpenSea trait panel 2026-10-30; multipliers from docs
-    # floor_eth / clearing band observed on OpenSea 2026-10-30 (owner screenshots). Biome == Tier 1:1.
-    Mythic:    {count: 111,  multiplier: null, biome: Cosmic,    floor_eth: 2.66,  band: [2.10, 3.40]}
-    Legendary: {count: 222,  multiplier: null, biome: Sunset,    floor_eth: 1.60,  band: [1.42, 1.77]}
-    Epic:      {count: 555,  multiplier: null, biome: Swamp,     floor_eth: 1.18,  band: [1.03, 1.17]}
-    Rare:      {count: 888,  multiplier: null, biome: Snow,      floor_eth: 0.96,  band: [0.88, 0.99]}
-    Common:    {count: 1557, multiplier: null, biome: Grassland, floor_eth: 0.875, band: [0.786, 0.90]}
-  owner_tier: Rare          # owner's 3 deeds: Rare, Snow biome
-  owner_biome: Snow
-  output_resource: null     # "Fertilizer"
-  output_per_cycle: null
+deed:                       # /docs/deed-gameplay/founding-deeds
+  contract: "0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a"   # docs + OpenSea API agree
+  standard: ERC-721C
+  royalty_pct: 5            # to project treasury
+  opensea_fee_pct: 1        # from OpenSea API fees[]; total round-trip exit fee 6%
+  tiers:                    # Fertility = the multiplier. "Every deed of the same rarity has the same Fertility"
+    Mythic:    {count: 111,  fertility: 9, multiplier: 1.8, biome: Astral,  floor_eth: 2.66,  band: [2.10, 3.40]}
+    Legendary: {count: 222,  fertility: 8, multiplier: 1.6, biome: Radiant, floor_eth: 1.60,  band: [1.42, 1.77]}
+    Epic:      {count: 555,  fertility: 7, multiplier: 1.4, biome: Blight,  floor_eth: 1.18,  band: [1.03, 1.17]}
+    Rare:      {count: 888,  fertility: 6, multiplier: 1.2, biome: Frost,   floor_eth: 0.96,  band: [0.88, 0.99]}
+    Common:    {count: 1557, fertility: 5, multiplier: 1.0, biome: Meadow,  floor_eth: 0.875, band: [0.786, 0.90]}
+  total_fertility: 19773    # Σ count × fertility
+  owner_tier: Rare
+  owner_count: 3
+  fertility_uses: [fert_deck_output, root_cellar_share, claim_fee_rebate_share, windfall_share, classified]
+  output_resource: Fertilizer
+  output_per_cycle: null    # NOT PUBLISHED: units/day per Fertility point. Observe in-app at staking launch.
   cycle_hours: null
-  action_required: null     # true/false — does claiming cost gas/time?
-  upkeep_per_cycle: null    # in $YIELD or ETH
-  pays_yield_directly: null
+  storage_cap_days: 3       # deck stops when full; partial progress carries over
+  action_required: true     # claim tx moves Fert to Bag
+  stake_cost_eth: 0         # gas only; multiple deeds per tx
+  build_cost_eth: 0.01      # Fert Deck, "at launch", may change; goes to staking contract (Root Cellars)
+  unstake_destroys_structure: true
+  staked_deed_sellable: false
+  upkeep_per_cycle: 0
+  pays_yield_directly: false   # Stage One: Fertilizer only. Deed rewards in $YIELD later, split by Fertility, with a ███% claim fee
+  claim_fee_pct: null       # redacted; part to all staked deeds by Fertility, part to Silo
 
-fert:                       # Q5, Q9
-  effect: null              # "harvest_multiplier" | "time_reduction" | "gate"
-  magnitude: null           # e.g. 1.5 for +50%
-  sellable: null
-  market_type: null         # "fixed_price" | "orderbook" | "none"
-  price_yield: null         # current market price per unit in $YIELD
+fert:                       # /docs/deed-gameplay/fertilizer
+  effect: time_reduction
+  magnitude_per_unit: 0.25  # cuts 25% of total grow time; max 2 per crop (50%)
+  max_per_crop: 2
+  instant_ripen_if_under: 0.25   # one unit with <25% time left ripens at once
+  consumed_on_use: true
+  expires: false
+  sellable: true
+  market_type: opensea_erc1155c
+  royalty_pct: 5
+  contract: null            # published when staking opens
+  price_eth: null           # observe
 
-seeds: []                   # Q8 — list of {name, cost_yield, grow_hours, harvest_yield, fert_required}
+root_cellar:                # /docs/deed-gameplay/the-root-cellar
+  funded_by: [fert_deck_build_fees, yield_tax_share_later]
+  share_by: fertility       # every deed (staked or not) has one; only a STAKED deed can be burned to collect
+  collect_by: burn_only
+  payout_asset: ETH
 
-farm:                       # Q10, Q13
-  plot_cap_per_wallet: null
-  daily_harvest_cap: null
-  energy: null
+silo:                       # /docs/deed-gameplay/the-silo-and-the-windfall
+  funded_by: part_of_deed_reward_claim_fees
+  payout_asset: YIELD
+  windfall_pct_by_tier: {Common: null, Rare: null, Epic: null, Legendary: null, Mythic: null}   # redacted
+  never_empties: true
+  batch_burns_sequential: true   # each burn takes its share of what the previous left
+  burn_min_payout_guard: true
 
-weather:                    # Q11
-  states: {}                # {"Rain": {p: null, mult: null}, ...}
+seeds:                      # /docs/farming-and-yield/seeds-and-crops — opens after Stage One
+  packs: {Diamond: null, Platinum: null, Gold: null, Silver: null, Bronze: null}   # ETH prices redacted
+  same_odds_all_packs: true
+  rarities: {Common: {p: null, worth_x: null}, Uncommon: {p: null, worth_x: null}, Rare: {p: null, worth_x: null},
+             Epic: {p: null, worth_x: null}, Legendary: {p: null, worth_x: null}, Mythic: {p: null, worth_x: null}}
+  common_worth_below_pack: true
+  bigger_pack_grows_faster_per_eth: true   # "splitting ETH across lots of small packs never beats 1 bigger pack"
+  randomness: drand
+  seeds_tradeable: true
 
-leaderboard:                # Q12
-  reward_pool_yield: null
-  cadence: null
+farm:                       # /docs/farming-and-yield/growing-and-selling
+  plot: free_fixed_grid     # 1 crop per slot, no expansions, no deed needed
+  slots_per_wallet: null    # not published
+  grow_hours: [null, null]  # redacted range; rarer = longer, bigger pack = faster
+  ripe_crops_wilt: false
+  farmer_pays_pct_in_yield: null    # redacted; "pays more"; executes a $YIELD buy on the official pool, skips buy tax
+  broker_pays_pct_in_eth: null      # redacted; paid from Cornhub pack-sale ETH
+  coop_dues_farmer_pct: null
+  coop_dues_broker_pct: null        # docs: Farmer charges lower dues than Broker
+
+weather: {}                 # not in docs (the "dynamic weather" claim came from a lookalike site)
+leaderboard: {}             # not in docs
+classified: [truffles, volume_incentive_mechanism, extra_deed_reward_stream, fert_deck_boosts, new_structures]
+
+governance:                 # /docs/reference/fees-and-risks
+  owner: team_multisig
+  timelock: false
+  contracts_upgradeable: true     # including deed staking; "updates apply to staked deeds too"
+  audit: planned_not_done
+  team_can_move_staked_deed: false

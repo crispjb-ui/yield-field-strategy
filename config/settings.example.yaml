@@ -3,19 +3,19 @@ chain:
   name: robinhood-mainnet
   chain_id: 4663                       # verified (A)
   rpc_url: https://rpc.mainnet.chain.robinhood.com   # B — verify against docs.robinhood.com/chain
-  explorer_api: https://robinhoodchain.blockscout.com/api   # B — Blockscout v1-style API
+  explorer_api: https://robinhoodchain.blockscout.com/api   # behind Cloudflare challenge from scripts (2026-10-30); use RPC instead
   explorer_url: https://robinhoodchain.blockscout.com
 
 contracts:
-  deed_nft: null          # ERC-721 — confirm on @YieldFields_RH AND explorer before filling
+  deed_nft: "0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a"   # docs Official-links page == OpenSea API (verified 2026-10-30)
   yield_token: null       # ERC-20 — same rule; token not confirmed live as of 2026-10-30
-  game: null              # core game contract(s), if separate
-  fert_market: null
+  deed_staking: null      # published when staking opens
+  items: null             # Fertilizer ERC-1155C, published when staking opens
 
 opensea:
-  api_key: ""             # https://docs.opensea.io — required for v2 REST
+  api_key: ""             # /collections/{slug} and /stats work WITHOUT a key (verified); listings/offers/events need one
   collection_slug: yield-field-deeds
-  chain_slug: null        # UNVERIFIED — check GET /api/v2/chains for the Robinhood identifier
+  chain_slug: robinhood   # verified from GET /api/v2/collections/yield-field-deeds contracts[].chain
 
 wallets:                  # addresses you OWN, read-only monitoring
   - null
@@ -26,6 +26,7 @@ alerts:
   best_offer_above_eth: 1.20
   volume_24h_below_usd: 10000
   poll_seconds: 900
+  fert_claim_every_hours: 60   # storage caps at 72 h of production; deck stops when full
 
 pricing:
   eth_usd_source: coingecko   # used only for USD marks; replace if blocked

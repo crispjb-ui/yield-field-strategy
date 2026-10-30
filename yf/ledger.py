@@ -35,9 +35,9 @@ def read_ledger(path: Path) -> list[Position]:
 
 
 def mark(positions: list[Position], floor_eth: float, eth_usd: float | None = None,
-         royalty_pct: float = 5.0, market_fee_pct: float = 2.5) -> dict:
+         royalty_pct: float = 5.0, market_fee_pct: float = 1.0) -> dict:
     """Mark deeds to floor net of exit fees. Fees: 5% creator (verified) +
-    marketplace fee (OpenSea default assumed 2.5% — verify)."""
+    OpenSea fee 1.0% (verified from the collection API fees[] 2026-10-30)."""
     deeds = [p for p in positions if p.asset == "deed"]
     qty = sum(p.qty for p in deeds)
     cost = sum(p.cost_eth * p.qty for p in deeds)

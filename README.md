@@ -3,12 +3,10 @@
 Private working repo for a position in **Yield Fields** (Robinhood Chain farming game,
 3,333 "Founding Deeds", `$YIELD` token) and the tooling around it.
 
-Status (2026-10-30): primary sources (`yieldfields.fun/docs`, `opensea.io`,
-`robinhoodchain.blockscout.com`, `x.com`) were **unreachable** from the build
-session. Everything in `docs/` is split into *verified from secondary sources*
-vs *unverified*. Nothing in the strategy assumes a game mechanic that has not
-been read in the docs; those parameters live in `config/mechanics.yaml` as
-`null` until filled.
+Status (2026-10-30): official docs read in full (snapshot in `docs/source/`),
+OpenSea API and Robinhood Chain RPC verified live. `config/mechanics.yaml`
+holds every published number; `null` means the docs redact it until that
+stage launches. Stage One (staking + Fert Deck) is the only live loop.
 
 | Path | What |
 |---|---|
@@ -17,7 +15,8 @@ been read in the docs; those parameters live in `config/mechanics.yaml` as
 | `docs/03_AUTOMATION_PLAN.md` | Infrastructure build plan, phased |
 | `docs/04_OPEN_QUESTIONS.md` | Exact questions the docs must answer before capital is deployed |
 | `config/settings.example.yaml` | Chain / API / contract config (copy to `config/settings.yaml`) |
-| `config/mechanics.yaml` | Game-mechanics parameters (all `null` until read from docs) |
+| `config/mechanics.yaml` | Game-mechanics parameters from the docs (`null` = redacted) |
+| `docs/source/` | Verbatim text snapshot of the official docs, dated |
 | `yf/` | Python package: RPC, OpenSea, Blockscout clients; ledger; ROI model; CLI |
 | `data/ledger.csv` | Your positions (cost basis, token ids) — create from `ledger.example.csv` |
 

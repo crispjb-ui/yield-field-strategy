@@ -1,0 +1,1266 @@
+
+Getting Started
+›
+About Yield Fields
+About Yield Fields
+In short:
+ Yield Fields is an onchain farming protocol on Robinhood Chain. 
+Stage One opens the land:
+ Founding Deed holders stake their deeds, build a Fert Deck and make the Fertilizer every farmer will want. Farming and $YIELD come next, and their fees flow back into the game.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+note
+Everything about deeds and Fertilizer goes live when staking opens, including Fertilizer export. Details for farming and $YIELD are published before each goes live.
+“Scouts camped in an unexplored land. By morning, the seeds from their last meal had sprouted into crops. They called it the Yield Fields.”
+Dewey
+, the game's guide, arrives with the full game to show new Yielders around.
+Two ways to play
+Yield Fields has 2 sides that feed each other. 
+Farmers
+ grow crops, and 
+deed holders
+ own the land that makes them grow faster.
+Farm the fields
+For everyone. Opens after Stage One.
+ No deed needed.
+1
+Buy a seed pack
+ at the Cornhub with ETH.
+2
+Plant it
+ in your free farm plot.
+3
+Harvest
+ once it's ripe. Fertilizer gets you there faster.
+4
+Sell
+ to the Farmer for $YIELD, or to the Broker for ETH.
+Own the land
+For Founding Deed holders. Live in Stage One.
+ Don't have one? Get a deed on 
+OpenSea
+.
+1
+Stake your deed.
+ It's free apart from gas.
+2
+Build a Fert Deck.
+ 0.01 ETH at launch.
+3
+Make Fertilizer
+ around the clock. Higher Fertility makes more.
+4
+Use it or trade it.
+ Claim it to your Bag, or export it and sell it to farmers.
+How they connect
+Farmers want Fertilizer, and only deeds make it. Every crop sale pays into the Farmers Co-op, and every $YIELD trade also fills the deeds' Root Cellars, so the busier the fields, the stronger the land.
+Built to last
+The land comes first.
+ Deed holders stockpile Fertilizer before farming opens, so supply is ready on day 1.
+Fees stay in the game.
+ Build fees stay in the deed staking contract for deed holders. Sale fees and most of the regular trading taxes go to the Farmers Co-op and the Root Cellars.
+0% team allocation.
+ All $YIELD goes to the game, and no more can ever be minted.
+Heavy selling feeds the Farmers Co-op.
+ The sell tax rises during heavy selling, and the extra goes straight to it.
+Deeds get stronger.
+ Root Cellars fill from fees, and every burned deed means future fees are shared among fewer deeds.
+Provably fair.
+ Pack results come from public randomness anyone can check.
+Good to know
+Farming isn't a guaranteed profit.
+ Every seed is random. Read 
+ Fees and risks
+ before you play.
+You don't need $YIELD to play.
+ You pay for everything in ETH.
+Deed holders are first in line.
+ Deed rewards, ██████████ and the Silo are lined up for staked deeds. Additional rewards for deed owners will be launched when the farming game launches.
+Where to go next
+ Quick start
+: your first steps
+ Seeds and crops
+: packs, odds and every crop
+ Staking and the Fert Deck
+: staking, building and making Fertilizer
+ The Root Cellar
+: each deed's pot of ETH
+ The Silo and the Windfall
+: the $YIELD pot only deeds can win
+ How the Farmers Co-op works
+: how every part feeds the next
+ Flywheels
+: how the land, the fields and the fees keep each other spinning
+ What's coming
+: the rollout and what's next
+ Official links and contracts
+: the only official links and addresses
+Updated 30 Oct 2026
+Next
+Quick start
+
+=================== https://yieldfields.fun/docs/getting-started/quick-start
+
+Getting Started
+›
+Quick start
+Quick start
+In short:
+ Stage One is for Founding Deed holders. You need a wallet on Robinhood Chain, a little ETH and a deed. Farming opens to everyone after.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+What you need
+A wallet on Robinhood Chain:
+ Robinhood Wallet, MetaMask, Rabby, or any wallet that connects through WalletConnect. Abstract Global Wallet (AGW) doesn't work on Robinhood Chain
+A little ETH on Robinhood Chain
+ for gas and build fees. Bridge it over with the official Robinhood Chain bridge
+A Founding Deed.
+ Buy one on 
+OpenSea
+warning
+Only use the official bridge. ETH sent to the wrong network or address can't be recovered.
+1. Check the official addresses
+Before you sign anything, check the contract against 
+ Official links and contracts
+. The team will never DM you first.
+2. Connect your wallet
+Go to 
+yieldfields.fun
+ and connect your wallet.
+3. Stake your deed
+It's free apart from gas, and you can stake several deeds in one transaction.
+4. Build a Fert Deck
+It costs 0.01 ETH at launch. You can stake and build in one go.
+5. Claim your Fertilizer
+Come back regularly. Claimed Fertilizer goes to your Bag, and the deck stops when its storage is full. The full guide is in 
+ Staking and the Fert Deck
+.
+When farming opens
+1
+Buy a seed pack at the 
+Cornhub
+.
+2
+Plant it in your free farm plot.
+3
+Harvest once it's ripe.
+4
+Sell to the 
+Farmer
+ for $YIELD, or to the 
+Broker
+ for ETH.
+Updated 30 Oct 2026
+Previous
+About Yield Fields
+Next
+What's coming
+
+=================== https://yieldfields.fun/docs/getting-started/whats-coming
+
+Getting Started
+›
+What's coming
+What's coming
+In short:
+ Stage One opens the land. Farming, $YIELD and deed rewards come next, and there's more we haven't shown yet.
+The rollout
+1
+Stage One:
+ deed staking, the Fert Deck, Fertilizer and export
+2
+The fields open:
+ farming for everyone at the Cornhub, $YIELD and the Farmer, and the Farmers Co-op wakes up
+3
+Deed rewards switch on
+ with farming: deed rewards, ██████████, the Silo and burns
+Details for each are published before it goes live.
+The fields
+Farming is open to everyone. Buy seed packs at the Cornhub, plant them on your own plot, harvest and sell. Fertilizer from deed holders' Fert Decks helps you grow faster.
+$YIELD
+The game's reward token. You never need it to play. The team gets 0% of the supply, and 100% goes to the game. Launch details, including a launch tax, are announced before it goes live.
+More for deed holders
+Staked deeds pick up more as each part of the game goes live: deed rewards, ██████████, the Silo, Fert Deck boosts and new structures.
+Still classified
+There's more coming that we haven't shown yet. See 
+ Classified
+.
+Out in the open
+The Farmers Co-op balance is shown in the game
+Every change to rates and fees is logged in 
+ Patch notes
+Regular updates on X with the key numbers
+note
+Plans can shift as the game grows. Follow 
+@YieldFields_RH on X
+ to hear first.
+Updated 30 Oct 2026
+Previous
+Quick start
+Next
+Founding Deeds
+
+=================== https://yieldfields.fun/docs/deed-gameplay/founding-deeds
+
+Deed Gameplay
+›
+Founding Deeds
+Founding Deeds
+In short:
+ Founding Deeds are 3,333 land NFTs on Robinhood Chain. Each one is a pixel art plot with a Fertility score that sets how much it produces.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Item
+Value
+Supply
+3,333
+Standard
+ERC-721C
+Chain
+Robinhood Chain
+Royalty
+5%
+Marketplace
+OpenSea
+Contract
+Listed on Official links and contracts
+Check the contract address on 
+ Official links and contracts
+ before you sign anything.
+Rarity and Fertility
+Every deed has a rarity, and each rarity has its own biome and 
+Fertility
+. Fertility is the deed's power in the game: the higher it is, the more the deed produces.
+Rarity
+Biome
+Fertility
+Deeds
+Common
+Meadow
+5
+1,557
+Rare
+Frost
+6
+888
+Epic
+Blight
+7
+555
+Legendary
+Radiant
+8
+222
+Mythic
+Astral
+9
+111
+Every deed of the same rarity has the same Fertility, so a Mythic has 1.8× the Fertility of a Common
+Rarity was assigned at random. It's shown in each deed's metadata and on OpenSea
+Biomes are the look. Fertility does the work
+Fertility counts more than once
+Fertility isn't just one number in one formula. It sets your share almost everywhere a deed earns:
+Now:
+ how much Fertilizer your Fert Deck makes
+Later:
+ your share of your deed's Root Cellar
+Later:
+ your share of the claim fees paid back to staked deeds
+Later:
+ your share of the Windfall
+Later:
+ ████████████ (classified)
+So a Mythic's 1.8× is only the raw score. Its edge carries into every reward, and more parts of the game may use Fertility as it grows.
+Plot art
+Each deed is an animated isometric pixel art plot, 180×180, laid out as a 4×4 grid
+The top of the plot is the build site. It's empty in the art, and the game draws your structure there
+The rest is generated: terrain (
+Open Field
+, 
+Pond
+ or 
+River
+), big decor, water decor and small decor
+Rarer deeds tend to roll more decor and more special pieces. A special never repeats on the same plot
+Plot art is visual only and doesn't change what a deed produces
+Metadata
+Each deed's metadata lists its 
+Tier
+, 
+Biome
+, 
+Fertility
+, 
+Terrain
+, each decor piece, each special, and its decor and special counts.
+Transfers
+Founding Deeds use the ERC-721C standard, which lets the collection control which marketplaces can trade it, so royalties are respected. Resales carry a 5% royalty.
+Next, 
+ Staking and the Fert Deck
+.
+Updated 30 Oct 2026
+Previous
+What's coming
+Next
+Staking and the Fert Deck
+
+=================== https://yieldfields.fun/docs/deed-gameplay/staking-and-the-fert-deck
+
+Deed Gameplay
+›
+Staking and the Fert Deck
+Staking and the Fert Deck
+In short:
+ Stake a Founding Deed, build a Fert Deck on it, and it makes Fertilizer around the clock. Staking is free apart from gas, and a Fert Deck costs 0.01 ETH at launch.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Staking
+Free apart from gas. Stake any number of deeds in one transaction
+Stake and build in the same step
+Your deed is held by the staking contract while it's staked. It stays yours
+Unstake whenever you like, except while the game is paused
+warning
+Unstaking destroys the structure on the deed. Any Fertilizer it had made that you hadn't claimed goes into your Bag for you.
+Building a Fert Deck
+Each staked deed holds 1 structure. The Fert Deck is the first, and more types are planned
+It costs 0.01 ETH at launch, shown before you confirm. The fee may change
+The fee stays in the deed staking contract and fills the deeds' Root Cellars. See 
+ The Root Cellar
+Structures aren't part of the NFT. The game draws them on your plot
+Making Fertilizer
+Your Fert Deck makes Fertilizer on its own, around the clock
+Output scales with Fertility, so a Mythic deck makes 1.8× what a Common deck makes
+Storage holds up to 3 days of production. When it's full, the deck stops until you claim
+Claimed Fertilizer goes to your in-game 
+Bag
+. Partial progress carries over
+tip
+Fert Decks open before farming, so you can stockpile Fertilizer ahead of farming day 1. Check in at least every 3 days to keep your deck running.
+Rewards
+Staked deeds are first in line when the fields open:
+Deed rewards,
+ split by Fertility
+A share of
+ ██████████████ (classified)
+The Silo and the Windfall,
+ once burns open
+Fert Deck boosts
+ and new structures, starting with ████████
+Additional rewards for deed owners will be launched when the farming game launches.
+Next, 
+ Fertilizer
+.
+Updated 30 Oct 2026
+Previous
+Founding Deeds
+Next
+Fertilizer
+
+=================== https://yieldfields.fun/docs/deed-gameplay/fertilizer
+
+Deed Gameplay
+›
+Fertilizer
+Fertilizer
+In short:
+ Fertilizer makes crops grow faster, and it never expires. Keep it in your Bag to use, or export it to your wallet and sell it to farmers on OpenSea.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+What Fertilizer does
+Each Fertilizer cuts 25% of a crop's total grow time
+Use up to 2 per crop, for 50%
+Use one with less than a quarter of the time left and the crop ripens at once
+It's used up when applied
+It never expires
+Only Fert Decks make it, so every farmer who wants faster harvests gets it from deed holders.
+Trading it
+1
+Claim
+ Fertilizer from your Fert Deck. It goes to your Bag.
+2
+Export
+ it from your Bag. This mints it to your wallet as an onchain item.
+3
+Trade
+ it on OpenSea, like any other item.
+4
+Import
+ it back into your Bag when you want to use it in the game.
+Export is live as soon as staking opens. Items in your wallet can't be used in the game until you import them.
+Item details
+Item
+Value
+Item
+Fertilizer
+Standard
+ERC-1155C
+Chain
+Robinhood Chain
+Royalty
+5%
+Contract
+Published when staking opens
+Once it's live, the items contract is listed on 
+ Official links and contracts
+.
+Next, 
+ The Root Cellar
+.
+Updated 30 Oct 2026
+Previous
+Staking and the Fert Deck
+Next
+The Root Cellar
+
+=================== https://yieldfields.fun/docs/deed-gameplay/the-root-cellar
+
+Deed Gameplay
+›
+The Root Cellar
+The Root Cellar
+In short:
+ Every Founding Deed has its own pot of ETH, called its Root Cellar. Fees fill the cellars over time, and a deed's Fertility decides how big its share is. Burn a staked deed to cash out its cellar in ETH.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+“Nobody remembers who dug the cellars under the Founding Deeds. They fill slowly, and rarer land runs deeper.”
+In plain terms
+A slice of every Fert Deck build fee, and later every $YIELD trade, is set aside in ETH for deeds
+Each deed's slice is its Root Cellar, and higher Fertility means a bigger slice
+Burning a staked deed is how you collect it
+How it fills
+Every deed has a cellar,
+ staked or not, and its Fertility sets how deep it is. Only a staked deed can be burned to collect it
+It fills from
+ Fert Deck build fees now, and from part of every $YIELD buy and sell tax once $YIELD launches
+No set amount.
+ It starts filling from day 1 as deed holders build
+Why deeds get stronger over time
+Cellars fill
+ with every Fert Deck built, and later with every $YIELD trade
+Burns shrink the collection.
+ Every burned deed is gone for good, so the rest share future fees
+Only deeds make Fertilizer,
+ and every farmer will want it
+Collecting it
+Burning a staked deed is the only way to open its cellar, and it pays out in ETH. The same burn also wins a share of the Silo. See 
+ The Silo and the Windfall
+ for how to burn.
+A Root Cellar has no set amount and isn't a price for your deed. It moves with how much is built and traded.
+Next, 
+ The Silo and the Windfall
+.
+Updated 30 Oct 2026
+Previous
+Fertilizer
+Next
+The Silo and the Windfall
+
+=================== https://yieldfields.fun/docs/deed-gameplay/the-silo-and-the-windfall
+
+Deed Gameplay
+›
+The Silo and the Windfall
+The Silo and the Windfall
+In short:
+ The Silo is a pot of $YIELD that only deed holders fill and only deed holders can win. Burn a staked deed and you take a share of it, called the Windfall. Higher Fertility takes a bigger share.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+In plain terms
+Deed holders pay a small fee when they claim deed rewards, and part of that fee goes into the Silo
+Burning a staked deed wins a share of the Silo, plus that deed's 
+ The Root Cellar
+The Silo never empties, so it keeps growing for the next burn
+The Silo
+Only deed holders fill it.
+ Every deed reward claim pays a claim fee. Part goes back to all staked deeds, and part goes into the Silo
+Only deed holders win it,
+ by burning a staked deed
+It refills.
+ A Windfall never empties the Silo, and what's left grows again with every claim
+The Windfall
+Burn a staked deed and you win the Windfall, a share of the Silo set by its Fertility. The same burn empties its Root Cellar in ETH.
+Common:
+ ███%
+Rare:
+ ███%
+Epic:
+ ███%
+Legendary:
+ ███%
+Mythic:
+ ███%
+It's a share of the Silo's balance at that moment, and the Silo refills between burns.
+How to burn
+1
+Pick a staked deed and choose 
+Burn Deed
+. The app shows your Root Cellar and Windfall first.
+2
+Hold to Burn
+, then confirm in your wallet. You can burn several deeds in one go. They're processed 1 at a time, and each takes its share of what the last one left.
+3
+Your Windfall arrives in $YIELD and your Root Cellar in ETH, straight to your wallet.
+Burning destroys the deed's structure, moves any stored Fertilizer to your Bag and claims its pending rewards first. Every burn has a minimum payout, so it fails instead of paying less than you saw.
+stop
+Burning is permanent. The deed is gone for good, and there is no undo.
+Next, 
+ Seeds and crops
+.
+Updated 30 Oct 2026
+Previous
+The Root Cellar
+Next
+Seeds and crops
+
+=================== https://yieldfields.fun/docs/farming-and-yield/seeds-and-crops
+
+Farming and $YIELD
+›
+Seeds and crops
+Seeds and crops
+In short:
+ Buy seed packs at the Cornhub with ETH. Each pack holds 1 random seed. Every pack has the same odds, and bigger packs hold more valuable crops.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+note
+Farming opens after Stage One. Exact prices, odds and values go live with it.
+Packs
+Pack
+Price
+Diamond
+███ ETH
+Platinum
+███ ETH
+Gold
+███ ETH
+Silver
+███ ETH
+Bronze
+███ ETH
+Seeds are tradeable items, so you can also buy and sell them.
+Odds
+Every pack uses the same odds. A seed's rarity sets what its crop is worth, as a multiple of the pack's price.
+Rarity
+Chance
+Worth
+Common
+███%
+███×
+Uncommon
+███%
+███×
+Rare
+███%
+███×
+Epic
+███%
+███×
+Legendary
+███%
+███×
+Mythic
+███%
+███×
+A Common is worth less than its pack, and rarer seeds are worth more. Mythic is the ultra-rare tier.
+Crops
+Each pack has its own 6 crops, 1 for each rarity.
+Bronze
+Crop
+Rarity
+Spinach
+Common
+Potato
+Uncommon
+Cabbage
+Rare
+Carrot
+Epic
+Flare Kale
+Legendary
+Swirlchard
+Mythic
+Silver
+Crop
+Rarity
+Wheat
+Common
+Parsnip
+Uncommon
+Broccoli
+Rare
+Red Pepper
+Epic
+Sunchoke
+Legendary
+Cosmoflower
+Mythic
+Gold
+Crop
+Rarity
+Leek
+Common
+Onion
+Uncommon
+Squash
+Rare
+Turnip
+Epic
+Halopeno
+Legendary
+Moonkin
+Mythic
+Platinum
+Crop
+Rarity
+Brussels Sprouts
+Common
+Rhubarb
+Uncommon
+Tomato
+Rare
+Red Cabbage
+Epic
+Raydish
+Legendary
+Starnip
+Mythic
+Diamond
+Crop
+Rarity
+Ginger
+Common
+Beet
+Uncommon
+Pumpkin
+Rare
+Eggplant
+Epic
+Gilded Corn
+Legendary
+Heartbeet
+Mythic
+Heartbeet is the most valuable crop in the game.
+Fair randomness
+Every pack is tied to a future draw from drand, a public randomness source. The result is fixed before anyone can see it, and anyone can check it afterwards.
+tip
+Bigger packs grow faster for the ETH you put in. Splitting ETH across lots of small packs never beats 1 bigger pack.
+Next, 
+ Growing and selling
+.
+Updated 30 Oct 2026
+Previous
+The Silo and the Windfall
+Next
+Growing and selling
+
+=================== https://yieldfields.fun/docs/farming-and-yield/growing-and-selling
+
+Farming and $YIELD
+›
+Growing and selling
+Growing and selling
+In short:
+ Plant seeds in your free farm plot, harvest when they're ripe, then sell to the Farmer for $YIELD or the Broker for ETH.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+note
+Farming opens after Stage One. Exact grow times and fees go live with it.
+Your farm plot
+A grid of slots, free for every wallet. Each slot holds 1 crop at a time
+There are no plot expansions, and you don't need a deed to farm
+Other players can visit your plot and see what you're growing
+Growing
+From ███ to ███ hours, with a live countdown in the game
+Rarer crops take longer, and bigger packs grow faster
+Fertilizer cuts 25% of the grow time each, up to 2 per crop. Use it from your Bag. See 
+ Fertilizer
+Ripe crops never wilt, so harvest on your own schedule
+Harvesting
+Harvest 1 crop or everything ripe at once. Harvested crops go to your Bag, ready to sell.
+note
+The soil hides more than vegetables. ████████████████. See 
+ Classified
+.
+Selling
+Farmer ($YIELD)
+Pays ███% of the crop's value in $YIELD, straight to your wallet
+Buys $YIELD for you on the official pool and skips the buy tax, so every Farmer sale is a $YIELD buy
+The app shows a quote first. If the price moves past it, the sale stops instead of paying you less
+Broker (ETH)
+Pays ███% of the crop's value in ETH, from the ETH that pack sales bring into the Cornhub
+Which one?
+The Farmer pays more
+ and charges lower Co-op Dues, so it's the better deal if you plan to hold $YIELD. 
+The Broker is the simplest way to get ETH,
+ since selling to the Farmer and then selling the $YIELD nets less.
+Whichever you pick, the fee is Co-op Dues, and it goes to the Farmers Co-op. See 
+ How the Farmers Co-op works
+.
+Next, 
+ $YIELD
+.
+Updated 30 Oct 2026
+Previous
+Seeds and crops
+Next
+$YIELD
+
+=================== https://yieldfields.fun/docs/farming-and-yield/yield
+
+Farming and $YIELD
+›
+$YIELD
+$YIELD
+In short:
+ $YIELD is the reward token of Yield Fields. Farmers earn it from the Farmer, deed holders earn it from the land, and its trading taxes feed the Farmers Co-op. You never need it to play.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+note
+$YIELD isn't live yet. Contract details and exact taxes are published when it launches.
+Item
+Detail
+Ticker
+$YIELD
+Network
+Robinhood Chain
+Standard
+ERC-20
+Total supply
+███ $YIELD
+Supply
+Fixed. Minted once, never again
+Team allocation
+0%
+Where it trades
+1 official pool
+Contract
+Coming at launch. Listed on Official links and contracts
+How you earn it
+Selling crops to the Farmer
+Staking a Founding Deed, once deed rewards are live. See 
+ Founding Deeds
+Windfalls from the Silo
+██████████ (classified). See 
+ Classified
+Trading
+Taxes:
+ ███% on buys and ███% on sells. No LP fee, so the tax is the only cost of a trade
+Heavy selling:
+ once net selling passes a set level, the sell tax climbs to a hard cap, then eases back over time. Buys cancel out sells, and splitting a sale doesn't avoid it
+Launch protection:
+ right after trading opens, buys pay a much higher tax that falls steadily back to normal, so bots can't snipe the opening price
+Where taxes go:
+ regular taxes are split between the Farmers Co-op and the deeds' Root Cellars, with a small cut to the team. The heavy-selling extra all goes to the Farmers Co-op. The launch tax goes to a wallet set by the team, and 100% of it is put back into the game
+Limits:
+ the tax caps are hard-coded. The team can never raise them
+Built on URC-5
+$YIELD uses URC-5, the Token Venue Policy standard built by The Standard Reserve and now part of Uniswap's URC repository.
+1 official pool.
+ $YIELD declares its official Uniswap v4 pool onchain and blocks copycat pools
+Every trade counts.
+ All trading runs through that pool, so taxes and rewards always apply
+Smooth routing.
+ Wallets and routers read the policy onchain and route trades to the right place
+Next, 
+ How the Farmers Co-op works
+.
+Updated 30 Oct 2026
+Previous
+Growing and selling
+Next
+Classified
+
+=================== https://yieldfields.fun/docs/farming-and-yield/classified
+
+Farming and $YIELD
+›
+Classified
+Classified
+In short:
+ Nothing to see here yet.
+“Every farm has secrets buried in the soil. Something is coming to sniff them out.”
+████████ ███ ██████
+███ ████████ ██ ███ t████ ██ █████ ███ ████. ██████ r███ ████ ██u ███████ ██ ████████, and nothing you do at harvest changes it.
+███████ ███ ████ f██ ███████
+Paid out ███ █████, ██ ██████
+█████ ██████ ███ ████ ███ ██f█ ███ ████████
+How to ████ ███
+1
+Plant
+ ██ ███ ████
+2
+Harvest
+ ███ ████l ███ ███████
+3
+████ ███ ███████ ██ ███ ██████
+The ███
+████████ ██ ███████ ██e ███ ████████ ████. ███ ████████ ███████ get bigger shares.
+███ ███ ███ ████ ███████
+████████ ██ ████████ ███s ██████
+Busy days ██████ ████ ████ ones
+note
+This page is classified. Details are published before it goes live, so follow 
+@YieldFields_RH on X
+ to see it first.
+Back to 
+ Growing and selling
+.
+Updated 30 Oct 2026
+Previous
+$YIELD
+Next
+How the Farmers Co-op works
+
+=================== https://yieldfields.fun/docs/the-farmers-co-op/how-the-farmers-co-op-works
+
+The Farmers Co-op
+›
+How the Farmers Co-op works
+How the Farmers Co-op works
+In short:
+ The Farmers Co-op is the farmers' collective pot, and the engine that ties the game together. Every farmer is a member just by selling a harvest. What it does stays under wraps until farming opens.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+“The Farmers Co-op doesn't farm. It keeps the fields fed.”
+What feeds it
+Co-op Dues
+ from every crop sold, at the Farmer or the Broker
+A share of the taxes
+ on every $YIELD trade, plus the extra that heavy selling pays
+Fees from Fert Deck boosts,
+ once they arrive
+Its balance is shown at the Farmers Co-op in the game.
+What we can tell you
+It works in the open.
+ Its balance is shown in the game, and everything it does happens onchain
+It doesn't add to heavy selling.
+ Its own trades never count toward the higher sell tax
+It works for the fields.
+ What it collects goes back into the farm and its rewards. Some of it may never come back out
+The Farmers Co-op wakes on day 1 of farming, and it won't start from zero: it gets seeded with ████████ on day 1. Until then, it waits and it fills. Its rules are published before it makes its first move.
+How it all connects
+1
+Deeds make Fertilizer.
+ Farmers use it, or buy it from deed holders, to grow faster.
+2
+Farmers sell their harvest.
+ Every sale pays Co-op Dues into the Farmers Co-op.
+3
+$YIELD trading adds more.
+ Taxes flow in too, including the extra from heavy selling.
+4
+The Farmers Co-op feeds the farm.
+ What it collects goes back into rewards for farmers and deed holders.
+5
+Deeds get stronger.
+ Build fees and trading taxes fill the Root Cellars, and every burn means future fees are shared among fewer deeds.
+More farming means more fees, and more fees means more for the Farmers Co-op to work with.
+What it isn't
+The Farmers Co-op isn't a promise. It doesn't set or hold up the price of $YIELD, and what it gives back depends on how much the game collects.
+Next, 
+ Flywheels
+.
+Updated 30 Oct 2026
+Previous
+Classified
+Next
+Flywheels
+
+=================== https://yieldfields.fun/docs/the-farmers-co-op/flywheels
+
+The Farmers Co-op
+›
+Flywheels
+Flywheels
+In short:
+ The Farmers Co-op is the engine of Yield Fields. It collects Co-op Dues from every harvest and feeds them back into the farm and its rewards. More farmers and more harvests grow the Farmers Co-op, deeds earn more, and the whole economy compounds. More volume, more rewards.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+note
+These flywheels switch on when farming launches.
+The main flywheel
+1
+The Farmers Co-op fills.
+ It's seeded with ████ on day 1, and every harvest sold pays Co-op Dues into it.
+2
+Speculation follows.
+ A busy, growing farm draws attention, new players and trading in the 1 official pool.
+3
+Every trade pays fees.
+ Each $YIELD buy and sell pays tax, split between the Farmers Co-op and the deeds' Root Cellars, with a small team cut. The extra from heavy selling all goes to the Farmers Co-op.
+4
+Fees fund rewards.
+ Rewards pull in more players and more volume, and the Farmers Co-op has more to feed back into the fields. Back to step 1.
+The volume problem
+The main flywheel turns volume into rewards. The hard part is getting the volume in the first place: most onchain games and protocols never figured out how to incentivize it.
+Yield Fields is built to tackle exactly that. Our answer is ████████████ (classified), and it's revealed at launch.
+In plain terms
+More farmers and more harvests grow the Farmers Co-op, and the buzz follows
+Trading volume, including speculative volume, is what funds rewards
+Deeds make Fertilizer, and farmers use it to grow faster
+Every crop sale pays Co-op Dues into the Farmers Co-op
+Fees fill the deeds' Root Cellars, and every burn leaves fewer deeds to share them
+Supporting flywheels
+Three more flywheels feed the main one.
+1. The land feeds the fields
+1
+Stake a Founding Deed
+ and build a Fert Deck. It costs 0.01 ETH at launch.
+2
+It makes Fertilizer
+ around the clock. Higher Fertility makes more, and claimed Fertilizer never expires.
+3
+Farmers use it
+ for faster harvests. Deed holders use it themselves, or export it and sell it to farmers.
+4
+Faster harvests
+ mean more planting and more sales.
+More volume, more rewards:
+ every extra sale pays more Co-op Dues into the Farmers Co-op.
+2. The fields feed the Farmers Co-op
+1
+Farmers buy seed packs
+ at the Cornhub with ETH, plant them and harvest.
+2
+Every sale pays Co-op Dues,
+ to the Farmer for $YIELD or to the Broker for ETH.
+3
+The Farmers Co-op grows
+ with every sale, and feeds it back into the farm and its rewards.
+More volume, more rewards:
+ every crop sale gives the Farmers Co-op more to feed back into the fields.
+The full picture is on 
+ How the Farmers Co-op works
+.
+3. Fees come back to deed holders
+Build fees
+ stay in the deed staking contract and fill the deeds' Root Cellars, alongside their share of the trading tax
+Claim fees:
+ every deed reward claim pays a ███% fee. Part goes back to all staked deeds by Fertility, and part goes into the Silo
+The Farmers Co-op:
+ ██████████ (classified)
+More volume, more rewards:
+ the more $YIELD trades, the faster the Root Cellars fill.
+See 
+ The Root Cellar
+.
+Burns make every deed stronger
+Burn a staked deed
+ to cash out its Root Cellar in ETH and win the Windfall, a share of the Silo in $YIELD. Higher Fertility takes a bigger share
+The Silo never empties.
+ What a burn leaves keeps growing with every claim
+Every burned deed is gone for good,
+ so the deeds that remain share future fees among fewer deeds
+How to burn is on 
+ The Silo and the Windfall
+.
+stop
+Burning is permanent. The deed is gone for good, and there is no undo.
+Something else in the soil
+Word is, it's truffles. Every truffle ███ ████, and the details stay sealed until farming opens. See 
+ Classified
+.
+Why it holds together
+Busy days fund quiet ones.
+ What the Farmers Co-op collects on a busy day keeps working for the fields long after
+Heavy selling feeds the Farmers Co-op.
+ The extra sell tax lands there exactly when selling spikes
+Fees stay in the game.
+ Royalties go to the project treasury, not the team. The launch tax goes to a wallet set by the team, with 100% used for in-game initiatives
+More markets later.
+ Crops, seeds and packs can go on OpenSea later, not at launch
+warning
+None of these flywheels guarantees a price, a return or any amount of rewards. They show how fees move through the game.
+Next, 
+ Fees and risks
+.
+Updated 30 Oct 2026
+Previous
+How the Farmers Co-op works
+Next
+Fees and risks
+
+=================== https://yieldfields.fun/docs/reference/fees-and-risks
+
+Reference
+›
+Fees and risks
+Fees and risks
+In short:
+ Game fees flow back into the game. Here's every fee, where it goes, what the team earns, and what to know before you put ETH in.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Fees in Stage One
+Fee
+Amount
+Goes to
+Building a Fert Deck
+0.01 ETH at launch
+The deed staking contract, as the deeds' Root Cellars
+Royalties on Founding Deeds and items
+5%
+The project treasury, not the team
+Fees after Stage One
+Fee
+Amount
+Goes to
+Selling to the Farmer
+███% Co-op Dues
+The Farmers Co-op
+Selling to the Broker
+███% Co-op Dues
+The Farmers Co-op
+Buying $YIELD
+███%
+The Farmers Co-op and the Root Cellars, with a small team cut
+Selling $YIELD
+███%, more during heavy selling
+The Farmers Co-op and the Root Cellars, with a small team cut. The extra from heavy selling all goes to the Farmers Co-op
+Launch buy tax
+Everything above the regular buy tax, during the launch window
+A wallet set by the team, with 100% used for in-game initiatives
+Claiming deed rewards
+███%
+All staked deeds and the Silo
+How the team makes money
+A share of the Founding Deed mint
+A small cut of the regular $YIELD trading taxes
+Build fees, royalties and the launch tax aren't team revenue
+Good to know before you play
+Yield Fields is an onchain game, so a few things are worth knowing up front.
+Smart contracts.
+ Like any onchain game, the contracts could have bugs. An external audit is planned.
+Pauses.
+ If the game is paused for maintenance or safety, unstaking waits until it's back.
+Updates.
+ The team can tune settings and upgrade the game contracts, including deed staking, to keep the game healthy. Updates apply to staked deeds too.
+Values move.
+ Founding Deeds, Fertilizer, $YIELD and rewards move with the market, and rates can change up or down. Nothing here is a guaranteed return.
+Trading costs.
+ Sells cost more during heavy selling, and big trades move the price.
+Liquidity.
+The team manages the trading pool and can add, remove or rebalance it.
+The Root Cellar grows with fees.
+ It has no set amount.
+Burning a deed is permanent.
+Partners.
+ The game runs on Robinhood Chain, Uniswap, drand and other third-party infrastructure.
+Regulation.
+ Rules for digital assets and online games vary by country and can change.
+Who controls settings
+Settings are changed by the owner, a team multisig
+Changes take effect when they're made. They aren't scheduled or timelocked
+The $YIELD tax caps are hard-coded
+The current staking contract has no way for the team to move a staked deed. Upgrades are covered under Updates above
+Nothing in these docs is financial advice.
+Next, 
+ FAQ
+.
+Updated 30 Oct 2026
+Previous
+Flywheels
+Next
+FAQ
+
+=================== https://yieldfields.fun/docs/reference/faq
+
+Reference
+›
+FAQ
+FAQ
+In short:
+ Quick answers, with the answer first.
+note
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Do I need a deed to play?
+No.
+ Farming opens to everyone after Stage One. Deeds let you stake, build a Fert Deck and make Fertilizer. Want one? Founding Deeds trade on 
+OpenSea
+. See 
+ Founding Deeds
+.
+Does staking cost anything?
+No.
+ Only gas. Building a Fert Deck costs 0.01 ETH at launch.
+Can I sell a staked deed?
+No.
+ Unstake it first. Unstaking destroys its structure, and any unclaimed Fertilizer goes into your Bag for you.
+Can I unstake while the game is paused?
+No.
+ You can unstake again as soon as it resumes.
+Do I earn $YIELD or ETH for staking right now?
+Not yet.
+ Staked deeds are lined up for deed rewards, ██████████ and the Silo. Additional rewards for deed owners will be launched when the farming game launches.
+Does a higher rarity produce more?
+Yes.
+ Fert Deck output scales with Fertility, from 5 for a Common to 9 for a Mythic.
+What happens if I don't claim my Fertilizer?
+Your deck stops producing once its storage is full, at 3 days of production.
+Can I trade Fertilizer?
+Yes.
+ Export it to your wallet first. See 
+ Fertilizer
+.
+Does Fertilizer expire?
+No.
+ Stock up whenever you like.
+Do I need $YIELD to play?
+No.
+ You pay for everything in ETH. $YIELD is only a reward.
+Will I make money farming?
+Farming isn't a guaranteed profit.
+Should I sell to the Farmer or the Broker?
+The Farmer if you want to hold $YIELD, since it pays more. The Broker if you want ETH. See 
+ Growing and selling
+.
+Are the odds fair?
+Yes.
+ Every pack is tied to a future draw from drand, a public randomness source. The result is fixed before anyone can see it, and anyone can check it.
+What stops people from dumping $YIELD?
+The sell tax rises during heavy selling, and the extra goes to the Farmers Co-op. At launch, a high buy tax that drops over time stops bots from sniping the opening price.
+Does the team hold $YIELD?
+The team got 0% of the supply.
+How do I spot a scam?
+Check every link and address against 
+ Official links and contracts
+. The team will never DM you first.
+Are the numbers final?
+No.
+ Current rates and fees are shown in the app, and every change is logged in 
+ Patch notes
+.
+Why are some numbers blacked out?
+They go live with each stage. Follow 
+@YieldFields_RH on X
+ to see them first.
+Updated 30 Oct 2026
+Previous
+Fees and risks
+Next
+Glossary
+
+=================== https://yieldfields.fun/docs/reference/glossary
+
+Reference
+›
+Glossary
+Glossary
+In short:
+ Every name in Yield Fields, with one meaning each.
+The land
+Founding Deed:
+ 1 of 3,333 NFT plots of land in the Yield Fields. See 
+ Founding Deeds
+Tier:
+ a deed's rarity, from Common to Mythic
+Biome:
+ a deed's look, set by its rarity: Meadow, Frost, Blight, Radiant or Astral
+Fertility:
+ a deed's power in the game, from 5 (Common) to 9 (Mythic)
+Structure:
+ a building on a staked deed's build site. 1 per deed
+Fert Deck:
+ the first structure. It makes Fertilizer
+Root Cellar:
+ a deed's share of the ETH in the deed staking contract, set by its Fertility
+Silo:
+ a growing $YIELD reserve that only staked deeds can tap, by burning
+Windfall:
+ your share of the Silo when you burn a staked deed. The burn also pays out the deed's Root Cellar
+Items
+Fertilizer:
+ an item that cuts a crop's grow time. Used up when applied
+Bag:
+ your in-game inventory
+Export:
+ moving an item from your Bag to your wallet, so you can trade it
+Import:
+ moving an item from your wallet back into your Bag, so you can use it
+The fields
+Yielder:
+ you, a player
+Dewey:
+ your guide around the fields
+Farm plot:
+ the free plot every wallet gets for growing crops
+Cornhub:
+ the shop where you buy seed packs
+Seed pack:
+ bought with ETH, holds 1 random seed
+Farmer:
+ buys crops for $YIELD
+Broker:
+ buys crops for ETH
+$YIELD
+$YIELD:
+ the game's reward token
+Co-op Dues:
+ the fee on every crop sale
+Farmers Co-op:
+ the farmers' collective pot
+Back to 
+ About Yield Fields
+.
+Updated 30 Oct 2026
+Previous
+FAQ
+Next
+Patch notes
+
+=================== https://yieldfields.fun/docs/reference/patch-notes
+
+Reference
+›
+Patch notes
+Patch notes
+In short:
+ Every change to the game, newest first.
+Version
+When
+Change
+v1.0
+When staking opens
+Stage One: deed staking, the Fert Deck, Fertilizer and export. Fert Deck build fee 0.01 ETH.
+Updated 30 Oct 2026
+Previous
+Glossary
+Next
+Official links and contracts
+
+=================== https://yieldfields.fun/docs/reference/official-links-and-contracts
+
+Reference
+›
+Official links and contracts
+Official links and contracts
+In short:
+ These are the only official Yield Fields links and contracts. Anything else is a scam.
+Official links
+Channel
+Link
+Website
+yieldfields.fun
+X
+@YieldFields_RH
+Discord
+discord.gg/onchainheroes
+Founding Deeds on OpenSea
+opensea.io/collection/yield-field-deeds
+Contracts on Robinhood Chain
+Contract
+Address
+Founding Deeds
+0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a
+Deed staking
+Published when staking opens
+Yield Fields items
+Published when staking opens
+$YIELD
+Published when $YIELD launches
+Contract addresses and explorer links:
+ coming at launch. Only trust the addresses on this page.
+stop
+The team will never DM you first. Before you sign anything, check the address against this page, character by character. Never share your recovery phrase.
+Updated 30 Oct 2026
+Previous
+Patch notes
