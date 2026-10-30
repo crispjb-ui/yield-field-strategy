@@ -92,7 +92,7 @@ Commons + 0.08 ETH) loses Fertility 3 for 0.08 ETH; not worth the fees.
 - Own-use beats buying: your 3 decks fund your own farming's Fert at zero
   marginal cost. Buy Fert never.
 
-### 3.3 The $8,000
+### 3.3 The $8,000 — superseded by `05_OWNER_THESIS.md` (owner elected the token thesis); the gating rules below still apply
 - **R0 stands for seeds and `$YIELD`:** nothing is purchasable yet. Farming
   prices, odds and payout % are redacted. When published, run
   `seed_pack_ev()`; deploy only if the Broker-path EV ratio is ≥ 0.90 (ETH-only

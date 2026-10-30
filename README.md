@@ -13,6 +13,7 @@ stage launches. Stage One (staking + Fert Deck) is the only live loop.
 | `docs/01_VERIFIED_FACTS.md` | Fact ledger with sources and confidence |
 | `docs/02_STRATEGY_FRAMEWORK.md` | Game summary, decision rules, $8k allocation, exit plan, risk register |
 | `docs/03_AUTOMATION_PLAN.md` | Infrastructure build plan, phased |
+| `docs/05_OWNER_THESIS.md` | Owner's token thesis, the docs-based challenge to it, and the operating rules in force |
 | `docs/04_OPEN_QUESTIONS.md` | Exact questions the docs must answer before capital is deployed |
 | `config/settings.example.yaml` | Chain / API / contract config (copy to `config/settings.yaml`) |
 | `config/mechanics.yaml` | Game-mechanics parameters from the docs (`null` = redacted) |

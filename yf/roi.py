@@ -187,3 +187,15 @@ def fert_deed_yield(fert_units_per_day: float, fert_price_eth: float, tier_floor
     return {"units_per_day": units, "net_eth_per_day": net,
             "payback_days": (tier_floor_eth / net) if net > 0 else None,
             "annualized_pct": (net * 365 / tier_floor_eth * 100) if net > 0 else None}
+
+
+def farm_vs_buy(pack_price_eth: float, ev_worth_x: float, farmer_pct: float, farmer_dues_pct: float,
+                pool_price_eth_per_yield: float, buy_tax_pct: float) -> dict:
+    """Cheapest route to accumulate $YIELD. Farming: pack → crop (EV worth multiple) → Farmer pays
+    farmer_pct of crop value in $YIELD at pool price, skipping the buy tax, minus Co-op dues.
+    Direct: buy on the official pool and pay the buy tax. All inputs are redacted until launch."""
+    yield_per_eth_farm = ev_worth_x * farmer_pct / 100 * (1 - farmer_dues_pct / 100) / pool_price_eth_per_yield
+    yield_per_eth_buy = (1 - buy_tax_pct / 100) / pool_price_eth_per_yield
+    return {"yield_per_eth_farming": yield_per_eth_farm, "yield_per_eth_direct": yield_per_eth_buy,
+            "farming_advantage_pct": (yield_per_eth_farm / yield_per_eth_buy - 1) * 100,
+            "farm_if": yield_per_eth_farm > yield_per_eth_buy}
