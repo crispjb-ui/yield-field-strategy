@@ -34,6 +34,6 @@ into `docs/01_VERIFIED_FACTS.md` with the docs URL.
 22. Does the team have a published roadmap with dated milestones (token launch date, season end)?
 
 ## E. Owner inputs
-23. Exact cost basis per deed in ETH and the ETH/USD at purchase (see discrepancy in `01_VERIFIED_FACTS.md`).
+23. ~~Cost basis~~ Resolved: 0.1 ETH each via whitelist. Still needed: ETH/USD on 2026-10-13 for USD basis.
 24. The three token IDs.
 25. Target hold horizon and the drawdown you will tolerate on the $8k (defines the stop rules in §5 of the strategy).

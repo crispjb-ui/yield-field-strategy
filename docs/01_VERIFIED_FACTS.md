@@ -64,10 +64,10 @@ against the docs directly before acting.
 | GitHub `identity-md-launches/launch-1626-yield-fields-deed` (`YFD` ERC-20) | Random token-generator repo; no link to project. |
 | `yieldfields.medium.com` (BSC "YieldFields") | 2021 BSC DeFi farm, unrelated. |
 
-## Discrepancy flagged for the owner
+## Owner position (resolved 2026-10-30)
 
-Owner states three "rare" deeds minted at **0.1 ETH each**. Every source puts
-the public clearing price at **0.999688 ETH**. Either (a) 0.1 is a typo for
-~1.0, (b) they were acquired in a WL/other phase at a different price, or
-(c) they were bought on secondary. Cost basis changes the whole exit plan
-(see `02_STRATEGY_FRAMEWORK.md` §5). Unresolved.
+Three deeds minted at **0.1 ETH each via whitelist allocation** (owner
+statement). Public Dutch auction cleared at 0.999688 ETH; WL price was a
+separate tier (coverage noted WL pricing was "not yet clear"). Total basis
+0.3 ETH. At a 0.879 ETH floor net of 7.5% fees: ~2.44 ETH exit value, ~+713%.
+Token IDs and Tier values still unrecorded (Q1, Q24).

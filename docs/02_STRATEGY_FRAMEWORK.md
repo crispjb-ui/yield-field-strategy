@@ -85,16 +85,23 @@ ETH terms; the compounding case has to be proven by realized data, not assumed.
 
 ## 5. Exit plan (all assets)
 
-### 5.1 Cost basis determines the posture
-- If basis ≈ **0.1 ETH/deed** (owner's statement): position is ~8× at the
-  reported floor. Priority is *locking profit*: sell 1 of 3 at the first
-  liquidity event (token launch day or any floor >1.2 ETH) to make the
-  remaining two free. Hold the two for the deed loop.
-- If basis ≈ **1.0 ETH/deed** (the public clearing price): position is
-  ~12% underwater at a 0.88 ETH floor. Do not sell into the post-mint trough
-  unless the docs reveal a weak Fert economy (§2 row 1). Set a hard stop at
-  0.60 ETH floor (−40%) for all three.
-- Resolve this before anything else (Q23).
+### 5.1 Posture (basis confirmed: 0.1 ETH/deed via whitelist)
+Total basis 0.3 ETH. Floor ~0.88 ETH → net exit ~2.44 ETH, ~+713%. Fee-adjusted
+breakeven is 0.108 ETH; a floor collapse to 0.2 ETH still returns the basis.
+
+- **Sell 1 of 3 at the first liquidity event** (token launch day, or any
+  floor ≥1.2 ETH, whichever first). Proceeds (~0.8+ ETH) exceed the basis of
+  all three by >2.5×; the remaining two are then a free position.
+- **Hold the two** for the deed loop. They are not sold on narrative; they
+  are sold only on the kill table in 5.2 or at ≥1.5 ETH.
+- **No stop-loss on the remaining two.** Downside to zero is 0.2 ETH of
+  basis; upside is the deed loop plus any re-rating. Asymmetry favours holding.
+- **Do not add deeds at the floor.** Buying at 0.88 ETH raises the blended
+  basis from 0.10 to 0.41 ETH per deed on four, or 0.49 on five, and converts
+  a free option into a market position. R3 stands: extra deeds only on a
+  measured coupon, max 2.
+- Fund the $8k seed tranche from cash, not from the sold deed; keep the
+  deed proceeds in ETH as the reserve (R1), which then costs you nothing.
 
 ### 5.2 Trigger-based exits for deeds
 | Trigger | Action |
