@@ -40,6 +40,10 @@ against the docs directly before acting.
 | **Tier supply** (owner screenshot of OpenSea trait filter, 2026-10-30): Mythic 111, Legendary 222, Epic 555, Rare 888, Common 1,557 (sums to 3,333) | A | OpenSea trait panel |
 | **Rare-tier floor 0.94 ETH** (listings 0.94–0.99 across Snow and Green biomes), owner screenshot 2026-10-30 | A | OpenSea, Tier=Rare filter |
 | **Sales tape, ~22 h window ending 2026-10-30:** 39 sales, 38.8 ETH, mean 0.996, median 0.95 ETH; bimodal: a 0.79–0.99 band and a 1.15–1.23 band (10 of 39 prints ≥1.14), one outlier at 2.20 WETH | A | OpenSea activity (Sale, Mint filter) |
+| **Collection header 2026-10-30:** floor 0.875 ETH, top offer 0.806 WETH, 24h volume 38.84 ETH, total volume 1,386.18 ETH, 222 listed (6.7%), 1,208 owners (36.2%); OpenSea footer showed ETH ≈ $2,223 | A | OpenSea header (owner screenshot) |
+| **Biome == Tier, 1:1.** Mythic=Cosmic (purple/pink), Legendary=Sunset (orange), Epic=Swamp (purple/green), Rare=Snow, Common=Grassland | A | Tier-filtered item grids |
+| **Tier floors / 7-day clearing bands (ETH):** Mythic 2.66 / 2.10–3.40 · Legendary 1.60 / 1.42–1.77 · Epic 1.18 / 1.03–1.17 · Rare 0.96 / 0.88–0.99 (one print 1.23) · Common 0.875 / 0.786–0.90 | A | Tier-filtered activity panels |
+| The 1.15–1.23 band in the unfiltered tape is **Epic**, not Rare | A | Epic activity panel |
 | What Tier / Fertility / any trait does in-game | **UNKNOWN** | — |
 
 ## Token

@@ -85,34 +85,45 @@ ETH terms; the compounding case has to be proven by realized data, not assumed.
 
 ## 5. Exit plan (all assets)
 
-### 5.1 Posture (basis 0.1 ETH/deed via whitelist; 3× Rare, Snow biome)
-Basis 0.3 ETH. Rare floor 0.94 ETH → net exit 3 × 0.94 × 0.925 ≈ 2.61 ETH
-(~+770%). Fee-adjusted breakeven 0.108 ETH.
+### 5.1 Posture (basis 0.1 ETH/deed via whitelist; 3× Rare = Snow biome)
+Basis 0.3 ETH. Rare floor 0.96 → net exit 3 × 0.96 × 0.925 ≈ 2.66 ETH (~+790%).
+Fee-adjusted breakeven 0.108 ETH. 24h volume 38.84 ETH (header): three deeds
+are ~7% of a day; exits are not a constraint.
 
-**Liquidity correction.** The sales tape shows ~39 sales / ~39 ETH in a
-22 h window (median 0.95 ETH). One deed is <3% of a day's volume; all three
-are <8%. The thin-market caveat in §1 is withdrawn for single-deed exits.
-Listing, not just offer-acceptance, is viable.
+**Anomaly resolved.** The 1.15–1.23 prints are Epic. Rares clear 0.95–0.99.
+So list at **0.99–1.00**, the top of the Rare band, not 1.15; a Rare at 1.15
+competes with Epic floor at 1.18 and will not fill.
 
-**Pricing anomaly to exploit before selling anything.** Rare is 26.6% of
-supply yet its floor (0.94) sits only ~7% above the collection floor
-(~0.88). Meanwhile 10 of 39 prints cleared at 1.15–1.23 ETH. Find what
-those buyers paid for: filter OpenSea activity by Tier and by Biome. Two cases:
-- Those prints are Rares (or Snow): list one of yours at 1.15, not 0.94.
-- Those prints are Epic+ only: Rare is priced as Common. Tier is either
-  cosmetic (then your premium is nil and docs will say so) or the market has
-  not read the docs yet (then hold all three through the repricing; the
-  docs "just came out").
-Do not list at 0.94 until this is resolved; it costs one page of OpenSea
-filters to find out.
+**Market-implied tier ladder (floor ÷ Common floor):**
+
+| Tier | Supply | Scarcity vs Common | Price ratio |
+|---|---|---|---|
+| Common | 1,557 | 1.0× | 1.00 |
+| Rare | 888 | 1.75× | 1.10 |
+| Epic | 555 | 2.8× | 1.35 |
+| Legendary | 222 | 7.0× | 1.83 |
+| Mythic | 111 | 14.0× | 3.04 |
+
+Premiums are strongly sub-linear in scarcity. The market is pricing Tier as a
+*mild* utility multiplier plus a collector premium at the top. The docs'
+actual output multiplier per tier (Q2) is the trade: run
+`tier_relative_value()` in `yf/roi.py` once `multiplier` is filled. A tier
+whose stated-utility ratio exceeds its price ratio by ≥20% is the buy; one
+below is the sell. This relative-value trade does not depend on `$YIELD`
+being live, so it is the only thing the $8k can legitimately target today —
+**after** the multipliers are read, not before.
+
+**Upgrade check.** Selling all 3 Rares buys 1 Legendary (2.66 net ÷ 1.60)
+with 1.06 ETH left over. Worth it only if one Legendary out-produces three
+Rares, i.e. Legendary multiplier ≥ 3× Rare's. Compute with `swap_breakeven()`.
+Default: no.
 
 **Rules.**
-- Sell 1 of 3 at the first liquidity event (token launch day or Rare floor
-  ≥1.2 ETH). List at the top of the observed clearing band for its tier,
-  cancel and relist daily; never list below the Rare floor.
+- Sell 1 of 3 at the first liquidity event (token launch day, or Rare floor
+  ≥1.2 ETH). List at 0.99–1.00; relist daily at the top of the band. Never
+  list below the Rare floor.
 - Hold the other two, no stop-loss; 0.2 ETH of basis at risk.
-- Do not buy at the floor. A fourth deed at 0.94 lifts blended basis from
-  0.10 to 0.31 ETH. R3 stands.
+- Do not buy Rares at the floor. Blended basis would go 0.10 → 0.31 ETH.
 - Deed proceeds become the ETH reserve (R1); seed tranche from cash.
 
 ### 5.2 Trigger-based exits for deeds

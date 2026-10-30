@@ -4,7 +4,7 @@ Each answer goes into `config/mechanics.yaml` (parameter name in brackets) and
 into `docs/01_VERIFIED_FACTS.md` with the docs URL.
 
 ## A. Deeds (your 3 + any purchase)
-1. What are the Tier values and their supply counts? Which Tier are token IDs ___, ___, ___? `[deed.tiers]`
+1. ~~Tier values/counts~~ Resolved (Mythic 111 / Legendary 222 / Epic 555 / Rare 888 / Common 1,557; owner holds 3× Rare). Token IDs still needed.
 2. What does Tier change numerically: resource output rate, plot count, Fert Deck size, multiplier? `[deed.tier_multiplier]`
 3. What do Fertility, Landmark, Special, Special Count, Biome, Terrain do? Which are cosmetic? `[deed.trait_effects]`
 4. Is deed output (Fertilizer / Fert Decks) a passive drip, or does it require actions (gas, time, inputs)? `[deed.output_per_cycle, deed.cycle_hours, deed.action_required]`

@@ -111,3 +111,34 @@ def allocate(budget_usd: float, reserve_pct: float = 25.0, seed_first_usd: float
     return {"reserve_usd": reserve, "seed_tranche_usd": seeds, "extra_deeds": deeds,
             "deed_spend_usd": deed_spend,
             "undeployed_usd": budget_usd - reserve - seeds - deed_spend}
+
+
+def tier_relative_value(tiers: dict, base: str = "Common") -> dict:
+    """Market-implied vs docs-stated tier value.
+
+    For each tier: price_ratio = floor / base floor; util_ratio = multiplier /
+    base multiplier (None until docs fill multipliers); score = util / price.
+    score > 1 → tier is cheap relative to its stated utility; < 1 → expensive.
+    """
+    b = tiers[base]
+    out = {}
+    for name, t in tiers.items():
+        pr = (t["floor_eth"] / b["floor_eth"]) if t.get("floor_eth") and b.get("floor_eth") else None
+        scarcity = b["count"] / t["count"] if t.get("count") else None
+        ur = None
+        if t.get("multiplier") is not None and b.get("multiplier"):
+            ur = t["multiplier"] / b["multiplier"]
+        out[name] = {"floor_eth": t.get("floor_eth"), "price_ratio": pr, "scarcity_ratio": scarcity,
+                     "util_ratio": ur, "score": (ur / pr) if (ur and pr) else None}
+    return out
+
+
+def swap_breakeven(sell_tier: dict, buy_tier: dict, n_sell: int, fee_pct: float = 7.5) -> dict:
+    """Selling n deeds of one tier to buy another: how many you get and the
+    utility multiple the bought tier must carry to break even on output."""
+    proceeds = n_sell * sell_tier["floor_eth"] * (1 - fee_pct / 100)
+    n_buy = int(proceeds // buy_tier["floor_eth"])
+    leftover = proceeds - n_buy * buy_tier["floor_eth"]
+    req = (n_sell * sell_tier.get("multiplier", 1) / n_buy) if n_buy else None
+    return {"proceeds_eth": proceeds, "n_buy": n_buy, "leftover_eth": leftover,
+            "required_multiplier_ratio": req}

@@ -17,11 +17,12 @@ token:                      # Q14-19
 
 deed:                       # Q1-7
   tiers:                    # counts verified from OpenSea trait panel 2026-10-30; multipliers from docs
-    Mythic:    {count: 111,  multiplier: null}
-    Legendary: {count: 222,  multiplier: null}
-    Epic:      {count: 555,  multiplier: null}
-    Rare:      {count: 888,  multiplier: null}
-    Common:    {count: 1557, multiplier: null}
+    # floor_eth / clearing band observed on OpenSea 2026-10-30 (owner screenshots). Biome == Tier 1:1.
+    Mythic:    {count: 111,  multiplier: null, biome: Cosmic,    floor_eth: 2.66,  band: [2.10, 3.40]}
+    Legendary: {count: 222,  multiplier: null, biome: Sunset,    floor_eth: 1.60,  band: [1.42, 1.77]}
+    Epic:      {count: 555,  multiplier: null, biome: Swamp,     floor_eth: 1.18,  band: [1.03, 1.17]}
+    Rare:      {count: 888,  multiplier: null, biome: Snow,      floor_eth: 0.96,  band: [0.88, 0.99]}
+    Common:    {count: 1557, multiplier: null, biome: Grassland, floor_eth: 0.875, band: [0.786, 0.90]}
   owner_tier: Rare          # owner's 3 deeds: Rare, Snow biome
   owner_biome: Snow
   output_resource: null     # "Fertilizer"
