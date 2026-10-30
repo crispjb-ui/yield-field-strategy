@@ -1,0 +1,4 @@
+date,asset,token_id,qty,cost_eth,eth_usd_at_cost,venue,tier,notes
+2026-10-13,deed,0,1,0.1,0,mint,rare,REPLACE — see cost-basis discrepancy in docs/01
+2026-10-13,deed,0,1,0.1,0,mint,rare,REPLACE
+2026-10-13,deed,0,1,0.1,0,mint,rare,REPLACE

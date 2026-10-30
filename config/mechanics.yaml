@@ -1,0 +1,47 @@
+# Game-mechanics parameters. ALL null until quoted from yieldfields.fun/docs.
+# Each key maps to a numbered question in docs/04_OPEN_QUESTIONS.md.
+# The ROI model (yf/roi.py) refuses to run while any required key is null.
+
+source_url: null            # docs page(s) these numbers were read from
+as_of: null                 # date read
+
+token:                      # Q14-19
+  address: null
+  max_supply: null
+  emission_model: null      # "fixed_pool_split" | "per_player" | "treasury_funded" | other
+  emissions_per_day: null   # total $YIELD/day entering circulation, if fixed
+  sinks: []                 # e.g. ["seed_purchase_burn_50pct", "fert_purchase"]
+  tax_pct: null
+  liquidity_usd: null
+  dex: null
+
+deed:                       # Q1-7
+  tiers: {}                 # {"Common": {count: null, multiplier: null}, ...}
+  owner_tier: null          # the Tier of the owner's deeds, once known
+  output_resource: null     # "Fertilizer"
+  output_per_cycle: null
+  cycle_hours: null
+  action_required: null     # true/false — does claiming cost gas/time?
+  upkeep_per_cycle: null    # in $YIELD or ETH
+  pays_yield_directly: null
+
+fert:                       # Q5, Q9
+  effect: null              # "harvest_multiplier" | "time_reduction" | "gate"
+  magnitude: null           # e.g. 1.5 for +50%
+  sellable: null
+  market_type: null         # "fixed_price" | "orderbook" | "none"
+  price_yield: null         # current market price per unit in $YIELD
+
+seeds: []                   # Q8 — list of {name, cost_yield, grow_hours, harvest_yield, fert_required}
+
+farm:                       # Q10, Q13
+  plot_cap_per_wallet: null
+  daily_harvest_cap: null
+  energy: null
+
+weather:                    # Q11
+  states: {}                # {"Rain": {p: null, mult: null}, ...}
+
+leaderboard:                # Q12
+  reward_pool_yield: null
+  cadence: null
