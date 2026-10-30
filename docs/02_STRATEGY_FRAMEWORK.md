@@ -16,9 +16,9 @@ the docs. Where a rule depends on an unknown, the unknown is named.
   Items (a)–(e) are all unknown numerically (Q4–Q9, Q15–Q18).
 - `$YIELD` is not confirmed live. Until it is, there is no seed market to
   deploy into and nothing to exit into except ETH via deed sales.
-- The deed market is thin: one snapshot showed ~$33k/24h volume against a
-  ~$3.3M total. Your 3 deeds at a ~0.88 ETH floor are a material fraction of a
-  day's volume. Add 4 more and a same-day exit moves the floor.
+- Deed market depth (owner screenshot 2026-10-30): ~39 sales / ~39 ETH in
+  22 h, median 0.95 ETH. An earlier $33k/24h snapshot (Oct 28) understated it.
+  Three deeds are <8% of a day's volume; exits are not the constraint.
 - 5% creator royalty on OpenSea plus marketplace fee: round-trip friction on a
   deed is ≥7.5% before spread.
 
@@ -85,23 +85,35 @@ ETH terms; the compounding case has to be proven by realized data, not assumed.
 
 ## 5. Exit plan (all assets)
 
-### 5.1 Posture (basis confirmed: 0.1 ETH/deed via whitelist)
-Total basis 0.3 ETH. Floor ~0.88 ETH → net exit ~2.44 ETH, ~+713%. Fee-adjusted
-breakeven is 0.108 ETH; a floor collapse to 0.2 ETH still returns the basis.
+### 5.1 Posture (basis 0.1 ETH/deed via whitelist; 3× Rare, Snow biome)
+Basis 0.3 ETH. Rare floor 0.94 ETH → net exit 3 × 0.94 × 0.925 ≈ 2.61 ETH
+(~+770%). Fee-adjusted breakeven 0.108 ETH.
 
-- **Sell 1 of 3 at the first liquidity event** (token launch day, or any
-  floor ≥1.2 ETH, whichever first). Proceeds (~0.8+ ETH) exceed the basis of
-  all three by >2.5×; the remaining two are then a free position.
-- **Hold the two** for the deed loop. They are not sold on narrative; they
-  are sold only on the kill table in 5.2 or at ≥1.5 ETH.
-- **No stop-loss on the remaining two.** Downside to zero is 0.2 ETH of
-  basis; upside is the deed loop plus any re-rating. Asymmetry favours holding.
-- **Do not add deeds at the floor.** Buying at 0.88 ETH raises the blended
-  basis from 0.10 to 0.41 ETH per deed on four, or 0.49 on five, and converts
-  a free option into a market position. R3 stands: extra deeds only on a
-  measured coupon, max 2.
-- Fund the $8k seed tranche from cash, not from the sold deed; keep the
-  deed proceeds in ETH as the reserve (R1), which then costs you nothing.
+**Liquidity correction.** The sales tape shows ~39 sales / ~39 ETH in a
+22 h window (median 0.95 ETH). One deed is <3% of a day's volume; all three
+are <8%. The thin-market caveat in §1 is withdrawn for single-deed exits.
+Listing, not just offer-acceptance, is viable.
+
+**Pricing anomaly to exploit before selling anything.** Rare is 26.6% of
+supply yet its floor (0.94) sits only ~7% above the collection floor
+(~0.88). Meanwhile 10 of 39 prints cleared at 1.15–1.23 ETH. Find what
+those buyers paid for: filter OpenSea activity by Tier and by Biome. Two cases:
+- Those prints are Rares (or Snow): list one of yours at 1.15, not 0.94.
+- Those prints are Epic+ only: Rare is priced as Common. Tier is either
+  cosmetic (then your premium is nil and docs will say so) or the market has
+  not read the docs yet (then hold all three through the repricing; the
+  docs "just came out").
+Do not list at 0.94 until this is resolved; it costs one page of OpenSea
+filters to find out.
+
+**Rules.**
+- Sell 1 of 3 at the first liquidity event (token launch day or Rare floor
+  ≥1.2 ETH). List at the top of the observed clearing band for its tier,
+  cancel and relist daily; never list below the Rare floor.
+- Hold the other two, no stop-loss; 0.2 ETH of basis at risk.
+- Do not buy at the floor. A fourth deed at 0.94 lifts blended basis from
+  0.10 to 0.31 ETH. R3 stands.
+- Deed proceeds become the ETH reserve (R1); seed tranche from cash.
 
 ### 5.2 Trigger-based exits for deeds
 | Trigger | Action |

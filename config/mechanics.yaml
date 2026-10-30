@@ -16,8 +16,14 @@ token:                      # Q14-19
   dex: null
 
 deed:                       # Q1-7
-  tiers: {}                 # {"Common": {count: null, multiplier: null}, ...}
-  owner_tier: null          # the Tier of the owner's deeds, once known
+  tiers:                    # counts verified from OpenSea trait panel 2026-10-30; multipliers from docs
+    Mythic:    {count: 111,  multiplier: null}
+    Legendary: {count: 222,  multiplier: null}
+    Epic:      {count: 555,  multiplier: null}
+    Rare:      {count: 888,  multiplier: null}
+    Common:    {count: 1557, multiplier: null}
+  owner_tier: Rare          # owner's 3 deeds: Rare, Snow biome
+  owner_biome: Snow
   output_resource: null     # "Fertilizer"
   output_per_cycle: null
   cycle_hours: null

@@ -37,7 +37,10 @@ against the docs directly before acting.
 | Trait categories: Background, Biome, Decor, Fertility, Landmark, Special, Special Count, Terrain, **Tier** | A | OpenSea trait filters (via search) |
 | Snapshot 2026-10-28: floor ≈ $2,015, top offer ≈ $1,864, 24 h volume ≈ $33k, total volume ≈ $3.3M | B | OpenSea (via search) |
 | Other snapshots: floor $2,957 / top offer $2,814; page titles showing 0.879 ETH floor and 1.219 ETH (offers page) | C (unknown dates) | OpenSea page titles |
-| Meaning of Tier values, Fertility values, what any trait does in-game | **UNKNOWN** | — |
+| **Tier supply** (owner screenshot of OpenSea trait filter, 2026-10-30): Mythic 111, Legendary 222, Epic 555, Rare 888, Common 1,557 (sums to 3,333) | A | OpenSea trait panel |
+| **Rare-tier floor 0.94 ETH** (listings 0.94–0.99 across Snow and Green biomes), owner screenshot 2026-10-30 | A | OpenSea, Tier=Rare filter |
+| **Sales tape, ~22 h window ending 2026-10-30:** 39 sales, 38.8 ETH, mean 0.996, median 0.95 ETH; bimodal: a 0.79–0.99 band and a 1.15–1.23 band (10 of 39 prints ≥1.14), one outlier at 2.20 WETH | A | OpenSea activity (Sale, Mint filter) |
+| What Tier / Fertility / any trait does in-game | **UNKNOWN** | — |
 
 ## Token
 
@@ -70,4 +73,4 @@ Three deeds minted at **0.1 ETH each via whitelist allocation** (owner
 statement). Public Dutch auction cleared at 0.999688 ETH; WL price was a
 separate tier (coverage noted WL pricing was "not yet clear"). Total basis
 0.3 ETH. At a 0.879 ETH floor net of 7.5% fees: ~2.44 ETH exit value, ~+713%.
-Token IDs and Tier values still unrecorded (Q1, Q24).
+All three are **Tier = Rare, Biome = Snow**. Token IDs still unrecorded (Q24).

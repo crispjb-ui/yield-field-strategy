@@ -1,4 +1,4 @@
 date,asset,token_id,qty,cost_eth,eth_usd_at_cost,venue,tier,notes
-2026-10-13,deed,0,1,0.1,0,whitelist_mint,unknown,fill token_id + Tier trait from OpenSea
-2026-10-13,deed,0,1,0.1,0,whitelist_mint,unknown,fill token_id + Tier trait from OpenSea
-2026-10-13,deed,0,1,0.1,0,whitelist_mint,unknown,fill token_id + Tier trait from OpenSea
+2026-10-13,deed,0,1,0.1,0,whitelist_mint,Rare,Snow biome; fill token_id
+2026-10-13,deed,0,1,0.1,0,whitelist_mint,Rare,Snow biome; fill token_id
+2026-10-13,deed,0,1,0.1,0,whitelist_mint,Rare,Snow biome; fill token_id
