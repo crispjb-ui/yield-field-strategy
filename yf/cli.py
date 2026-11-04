@@ -13,6 +13,7 @@ from . import config
 from .ledger import read_ledger, mark
 from .opensea import OpenSea
 from .roi import MissingMechanics, seed_roi, deed_roi, allocate
+from . import fertrate
 
 ROOT = config.ROOT
 SNAP_DIR = ROOT / "data" / "snapshots"
@@ -102,6 +103,37 @@ def cmd_watch(cfg, args):
         time.sleep(a["poll_seconds"])
 
 
+def cmd_fertrate(cfg, args):
+    fr = fertrate.fetch()
+    s = fertrate.summarize(fr)
+    s["milestones_days_from_now"] = fertrate.milestones(fr["supply"], s["network_output_per_day"])
+    print(json.dumps(s, indent=2))
+    if args.save:
+        SNAP_DIR.mkdir(parents=True, exist_ok=True)
+        fr["ts"] = datetime.now(timezone.utc).isoformat()
+        with open(SNAP_DIR / "fert-rate.jsonl", "a") as f:
+            f.write(json.dumps(fr) + "\n")
+    if s["network_rate"] < 1.0:
+        print(f"ALERT: network rate {s['network_rate']:.0%}")
+
+
+def cmd_deeds(cfg, args):
+    from .rpc import Rpc, selector, enc_uint
+    from .abi import Contract
+    rpc = Rpc(cfg["chain"]["rpc_url"])
+    S = Contract(rpc, cfg["contracts"]["deed_staking"], "stakeAndBuild")
+    ledger = ROOT / "data" / ("ledger.csv" if (ROOT / "data" / "ledger.csv").exists() else "ledger.example.csv")
+    ids = [int(p.token_id) for p in read_ledger(ledger) if p.asset == "deed" and p.token_id not in ("", "0")]
+    out = []
+    for t in ids:
+        own, fert, struct, flag = S.call("deedOf", t)
+        rv = int(rpc.eth_call(S.address, selector("redeemValue(uint256[])") + enc_uint(32) + enc_uint(1) + enc_uint(t)), 16) / 1e18
+        out.append({"token_id": t, "staker": own, "fertility": fert, "structure": struct,
+                    "fert_per_day_nominal": fert * 0.5, "root_cellar_eth": rv})
+    print(json.dumps({"deeds": out, "backing_eth": S.call("backing") / 1e18, "jackpot": S.call("jackpot"),
+                      "reward_pool": S.call("rewardPool"), "paused": S.call("paused")}, indent=2))
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="yf")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -115,10 +147,12 @@ def main(argv=None):
     s.add_argument("--gas", type=float, default=0.0)
     s = sub.add_parser("allocate"); s.add_argument("--budget", type=float, default=8000); s.add_argument("--floor-usd", type=float)
     s = sub.add_parser("watch"); s.add_argument("--once", action="store_true")
+    s = sub.add_parser("fertrate"); s.add_argument("--save", action="store_true")
+    sub.add_parser("deeds")
     args = p.parse_args(argv)
     cfg = config.load_settings()
     {"market": cmd_market, "positions": cmd_positions, "roi": cmd_roi,
-     "allocate": cmd_allocate, "watch": cmd_watch}[args.cmd](cfg, args)
+     "allocate": cmd_allocate, "watch": cmd_watch, "fertrate": cmd_fertrate, "deeds": cmd_deeds}[args.cmd](cfg, args)
 
 
 if __name__ == "__main__":

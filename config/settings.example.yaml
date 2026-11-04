@@ -9,8 +9,8 @@ chain:
 contracts:
   deed_nft: "0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a"   # docs Official-links page == OpenSea API (verified 2026-10-30)
   yield_token: null       # ERC-20 — same rule; token not confirmed live as of 2026-10-30
-  deed_staking: null      # published when staking opens
-  items: null             # Fertilizer ERC-1155C, published when staking opens
+  deed_staking: "0x0AcFcD1483686fcd94DABeA03714321d0E05fc8D"   # EIP-1967 proxy, impl 0xaa4478ef0c7bc33dae45fa5ff870877325c34308
+  items: "0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317"          # Fertilizer ERC-1155C proxy, impl 0xe0b488f1fd4dab9c8566fedd883d4229a31c4aa9
 
 opensea:
   api_key: ""             # /collections/{slug} and /stats work WITHOUT a key (verified); listings/offers/events need one

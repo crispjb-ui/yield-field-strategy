@@ -1,0 +1,512 @@
+[
+ {
+  "type": "constructor",
+  "inputs": [
+   {
+    "name": "owner_",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "yield_",
+    "internalType": "contract ERC20",
+    "type": "address"
+   },
+   {
+    "name": "virtualEthReserve_",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "LP_FEE_BPS",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "buyFeeBps",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "cancelOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "completeOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "ethReserve",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "maxSellFeeBps",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "owner",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "ownershipHandoverExpiresAt",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "prevBlockPrice",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ethIn",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "quoteEthForYield",
+  "outputs": [
+   {
+    "name": "yieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ethIn",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "quoteSpotEthForYield",
+  "outputs": [
+   {
+    "name": "yieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "yieldIn",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "quoteYieldForEth",
+  "outputs": [
+   {
+    "name": "ethOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "renounceOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "requestOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "sellFeeBps",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "buy",
+    "internalType": "uint16",
+    "type": "uint16"
+   },
+   {
+    "name": "sell",
+    "internalType": "uint16",
+    "type": "uint16"
+   },
+   {
+    "name": "maxSell",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "name": "setDisplayFees",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "spotPrice",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "minYieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "to",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "swapEthForYield",
+  "outputs": [
+   {
+    "name": "yieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "yieldIn",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "minEthOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "to",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "swapYieldForEth",
+  "outputs": [
+   {
+    "name": "ethOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "transferOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "virtualEthReserve",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "yieldReserve",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "yieldToken",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "contract ERC20",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "buyFeeBps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   },
+   {
+    "name": "sellFeeBps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   },
+   {
+    "name": "maxSellFeeBps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   }
+  ],
+  "name": "DisplayFeesSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverCanceled"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverRequested"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "oldOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipTransferred"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "sender",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "to",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "ethForYield",
+    "internalType": "bool",
+    "type": "bool",
+    "indexed": false
+   },
+   {
+    "name": "amountIn",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "amountOut",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "Swap"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "AlreadyInitialized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InsufficientLiquidity"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InsufficientOutput"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidFee"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NewOwnerIsZeroAddress"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NoHandoverRequest"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Unauthorized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroAmount"
+ }
+]

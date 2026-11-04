@@ -1,0 +1,65 @@
+
+Deed Gameplay
+›
+Fertilizer
+Fertilizer
+In short:
+Fertilizer makes crops grow faster, and it never expires. Keep it in your Bag to use, or export it to your wallet and sell it to farmers on OpenSea.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+What Fertilizer does
+Each Fertilizer cuts 25% of a crop's total grow time
+Use up to 2 per crop, for 50%
+Use one with less than a quarter of the time left and the crop ripens at once
+It's used up when applied
+It never expires
+Only Fert Decks make it, so every farmer who wants faster harvests gets it from deed holders.
+Trading it
+1
+Claim
+ Fertilizer from your Fert Deck. It goes to your Bag.
+2
+Export
+ it from your Bag. This mints it to your wallet as an onchain item.
+3
+Trade
+ it on OpenSea, like any other item.
+4
+Import
+ it back into your Bag when you want to use it in the game.
+Export is live as soon as staking opens. Items in your wallet can't be used in the game until you import them.
+Daily export limit
+Each wallet can export a limited amount of Fertilizer every 24 hours.
+The limit grows with the Fert Decks you run. It is half of what your Fert Decks make in a day, counting every Fert Deck you've had running in the last 7 days. Each Common's Fert Deck adds 1.25 a day and each Mythic's adds 2.25 a day.
+Fertilizer you import back into your Bag in the last 24 hours adds to your limit.
+If the game can't check your limit, export pauses until it can.
+Keeping supply healthy
+Nothing uses Fertilizer until farming opens, so a network-wide slowdown arrives before then to stop it piling up.
+Network rate. Every hour, if the Fertilizer in circulation is above 7 days of the network's output, every Fert Deck slows down. At 10 days in circulation Decks run at 70% speed, and at 14 days or more at 50%, the lowest.
+Exporter rate. It starts exactly 24 hours after staking opens. From then, if a wallet exports more than 25% of its Decks' daily output in 24 hours, its Decks slow down: 90% speed at 30%, 70% at 40% and 50% at 50% or more. Fertilizer you keep in your Bag never counts against you, and neither do imports.
+A Deck runs at the lower of the two rates, so it never goes below half speed. Fertilizer you hold is never taken away.
+The circulation number, the target and the current network rate are public, so everyone can see where it stands.
+These are launch settings and may change.
+Item details
+Item
+Value
+Item
+Fertilizer
+Standard
+ERC-1155C
+Chain
+Robinhood Chain
+Royalty
+5%
+Contract
+0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317
+Once it's live, the items contract is listed on 
+Official links and contracts
+.
+Next, 
+The Root Cellar
+.
+Updated 3 Nov 2026
+Previous
+Staking and the Fert Deck
+Next
+The Root Cellar

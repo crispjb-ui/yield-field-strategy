@@ -1,0 +1,49 @@
+
+Deed Gameplay
+›
+Staking and the Fert Deck
+Staking and the Fert Deck
+In short:
+Stake a Founding Deed, build a Fert Deck on it, and it makes Fertilizer around the clock. Staking is free apart from gas, and a Fert Deck costs 0.01 ETH at launch.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Staking
+Free apart from gas. Stake any number of deeds in one transaction
+Stake and build in the same step
+Your deed is held by the staking contract while it's staked. It stays yours
+Unstake any time, including while the game is paused
+Unstaking destroys the structure on the deed. Any Fertilizer it had made that you hadn't claimed goes into your Bag for you.
+Building a Fert Deck
+Each staked deed holds 1 structure. The Fert Deck is the first, and more types are planned
+It costs 0.01 ETH at launch, shown before you confirm. The fee may change
+The fee stays in the deed staking contract and fills the deeds' Root Cellars. See 
+The Root Cellar
+Structures aren't part of the NFT. The game draws them on your plot
+Making Fertilizer
+Your Fert Deck makes Fertilizer on its own, around the clock
+It makes half a Fertilizer a day for each point of Fertility, from 2.5 a day on a Common to 4.5 a day on a Mythic
+Storage holds up to 3 days of production, from 7.5 on a Common to 13.5 on a Mythic. When it's full, the deck stops until you claim
+Claimed Fertilizer goes to your in-game 
+Bag
+. Partial progress carries over
+Fert Decks open before farming, so you can stockpile Fertilizer ahead of farming day 1. Check in at least every 3 days to keep your deck running.
+Rewards
+Staked deeds are first in line when the fields open:
+Deed rewards,
+ split by Fertility
+A share of
+██████████████
+ (classified)
+The Silo and the Windfall,
+ once burns open
+Fert Deck boosts
+ and new structures, starting with 
+████████
+Additional rewards for deed owners will be launched when the farming game launches.
+Next, 
+Fertilizer
+.
+Updated 3 Nov 2026
+Previous
+Founding Deeds
+Next
+Fertilizer

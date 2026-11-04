@@ -1,8 +1,9 @@
 # Game-mechanics parameters. Source: https://yieldfields.fun/docs (all pages "Updated 30 Oct 2026").
 # null = redacted in the docs (███) or not yet published. The docs state every number is subject to change.
 source_url: https://yieldfields.fun/docs
-as_of: "2026-10-30"
-stage: 1                    # Stage One = staking + Fert Deck + Fertilizer + export. Farming/$YIELD/deed rewards later. No dates published.
+as_of: "2026-11-03"   # docs updated 3 Nov; staking LIVE; owner has 3 Rare decks running
+stage: 1                    # Stage One LIVE (staking + Fert Deck + Fertilizer + export). Farming/$YIELD/deed rewards later. No dates published.
+staked_deeds_2026_11_04: 2844   # balanceOf(staking) via RPC; 85.3% of supply
 
 token:                      # /docs/farming-and-yield/yield
   address: null             # published at launch
@@ -33,17 +34,23 @@ deed:                       # /docs/deed-gameplay/founding-deeds
   owner_count: 3
   fertility_uses: [fert_deck_output, root_cellar_share, claim_fee_rebate_share, windfall_share, classified]
   output_resource: Fertilizer
-  output_per_cycle: null    # NOT PUBLISHED: units/day per Fertility point. Observe in-app at staking launch.
-  cycle_hours: null
+  output_per_fertility_per_day: 0.5   # docs 3 Nov: Common 2.5, Rare 3, Epic 3.5, Legendary 4, Mythic 4.5 per day
+  output_per_cycle: 3.0     # Rare, per day (owner tier)
+  cycle_hours: 24
+  storage_cap_units: {Common: 7.5, Rare: 9, Epic: 10.5, Legendary: 12, Mythic: 13.5}
   storage_cap_days: 3       # deck stops when full; partial progress carries over
   action_required: true     # claim tx moves Fert to Bag
   stake_cost_eth: 0         # gas only; multiple deeds per tx
   build_cost_eth: 0.01      # Fert Deck, "at launch", may change; goes to staking contract (Root Cellars)
   unstake_destroys_structure: true
+  unstake_while_paused: true   # changed 3 Nov (was blocked)
+  staking_contract: "0x0AcFcD1483686fcd94DABeA03714321d0E05fc8D"   # 119-byte proxy; paused()=false; owner 0x93f0494af1d071d85b31ee41f6eba51a2c52dbae
   staked_deed_sellable: false
   upkeep_per_cycle: 0
   pays_yield_directly: false   # Stage One: Fertilizer only. Deed rewards in $YIELD later, split by Fertility, with a ███% claim fee
-  claim_fee_pct: null       # redacted; part to all staked deeds by Fertility, part to Silo
+  claim_fee_pct: 10         # on-chain CLAIM_FEE_BPS=1000; split 50/50 (claimFeeSplit) staked-deeds / Silo
+  claim_fee_split: [0.5, 0.5]
+  no_back_pay: true         # in-app: rewards start when $YIELD launches; nothing accrues before
 
 fert:                       # /docs/deed-gameplay/fertilizer
   effect: time_reduction
@@ -55,10 +62,29 @@ fert:                       # /docs/deed-gameplay/fertilizer
   sellable: true
   market_type: opensea_erc1155c
   royalty_pct: 5
-  contract: null            # published when staking opens
-  price_eth: null           # observe
+  contract: "0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317"   # ERC-1155C proxy
+  price_eth: null           # observe on OpenSea
+  # ---- export rules (docs 3 Nov, "launch settings and may change")
+  export_cap_per_day_frac: 0.5        # per wallet: half of decks' daily nominal output, decks counted over last 7 days; imports in last 24 h add to cap
+  export_cap_per_day_owner: 4.5       # 3 Rares × 1.5
+  exporter_slowdown:                  # starts 24 h after staking opened; based on exports in trailing 24 h as % of decks' daily output
+    free_threshold_frac: 0.25         # ≤25%: full speed
+    steps: {0.30: 0.9, 0.40: 0.7, 0.50: 0.5}   # export fraction → deck speed; "50% or more" → 0.5 floor
+    bag_and_imports_exempt: true
+  network_slowdown:                   # hourly; circulation = claimedTotal - usedTotal (BAG COUNTS); /api/fert-rate
+    api: https://yieldfields.fun/api/fert-rate
+    snapshot_2026_11_04: {supply: 3848, target: 58614.5, output_per_day: 8373.5, staked_fertility: 16747, rate: 1.0}
+    projected_floor_date: ~2026-11-21   # 50% speed if nothing consumes Fert
+    free_days: 7                      # ≤7 days of output in circulation: full speed
+    steps: {10: 0.7, 14: 0.5}         # days-of-output in circulation → speed; 14+ → 0.5 floor
+    public_metrics: [circulation, target, current_rate]
+  deck_speed: min(exporter_rate, network_rate), floor 0.5
+  held_fert_never_confiscated: true
 
-root_cellar:                # /docs/deed-gameplay/the-root-cellar
+root_cellar:                # /docs/deed-gameplay/the-root-cellar + on-chain
+  backing_eth_2026_11_04: 28.28
+  per_deed_eth_2026_11_04: {Common: 0.00715, Rare: 0.00858, Epic: 0.01001, Legendary: 0.01144, Mythic: 0.01287}
+  share_formula: backing * fertility / 19773
   funded_by: [fert_deck_build_fees, yield_tax_share_later]
   share_by: fertility       # every deed (staked or not) has one; only a STAKED deed can be burned to collect
   collect_by: burn_only
@@ -67,7 +93,7 @@ root_cellar:                # /docs/deed-gameplay/the-root-cellar
 silo:                       # /docs/deed-gameplay/the-silo-and-the-windfall
   funded_by: part_of_deed_reward_claim_fees
   payout_asset: YIELD
-  windfall_pct_by_tier: {Common: null, Rare: null, Epic: null, Legendary: null, Mythic: null}   # redacted
+  windfall_pct_by_tier: {Common: null, Rare: null, Epic: null, Legendary: null, Mythic: null}   # redacted; on-chain jackpotCurve=(0,1000); quoteBurnForJackpot(ids) gives live quote
   never_empties: true
   batch_burns_sequential: true   # each burn takes its share of what the previous left
   burn_min_payout_guard: true
@@ -102,3 +128,23 @@ governance:                 # /docs/reference/fees-and-risks
   contracts_upgradeable: true     # including deed staking; "updates apply to staked deeds too"
   audit: planned_not_done
   team_can_move_staked_deed: false
+
+mint:                       # on-chain deed contract + /api/mint/state
+  gtd_price_eth: 0.1
+  gtd_minted: 2338          # 3333 - 975 public - 20 team
+  public_minted: 975
+  public_final_eth: 0.999687511574074075
+  team_reserve: 20
+  proceeds_eth: 1208.5      # 'withdrawn'
+  basis_distribution: {0.1: 0.701, 0.9997: 0.293, 0: 0.006}
+
+unreleased_abis:            # shipped in the frontend bundle; values unknown until deployed
+  cornhub: abi/abi_2.json
+  yield_pool: abi/abi_3.json       # in-house AMM with virtualEthReserve, buy/sell fee bps, maxSellFeeBps
+  truffle_vester: abi/abi_4.json
+  buyback: abi/abi_6.json          # DAILY_RATE_BPS of Co-op pool → buys $YIELD → trufflePool
+  yield_token: abi/abi_5.json
+
+owner:
+  wallet: "0x139e79b0d01148712528d56625a2a59f676e3952"   # read-only
+  deeds: [537, 660, 661]

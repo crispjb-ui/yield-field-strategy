@@ -1,0 +1,749 @@
+[
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "EMISSION_TOTAL",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "balance",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "cancelOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "capBps",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "c",
+    "internalType": "struct YieldFieldMockTrufflePool.TruffleClaim",
+    "type": "tuple",
+    "components": [
+     {
+      "name": "player",
+      "internalType": "address",
+      "type": "address"
+     },
+     {
+      "name": "claimId",
+      "internalType": "bytes32",
+      "type": "bytes32"
+     },
+     {
+      "name": "amount",
+      "internalType": "uint256",
+      "type": "uint256"
+     },
+     {
+      "name": "deadline",
+      "internalType": "uint256",
+      "type": "uint256"
+     }
+    ]
+   },
+   {
+    "name": "signature",
+    "internalType": "bytes",
+    "type": "bytes"
+   }
+  ],
+  "name": "claim",
+  "outputs": [
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "completeOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "dailyCap",
+  "outputs": [
+   {
+    "name": "limit",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "used",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "day",
+    "internalType": "uint64",
+    "type": "uint64"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "depositEmission",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "eip712Domain",
+  "outputs": [
+   {
+    "name": "fields",
+    "internalType": "bytes1",
+    "type": "bytes1"
+   },
+   {
+    "name": "name",
+    "internalType": "string",
+    "type": "string"
+   },
+   {
+    "name": "version",
+    "internalType": "string",
+    "type": "string"
+   },
+   {
+    "name": "chainId",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "verifyingContract",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "salt",
+    "internalType": "bytes32",
+    "type": "bytes32"
+   },
+   {
+    "name": "extensions",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "emissionStart",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint64",
+    "type": "uint64"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "c",
+    "internalType": "struct YieldFieldMockTrufflePool.TruffleClaim",
+    "type": "tuple",
+    "components": [
+     {
+      "name": "player",
+      "internalType": "address",
+      "type": "address"
+     },
+     {
+      "name": "claimId",
+      "internalType": "bytes32",
+      "type": "bytes32"
+     },
+     {
+      "name": "amount",
+      "internalType": "uint256",
+      "type": "uint256"
+     },
+     {
+      "name": "deadline",
+      "internalType": "uint256",
+      "type": "uint256"
+     }
+    ]
+   }
+  ],
+  "name": "hashTruffleClaim",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bytes32",
+    "type": "bytes32"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "owner_",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "signer_",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "yield_",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "initialize",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "id",
+    "internalType": "bytes32",
+    "type": "bytes32"
+   }
+  ],
+  "name": "isUsed",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "owner",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "ownershipHandoverExpiresAt",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "paused",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "proxiableUUID",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bytes32",
+    "type": "bytes32"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "renounceOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "requestOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "bps",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "name": "setCapBps",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "paused_",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "name": "setPaused",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "signer_",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "setSigner",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "signer",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "transferOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "t",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "unvestedAt",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "newImplementation",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "data",
+    "internalType": "bytes",
+    "type": "bytes"
+   }
+  ],
+  "name": "upgradeToAndCall",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "t",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "vestedAt",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "vestingRate",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "yieldToken",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "bps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   }
+  ],
+  "name": "CapBpsSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "claimId",
+    "internalType": "bytes32",
+    "type": "bytes32",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "Claimed"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "start",
+    "internalType": "uint64",
+    "type": "uint64",
+    "indexed": false
+   }
+  ],
+  "name": "EmissionDeposited"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "version",
+    "internalType": "uint64",
+    "type": "uint64",
+    "indexed": false
+   }
+  ],
+  "name": "Initialized"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverCanceled"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverRequested"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "oldOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipTransferred"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "paused",
+    "internalType": "bool",
+    "type": "bool",
+    "indexed": false
+   }
+  ],
+  "name": "PausedSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "signer",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "SignerSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "implementation",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "Upgraded"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "AlreadyInitialized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "DailyCapExceeded"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "EmissionAlreadyDeposited"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ExceedsVested"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Expired"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "IdUsed"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidCapBps"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidInitialization"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidSignature"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NewOwnerIsZeroAddress"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NoHandoverRequest"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NotInitializing"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Paused"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Unauthorized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UnauthorizedCallContext"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UpgradeFailed"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "WrongPlayer"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroAddress"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroAmount"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroSigner"
+ }
+]

@@ -1,0 +1,247 @@
+[
+ {
+  "type": "constructor",
+  "inputs": [
+   {
+    "name": "yield_",
+    "internalType": "contract YieldFieldMockToken",
+    "type": "address"
+   },
+   {
+    "name": "pool_",
+    "internalType": "contract YieldFieldMockPool",
+    "type": "address"
+   },
+   {
+    "name": "trufflePool_",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "receive",
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "CALLER_REWARD_BPS",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "DAILY_RATE_BPS",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "MAX_PER_CALL",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "PRICE_GUARD_BPS",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "buy",
+  "outputs": [
+   {
+    "name": "yieldBought",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "lastBuyAt",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint64",
+    "type": "uint64"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "lastBuyBlock",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "lastBuyPrice",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "pool",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "contract YieldFieldMockPool",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "spendable",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "totalSentToTruffles",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "trufflePool",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "yieldToken",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "contract YieldFieldMockToken",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "caller",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "ethSpent",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "reward",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "yieldBought",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "Buyback"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "AlreadyBoughtThisBlock"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NothingToSpend"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "PriceGuard"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroAddress"
+ }
+]

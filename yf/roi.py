@@ -199,3 +199,36 @@ def farm_vs_buy(pack_price_eth: float, ev_worth_x: float, farmer_pct: float, far
     return {"yield_per_eth_farming": yield_per_eth_farm, "yield_per_eth_direct": yield_per_eth_buy,
             "farming_advantage_pct": (yield_per_eth_farm / yield_per_eth_buy - 1) * 100,
             "farm_if": yield_per_eth_farm > yield_per_eth_buy}
+
+
+def _interp(x: float, pts: list[tuple[float, float]]) -> float:
+    if x <= pts[0][0]:
+        return pts[0][1]
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        if x <= x1:
+            return y0 + (y1 - y0) * (x - x0) / (x1 - x0)
+    return pts[-1][1]
+
+
+def exporter_speed(export_frac: float) -> float:
+    """Deck speed vs 24 h exports ÷ decks' daily nominal output. Docs chart (3 Nov): 100% up to 25%,
+    90% at 30%, 70% at 40%, 50% at ≥50%, linear between points."""
+    return _interp(export_frac, [(0.25, 1.0), (0.30, 0.9), (0.40, 0.7), (0.50, 0.5)])
+
+
+def network_speed(days_in_circulation: float) -> float:
+    """Docs chart: 100% up to 7 days of network output in circulation, 70% at 10, 50% at 14+, linear."""
+    return _interp(days_in_circulation, [(7, 1.0), (10, 0.7), (14, 0.5)])
+
+
+def export_policy(nominal_per_day: float, network_rate: float = 1.0) -> list[dict]:
+    """For each export fraction, units exported vs kept per day. Exported units are capped at
+    50% of nominal (daily export limit). Kept = produced − exported, produced = nominal × speed."""
+    rows = []
+    for f in (0.0, 0.10, 0.20, 0.25, 0.30, 0.40, 0.50):
+        speed = min(exporter_speed(f), network_rate)
+        produced = nominal_per_day * speed
+        exported = min(f * nominal_per_day, 0.5 * nominal_per_day, produced)
+        rows.append({"export_frac": f, "speed": speed, "produced": produced,
+                     "exported": exported, "kept": produced - exported})
+    return rows

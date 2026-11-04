@@ -1,0 +1,1287 @@
+[
+ {
+  "type": "receive",
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "CLAIM_FEE_BPS",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "backing",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   },
+   {
+    "name": "structureIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   }
+  ],
+  "name": "buildStructure",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   },
+   {
+    "name": "minEthOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "burnAndRedeemEth",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   },
+   {
+    "name": "minEthOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "minYieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "burnForJackpot",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "cancelOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "claimFeeSplit",
+  "outputs": [
+   {
+    "name": "stakersBps",
+    "internalType": "uint16",
+    "type": "uint16"
+   },
+   {
+    "name": "jackpotBps",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "claimYield",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "completeOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "id",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "name": "deedOf",
+  "outputs": [
+   {
+    "name": "staker",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "fertility",
+    "internalType": "uint8",
+    "type": "uint8"
+   },
+   {
+    "name": "structure",
+    "internalType": "uint8",
+    "type": "uint8"
+   },
+   {
+    "name": "burned",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "deeds",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "fertilityComplete",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "fertilitySetCount",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "forgetBurned",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "owner_",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "deeds_",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "initialize",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "jackpot",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "jackpotCurve",
+  "outputs": [
+   {
+    "name": "base",
+    "internalType": "uint8",
+    "type": "uint8"
+   },
+   {
+    "name": "bpsPerPoint",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "lockedYield",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "owner",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "ownershipHandoverExpiresAt",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "paused",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "pendingYield",
+  "outputs": [
+   {
+    "name": "amounts",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "proxiableUUID",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bytes32",
+    "type": "bytes32"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "quoteBurnForJackpot",
+  "outputs": [
+   {
+    "name": "ethOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "yieldOut",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "id",
+    "internalType": "uint256",
+    "type": "uint256"
+   },
+   {
+    "name": "to",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "recoverDeed",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "redeemValue",
+  "outputs": [
+   {
+    "name": "payout",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "renounceOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "requestOwnershipHandover",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "rewardPool",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "stakersBps",
+    "internalType": "uint16",
+    "type": "uint16"
+   },
+   {
+    "name": "jackpotBps",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "name": "setClaimFeeSplit",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   },
+   {
+    "name": "fertility",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   }
+  ],
+  "name": "setFertility",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "base",
+    "internalType": "uint8",
+    "type": "uint8"
+   },
+   {
+    "name": "bpsPerPoint",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "name": "setJackpotCurve",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "paused_",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "name": "setPaused",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "structureIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   },
+   {
+    "name": "fees",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "setStructureFees",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "token",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "setYieldToken",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "stake",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   },
+   {
+    "name": "structureIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   }
+  ],
+  "name": "stakeAndBuild",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "id",
+    "internalType": "uint8",
+    "type": "uint8"
+   }
+  ],
+  "name": "structureFee",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "syncYield",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "totalFertility",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "transferOwnership",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "account",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "name": "unpaidYield",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "ids",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "unstake",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "newImplementation",
+    "internalType": "address",
+    "type": "address"
+   },
+   {
+    "name": "data",
+    "internalType": "bytes",
+    "type": "bytes"
+   }
+  ],
+  "name": "upgradeToAndCall",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "withdrawYield",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "yieldToken",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "from",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "BackingReceived"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "fertility",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": false
+   }
+  ],
+  "name": "BurnReconciled"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "stakersBps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   },
+   {
+    "name": "jackpotBps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   }
+  ],
+  "name": "ClaimFeeSplitUpdated"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "eth",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "DeedBurned"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "fertility",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": false
+   }
+  ],
+  "name": "DeedFertilitySet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "to",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "DeedRecovered"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   }
+  ],
+  "name": "DeedStaked"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "structureId",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": false
+   }
+  ],
+  "name": "DeedStructureBuilt"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   }
+  ],
+  "name": "DeedUnstaked"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "version",
+    "internalType": "uint64",
+    "type": "uint64",
+    "indexed": false
+   }
+  ],
+  "name": "Initialized"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "base",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": false
+   },
+   {
+    "name": "bpsPerPoint",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   }
+  ],
+  "name": "JackpotCurveUpdated"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "JackpotWon"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverCanceled"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "pendingOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipHandoverRequested"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "oldOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "newOwner",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "OwnershipTransferred"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "paused",
+    "internalType": "bool",
+    "type": "bool",
+    "indexed": false
+   }
+  ],
+  "name": "PausedSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "structureId",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": true
+   },
+   {
+    "name": "fee",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "StructureFeeUpdated"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "implementation",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "Upgraded"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "player",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "deedId",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "stakersFee",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   },
+   {
+    "name": "jackpotFee",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "YieldClaimed"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "account",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "YieldDeferred"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "YieldReceived"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "token",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   }
+  ],
+  "name": "YieldTokenSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "account",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "amount",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "YieldWithdrawn"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "AlreadyInitialized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "EmptySelection"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "FertilityIncomplete"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "FertilityLocked"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "IdsNotAscending"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InsufficientOutput"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidDeed"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidFeeSplit"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidFertility"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidInitialization"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidJackpotCurve"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "LengthMismatch"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NewOwnerIsZeroAddress"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NoHandoverRequest"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NotBurned"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NotInitializing"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NotRecoverable"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NotStaker"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "NothingToClaim"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Paused"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Reentrancy"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "SameStructure"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Unauthorized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UnauthorizedCallContext"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UnexpectedValue"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UnknownStructure"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "UpgradeFailed"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "WrongPayment"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "YieldTokenAlreadySet"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroAddress"
+ }
+]
