@@ -138,7 +138,7 @@ three weeks. Default remains: keep everything for launch-window throughput.
 ## Operating rules under the owner's thesis
 | Rule | Setting |
 |---|---|
-| Allocation | 75% ($6,000) farming/`$YIELD`; 25% ($2,000) ETH reserve for gas, decks, and a capitulation buy of `$YIELD` if it dumps post-launch tax |
+| Allocation | **Confirmed by owner 2026-11-04:** 75% ($6,000) farming/`$YIELD`; 25% ($2,000) ETH reserve for gas, structures, Truffle Pig, and a capitulation buy of `$YIELD` after the launch tax decays. Revisit after the first realized cycle |
 | Timing | Nothing until farming and `$YIELD` are live and odds, pack prices, Farmer %, dues and buy tax are published. Then run `seed_pack_ev()` and `farm_vs_buy()` the same day |
 | Route | Launch window: farm, Farmer only (never Broker), largest pack only, 2 Fert per crop from own decks, run slots continuously. After the launch tax decays: re-run `farm_vs_buy()`; buy direct only if it wins by >10%, in ≤2%-of-pool clips |
 | Tranches | First tranche ≤ $1,500 regardless of route; next tranche only after one full realized cycle matches the model within 20% |
