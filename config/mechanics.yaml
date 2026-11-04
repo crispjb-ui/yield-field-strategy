@@ -63,7 +63,9 @@ fert:                       # /docs/deed-gameplay/fertilizer
   market_type: opensea_erc1155c
   royalty_pct: 5
   contract: "0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317"   # ERC-1155C proxy
-  price_eth: null           # observe on OpenSea
+  price_usdg_2026_11_04: {floor: 4.80, top_offer: 3.51, cluster: 4.22}
+  price_eth: 0.0019         # ≈4.25 USDG at ~$2,223/ETH; falling
+  opensea_slug: yield-fields-items
   # ---- export rules (docs 3 Nov, "launch settings and may change")
   export_cap_per_day_frac: 0.5        # per wallet: half of decks' daily nominal output, decks counted over last 7 days; imports in last 24 h add to cap
   export_cap_per_day_owner: 4.5       # 3 Rares × 1.5

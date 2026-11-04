@@ -79,7 +79,40 @@ of pack EV, unless Farmer % is very low. Consequences:
    Fert, Farmer not Broker) is aligned with it. Budget for a Truffle Pig on
    day 1 if its fee is small relative to the tranche.
 
-## Where the docs cut against it (the challenge)
+## Fert market read (2026-11-04) and the claim-automation decision
+**Price.** 4.25 USDG ≈ 0.0019 ETH per unit, down from ~0.01–0.02 ETH on the
+first prints. Supply in circulation grows ~8,400/day against ~1,200 exported
+in total; pre-farming demand is speculators only. Expect the price to keep
+falling toward the 50%-floor regime. Do not anchor the deed valuation on it.
+
+**What a Rare earns at this price.** 3/day × $4.25 × 0.94 = $12/day gross
+production value, but only 0.75/day (25%) exports without slowing the deck
+and 1.5/day is the hard cap. Sustainable ETH income ≈ $3/day per Rare
+(≈50% annualised on a $2,130 deed at a price that is collapsing). The
+Fert-sale leg is a rounding error against the thesis; it exists to price
+your own Fert's opportunity cost, which is now ~$4 per unit.
+
+**Optional trade, not recommended for the effort:** export the free 25%
+band (2.25/day across 3 decks ≈ $9/day) while the price is >$4 and rebuy
+cheaper before farming. Exporting does not add to circulation (claimed
+units already count), so it has no network cost. Upside ≈ $150–200 over
+three weeks. Default remains: keep everything for launch-window throughput.
+
+**Claim automation: manual, with a reminder.** Reasons:
+- Claims are off-chain, authenticated by a wallet-signed login (SIWE) and
+  a session cookie, then `POST /api/play/deeds/claim`. No key is needed
+  after login, but a browser bot that signs the login needs a key or a
+  wallet extension; that is the only dangerous part and it is avoidable.
+- Stakes are small: a missed claim window costs at most 3 units per deck
+  per day ≈ $38/day today, falling with price and the network throttle.
+  Twelve clicks a month cover it.
+- Partial progress carries over, so claiming early loses nothing. Any
+  time inside 72 h is equally good.
+- If travel makes manual claiming unreliable: log in once in a normal
+  browser, copy the session cookie, and run a 30-line script that calls
+  the claim endpoint every 60 h until the cookie expires. The cookie can
+  act in-game (claim, plant, use Fert) but cannot move on-chain assets,
+  which always need a wallet signature. Build only on request.
 1. **After the launch tax decays, farming is not necessarily the cheapest way to own `$YIELD`.**
    Farming route: pack ETH → random seed (Common < pack value) → Farmer pays
    ███% in `$YIELD` minus Co-op Dues. Direct route: buy on the pool and pay the

@@ -15,6 +15,7 @@ contracts:
 opensea:
   api_key: ""             # /collections/{slug} and /stats work WITHOUT a key (verified); listings/offers/events need one
   collection_slug: yield-field-deeds
+  items_slug: yield-fields-items   # Fertilizer (and future items) — stats endpoint works without a key
   chain_slug: robinhood   # verified from GET /api/v2/collections/yield-field-deeds contracts[].chain
 
 wallets:                  # addresses you OWN, read-only monitoring
