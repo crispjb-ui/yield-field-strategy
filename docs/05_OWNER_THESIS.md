@@ -113,6 +113,7 @@ three weeks. Default remains: keep everything for launch-window throughput.
   the claim endpoint every 60 h until the cookie expires. The cookie can
   act in-game (claim, plant, use Fert) but cannot move on-chain assets,
   which always need a wallet signature. Build only on request.
+## Where the docs cut against it (the challenge)
 1. **After the launch tax decays, farming is not necessarily the cheapest way to own `$YIELD`.**
    Farming route: pack ETH → random seed (Common < pack value) → Farmer pays
    ███% in `$YIELD` minus Co-op Dues. Direct route: buy on the pool and pay the
