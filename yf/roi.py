@@ -253,3 +253,20 @@ def launch_fert_need(budget_usd: float, pack_price_usd: float, stockpile: float,
         out["slots_bind_without_fert"] = packs > slots * cycles_no_fert
     del out["fert_cost_per_crop_usd_at"]
     return out
+
+
+def plots_needed(budget_usd: float, pack_price_usd: float, grow_hours: float, window_days: int = 7,
+                 slots: int = 25, fert_per_crop: int = 2, stockpile: float = 120, own_per_day: float = 4.5) -> dict:
+    """Minimum fully-allocated plots so the whole budget deploys inside the launch window, with and
+    without Fert, and the Fert required to fertilize every crop. Plots beyond this have zero value."""
+    import math
+    packs = int(budget_usd // pack_price_usd)
+    cyc = grow_hours * (1 - 0.25 * fert_per_crop)
+    cap_fert = slots * window_days * 24 / cyc
+    cap_no = slots * window_days * 24 / grow_hours
+    need = fert_per_crop * packs
+    have = stockpile + own_per_day * window_days
+    return {"packs": packs, "plots_with_fert": max(1, math.ceil(packs / cap_fert)),
+            "plots_without_fert": max(1, math.ceil(packs / cap_no)),
+            "fert_needed": need, "fert_gap": max(0, need - have),
+            "per_cycle_outlay_usd_one_plot": slots * pack_price_usd}
