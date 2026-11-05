@@ -150,3 +150,25 @@ three weeks. Default remains: keep everything for launch-window throughput.
 ## What would change my recommendation to "wait"
 Published numbers showing `farm_vs_buy` advantage > +20%, or a classified
 reveal that pays farmers something deed holders and pool buyers cannot get.
+
+## Buying Fertilizer before launch (asked 2026-11-05)
+Not now. Rule: **bid, don't buy; before the farming date is announced; only
+for the launch-week gap.**
+- Supply grows ~8,400/day claimed (circulation 3,848 → 8,105 in a day) and
+  the market is one day old. Price went ~$30 → ~$4.8 in a day. The network
+  throttle slows growth, it does not shrink circulation. Expect lower prices
+  into the 50% regime unless a farming date is announced.
+- The launch squeeze is real: at launch the only sellable Fert is the
+  exported float plus ≤25–50% of a halved daily output, while every farmer
+  wants 2 per crop. Price can gap up on the announcement. That is the reason
+  to hold some extra before the announcement, not after.
+- Own production covers ~4.5 fully-fertilized crops/day plus the stockpile
+  (~120 by 21 Nov). Extra need = 2 × (crops planted in launch week) − that.
+  Crops planted depends on slots per plot and pack prices, both redacted.
+  Size the bid only once slots are known; cap at $300–500 from the farming
+  bucket. Fert never expires, so there is no holding cost.
+- Execution: collection offers at ~$2–2.5 USDG (top offer 3.51 against a
+  4.79 floor). Exporters are throttled to 25% and speculators capitulate into
+  bids. Raise the bid to the floor only if a launch date is announced and
+  the gap is still open.
+
