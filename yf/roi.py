@@ -232,3 +232,24 @@ def export_policy(nominal_per_day: float, network_rate: float = 1.0) -> list[dic
         rows.append({"export_frac": f, "speed": speed, "produced": produced,
                      "exported": exported, "kept": produced - exported})
     return rows
+
+
+def launch_fert_need(budget_usd: float, pack_price_usd: float, stockpile: float, own_per_day: float = 4.5,
+                     window_days: int = 7, slots: int = 25, grow_hours: float | None = None) -> dict:
+    """Fert needed to fully fertilize (2 units) every pack the budget buys in the launch window,
+    net of stockpile and own production. If grow_hours is given, also reports whether 25 slots
+    bind without Fert (capital deploys slower than the window) — the only case where Fert has
+    value beyond speed."""
+    packs = int(budget_usd // pack_price_usd)
+    need = 2 * packs
+    have = stockpile + own_per_day * window_days
+    out = {"packs": packs, "fert_needed": need, "fert_available": have, "gap": max(0, need - have),
+           "fert_cost_per_crop_usd_at": lambda px: 2 * px}
+    if grow_hours:
+        cycles_no_fert = window_days * 24 / grow_hours
+        cycles_fert = window_days * 24 / (grow_hours / 2)
+        out["crops_possible_no_fert"] = int(slots * cycles_no_fert)
+        out["crops_possible_with_fert"] = int(slots * cycles_fert)
+        out["slots_bind_without_fert"] = packs > slots * cycles_no_fert
+    del out["fert_cost_per_crop_usd_at"]
+    return out

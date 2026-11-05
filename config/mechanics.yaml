@@ -112,7 +112,7 @@ seeds:                      # /docs/farming-and-yield/seeds-and-crops — opens 
 
 farm:                       # /docs/farming-and-yield/growing-and-selling
   plot: free_fixed_grid     # 1 crop per slot, no expansions, no deed needed
-  slots_per_wallet: null    # not published
+  slots_per_wallet: 25      # OWNER statement 2026-11-05 ('25 slots per plot'); docs say one free plot per WALLET, deed not needed — source/whether deeds add plots unverified
   grow_hours: [null, null]  # redacted range; rarer = longer, bigger pack = faster
   ripe_crops_wilt: false
   farmer_pays_pct_in_yield: null    # redacted; "pays more"; executes a $YIELD buy on the official pool, skips buy tax
