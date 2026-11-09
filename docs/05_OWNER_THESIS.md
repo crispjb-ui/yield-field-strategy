@@ -173,3 +173,9 @@ for the launch-week gap.**
   bids. Raise the bid to the floor only if a launch date is announced and
   the gap is still open.
 
+
+## Update 2026-11-09 (devlog)
+- Launch "next week" with a launch event; `$YIELD` = declining buy tax at low mcap + gameplay access. Thesis structure confirmed.
+- Fert bid rule did not fill: price rose 4.80 → 6.53 USDG on the news. Rule closed. No Fert purchases before launch; reassess after day 1 with real slot binding.
+- Deed floor 0.764 ETH, 11 sales/day. Sell-one rule: list at top of Rare band on launch day only if Rare floor ≥ 0.90 the day before; otherwise hold all three through launch week.
+- Concentration rule: the $6,000 farming bucket and the OCH book (41 heroes, 2 Ringbearers, weapons) are one bet on one team's five-week execution. The $2,000 ETH reserve is not deployed before 2026-12-15 under any trigger.
