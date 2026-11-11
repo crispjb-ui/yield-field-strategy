@@ -1,0 +1,1 @@
+{"status": "ok", "enabled": true, "supply": 57085, "target": 63255.5, "networkBps": 10000, "floorBps": 5000, "targetDays": 7, "usedTotal": 0, "claimedTotal": 57085, "hour": 498449, "nextUpdateAt": 1794420000000, "sourceAgeHours": 0, "cause": "computed", "ts": "2026-11-11T17:54:48+00:00"}

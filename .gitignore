@@ -1,6 +1,5 @@
 config/settings.yaml
 data/ledger.csv
-data/snapshots/*.jsonl
 __pycache__/
 *.pyc
 .pytest_cache/

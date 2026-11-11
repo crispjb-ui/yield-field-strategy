@@ -6,7 +6,8 @@ Principle: read-only first, signing never from this repo. Updated 2026-11-04.
 | Item | State |
 |---|---|
 | Network access | Docs, game API, OpenSea API, Robinhood RPC reachable via the session proxy. Blockscout and Sourcify blocked; all chain reads go through `yf/rpc.py` + `yf/abi.py` with ABIs extracted from the game bundle (`abi/`) |
-| Claim reminder | **Live.** Scheduled task `trig_014BCKNZPVfFwhak8pAhRcAU`, "Yield Fields: claim Fertilizer reminder + status", cron `47 2 2-30/2 * *` UTC (every even calendar day at 02:47 UTC; 72 h worst case across a 31-day month end), fresh session, push notification. First run 2026-11-06 02:47 UTC, before the first claim deadline (~08:00 UTC). Each run: `fertrate --save`, `deeds`, both OpenSea stats, docs patch-notes/contracts diff. Read-only, no commits |
+| GitHub Actions | **Live 2026-11-11.** `monitor.yml` every 6 h → `STATUS.md` + snapshots + alert issues; `claim-reminder.yml` every 2 days → claim issue. Independent of any Claude account |
+| Claim reminder (Claude) | Scheduled task `trig_014BCKNZPVfFwhak8pAhRcAU`, "Yield Fields: claim Fertilizer reminder + status", cron `47 2 2-30/2 * *` UTC (every even calendar day at 02:47 UTC; 72 h worst case across a 31-day month end), fresh session, push notification. First run 2026-11-06 02:47 UTC, before the first claim deadline (~08:00 UTC). Each run: `fertrate --save`, `deeds`, both OpenSea stats, docs patch-notes/contracts diff. Read-only, no commits |
 | Fert claims | Off-chain, behind the game's wallet-signed login. Not automatable without a key or a copied session cookie. Decision: manual (see `05_OWNER_THESIS.md`). Cookie-replay script available on request |
 
 ## Commands (all read-only)

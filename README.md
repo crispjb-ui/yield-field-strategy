@@ -10,6 +10,9 @@ stage launches. Stage One (staking + Fert Deck) is the only live loop.
 
 | Path | What |
 |---|---|
+| **`STATUS.md`** | **Live status page**, rebuilt every 6 h by GitHub Actions: Fert network, deeds, markets, docs watch, alerts |
+| `.github/workflows/` | `monitor.yml` (6-hourly status + snapshots + alert issues) · `claim-reminder.yml` (every 2 days opens a "CLAIM FERTILIZER" issue) |
+| `data/snapshots/*.jsonl` | Time series appended by the monitor (fert-rate, deeds, markets) |
 | `docs/00_HANDOFF.md` | **Start here** in a new session: position, reading order, tooling, scheduled task, next triggers |
 | `docs/01_VERIFIED_FACTS.md` | Fact ledger with sources and confidence |
 | `docs/02_STRATEGY_FRAMEWORK.md` | Game summary, decision rules, $8k allocation, exit plan, risk register |
@@ -22,6 +25,9 @@ stage launches. Stage One (staking + Fert Deck) is the only live loop.
 | `docs/source/` | Verbatim text snapshot of the official docs, dated |
 | `yf/` | Python package: RPC, OpenSea, Blockscout clients; ledger; ROI model; CLI |
 | `data/ledger.csv` | Your positions (cost basis, token ids) — create from `ledger.example.csv` |
+
+## Notifications
+GitHub Issues are the notification channel, independent of any Claude subscription: watch this repository (Watch → Custom → Issues) and GitHub emails/pushes you each `claim` and `alert` issue.
 
 ## Quick start
 

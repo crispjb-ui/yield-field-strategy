@@ -1,0 +1,26 @@
+{
+ "reference/official-links-and-contracts": {
+  "hash": "8ff20e7650669705",
+  "addresses": [
+   "0x0acfcd1483686fcd94dabea03714321d0e05fc8d",
+   "0x231142e88f523b0a4f46d2d79faab2ce1828e43a",
+   "0xd9d6d0557f3479e801a967eb693ebe1ada6e5317"
+  ],
+  "updated": "3 Nov 2026"
+ },
+ "reference/patch-notes": {
+  "hash": "95db7f1163761d9d",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "farming-and-yield/yield": {
+  "hash": "696af1c15f6b00ca",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "farming-and-yield/seeds-and-crops": {
+  "hash": "5a6601bf86dea9a5",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ }
+}

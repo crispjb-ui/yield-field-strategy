@@ -1,0 +1,37 @@
+name: claim-reminder
+on:
+  schedule:
+    - cron: "47 2 2-30/2 * *"   # every even calendar day 02:47 UTC (≤72 h gap except 30th→2nd)
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: Snapshot for the issue body
+        run: python -m yf.cli fertrate > /tmp/fert.json && python -m yf.cli deeds > /tmp/deeds.json
+      - name: Open reminder issue (closes the previous one)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create claim --color 0E8A16 --force >/dev/null 2>&1 || true
+          for n in $(gh issue list --label claim --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Superseded by today's reminder." >/dev/null
+          done
+          title="CLAIM FERTILIZER — $(date -u +%Y-%m-%d)"
+          {
+            echo "**Claim now in the Yield Fields app: Manage Deeds → Claim All.** Decks stop at 9/9 (72 h)."
+            echo
+            echo '```json'; cat /tmp/fert.json; echo '```'
+            echo '```json'; cat /tmp/deeds.json; echo '```'
+            echo
+            echo "Status page: STATUS.md on the default branch."
+          } > /tmp/body.md
+          gh issue create --title "$title" --label claim --body-file /tmp/body.md

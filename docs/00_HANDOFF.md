@@ -25,7 +25,12 @@ python -m yf.cli market       # deed collection stats
 ```
 `config/settings.example.yaml` already holds every address; `config/settings.yaml` is optional.
 
-## Scheduled reminder
+## Automation (GitHub Actions, no Claude dependency)
+- `monitor.yml`: every 6 h rebuilds `STATUS.md`, appends `data/snapshots/*.jsonl`, opens/comments an `alert` issue on: network rate <100%, a deed unstaked or deck missing, staking paused, `$YIELD` token set, docs page change or new contract address.
+- `claim-reminder.yml`: every even calendar day 02:47 UTC opens a `claim` issue (closing the previous one). Watch the repo for Issues to get email/push.
+- Both have `workflow_dispatch` for manual runs under the Actions tab.
+
+## Scheduled reminder (Claude, legacy)
 Claude scheduled task `trig_014BCKNZPVfFwhak8pAhRcAU` ("Yield Fields: claim Fertilizer reminder + status"), every even calendar day 02:47 UTC, push notification. **It belongs to the Claude account that created it. If the subscription or account changes, recreate it from `docs/03_AUTOMATION_PLAN.md` (prompt text is in the Status table) or use a phone alarm every 2 days.** Fert Decks stop at 9/9 (72 h).
 
 ## Next triggers
