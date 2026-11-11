@@ -10,6 +10,7 @@ stage launches. Stage One (staking + Fert Deck) is the only live loop.
 
 | Path | What |
 |---|---|
+| `docs/00_HANDOFF.md` | **Start here** in a new session: position, reading order, tooling, scheduled task, next triggers |
 | `docs/01_VERIFIED_FACTS.md` | Fact ledger with sources and confidence |
 | `docs/02_STRATEGY_FRAMEWORK.md` | Game summary, decision rules, $8k allocation, exit plan, risk register |
 | `docs/03_AUTOMATION_PLAN.md` | Infrastructure build plan, phased |
