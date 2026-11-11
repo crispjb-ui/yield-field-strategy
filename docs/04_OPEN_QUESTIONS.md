@@ -8,11 +8,11 @@ either redacted (███) until its stage goes live, or an owner input.
 |---|---|---|---|---|
 | 3 | Fertilizer clearing price in ETH | Staking launch (speculative), farming day 1 (real) | OpenSea item sales | `fert.price_eth` |
 | 4 | ~~Staking address~~ known. Fert claims are off-chain (in-app, authenticated); no operator role in the ABI. Automation of claims requires the game session cookie, not a key | — | — |
-| 5 | Pack prices, seed odds, worth multiples | Farming launch | seeds-and-crops page | `seeds.*` |
-| 6 | Grow-time range; slots per plot | Farming launch | growing-and-selling | `farm.*` |
-| 7 | Farmer % / Broker % / Co-op Dues % | Farming launch | growing-and-selling, fees-and-risks | `farm.*` |
+| 5 | ~~Pack prices, odds, worth~~ testnet defaults known (mirror); confirm from Cornhub contract at launch | Farming launch | `packPrices()` | `seeds.*` |
+| 6 | ~~Grow times; slots~~ known: 1–12 h formula; 25 slots per wallet | — | — | — |
+| 7 | Farmer/Market fee: 10% testnet default; mainnet Farmer fee said to be lower | Farming launch | `farmerFeeBps()`, `marketFeeBps()` | `farm.*` |
 | 8 | `$YIELD` supply, taxes, contract, pool depth | Token launch | yield page, official-links | `token.*` |
-| 9 | ~~Claim fee~~ 10% on-chain, split 50/50. Windfall % by tier still redacted (`jackpotCurve`=(0,1000); `quoteBurnForJackpot` quotes 0 while Silo is empty) | Deed-rewards stage | silo page | `silo.windfall_pct_by_tier` |
+| 9 | ~~Claim fee, Windfall~~ 10% fee 50/50; Windfall = F×10% (Rare 60%) | — | — | — |
 | 10 | Farmers Co-op rules, day-1 seed amount, "classified" volume mechanism, truffles | Farming launch | co-op pages, classified | — |
 | 11 | Dates for any stage | — | `@YieldFields_RH` | `stage` |
 
@@ -24,3 +24,13 @@ either redacted (███) until its stage goes live, or an owner input.
 | 14 | Hold horizon; max tolerable drawdown on the $8k | stop rules in strategy §3 |
 | 15 | Whether a dedicated hot wallet for staking/claims is acceptable (see automation plan Phase 3) | automation scope |
 | 16 | ETH/USD on 2026-10-13 | USD cost basis only |
+
+## New unknowns (2026-11-11)
+| # | Unknown | Why it matters |
+|---|---|---|
+| 17 | Launch seed size and daily release; claim limit | Sets tonight's budget B for the first 30 days, i.e. whether cycling is +EV at all |
+| 18 | Truffle Pig price | Fixed cost per wallet before any truffle |
+| 19 | Mainnet Farmer fee (docs: lower than Market) and normal buy tax | `farmer_vs_direct()` breakeven |
+| 20 | Pool ETH reserve at launch | How much can go through the Farmer per clip under 3% slippage |
+| 21 | Farmer open date | Whether day-1 harvests can be sold for $YIELD or must be held |
+| 22 | Deed reward pool funding | Size of the deed $YIELD stream; Silo fill rate |

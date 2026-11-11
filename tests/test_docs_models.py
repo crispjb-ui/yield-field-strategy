@@ -10,9 +10,9 @@ def test_tier_scores_from_docs_fertility():
     assert abs(rv["Mythic"]["util_ratio"] - 1.8) < 1e-9
     assert rv["Rare"]["score"] > 1.08 and rv["Mythic"]["score"] < 0.6
 
-def test_seed_ev_refuses_on_redacted():
-    with pytest.raises(MissingMechanics):
-        seed_pack_ev(0.1, config.load_mechanics()["seeds"]["rarities"], 80)
+def test_seed_ev_runs_on_mirror_defaults():
+    ev = seed_pack_ev(0.1, config.load_mechanics()["seeds"]["rarities"], 90)
+    assert abs(ev["ev_ratio"] - 0.8955) < 1e-9
 
 def test_seed_ev_math():
     r = {"Common": {"p": 0.6, "worth_x": 0.5}, "Rare": {"p": 0.4, "worth_x": 2.0}}

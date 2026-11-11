@@ -179,3 +179,11 @@ for the launch-week gap.**
 - Fert bid rule did not fill: price rose 4.80 → 6.53 USDG on the news. Rule closed. No Fert purchases before launch; reassess after day 1 with real slot binding.
 - Deed floor 0.764 ETH, 11 sales/day. Sell-one rule: list at top of Rare band on launch day only if Rare floor ≥ 0.90 the day before; otherwise hold all three through launch week.
 - Concentration rule: the $6,000 farming bucket and the OCH book (41 heroes, 2 Ringbearers, weapons) are one bet on one team's five-week execution. The $2,000 ETH reserve is not deployed before 2026-12-15 under any trigger.
+
+## Update 2026-11-11 (un-redacted mirror; see 07_LAUNCH_ECONOMICS)
+- ETH loop = 10.45% rake per cycle (EV 0.995 × 0.90). Tier does not change EV per ETH.
+- Fert has no throughput value at $6k (slots never bind); its value is the first 30 min of launch day. No Fert purchases, final.
+- Truffles pay pro-rata on pack spend: run `truffle_cycle_ev()` against the live Truffles tab before every tranche.
+- Farmer beats a direct buy only while buy tax > 10.45%; it opens on its own switch, date unknown; hold crops in Bag if closed.
+- Tranche 1 = 6 Platinum packs (~0.6 ETH), not Diamond. Pool depth, not slots, limits how fast $6k can become $YIELD.
+- Windfall is a race (Rare 60% of the current Silo if first). Monitor `jackpot()` once $YIELD is set.

@@ -1,0 +1,2879 @@
+
+=================== allpaths.txt
+/en/deeds/deeds-and-fert-deck
+/en/deeds/what-a-deed-earns
+/en/farming/growing-and-harvesting
+/en/fertilizer/exporting-and-trading
+/en/fertilizer/network-brake
+/en/fertilizer/production-and-claiming
+/en/getting-started/status
+/en/reference/glossary
+/en/selling/market-and-farmer
+/en/truffles-and-yield/truffles-and-payout
+/en/truffles-and-yield/yield-pool-buybacks
+
+=================== deeds_deeds-and-fert-deck.txt
+
+Deeds and the Fert Deck
+The 
+Founding Deeds
+ are the land of Yield Fields: 
+3,333 NFTs
+ on Robinhood Chain. Each Deed has
+a rarity, a biome and a 
+Fertility
+ from 5 to 9. Fertility is the number that matters: it sets how
+much Fertilizer the Deed makes and its share of the Root Cellar now, and later its share of Deed
+rewards and the Windfall.
+Verified
+A Deed does nothing in a wallet. 
+Staked
+ and given a 
+Fert Deck
+, it makes Fertilizer around the
+clock. Staking is free; the deck costs 
+0.01 ETH
+, and that fee goes into the Deeds’ shared backing,
+the Root Cellar (see 
+What a Deed earns
+). This has been live on mainnet
+since 
+3 November 2026, 13:06 UTC
+. 
+Verified
+The five tiers
+Common
+ · 
+Meadow
+Supply
+1,557
+Fertility
+5
+Fert / day
+2.5
+Deck storage
+7.5
+Root Cellar now
+…
+Windfall
+50
+ %
+Rare
+ · 
+Frost
+Supply
+888
+Fertility
+6
+Fert / day
+3
+Deck storage
+9
+Root Cellar now
+…
+Windfall
+60
+ %
+Epic
+ · 
+Blight
+Supply
+555
+Fertility
+7
+Fert / day
+3.5
+Deck storage
+10.5
+Root Cellar now
+…
+Windfall
+70
+ %
+Legendary
+ · 
+Radiant
+Supply
+222
+Fertility
+8
+Fert / day
+4
+Deck storage
+12
+Root Cellar now
+…
+Windfall
+80
+ %
+Mythic
+ · 
+Astral
+Supply
+111
+Fertility
+9
+Fert / day
+4.5
+Deck storage
+13.5
+Root Cellar now
+…
+Windfall
+90
+ %
+Each card shows the tier’s supply, Fertility, Fertilizer per day (F/2), the deck’s storage (3 days),
+its Root Cellar value (live from the game) and its Windfall share. 
+Verified
+Every Deed of a rarity has the same Fertility. A Mythic has 1.8× the Fertility of a Common (9 against
+5). Rarity was assigned at random and is in the metadata. 
+Official source
+Fertility is onchain
+The Fertility of every Deed is stored onchain on Robinhood Chain. All 3,333 values
+were set on 1 November 2026, and the table is locked as complete. 
+Verified
+Rarity | 
+Biome | 
+Fertility | 
+Deeds | 
+Fertility points | 
+Common | 
+Meadow | 
+5 | 
+1,557 | 
+7,785 | 
+Rare | 
+Frost | 
+6 | 
+888 | 
+5,328 | 
+Epic | 
+Blight | 
+7 | 
+555 | 
+3,885 | 
+Legendary | 
+Radiant | 
+8 | 
+222 | 
+1,776 | 
+Mythic | 
+Astral | 
+9 | 
+111 | 
+999 | 
+Total
+ | 
+ | 
+ | 
+3,333
+ | 
+19,773
+ | 
+Verified
+The game’s total Fertility reads 
+19,773
+, exactly the sum of the table. This is the number
+every share is divided by: a Deed’s share of the Root Cellar is F / 19,773. A Common holds 0.02529 %
+of the backing, a Mythic 0.04552 %. 
+Verified
+The Deed panel in the game shows the same thing as “Backing weight: 9 pts · 1.8× Common” for a Mythic.
+Verified
+What Fertility does
+Now | 
+Later | 
+Fertilizer output: F/2 a day from a Fert Deck | 
+Its share of Deed rewards in $YIELD | 
+The Deed’s share of the Root Cellar, growing now (collecting it by burning comes later) | 
+Its share of the claim fees paid back to staked Deeds | 
+ | 
+Its share of the Silo when it is burned (the Windfall) | 
+Official source
+The docs list one more Fertility use as “(classified)” and add that “more parts of the game may use
+Fertility as it grows”. 
+Official source
+ The later uses are on
+What a Deed earns
+.
+The NFT
+Fact | 
+Value | 
+Supply | 
+3,333 | 
+Standard | 
+ERC-721C, which lets the collection choose the marketplaces that may trade it | 
+Chain | 
+Robinhood Chain | 
+Marketplace | 
+OpenSea | 
+Verified
+Royalty: 5 % on resale (the docs say it goes to the project treasury). 
+Official source
+The art
+Each Deed is animated isometric pixel art, 180×180, laid out on a 4×4 grid. The top of the plot is the
+build site, drawn empty; the game draws the structure there. Terrain is generated as an 
+Open Field,
+Pond or River
+, with big decor, water decor and small decor; rarer Deeds roll more decor and
+specials, and a special never repeats on the same plot. The art is visual only.
+Official source
+Without a Fert Deck
+The build site on top is empty
+With a Fert Deck
+Staked, the Fert Deck stands on the build site and makes Fertilizer
+When a Deed’s Fert Deck is producing, the game shows the Deed with the deck drawn on its build site.
+Verified
+Staking today
+Loading…
+Fert Decks built so far counts rebuilds too: some Deeds were unstaked, restaked and built again.
+Verified
+ The network’s output at full speed is shown live on
+The network brake
+.
+Loading…
+How to stake and build
+Allow staking once
+The first stake asks the wallet to let the game hold your staked Deeds: “Your first stake asks
+you to allow the staking contract once, then to stake”. 
+Verified
+Stake
+“Staking is free. A staked deed makes Fertilizer once it has a Fert Deck.” Only gas is paid. The Deed
+is held for staking and stays yours. 
+Verified
+Build a Fert Deck
+0.01 ETH a deck, “one signature for all of them”. Staking and building can be done in one
+transaction, paying 0.01 ETH × number of Deeds. The game checks the fee again just
+before sending; if it changed: “The fee changed, review again. Nothing was built.”
+Verified
+Claim
+Claimed Fertilizer goes straight to your Bag, with no wallet signature: “No wallet needed: the
+Fertilizer goes straight to your Bag.” Only whole units are claimed. 
+Verified
+The build fee is a setting the team can change; the docs call it “0.01 ETH at launch”.
+May change
+ A fee of 0 would mean building is closed (“Fert Deck building isn’t
+open yet”). 
+Verified
+Each staked Deed holds 
+one structure
+. The Fert Deck is the first; more types are planned. Structures are not part of the NFT. 
+Official source
+What a deck makes
+A Fert Deck makes 
+half a Fertilizer a day per Fertility point
+ and stores up to 
+3 days
+ of it.
+Verified
+Deed | 
+Fertility | 
+Per day F/2 | 
+Storage 1.5 × F | 
+One Fertilizer every | 
+Common | 
+5 | 
+2.5 | 
+7.5 | 
+9.6 h | 
+Rare | 
+6 | 
+3.0 | 
+9.0 | 
+8 h | 
+Epic | 
+7 | 
+3.5 | 
+10.5 | 
+6.9 h | 
+Legendary | 
+8 | 
+4.0 | 
+12.0 | 
+6 h | 
+Mythic | 
+9 | 
+4.5 | 
+13.5 | 
+5.3 h | 
+Verified
+The game counts in small units: one Fertilizer is 172,800 units, and a deck gains F units a second
+at full speed. That gives the times in the last column: a Common needs 172,800 ÷ 5 = 34,560 seconds
+(9.6 h) per Fertilizer. 
+Verified
+The Fertilizer in a deck is kept by the game, off chain. Only the stake and the build are onchain;
+the deck starts counting from the moment it is built. 
+Verified
+Speed
+A deck runs at full speed unless one of two brakes is on: the 
+network rate
+ (all decks slow when
+more than 7 days of output sits unused) or 
+your export rate
+ (your decks slow when you export more
+than a quarter of their daily output). A deck runs at the slower of the two, never below half speed.
+On 8 November the network rate was 100 %. 
+Verified
+ Both brakes are explained
+on 
+The network brake
+.
+Full means stopped
+A full deck stops producing until you claim: “Holds 3 days of production. A full deck stops producing
+until you claim.” Check in at least every 3 days.
+Verified
+The screen shows “Full. Claim to restart production.” and “Claim to resume”.
+Verified
+ Progress toward the next Fertilizer carries over between claims.
+Official source
+Deck states
+State | 
+What it means | 
+Producing
+ | 
+Staked, built and filling | 
+Full
+ | 
+Storage is at its cap; production is paused until you claim | 
+Unrevealed
+ (“Awaiting reveal”) | 
+Built on a Deed whose Fertility was not set yet. All Fertility is set now | 
+Ended
+ | 
+The Deed was unstaked or burned. Whole Fertilizer it stored can still be claimed | 
+Inert
+ | 
+Burned before the reveal: “it made no Fertilizer” | 
+Verified
+The Deed list groups rows as “Producing”, “Idle · no Fert Deck”, “Idle · not staked” and “Ended
+decks”, with full decks first. 
+Verified
+Who owns the stored Fertilizer
+Fertilizer stored in a deck belongs to whoever built the deck, not to whoever owns the Deed now.
+Verified
+A deck is identified by its build, not by the Deed. If the Deed leaves your wallet, its deck stays
+in your list as ended: “You built this Fert Deck; the deed has left your wallet.” “What the deck
+stored stays yours to claim.” 
+Verified
+So selling a Deed does not sell its stored Fertilizer, and the buyer starts with an empty deck and a
+new 0.01 ETH build. 
+Inferred
+The fraction is lost
+When a deck ends, its 
+whole
+ Fertilizer is credited and the 
+fraction toward the next one is
+lost
+: “its stored whole Fertilizer … the fraction toward the next one is lost.”
+Verified
+Example.
+ A Common deck that has stored 4.9 Fertilizer is unstaked: 4 are credited, and the 0.9 is
+gone. Claiming first does not help, since a claim also takes only whole units; unstaking just after a
+whole unit is reached loses the least. 
+Inferred
+Unstaking
+Effect | 
+Detail | 
+The deck is destroyed | 
+“Unstaking destroys the deck, and a new one costs 0.01 ETH again.” | 
+Stored Fertilizer | 
+Whole units are claimed to you or stay yours to claim later; fractions are lost | 
+The old fee | 
+Stays in the Root Cellar; a rebuild pays the fee again | 
+Export allowance | 
+A deck keeps adding to your export allowance for 7 days after it ends | 
+Root Cellar share | 
+Unchanged: an unstaked Deed keeps its share, but only a staked Deed can be burned to collect it | 
+Verified
+Can you unstake while the game is paused? Yes: unstaking stays open during a pause, and every other
+action waits. 
+Verified
+Batch limits
+Action | 
+Deeds per transaction (in the game) | 
+Stake, build, unstake, claim $YIELD | 
+up to 
+500
+ | 
+Burn | 
+up to 
+20
+ | 
+Claim Fertilizer | 
+up to 
+20
+ picked Deeds (or “all” at once) | 
+Verified
+Up to 500 Deeds per transaction in the game. When a selection is too big: “picked: the most one
+transaction carries. Pick the rest in another.” 
+Verified
+Still REDACTED
+The Fertility use the docs list as “(classified)”.
+The structures planned after the Fert Deck, and their fees.
+
+=================== deeds_what-a-deed-earns.txt
+
+What a Deed earns
+Beyond its Fertilizer, a Founding Deed earns in three ways, each set by its Fertility:
+What | 
+Paid in | 
+How it is collected | 
+Status on 8 Nov 2026 | 
+Root Cellar
+ | 
+ETH | 
+Only by burning a staked Deed | 
+Filling now (live below) | 
+Deed rewards
+ | 
+$YIELD | 
+Claimed by staked Deeds, after a 10 % fee | 
+Not live | 
+Windfall
+ | 
+$YIELD | 
+A share of the 
+Silo
+, won by burning a staked Deed | 
+Not live | 
+Verified
+Only the Root Cellar is filling today, and 
+burning is not open yet
+. On 8 November 2026 no $YIELD
+token was set for staking, every Deed’s pending reward read 0 and the Silo held 0. The game says:
+“Staked Deeds start earning when $YIELD launches. No back pay.” 
+Verified
+The Root Cellar
+The 
+Root Cellar
+ is the ETH that backs the Founding Deeds. Every Fert Deck build fee goes into it,
+and every Deed, staked or not, owns a share of it set by its Fertility. The only way to collect a
+share is to 
+burn
+ a staked Deed. 
+Verified
+Root Cellar of a Deed = backing × F / 19,773
+Backing is the ETH held for the Deeds, F is the Deed’s Fertility and 19,773 is the total
+Fertility of all 3,333 Deeds. The game’s own burn quote returns exactly this.
+Verified
+The 19,773 counts 
+every
+ Deed, including the ones that are not staked. An unstaked Deed’s share
+keeps growing like any other; it only has to be staked before it can be burned.
+Verified
+Today’s values
+The backing is the whole ETH balance held for the Deeds, which so far equals every Fert Deck build
+fee paid (0.01 ETH each). It is shared by Fertility: a Deed’s Root Cellar is backing × F ÷ total
+Fertility. 
+Verified
+ The game does not show it on screen yet; the Deed panel
+shows each Deed’s backing once burning opens. 
+Verified
+Loading…
+The Root Cellar is not a price for a Deed. The docs say so plainly: it fills with “no set amount”.
+These numbers move with every new build.
+Where it comes from
+Inflow | 
+Status | 
+Fert Deck build fees (0.01 ETH each, including rebuilds after an unstake) | 
+Live 
+Verified
+ | 
+“Part of every $YIELD buy and sell tax once $YIELD launches” | 
+Not live; no rate given 
+Official source
+ | 
+ETH sent to the backing by anyone (it is accepted and recorded as backing received) | 
+Possible 
+Verified
+ | 
+The docs’ overview adds that “every $YIELD trade also fills the deeds’ Root Cellars”: part of the
+$YIELD tax goes to the Root Cellar (rate not announced). 
+Official source
+ Sale fees go to
+the Buyback vault. 
+Verified
+Worked example.
+ Each new deck adds 0.01 ETH, of which a Common’s share is 0.01 × 5 / 19,773 =
+0.0000025 ETH and a Mythic’s 0.0000046 ETH. A thousand more builds would raise a Mythic’s Root Cellar
+by about 0.0046 ETH. 
+Inferred
+Deed rewards
+Staked Founding Deeds will earn 
+$YIELD
+, “split by Fertility”. Rewards start when $YIELD launches,
+with no back pay for the time before. 
+Verified
+The reward mechanics are already in place for staking on mainnet, waiting for a $YIELD token
+to be set. The token can be set only once. 
+Verified
+Mechanic | 
+Detail | 
+Who earns | 
+Staked Deeds only | 
+Split | 
+By Fertility: “Released $YIELD is shared by Fertility among staked deeds, so a Mythic earns 1.8× a Common.” | 
+Release lock | 
+“New $YIELD enters a release lock, so it doesn’t pay out at once. Half of what’s locked releases every 8 hours while any deed is staked: about 87% within a day.” | 
+Start | 
+At $YIELD launch: “No back pay” | 
+Growth | 
+“It grows as $YIELD releases, until you claim.” “Your pending rewards never go down. They only rise until you claim, unstake or burn.” | 
+Claim | 
+One wallet signature for up to 500 Deeds, the ones with the most pending $YIELD first; the $YIELD goes to the wallet | 
+Fee | 
+10 % of every claim | 
+During a pause | 
+Rewards owed are deferred as credit and withdrawn after staking resumes | 
+On burn | 
+Pending rewards are claimed first, after the fee | 
+On unstake while paused | 
+The $YIELD is “kept as credit; withdraw after staking resumes” | 
+Verified
+The claim fee
+Every claim pays a 
+10 % fee
+: half goes back into the release lock, shared again with every staked Deed, and half goes to the Silo.
+Verified
+Part | 
+Share of the claim | 
+Goes to | 
+Kept by the claimer | 
+90 % | 
+The claiming wallet | 
+Staker share | 
+5 % | 
+Back into the release lock, shared by Fertility among all staked Deeds | 
+Silo share | 
+5 % | 
+The Silo, paid out by burns as the Windfall | 
+Verified
+The fee is 10 %, split 5 % to stakers and 5 % to the Silo. The team can change the split. 
+May change
+ The game shows reward
+amounts already net of the fee: “The estimate above is already net of it.” 
+Verified
+Worked example.
+ A wallet claims 1,000 $YIELD of gross rewards. It receives 900 $YIELD. 50 $YIELD goes
+back into the release lock for all staked Deeds and 50 $YIELD goes to the Silo. A Mythic burned right after, with that
+50 $YIELD as the whole Silo, would win 45 $YIELD as its Windfall. 
+Inferred
+Because the fee is a percentage, how often a holder claims does not change what it pays. The 5 % paid
+back means every claim by anyone adds a little to every staked Deed, and the 5 % to the Silo means every
+claim adds to what the next burn can win. 
+Inferred
+Where the rewards come from
+The docs list Deed rewards, a further blacked-out item and the Silo as “lined up for staked deeds”, and
+say “Additional rewards for deed owners will be launched when the farming game launches”.
+Official source
+ Rewards are paid from a $YIELD reward pool; how much flows into it, and
+from where, is not visible yet. 
+Verified
+What the release lock does.
+ Anything that enters the lock pays out over about a day: 50 % after 8
+hours, 75 % after 16, about 87 % after 24. A large inflow is spread instead of landing at once. Because
+the stakers’ half of every claim fee goes back into the lock, a holder who claims later also collects a
+share of the fees paid by those who claimed earlier. 
+Inferred
+The Silo and the Windfall
+The 
+Silo
+ is a pot of $YIELD for Deed holders, filled by the claim fee above: it receives 
+5 % of
+every Deed-reward claim
+. When a staked Deed is burned, it can win a share of the Silo, the
+Windfall
+, on top of its Root Cellar in ETH: “Each one redeems its ETH backing and can win a Windfall
+from the Silo.” A Windfall is paid only while the Silo is open, that is once $YIELD is live.
+Verified
+ The Silo is 
+inert until $YIELD launches
+.
+A single burn wins a fixed share of the Silo 
+as it is at that moment
+, set by the Deed’s Fertility:
+Deed | 
+Fertility | 
+Windfall share of the current Silo | 
+Common | 
+5 | 
+50 %
+ | 
+Rare | 
+6 | 
+60 %
+ | 
+Epic | 
+7 | 
+70 %
+ | 
+Legendary | 
+8 | 
+80 %
+ | 
+Mythic | 
+9 | 
+90 %
+ | 
+Verified
+The game sets the share as a curve: 10 % per
+Fertility point from a base of 0, capped at 100 %, so share = min(F × 10 %, 100 %). 
+Verified
+ The team can change the
+curve, and it applies only once $YIELD is live. 
+May change
+Because the largest share is 90 %, a single burn never takes the whole Silo; the docs say “the Silo never
+empties”. 
+Official source
+A race, not a split
+The Windfall is 
+not
+ shared pro rata among Deeds. Each burn takes its share of what is left by the
+burn before it.
+Within a batch, Deeds are “processed 1 at a time, and each takes its share of what the last one left”.
+Verified
+win = remaining Silo × share(F)
+remaining Silo = remaining Silo − win
+Worked example.
+ Say the Silo holds 10,000 $YIELD. 
+Inferred
+Order | 
+Burn | 
+Share | 
+Wins | 
+Silo left | 
+1 | 
+Mythic | 
+90 % | 
+9,000 | 
+1,000 | 
+2 | 
+Common | 
+50 % | 
+500 | 
+500 | 
+3 | 
+Legendary | 
+80 % | 
+400 | 
+100 | 
+The same three Deeds in another order pay out differently: a Common first would win 5,000, leaving the
+Mythic 4,500. The first burn after the Silo has filled takes the most; a burn that follows another one
+gets a share of a much smaller pot. The same logic holds between separate transactions: each burn sees
+the Silo as the last burn left it. 
+Inferred
+Burning
+Burning is the only way to collect a Root Cellar share or a Windfall. 
+Burning is not open yet.
+Verified
+Rule | 
+Detail | 
+Only staked Deeds burn | 
+Unstaked Deeds show “Stake to burn” | 
+Gates | 
+Burns must be opened by the game (“Burns aren’t open yet”), every Deed’s Fertility must be set (it is), and staking must not be paused | 
+Batch | 
+Up to 20 Deeds per burn | 
+Minimum payout | 
+Both the ETH and the $YIELD must come in at 99 % of the quote or more (1 % slippage), or nothing burns | 
+Side effects | 
+The Fert Deck is destroyed; whole stored Fertilizer goes to you, fractions are lost | 
+Permanent | 
+“This can’t be undone. The deed is gone for good.” | 
+Verified
+What a burn pays, straight to the wallet:
+Part | 
+Paid in | 
+From | 
+Root Cellar | 
+ETH | 
+backing × F / 19,773 | 
+Windfall (with $YIELD live) | 
+$YIELD | 
+Its share of the current Silo | 
+Pending Deed rewards | 
+$YIELD | 
+Claimed first, after the 10 % fee | 
+Verified
+If the Silo opens or closes between review and sending, the burn stops and asks for a new review: “The
+Silo closed since your review, so this burn now pays ETH only.” or “The Silo opened since your review,
+so this burn now pays $YIELD too.” 
+Verified
+Why a burn does not change the backing per point
+A burned Deed takes out exactly its share, backing × F / total, and its Fertility leaves the total
+with it. What remains per point is the same:
+before: backing / total
+after: (backing − backing × F / total) / (total − F) = backing / total
+So a burn does not raise or lower anyone else’s Root Cellar. What changes is the future: every later
+inflow is divided among fewer Fertility points. The docs put it as “each burned deed means future fees
+are shared among fewer deeds”. 
+Inferred
+Example (figures of 8 Nov 2026).
+ With 29.58 ETH and 19,773 points, a Mythic burn pays 0.013464 ETH. The backing becomes
+29.566536 ETH over 19,764 points: still 0.0014960 ETH per point. The next 0.01 ETH build fee is then
+shared over 19,764 points instead of 19,773.
+Still REDACTED
+The share of $YIELD buy and sell taxes that goes to the Root Cellar.
+The share of $YIELD taxes and game fees routed to Deeds as rewards.
+The size of Deed rewards.
+The reward the docs list next to Deed rewards and the Silo (“A share of ████”).
+How fast the Silo will fill: it depends on the size of Deed rewards.
+Whether the current Windfall curve (50 % to 90 %) is the final setting.
+When burns open. Burning is not open yet.
+
+=================== farming_growing-and-harvesting.txt
+
+Growing and harvesting
+A planted seed takes 
+1 to 12 hours
+ to ripen. Rarer seeds take longer, bigger packs grow a little faster, and Fertilizer cuts the time. A ripe crop is harvested 
+once
+: the crop goes to your Bag, the slot empties, and the harvest may turn up a 
+Truffle
+.
+Planting
+Fact | 
+Value | 
+One seed per slot | 
+A slot holds 1 crop at a time | 
+Plant one or many | 
+Pick seeds slot by slot, or auto-fill the free slots | 
+Auto-fill order | 
+Highest rarity first, then highest tier | 
+Refusals | 
+“that slot is taken”, “you no longer hold those seeds” | 
+All verified. 
+Verified
+The grow-time formula
+grow time (h) = worth×10 × tier factor / 500
+with worth×10 = 5, 10, 16, 20, 30, 50 for Common … Mythic, and the tier factor: 
+Verified
+Tier | 
+Factor | 
+Grow time vs Bronze | 
+Bronze | 
+120 | 
+— | 
+Silver | 
+116 | 
+3.3 % shorter | 
+Gold | 
+108 | 
+10 % shorter | 
+Platinum | 
+104 | 
+13.3 % shorter | 
+Diamond | 
+100 | 
+16.7 % shorter (Bronze takes 20 % longer) | 
+Example: a Gold Rare is 16 × 108 / 500 = 
+3.456 h = 3 h 27 min 22 s
+.
+All 30 grow times
+Tier \ rarity | 
+Common | 
+Uncommon | 
+Rare | 
+Epic | 
+Legendary | 
+Mythic | 
+Average | 
+Bronze | 
+1h 12m | 
+2h 24m | 
+3h 50m 24s | 
+4h 48m | 
+7h 12m | 
+12h | 
+2h 23m | 
+Silver | 
+1h 9m 36s | 
+2h 19m 12s | 
+3h 42m 43s | 
+4h 38m 24s | 
+6h 57m 36s | 
+11h 36m | 
+2h 18m | 
+Gold | 
+1h 4m 48s | 
+2h 9m 36s | 
+3h 27m 22s | 
+4h 19m 12s | 
+6h 28m 48s | 
+10h 48m | 
+2h 9m | 
+Platinum | 
+1h 2m 24s | 
+2h 4m 48s | 
+3h 19m 41s | 
+4h 9m 36s | 
+6h 14m 24s | 
+10h 24m | 
+2h 4m | 
+Diamond | 
+1h | 
+2h | 
+3h 12m | 
+4h | 
+6h | 
+10h | 
+1h 59m | 
+“Average” is the odds-weighted average over a tier’s six rarities. 
+Inferred
+The game fixes each planting’s grow time and ripe time when you plant, and the formula is how the times shown are worked out. 
+May change
+Time is proportional to value
+A crop’s value is pack price × worth and its grow time is worth × factor / 500 hours, so the worth cancels out: 
+Inferred
+value per slot-hour = 50 × pack price / tier factor
+Inside a tier, every rarity earns the same value per slot-hour.
+ A Mythic is worth ten times a Common and takes ten times as long. A lucky seed is more value, not faster value.
+Tier | 
+Value per slot-hour | 
+As a share of the pack price | 
+Bronze | 
+0.00208 ETH | 
+41.7 % an hour | 
+Silver | 
+0.00431 ETH | 
+43.1 % | 
+Gold | 
+0.02315 ETH | 
+46.3 % | 
+Platinum | 
+0.04808 ETH | 
+48.1 % | 
+Diamond | 
+0.125 ETH | 
+50.0 % | 
+Diamond turns ETH into crop value 
+20 % faster than Bronze
+ (50.0 / 41.7 = 1.2): “Bigger packs grow faster for the ETH you put in. Splitting ETH across lots of small packs never beats 1 bigger pack.” 
+Official source
+Fertilizer
+Each Fertilizer used on a growing crop removes 
+25 % of its total grow time
+, not of the time left. At most 
+2 per crop
+, so a crop can grow in half the time. 
+Verified
+ready at = planted at + grow time × (4 − n) / 4 n = 0, 1 or 2 Fertilizers
+If the new ripe time is already past, the crop ripens at once: “Use one with less than a quarter of the time left and the crop ripens at once.” 
+Verified
+A third is refused: “that crop has its 2 already”. A ripe crop cannot be fertilized. 
+Verified
+Fertilizer is used up when applied, comes from your Bag, and never expires. Exported Fertilizer must be imported first (see 
+Production and claiming
+). 
+Official source
+What one Fertilizer saves
+Crop | 
+Grow time | 
+With 1 | 
+With 2 | 
+Saved per Fertilizer | 
+Diamond Common (Ginger) | 
+1h | 
+45m | 
+30m | 
+15 min | 
+Gold Rare (Squash) | 
+3h 27m 22s | 
+2h 35m 31s | 
+1h 43m 41s | 
+51 min 50 s | 
+Diamond Epic (Eggplant) | 
+4h | 
+3h | 
+2h | 
+1 h | 
+Bronze Legendary (Flare Kale) | 
+7h 12m | 
+5h 24m | 
+3h 36m | 
+1 h 48 min | 
+Diamond Mythic (Heartbeet) | 
+10h | 
+7h 30m | 
+5h | 
+2 h 30 min | 
+Bronze Mythic (Swirlchard) | 
+12h | 
+9h | 
+6h | 
+3 h | 
+Use it on long crops
+A Fertilizer always saves a quarter of the crop’s own grow time, so it saves the most on the longest crops: 12 times more on a Bronze Mythic (3 h) than on a Diamond Common (15 min). It matters most when your 25 slots are the limit: two Fertilizers make a slot cycle twice as fast. 
+Inferred
+Worked examples
+A late Fertilizer ripens at once.
+ A Heartbeet (10 h) planted at 08:00 is due at 18:00. At 16:00 it has 2 h left, less than a quarter of 10 h. One Fertilizer moves the ripe time to 08:00 + 7 h 30 m = 15:30, which is already past, so it is ripe at once.
+Two Fertilizers early.
+ A Swirlchard (12 h) planted at 00:00 with two Fertilizers right away ripens at 06:00 instead of 12:00. The same slot can take a second seed the same morning.
+Earlier is better, but never wasted.
+ The cut is always of the total time, so with two Fertilizers a crop can never ripen before planted + 50 %. Applied early, both cuts count in full. Applied late, the second one ripens the crop at once at the moment it is used: a Swirlchard fertilized once at planting (due at 9 h) and again at 8 h ripens at 8 h, not at 6 h.
+Fertilizer changes time, not value: a fertilized crop is worth exactly the same. What changes is how many harvests a slot makes in a day, and every harvest is a Truffle roll (below).
+Harvesting
+Fact | 
+Value | 
+Harvests per planting | 
+1 | 
+What you get | 
+The crop the seed promised, 1 per slot, into your Bag | 
+After the harvest | 
+The slot is empty and needs a new seed (so a new pack) | 
+Ripe crops | 
+Never wilt for selling: “harvest on your own schedule”. For Truffles they spoil: after 48 hours ripe, a crop finds no Truffle | 
+A planting is harvested once and the slot empties. 
+Verified
+ Each slot holds 1 crop, and ripe crops never wilt. 
+Official source
+ The game adds a clock for Truffles: a crop ripe for 24 hours shows “Spoiling. Harvest within … to keep its truffle chance.”, and after 48 hours “Spoiled. This crop can still be sold, but it won’t find a truffle.” Its value stays the same. 
+Verified
+ Each harvest gives exactly one crop, as the game’s log shows (“Harvested 1× Heartbeet”). 
+Inferred
+Three ways to harvest
+Way | 
+What it does | 
+One crop | 
+Tap a ripe slot | 
+Sweep | 
+Drag across the plot; every ripe slot under your finger is harvested in one go | 
+Harvest all | 
+Every ripe crop on the plot at once | 
+All verified. 
+Verified
+ The docs: “Harvest 1 crop or everything ripe at once. Harvested crops go to your Bag, ready to sell. The soil hides more than vegetables.” 
+Official source
+The Truffle roll
+Common
+Uncommon
+Rare
+Epic
+Legendary
+Mythic
+With a 
+Truffle Pig
+, every harvest of a crop planted after the Pig has a 
+1 in 20
+ chance of a Truffle, ranked like the crop it came from (a Rare crop gives a Rare Truffle). Without a Pig there is no Truffle roll: “Get a Truffle Pig to find truffles. Each crop you plant once it’s yours has a 1 in 20 chance of one.” With one: “Every harvest has a 1 in 20 chance of one, rolled just after you harvest. A find joins that harvest’s Settlement. A crop left ripe for 48 hours finds none.” The game makes the roll just after the harvest (“Checking for a truffle…”), not your device. 
+Verified
+A Truffle enters the nightly 
+Settlement at 00:00 UTC
+ by itself, where the Truffles of the day share a budget of $YIELD (see 
+Truffles and the nightly payout
+). Since farming is not live, neither are Truffles.
+Harvests (with a Pig, crops planted after it) | 
+Truffles you can expect | 
+20 | 
+1 | 
+25 (one full plot) | 
+1.25 | 
+100 | 
+5 | 
+300 (one Diamond plot for a day, no Fertilizer) | 
+15 | 
+Inferred
+ This is why harvest speed matters: two Fertilizers on a crop double a slot’s harvests, and so its Truffle rolls.
+When a harvest finds Truffles, the game plays the Truffle find; several in one batch show the best one (“N truffles!”). 
+Verified
+The Truffle Pig (“Crops planted with it can find Truffles. One per wallet.”) is sold on the CornHub. Buy it before you plant: crops already in the ground when you buy it do not count.
+After the harvest
+The crop sits in your Bag until you sell it at the Trading Post, to the Market for ETH or to the Farmer for $YIELD (see 
+Market and Farmer
+). In this build seeds, crops and packs stay in the game; only Fertilizer can be exported. 
+Verified
+Messages
+Message | 
+Meaning | 
+“Fertilized Heartbeet (1/2)” | 
+One Fertilizer applied | 
+“Heartbeet is ready” | 
+The cut ripened it at once | 
+“Out of fertilizer” | 
+None left in your Bag | 
+“that crop is ripe” | 
+Too late to fertilize | 
+“it isn’t ripe yet” | 
+Harvest refused: the crop is still growing | 
+“nothing is ripe” | 
+Harvest all with nothing ready | 
+“it’s already harvested” | 
+A repeated harvest | 
+“Harvesting is coming soon” | 
+Farming is switched off | 
+All game copy. 
+Verified
+Still REDACTED
+The Truffle Pig’s price.
+
+=================== fertilizer_exporting-and-trading.txt
+
+Exporting and trading
+Exporting
+ turns Fertilizer in your Bag into an onchain token in your wallet, so it can be sent or traded on OpenSea like any other item. 
+Importing
+ turns it back. Exporting is rationed: a per-wallet limit, a slowdown of your own decks when you export a lot, and a network-wide daily cap. This page gives each rule with its exact formula, then the OpenSea collection: its royalty, its pricing and how much Fertilizer exists onchain.
+Export and import
+Export: Bag → wallet
+You pick an amount. The game reserves it in your Bag (“They’re reserved from your Bag now and land in your wallet as tokens.”) and your wallet confirms the export, which mints the Fertilizer as a 
+Yield Fields Items
+ token (an ERC-1155 item) on Robinhood Chain. 
+Verified
+Use it onchain
+The token can be sent to any wallet or traded on OpenSea (see 
+Trading on OpenSea
+ below). A token in your wallet does nothing in the game. 
+Verified
+Import: wallet → Bag
+Your wallet confirms the import, the tokens are burned, and the game credits them to your Bag. Only then can they be used on crops. 
+Verified
+If you cancel in your wallet, “Your Fertilizer stays reserved: try again from Pending”. 
+Verified
+ Sending to another wallet you own still counts: “This uses … of your export allowance. Sending to another wallet you own counts too.” 
+Verified
+Rule 1: the per-wallet limit
+Each wallet may export, over any 
+rolling 24 hours
+: 
+Verified
+limit = floor( F_total / 4 ) + Fertilizer imported in the last 24 h
+F_total / 4 is half a day of your decks’ output (a deck makes F/2 a day). The game’s copy: “Each wallet can export half a day of its Fert Decks’ output every 24 hours, plus what it imported.”
+Every deck that ran in the last 7 days counts
+, including decks that have since ended: “half a day of their output every 24 hours, for 7 days after a Deck ends.” 
+Verified
+Imports raise the limit for 24 hours: “Limit …: … from your Fert Decks + … imported, counted until …”. 
+Verified
+The docs (8 Nov) say the limit is rounded 
+down
+ to whole Fertilizer: a single Common, Rare or Epic exports 1 a day, a Legendary or Mythic 2. 
+Official source
+One deck | 
+F | 
+F / 4 | 
+Limit (rounded down) | 
+Common | 
+5 | 
+1.25 | 
+1 | 
+Rare | 
+6 | 
+1.5 | 
+1 | 
+Epic | 
+7 | 
+1.75 | 
+1 | 
+Legendary | 
+8 | 
+2.0 | 
+2 | 
+Mythic | 
+9 | 
+2.25 | 
+2 | 
+It is rolling, not daily.
+ Each export counts until it is 24 hours old, then frees up: “Exports count until they are 24 hours old”, “More can go at HH:MM UTC”. There is 
+no 00:00 reset for a wallet’s limit.
+Verified
+Over the limit, the game answers “Over your wallet’s export limit”, says how many you can export now and offers “Export N instead”. Your limit can drop below what you already used when decks end (“Your limit went down after some of these Exports were made”). 
+Verified
+Rule 2: the exporter slowdown
+Exporting a lot slows 
+your own
+ Fert Decks. The game computes it like this: 
+Verified
+share = exports in the last 24 h ÷ your daily output (F / 2)
+rate = 100 % − 2 × (share − 25 %), at most 100 %, never below 50 %
+F is the total Fertility of your wallet’s decks. In words: up to 25 % of your daily output, nothing happens; above it, every extra percentage point of share costs 2 points of speed, down to a floor of 50 %.
+Share of daily output exported | 
+Deck speed | 
+25 % or less | 
+100 % | 
+30 % | 
+90 % | 
+40 % | 
+70 % | 
+50 % or more | 
+50 % | 
+The slowdown is a straight line through these points (“90% speed at 30%, 70% at 40% and 50% at 50% or more”), not steps. 
+Official source
+How many exports are free (they never slow a deck):
+Every wallet:
+ceil(F / 8)
+ a day, 25 % of the wallet’s daily output rounded up, counted over the whole wallet. 
+Verified
+A single deck:
+ a Common, Rare, Epic or Legendary exports 1 a day at full speed, and a Mythic 2: “You can now export 1 Fertilizer, per rolling 24h (up to 25% of your Deck’s daily output) at full speed.” 
+Official source
+A wallet with several decks:
+ the rounding applies to the wallet’s total Fertility, not deck by deck. The full limit (F/4) is about a 50 % share, so 
+exporting the whole allowance puts the decks at about half speed.
+Verified
+Importing back does not undo it.
+ The game says so in the export dialog: “This slows your Fert Decks to about X% speed. Importing back does not undo it. Export N or fewer to keep full speed.” Only exports count toward the share; imports never subtract. 
+Verified
+How long it lasts
+The slowdown lasts until the exports behind it are 24 hours old: “It eases as they pass 24 hours.” 
+Verified
+ Because rates are recalculated once an hour, full speed comes back on the first hourly update after that, so plan on about 
+25 hours
+ after your last export. Each new export starts its own 24-hour clock.
+The docs say the exporter rate counts exports from 13:00 UTC on 4 Nov. 
+Official source
+Examples
+A single deck.
+ A single Mythic exports 2 a day at full speed; a single Common, Rare, Epic or Legendary exports 1. 
+Official source
+A 10-Deed wallet.
+ A hypothetical wallet with 10 Deeds and Fertility 70 can export 9 a day at full speed (ceil(70 / 8) = 9), and the game warns of a slowdown at 10. 
+Inferred
+A worked example: a 10-Deed wallet, Fertility 70
+A hypothetical wallet: ten staked Deeds with decks, total F = 70. Daily output at full speed: 
+35 Fertilizer
+. Limit: floor(70 / 4) = 
+17
+. Free: ceil(70 / 8) = 
+9
+. 
+Inferred
+Exported in 24 h | 
+Share | 
+Deck speed | 
+Output for the next 24 h | 
+Lost vs full speed | 
+0 | 
+0 % | 
+100 % | 
+35.0 | 
+0 | 
+8 | 
+22.9 % | 
+100 % | 
+35.0 | 
+0 | 
+9 | 
+25.7 % | 
+100 % (free) | 
+35.0 | 
+0 | 
+10 | 
+28.6 % | 
+92.9 % | 
+32.5 | 
+2.5 | 
+12 | 
+34.3 % | 
+81.4 % | 
+28.5 | 
+6.5 | 
+14 | 
+40.0 % | 
+70.0 % | 
+24.5 | 
+10.5 | 
+16 | 
+45.7 % | 
+58.6 % | 
+20.5 | 
+14.5 | 
+17 (the limit) | 
+48.6 % | 
+52.9 % | 
+18.5 | 
+16.5 | 
+The 10th export drops the decks to about 93 %, and each export after it costs about 
+5.71 points of speed
+, which is 
+2 Fertilizer a day
+ of this wallet’s production for as long as the slowdown lasts. At the limit of 17 the decks run at about 53 %. 
+Inferred
+Calculator
+Enter your staked Deeds by tier and how many you exported in the last 24 hours.
+Your staked Deeds
+Common (F 5)
+Rare (F 6)
+Epic (F 7)
+Legendary (F 8)
+Mythic (F 9)
+Fertilizer exported in the last 24 h: 0
+Full-speed output
+11.5 / day
+Export limit (24 h)
+5
+Free of slowdown
+3
+Your deck speed
+100 %
+Production lost in 24 h
+0
+The calculator uses the formula above. The game’s own figure is authoritative, and the 
+network brake
+ can make your decks slower still (the deck takes the lower of the two). 
+Inferred
+Rule 3: the network-wide daily cap
+On top of every wallet’s limit, all exports of Fertilizer are capped at 
+60,000 a day across the whole game
+. 
+Verified
+ When it is reached, the game says “Daily Export limit reached. Try after 00:00 UTC, when daily limits reset.” 
+Verified
+ This cap resets at 
+00:00 UTC
+. 
+Inferred
+Loading…
+The 60,000 is a setting the team can change. 
+May change
+ For scale: the whole game’s output at full speed, shown live on 
+The network brake
+, is far below this cap, so the cap is far above what can be exported today. 
+Inferred
+Other refusals
+Message | 
+Meaning | 
+“Exports are briefly unavailable. We couldn’t check your export allowance.” | 
+The game could not compute your limit; the docs: “If the game can’t check your limit, export pauses until it can.” | 
+“Exports are paused” | 
+Exports are paused game-wide | 
+“Exporting is unavailable. Try later” | 
+The game cannot approve exports right now | 
+“That Export has run out of time” | 
+The approval expired before your wallet confirmed it | 
+All game copy. 
+Verified
+The per-wallet limit and both rates are not onchain; they are enforced by the game when it approves an export. 
+Inferred
+Trading on OpenSea
+Exported Fertilizer is an ordinary onchain token, so it trades on OpenSea like any other item.
+Fact | 
+Value | 
+Collection | 
+Yield Fields Items, on Robinhood Chain | 
+Standard | 
+ERC-1155C (the “C” lets the collection control which marketplaces may trade it) | 
+Fertilizer | 
+The only item that exists on mainnet | 
+All verified. 
+Verified
+Royalty
+Royalty: 5 % on resale (the docs say it goes to the project treasury). 
+Official source
+Pricing currency
+Fertilizer listings on OpenSea have been priced in 
+USDG
+, a dollar stablecoin on Robinhood Chain. 
+Verified
+How much exists
+Loading…
+The first days (3–7 Nov 2026):
+UTC day | 
+Minted | 
+3 Nov | 
+132 | 
+4 Nov | 
+1,277 | 
+5 Nov | 
+880 | 
+6 Nov | 
+818 | 
+7 Nov | 
+870 | 
+The per-day split is approximate, so a few exports near midnight may sit on the neighbouring day. 
+Inferred
+For scale, compare the Fertilizer onchain above with all the Fertilizer in circulation, shown live on 
+The network brake
+: only part of it has been exported. 
+Inferred
+No in-game market
+There is no player-to-player market inside the game: the “Trade” screen is for selling crops to the game. In this build seeds, crops and packs stay in the game; only Fertilizer can be exported. 
+Verified
+ The docs say crops, seeds and packs may go on OpenSea later, not at launch. 
+Official source
+This guide does not give prices or trading advice. What Fertilizer is worth depends on what it does in the game; see 
+Growing and harvesting
+ for what a Fertilizer saves on a crop.
+Still REDACTED
+When, or whether, seeds, crops or packs become onchain items.
+
+=================== fertilizer_network-brake.txt
+
+The network brake
+The second brake on Fert Decks is shared by the whole game. When too much Fertilizer sits unused across all players, 
+every deck slows together
+, never below half speed. The game publishes the numbers behind it, live, and anyone can see them without signing in.
+Live from the game
+Loading…
+The numbers behind it
+Number | 
+Meaning | 
+Supply | 
+Unused Fertilizer in circulation | 
+Target | 
+Where the brake starts | 
+Target length | 
+The target, in days of network output (7 days) | 
+Network rate | 
+How fast every deck runs now | 
+Floor | 
+The lowest the rate can go (50 %) | 
+Claimed so far | 
+All Fertilizer ever claimed | 
+Used so far | 
+All Fertilizer ever used on crops | 
+The live panel above shows each of these as it is now; rates are recomputed every hour. 
+Verified
+Supply
+ is claimed minus used: everything claimed out of decks (in Bags and exported to wallets) minus everything used on crops. Exporting does not change “claimed”, so exported Fertilizer counts. Fertilizer still stored in decks is not counted. 
+Inferred
+Target
+ is 7 days of the whole network’s output: the live decks’ total Fertility ÷ 2 a day, times 7. The live panel above shows the network’s current output at full speed. 
+Verified
+The target moves with the number of live decks: more decks, higher target. 
+Inferred
+How the rate is computed
+The game’s panel says: “Every Fert Deck runs at full speed while circulation is under 7 days of output. Above that, all Decks slow together, never below half speed. Using Fertilizer on crops brings it back down. Fertilizer you hold is never taken away.” 
+Verified
+The rate has three points: full speed up to 7 days of output, 
+70 % at 10 days
+, 
+50 % at 14 days or more
+. 
+Official source
+ These are 7/10 and 7/14, which gives the formula:
+network rate = target ÷ supply, at most 100 %, never below the 50 % floor
+Inferred
+ The game’s meter puts the edge of the floor at twice the target (at a 50 % floor), which agrees with this formula.
+Circulation | 
+Days of output | 
+Network rate | 
+up to the target | 
+≤ 7 | 
+100 % | 
+1.25 × the target | 
+8.75 | 
+80 % | 
+1.43 × the target | 
+10 | 
+70 % | 
+1.67 × the target | 
+11.7 | 
+60 % | 
+2 × the target or more | 
+≥ 14 | 
+50 % (floor) | 
+Rates are recomputed once an hour (“Rates update every hour”). The meter has three bands: “Full speed”, “Slowing” and the floor label (“Half speed”). 
+Verified
+The target length (7 days) and the floor (50 %) are game settings. 
+May change
+ The docs call them “Launch settings and may change”. 
+Official source
+One detail: the game’s “How rates work” text falls back to “14 days” when no target is available. That is the floor point, not the target. 
+Verified
+Your deck takes the slower brake
+Each deck runs at the lower of the network rate and your exporter rate, never below 50 %. The game’s copy: “Your Decks make the slower of the two.” 
+Verified
+ The two do not multiply: a wallet at a 70 % exporter rate during a 80 % network rate runs at 70 %, not 56 %.
+When it bites if nothing is spent
+Before farming opens, Fertilizer can only be claimed, held and traded, not used. Circulation therefore only grows. 
+Inferred
+The live panel above shows how many days are left until the target at full output if nothing is spent. At that rate, unused Fertilizer would reach the target within days; the brake then slows decks gradually, and farming will bring it back down. 
+Inferred
+Why farming relieves it
+Fertilizer used on crops leaves circulation. Once farming opens, every Fertilizer used to speed up a crop brings circulation down, and the network rate back up. 
+Verified
+ The panel’s tiles show both sides: “Network rate · Every Fert Deck this hour” and “Used on crops · All time”.
+At up to 2 Fertilizers per crop and 25 slots per plot, a single plot can consume up to 50 Fertilizer per round of plantings. 
+Inferred
+The brake never takes Fertilizer away. It only slows how fast new Fertilizer is made. 
+Verified
+Still REDACTED
+The exact network-rate formula; the target ÷ supply fit is an inference.
+What the game does when its live figures are stale or missing, beyond the “14 days” fallback text.
+
+=================== fertilizer_production-and-claiming.txt
+
+Production and claiming
+Fertilizer is made by 
+Fert Decks
+. A staked Deed with a Fert Deck makes Fertilizer around the clock, stores up to three days of it, and stops when the store is full. 
+Claiming
+ moves the whole Fertilizer from your decks into your 
+Bag
+, the game’s inventory, where you keep it for your crops or export it to your wallet as an onchain item. This page is the arithmetic behind production (how much a deck makes, in what units, how fast it runs and how much it holds) and how claiming and the Bag work.
+How much a deck makes
+A Fert Deck makes 
+F / 2 Fertilizer a day
+, where F is its Deed’s Fertility (5 to 9 by tier). 
+Verified
+Deed tier | 
+Fertility F | 
+Fertilizer a day (full speed) | 
+Storage (1.5 × F) | 
+Full after | 
+Common
+ (Meadow) | 
+5 | 
+2.5 | 
+7.5 | 
+72 h | 
+Rare
+ (Frost) | 
+6 | 
+3.0 | 
+9.0 | 
+72 h | 
+Epic
+ (Blight) | 
+7 | 
+3.5 | 
+10.5 | 
+72 h | 
+Legendary
+ (Radiant) | 
+8 | 
+4.0 | 
+12.0 | 
+72 h | 
+Mythic
+ (Astral) | 
+9 | 
+4.5 | 
+13.5 | 
+72 h | 
+A wallet’s output is simply the sum: three Commons and one Mythic are F = 5 + 5 + 5 + 9 = 24, so 12 Fertilizer a day at full speed.
+The Fertilizer in a deck is kept 
+by the game, off chain
+. Only the stake and the Fert Deck build are onchain; the deck’s count is kept by the game. 
+Verified
+Common
+ · 
+Meadow
+Supply
+1,557
+Fertility
+5
+Fert / day
+2.5
+Deck storage
+7.5
+Root Cellar now
+…
+Windfall
+50
+ %
+Rare
+ · 
+Frost
+Supply
+888
+Fertility
+6
+Fert / day
+3
+Deck storage
+9
+Root Cellar now
+…
+Windfall
+60
+ %
+Epic
+ · 
+Blight
+Supply
+555
+Fertility
+7
+Fert / day
+3.5
+Deck storage
+10.5
+Root Cellar now
+…
+Windfall
+70
+ %
+Legendary
+ · 
+Radiant
+Supply
+222
+Fertility
+8
+Fert / day
+4
+Deck storage
+12
+Root Cellar now
+…
+Windfall
+80
+ %
+Mythic
+ · 
+Astral
+Supply
+111
+Fertility
+9
+Fert / day
+4.5
+Deck storage
+13.5
+Root Cellar now
+…
+Windfall
+90
+ %
+The units underneath
+The game counts production in small units, called U here. 
+Verified
+Quantity | 
+Value | 
+1 Fertilizer | 
+172,800 U | 
+Production at full speed | 
+F U per second | 
+Production at a slower speed | 
+F × speed U per second (speed as a fraction of 100 %) | 
+Storage cap | 
+259,200 × F U (= 1.5 × F Fertilizer) | 
+At full speed a deck gains F × 86,400 U a day, which is F × 86,400 / 172,800 = 
+F / 2 Fertilizer
+. A Mythic (F 9) finishes one whole Fertilizer every 172,800 / 9 = 19,200 seconds, about 
+5 h 20 min
+; a Common (F 5) every 34,560 seconds, about 
+9 h 36 min
+.
+The deck screen shows “Next Fertilizer” (the progress toward the next whole unit) and “Until the deck is full”, both “at the current rate”. The remainder below one U is carried forward, so nothing is lost by rounding while the deck runs. 
+Verified
+Deck speed
+A deck does not always run at 100 %. Two brakes can slow it, and the deck takes the slower of the two: 
+Verified
+deck speed = min(network rate, exporter rate) never below 50 %
+The 
+exporter rate
+ is your own: it falls when your wallet exported more than 25 % of its daily output in the last 24 hours. See 
+Exporting and trading
+.
+The 
+network rate
+ is shared by every deck in the game: it falls when too much Fertilizer sits unused across the whole game. See 
+The network brake
+.
+Both are recalculated every hour (“Rates update every hour”). 
+Verified
+ At the floor a Mythic deck makes 2.25 a day instead of 4.5.
+Example: a wallet with F = 24 whose exporter rate is 80 % while the network rate is 100 % runs at 80 %, so it makes 24 / 2 × 0.8 = 
+9.6 Fertilizer a day
+ instead of 12.
+Storage and the full deck
+A deck holds 
+1.5 × F
+, which is exactly three days of production at full speed. The game’s copy says: “Holds 3 days of production. A full deck stops producing until you claim.” 
+Verified
+At a slower speed the deck takes longer to fill (at 50 % a full deck takes six days), but its cap does not change.
+A full deck shows “Full and paused. Claim to restart production.” Every hour it sits full is production you do not get back. Claiming often costs nothing: no wallet signature is needed.
+When the next whole Fertilizer would not fit under the cap, the deck shows “Storage fills before another whole Fertilizer”. 
+Verified
+How a claim works
+Open the Deeds screen
+Every deck shows how much it holds, the progress toward the next Fertilizer and when it will be full.
+Claim
+Claim all decks at once, one Deed, a list of Deeds (up to 20 at a time), or one specific deck. 
+Verified
+It lands in your Bag
+“No wallet needed: the Fertilizer goes straight to your Bag.” A claim is not a transaction: no gas and no signature. 
+Verified
+Only 
+whole
+ Fertilizer is claimed. If your decks hold 4.7, you get 4 and the 0.7 keeps growing in the deck. With nothing whole yet, the game says “Your Fert Decks had no whole Fertilizer yet.” 
+Verified
+A repeated claim is recognised and not credited twice, so a retry after a lost connection is safe. 
+Inferred
+Claim often
+Claiming often has three effects:
+The deck never hits its cap, so it never pauses.
+Fertilizer in the Bag is yours whatever happens to the Deed later.
+Claimed Fertilizer counts toward the network’s circulation (see 
+the network brake
+), and Fertilizer still in a deck does not. 
+Inferred
+When a claim is refused
+Message | 
+Meaning | 
+“The deeds index is catching up with the chain. Nothing was claimed; try again in a moment.” | 
+The game’s view of the chain is a few moments behind | 
+“Fertilizer claims aren’t open here right now. Nothing was claimed.” | 
+Claims are switched off | 
+“The chain or the deeds index can’t be reached right now. Nothing was claimed; try again later.” | 
+A temporary outage | 
+“Something went wrong. Whatever was claimed is in your Bag, and the rest stays in your Fert Decks; try again.” | 
+A partial claim: nothing is lost | 
+All of these are the game’s own copy. 
+Verified
+What the Bag is
+The Bag is “your in-game inventory” (docs glossary). 
+Official source
+ It holds seed packs, seeds, crops and Fertilizer. It 
+is kept by the game, off chain
+: nothing in the Bag is an onchain token. 
+Verified
+In this build seeds, crops and packs stay in the game; only Fertilizer can be exported. It is 
+exported
+ to your wallet as an ERC-1155 item (see 
+Exporting and trading
+). 
+Verified
+Items reserved by a pending export (or, later, a pending sale) are shown as “on hold” in the Bag until the operation finishes or times out. 
+Verified
+What Fertilizer in the Bag is for
+Fertilizer is a farming input. Once farming opens, each Fertilizer used on a growing crop 
+cuts 25 % of its total grow time
+, at most 2 per crop (see 
+Growing and harvesting
+). 
+Verified
+Until then the game says “Saved for your farm. It keeps in your Bag until farming opens.” Fertilizer “never expires” (docs). 
+Verified
+Official source
+Use | 
+Where it must be | 
+Speed up a crop | 
+In the Bag | 
+Trade with another player | 
+In your wallet (exported) | 
+Use exported Fertilizer on a crop | 
+Import it back to the Bag first: “Import them again before you use them on your Crops.” 
+Verified
+ | 
+Fertilizer used on crops leaves circulation, which is what relieves the network brake once farming opens (see 
+The network brake
+). 
+Inferred
+Fertilizer in the Bag is safe from the brakes: “Fertilizer you hold is never taken away.” The brakes only slow future production. 
+Verified
+When a deck ends
+Unstaking or burning a Deed 
+destroys its Fert Deck
+. Its stored whole Fertilizer is credited to the builder (or stays claimable), but 
+the fraction toward the next unit is lost
+. 
+Verified
+A deck belongs to whoever 
+built
+ it, not to whoever owns the Deed now. If a Deed leaves your wallet, its ended deck stays in your list (“You built this Fert Deck; the deed has left your wallet. What the deck stored stays yours to claim.”). 
+Verified
+ So the new owner of a Deed starts from an empty deck and pays a new 0.01 ETH build. 
+Inferred
+The build fee is 0.01 ETH per deck; it goes into the Deeds’ shared backing (the Root Cellar). 
+Verified
+May change
+Still REDACTED
+The other structures besides the Fert Deck that the docs plan.
+When the game’s view of the chain is behind, how long a claim waits.
+
+=================== getting-started_status.txt
+
+Where the game stands
+The game opens in stages. 
+Stage One
+, the Deed side, went live on mainnet on 
+3 November 2026 at
+13:06 UTC
+: staking, Fert Decks and Fertilizer export. Farming, Truffles and $YIELD are already built
+into the game, but are switched off or not on mainnet yet. This page is the state on 
+11 November
+2026
+.
+What is live
+Deed staking and the Fert Deck
+Live
+Live on mainnet since 3 Nov 2026, 13:06 UTC.
+Fertilizer claim, export and import
+Live
+The first economy feature: claim to the Bag, export to the chain as an item, trade it, import it back.
+Lobby (chat, fishing, the well, radio)
+Live
+One lobby.
+Seed packs, ripping, farming and selling
+Not live yet
+Not open yet; it comes with a new release of the game.
+Truffles and the Truffle Pool
+Not live yet
+Not open yet.
+$YIELD, Deed rewards and burning Deeds
+Not live yet
+Not open yet; the Silo is empty and burns are closed.
+Leaderboard
+Placeholder
+Placeholder: "Weekly standings land here once the boards are set."
+History
+Placeholder
+Placeholder: "Coming soon".
+Tutorial
+Placeholder
+Placeholder: "Coming soon".
+Verified
+Loading…
+What Stage One lets you do today
+Stake Founding Deeds (free apart from gas, up to 500 per transaction) and build a Fert Deck on
+each for 0.01 ETH, or do both in one transaction. See 
+Deeds and the Fert Deck
+.
+Claim the Fertilizer your decks make into your Bag. It waits there for farming to open: “It keeps
+in your Bag until farming opens.” 
+Verified
+ See
+Production and claiming
+.
+Export Fertilizer to your wallet as an on-chain item and trade it, within a daily limit. Exported
+Fertilizer has to be imported again before it can be used on crops. 
+Verified
+See 
+Exporting and trading
+.
+Hold a share of the Root Cellar that grows as more decks are built (the game does not show it on
+screen yet; the Deed panel shows each Deed’s backing once burning opens). See
+What a Deed earns
+.
+What comes next
+The docs give the rollout order: 
+Official source
+Stage One
+: Deed staking, the Fert Deck, Fertilizer and export (live).
+The fields open
+: farming for everyone at the CornHub, $YIELD and the Farmer.
+Deed rewards switch on with farming
+: Deed rewards, the Silo and burns.
+The docs say details for each stage are published before it goes live, and that a launch tax on
+$YIELD will be announced before $YIELD launches. 
+Official source
+The game already shows these as coming: 
+Verified
+Leaderboard
+ (the pink tree): weekly boards for “Harvest — Harvest value”, “Truffles — Truffle
+payouts” and “Deeds — Burn value held”. “Weekly standings land here once the boards are set.”
+History
+: “Everything you buy, grow, sell and claim lands here, each with its transaction.”
+Tutorial
+: “Tutorial coming soon”.
+$YIELD on Uniswap
+: “Trading $YIELD on Uniswap is coming soon”.
+Deeds on OpenSea
+: “Deeds on OpenSea are coming soon” (shown inside the game; the collection
+already trades on OpenSea).
+Truffle finds in chat
+: chat lines can carry a Truffle find announcement.
+A launch countdown
+: until the fields open, buying packs shows “Opening soon” or “Opens in …” and
+the farm reads “The fields open at launch”.
+The docs add 
+Dewey
+, the guide character who “arrives with the full game”. 
+Official source
+This build has no quests, achievements, events or Abstract wallet linking, and no “gem” item or
+currency. 
+Verified
+The values for the stages that are not live come from the test version and the game’s defaults.
+They are tagged 
+May change
+ across this guide and may be different on mainnet.
+Still REDACTED
+The date farming, Truffles and $YIELD open on mainnet.
+The mainnet pack prices, sale fees, $YIELD supply and $YIELD taxes: those parts of the game are
+not on mainnet.
+
+=================== links.txt
+/en/deeds/what-a-deed-earns
+/en/farming/growing-and-harvesting
+/en/fertilizer/exporting-and-trading
+/en/getting-started/status
+/en/reference/glossary
+/en/selling/market-and-farmer
+/en/truffles-and-yield/truffles-and-payout
+/en/whats-new
+
+=================== reference_glossary.txt
+
+Glossary
+Every term in Yield Fields, in one place. Where the docs and the game use different
+words for the same thing, both are given. Numbers are the values of 8 Nov 2026; those marked as
+settings may change before or after launch. 
+May change
+The land
+Term | 
+Meaning | 
+Founding Deed
+ (Deed) | 
+One of 3,333 land NFTs on Robinhood Chain (5 % royalty). Holding and staking one is the only way to make Fertilizer | 
+Deed tier
+ | 
+The Deed’s rarity: Common, Rare, Epic, Legendary or Mythic (1,557 / 888 / 555 / 222 / 111 Deeds). Deeds have no Uncommon tier | 
+Biome
+ | 
+The Deed’s land type, one per tier: Meadow, Frost, Blight, Radiant, Astral | 
+Fertility
+ | 
+A Deed’s strength: 5 (Common) to 9 (Mythic), stored on chain. It sets Fertilizer output, the Root Cellar share and the Windfall share. All 3,333 Deeds total 19,773 | 
+Staking
+ | 
+Handing the Deed over to staking (free apart from gas). It stays yours; a staked Deed cannot be sold until unstaked | 
+Structure
+ | 
+What a staked Deed builds on its plot. One per Deed. The Fert Deck is the only one so far | 
+Fert Deck
+ | 
+The first structure. Costs 0.01 ETH, makes F/2 Fertilizer a day (2.5 to 4.5) and stores 3 days’ worth (7.5 to 13.5), then stops until claimed. Unstaking destroys it | 
+Unrevealed
+ / “Awaiting reveal” | 
+A Deed whose Fertility is not set yet. All are set since 1 Nov | 
+Root Cellar
+ | 
+Each Deed’s share of the ETH held in staking, set by its Fertility: backing × F / 19,773. Collected only by burning; the game does not show it on screen yet | 
+Backing
+ | 
+The ETH held in staking: the sum of all Root Cellars. Filled by deck build fees; later also by part of the $YIELD taxes | 
+Silo
+ | 
+A $YIELD pot filled by half of the Deed-reward claim fee; a burned staked Deed can win a Windfall from it while it is open. Empty until $YIELD launches | 
+Windfall
+ | 
+The share of the Silo a burned Deed wins: 50 % (Common), 60 %, 70 %, 80 %, 90 % (Mythic). In a batch, each Deed takes its share of what the last one left | 
+Burn
+ | 
+Destroying a staked Deed for good to collect its Root Cellar in ETH and its Windfall in $YIELD. Not open yet | 
+Deed rewards
+ | 
+$YIELD paid to staked Deeds by Fertility (a Mythic earns 1.8× a Common) once $YIELD launches, through a release lock. “No back pay”: earning starts at launch | 
+Release lock
+ | 
+Where new Deed-reward $YIELD waits: half of what is locked releases every 8 hours while any Deed is staked, about 87 % within a day | 
+Claim fee
+ | 
+10 % of every Deed-reward claim: 5 % back into the release lock for all staked Deeds, 5 % to the Silo | 
+Deed Manager
+ | 
+The game screen for staking, building, claiming and (later) burning | 
+Fertilizer
+Term | 
+Meaning | 
+Fertilizer
+ | 
+The resource Fert Decks make. On a crop it cuts 25 % of the total grow time, at most 2 per crop. It never expires | 
+Claim
+ (Fertilizer) | 
+Moving whole Fertilizer from decks into the Bag. No wallet needed. Fractions stay in the deck; when a deck ends, the fraction is lost | 
+Bag
+ | 
+The in-game inventory, kept by the game: packs, seeds, crops, Fertilizer | 
+Export
+ | 
+Turning Bag Fertilizer into an onchain item in your wallet, to trade it. Live since 3 Nov | 
+Import
+ | 
+Burning on-chain Fertilizer to bring it back into the Bag, where it can be used | 
+Bridge
+ / “Import / Export” | 
+The game screen for export and import | 
+Export allowance
+ (wallet cap) | 
+How much a wallet may export in a rolling 24 hours: F/4 a day for every deck that ran in the last 7 days, plus what it imported in the last 24 hours | 
+Daily export cap
+ | 
+60,000 Fertilizer per UTC day for all players together | 
+Exporter slowdown
+ (exporter rate; in the game: seller rate) | 
+Your own decks slow when you export more than 25 % of their daily output in 24 hours: 90 % speed at 30 %, 70 % at 40 %, 50 % at 50 % or more. Free exports: ceil(F / 8) a day, F being the wallet’s total Fertility: 1 for a single Common to Legendary, 2 for a Mythic | 
+Network brake
+ (network rate) | 
+Every deck slows together once more than 7 days of the network’s output is in circulation: 70 % at 10 days, 50 % (the floor) at 14 days or more | 
+Circulation
+ / supply | 
+Fertilizer claimed from decks and not yet used on crops, in Bags and wallets alike. Shown live on the network brake page | 
+Effective rate
+ | 
+The speed a deck actually runs at: the lower of the network rate and your exporter rate, never below 50 % | 
+The fields
+Term | 
+Meaning | 
+Farm plot
+ | 
+The free plot every wallet gets: 25 slots, one crop each, no expansions, no Deed needed | 
+CornHub
+ | 
+The on-chain shop: sells seed packs for ETH, buys crops, sells the Truffle Pig. Not on mainnet yet | 
+Seed pack
+ | 
+Bought at the CornHub in ETH. Five tiers: Bronze 0.005, Silver 0.01, Gold 0.05, Platinum 0.1, Diamond 0.25 ETH (the game’s defaults). One pack holds one seed | 
+Pack tier
+ | 
+What the player chooses and pays for: Bronze, Silver, Gold, Platinum, Diamond | 
+Seed rarity
+ (rank) | 
+Drawn when the pack is opened, with the same odds in every tier: Common 45 %, Uncommon 31 %, Rare 15 %, Epic 6 %, Legendary 2.5 %, Mythic 0.5 % | 
+Rip
+ | 
+Opening packs: 1 to 1,000 at a time, one seed each | 
+drand
+ | 
+The public randomness network. Each rip is tied to future drand rounds (25 packs per round), so the seeds are fixed before anyone can see them and can be checked afterwards | 
+Verify the draw
+ | 
+The game screen that re-derives a rip’s seeds from the drand rounds | 
+Seed
+ | 
+What a rip gives: one of 30 kinds (5 tiers × 6 rarities). Planted in a slot | 
+Crop
+ | 
+What a seed grows into. Worth 0.5×, 1×, 1.6×, 2×, 3× or 5× its pack price by rarity. Each tier × rarity is a named crop, from Spinach (Bronze Common) to Heartbeet (Diamond Mythic, 1.25 ETH) | 
+Grow time
+ | 
+1 to 12 hours, proportional to the crop’s worth and a little faster in higher tiers. Ripe crops never wilt for selling, but after 48 hours ripe a crop finds no Truffle | 
+Harvest
+ | 
+Collecting a ripe crop into the Bag. The slot empties and needs a new seed | 
+Trading Post
+ | 
+The game screen for selling crops (“Trade” in the menu) | 
+Market
+ (also called the Broker) | 
+Buys crops for ETH on the spot, from the ETH that pack sales bring into the CornHub | 
+Farmer
+ | 
+Buys crops for $YIELD: the crop’s value, minus its fee, is swapped into $YIELD on the official pool without the buy tax. Opens when the game switches it on; until then “The Farmer isn’t buying for now” | 
+Co-op Dues
+ | 
+The name the docs and the game give the fee on a crop sale. 10 % for both buyers, a setting that may change | 
+Farmers Co-op
+ | 
+The docs’ collective pot, fed by Co-op Dues and a share of $YIELD taxes. Sale fees go to the Buyback vault, which is most likely the docs’ Farmers Co-op | 
+Float
+ | 
+The CornHub’s ETH that pays Market sales. “The Market is short on ETH” when it runs low | 
+Yielder
+, 
+Dewey
+ | 
+Docs words: a player, and the guide character who “arrives with the full game” | 
+Truffles and $YIELD
+Term | 
+Meaning | 
+Truffle
+ | 
+A find that comes with about one harvest in twenty. Named by its crop’s rarity (Common Truffle … Mythic Truffle). It enters tonight’s Settlement by itself | 
+Truffle Pig
+ | 
+One per wallet, bought at the CornHub, and needed to find Truffles: only crops planted after it can turn one up. Its price is still REDACTED | 
+Spoiled
+ | 
+A crop ripe for 48 hours or more: it can still be sold but finds no Truffle (“Spoiling” from 24 hours) | 
+Weight
+ | 
+A Truffle’s size in tonight’s Settlement, shown in ETH. Most likely its crop’s ETH value | 
+Share
+ | 
+A Truffle’s weight over the weight of all Truffles found that day. It falls as other players find Truffles | 
+Estimated payout
+ | 
+“About X $YIELD if today’s weight holds”: the game’s estimate during the day | 
+Settlement
+ | 
+The nightly payout at 00:00 UTC. The night’s budget is split by weight; “Payouts are fixed at 00:00 UTC” | 
+Launch seed
+ | 
+The $YIELD that pays Truffles for the first 30 days, released a part each day. “After day 30, payouts come only from refills” | 
+Refill balance
+ | 
+What buybacks have added to the Truffle Pool; 5 % of what it holds above the day’s seed release pays out each night | 
+Motherlode
+ | 
+A pot that takes 5 % of every night’s Truffle payout. What it pays is not known yet | 
+Budget
+ | 
+The day’s seed release + 5 % of the refill balance above that release, capped by a claim limit the game sets, minus 5 % to the Motherlode. No single Truffle gets more than 5 % of the pool | 
+Payout
+ | 
+What a player’s Truffles earned in one Settlement, claimable in $YIELD | 
+Truffle Pool
+ | 
+Holds the players’ $YIELD and makes the nightly payouts | 
+Truffle Vault
+ | 
+The game screen for Truffles, payouts and claims | 
+Buyback vault
+ | 
+Uses the game’s fees to buy $YIELD over time and puts all of it in the Truffle Pool. Sale fees go to it; pack ETH does not | 
+$YIELD
+ | 
+The game’s reward token, fixed supply, team allocation 0 %. Never needed to play. Not launched | 
+Launch tax
+ | 
+A much higher buy tax right after $YIELD trading opens, falling back to normal; 100 % put back into the game (docs) | 
+Heavy-selling tax
+ | 
+The sell tax rises to a hard cap during heavy net selling, then eases; the extra goes to the Co-op | 
+Official pool
+ | 
+$YIELD declares one official Uniswap v4 pool and blocks copycat pools | 
+Platform words
+Term | 
+Meaning | 
+Lobby
+ | 
+The shared scene with chat, fishing, the wishing well, the radio and the Farmhand | 
+Farmhand
+ | 
+The Lobby character with tips (“About one Crop in twenty turns up a Truffle”) | 
+Leaderboard
+ (the pink tree, “Ranks”) | 
+Weekly boards for Harvest value, Truffle payouts and Burn value held. A placeholder today | 
+Hold
+ | 
+Items the game reserves while an export, sale or claim transaction is pending. It expires if not used | 
+Account review
+ | 
+The game can pause selling, claiming and exports on an account while it is reviewed | 
+Stage One
+ | 
+The docs’ name for the first launch stage: staking, Fert Deck, Fertilizer and export | 
+Testnet
+ | 
+Robinhood Chain Testnet, where the farming economy is deployed | 
+Terms from the docs are tagged 
+Official source
+ in the pages that use them; the game’s
+names and numbers are 
+Verified
+ unless a page says otherwise.
+
+=================== selling_market-and-farmer.txt
+
+Market and Farmer
+Harvested crops go to your 
+Bag
+ and are sold at the 
+Trading Post
+. There are two buyers: the
+Market
+ pays ETH on the spot, the 
+Farmer
+ pays $YIELD. Both take a fee. 
+Verified
+ | 
+ Market | 
+ Farmer | 
+Also called | 
+The Broker | 
+— | 
+Pays in | 
+ETH | 
+$YIELD | 
+Pays | 
+Crop value minus the Market fee | 
+Crop value minus the Farmer fee, swapped into $YIELD | 
+Paid from | 
+The CornHub’s ETH float | 
+The official $YIELD pool | 
+Card copy | 
+“Sell to the Market” — “Paid on the spot. No waiting, no guessing.” | 
+“Sell to the Farmer” — “Moves with the $YIELD price. Swapping to ETH costs (sell fee) or more.” | 
+Fee | 
+10 %
+ | 
+10 %
+ | 
+Opens | 
+With farming | 
+When the game switches it on | 
+Verified
+ The fees are settings; the mainnet fees are not deployed yet, and
+the docs say the Farmer will charge lower Co-op Dues. 
+May change
+How a sale works
+Pick the crops
+Per crop, or “all of a rarity”, or everything. Crops with a price of 0 are hidden. The crop tile reads
+“Worth X. The Market pays Y of that in ETH, the Farmer Z in $YIELD.” 
+Verified
+The game signs a sale ticket
+The game prepares a signed sale (a 
+sale ticket
+) and puts the crops on hold. 
+Verified
+You send it on chain
+Your wallet sends the ticket to the CornHub; the game simulates it first. Each ticket can be used
+once and expires. 
+Verified
+Paid
+The CornHub pays you and records the value, the amount paid and the fee. Logs:
+“Sold N crops for X in ETH” (Market) or “Sold N crops · +Y $YIELD” (Farmer). 
+Verified
+The Market: ETH on the spot
+payout (ETH) = crop value − crop value × Market fee
+The ETH comes from the CornHub’s 
+float
+: the ETH that pack sales bring into the CornHub.
+Verified
+If the float is too low, the sale stops and nothing leaves your Bag: “Can’t sell right now — The Market
+is short on ETH. Nothing left your Bag. Try fewer crops, or come back later.” 
+Verified
+Example.
+ You sell one Diamond Heartbeet (value 1.25 ETH) at a 10 % fee: you receive 
+1.125 ETH
+and 0.125 ETH goes to the Buyback vault.
+The Farmer: $YIELD
+ETH into the swap = crop value − Farmer fee
+$YIELD out = what that ETH buys in the pool (at least the ticket's minimum)
+Selling to the Farmer converts the crop’s value, after the fee, into $YIELD at the pool price;
+swapping $YIELD back to ETH pays the sell tax. The in-game panel says the same: the Farmer pays in
+$YIELD bought tax-free on Uniswap, and swapping it to ETH costs the sell fee or more, “so it can net
+less than the Market”. 
+Verified
+Tax-free buy.
+ The Farmer buys $YIELD for you on the official pool and skips the buy tax, so
+every Farmer sale is a $YIELD buy. 
+Official source
+Slippage.
+ A bigger sale moves the price. The quote already includes it: ”≈ X, after Y %
+slippage”. When the $YIELD you would get is worth over 3 % less than the ETH going into the swap, the game warns:
+“This sale moves the $YIELD price … Sell fewer at a time to get more.” 
+Verified
+Protection.
+ If the price moves past the ticket’s minimum, the sale stops instead of paying
+less: “The $YIELD price moved. Your crops are safe; sell again for a new quote.” 
+Verified
+Opens on its own switch.
+ The game turns the Farmer on separately; until then: “The Farmer isn’t
+buying for now. Try again soon.” and “Opens soon — The Market still buys your crops.”
+Verified
+ No condition for opening it is stated. An earlier game line tied
+it to the launch tax settling; that line is no longer in the game’s text, and no new condition has
+taken its place. When the Farmer opens: not known yet. 
+Verified
+The Farmer pays in $YIELD. To compare it with the Market in ETH, subtract the $YIELD sell tax you
+would pay to swap back, or count it in $YIELD if you keep it.
+Where the fee goes
+Both fees go to the 
+Buyback vault
+, which buys $YIELD and sends all of it to the Truffle Pool. See
+$YIELD, the Truffle Pool and buybacks
+. 
+Verified
+The docs call these fees “Co-op Dues”. 
+Official source
+ Sale fees go to the Buyback
+vault, which is most likely the docs’ Farmers Co-op. 
+Inferred
+Seeds and crops stay in the game
+In this build seeds, crops and packs stay in the game; only Fertilizer can be exported. They live only
+inside the game, off chain. 
+Verified
+Refusals
+Message | 
+When | 
+“Selling is paused. Try later” | 
+The CornHub or the game paused sales | 
+“Some of those crops can’t be sold right now” | 
+A crop’s price is 0 | 
+“Those crops were already sold” | 
+The same crops in a second sale | 
+“That sale has run out of time” / “That sale is already over” | 
+The hold expired or closed | 
+“Farmer sales aren’t open yet” | 
+The Farmer gate is closed | 
+Verified
+ The practical limits on a sale are the Market’s float and the pool’s
+depth. 
+Inferred
+Still REDACTED
+The Market and Farmer fees on mainnet.
+How the game picks the minimum $YIELD out (its slippage tolerance).
+Whether seeds or crops will ever be exportable.
+
+=================== truffles-and-yield_truffles-and-payout.txt
+
+Truffles and the nightly payout
+A 
+Truffle
+ is the game’s daily payout ticket. With a 
+Truffle Pig
+, some harvests dig one up next to the crop; every
+Truffle found today takes a share of tonight’s $YIELD payout from the 
+Truffle Pool
+. A harvest
+without a Truffle earns nothing beyond its crop. Every night at 
+00:00 UTC
+ the game closes the
+day’s Truffles, pays out the day’s $YIELD from the Truffle Pool and splits it across all Truffles by
+weight. You then claim your payout from the Truffle Pool with one transaction.
+Common
+Uncommon
+Rare
+Epic
+Legendary
+Mythic
+Truffles are built into the game but not live on mainnet yet. Nothing about Truffles is switched on
+today. 
+Verified
+How a Truffle is found
+You need a Truffle Pig.
+ Without one, the game says: “Get a Truffle Pig to find truffles. Each
+crop you plant once it’s yours has a 1 in 20 chance of one.” Crops already growing when you buy the
+Pig do not count; only crops planted after it do. 
+Verified
+With a Pig, the game’s copy is: “Every harvest has a 1 in 20 chance of one, rolled just after you
+harvest. A find joins that harvest’s Settlement. A crop left ripe for 48 hours finds none.”
+Verified
+ A lobby tip says: “About one Crop in twenty turns up a Truffle.
+Keep harvesting!” 
+Verified
+The roll happens inside the game, off chain, just after the harvest. The game shows “Checking for a
+truffle…”, then the find animation, “No truffle this time”, or “Still checking. Any truffle will
+show in the Truffle Vault.” 
+Verified
+Ripe crops spoil for Truffles.
+ A crop that has been ripe for 24 hours shows “Spoiling. Harvest
+within … to keep its truffle chance.”; after 48 hours: “Spoiled. This crop can still be sold, but it
+won’t find a truffle.” Its sale value does not change. 
+Verified
+Any crop planted after the Pig can turn up a Truffle: the game shows no other crop filter. 
+Verified
+The official docs hint at it too: “The soil hides more than vegetables.” and “Word is, it’s
+truffles.” 
+Official source
+When several Truffles turn up in one batch, the scene shows the best one and the title reads
+“N truffles!”. The log line reads “The Truffle Pig found a Rare Truffle. It’s in tonight’s
+Settlement”. 
+Verified
+Expected Truffles per qualifying harvest are 1 / 20 = 0.05. Twenty harvests give one Truffle on average, but
+the roll is random: some days you find none, some days several.
+Ranked like the crop
+A Truffle carries the 
+tier
+ and 
+rank
+ of the crop it came from and is named by its rank.
+Verified
+Not a published figure.
+ The game, the docs and the team have not published how often each Truffle rank turns up. The table below follows from three things:
+A Truffle takes the rank of the crop it came from. 
+Verified
+Crop ranks follow the seed odds: 45 %, 31 %, 15 %, 6 %, 2.5 %, 0.5 %. 
+Verified
+The game says “Every harvest has a 1 in 20 chance”: the same chance for every harvest, whatever its rank. 
+Verified
+So Truffle ranks should follow the seed odds. The roll itself is made by the game, and farming is not live yet, so the mix has not been seen in practice.
+Rank | 
+Name | 
+Assumed share | 
+0 | 
+Common
+ Truffle | 
+45 % | 
+1 | 
+Uncommon
+ Truffle | 
+31 % | 
+2 | 
+Rare
+ Truffle | 
+15 % | 
+3 | 
+Epic
+ Truffle | 
+6 % | 
+4 | 
+Legendary
+ Truffle | 
+2.5 % | 
+5 | 
+Mythic
+ Truffle | 
+0.5 % | 
+These are the seed odds, carried over by the reasoning above. 
+Inferred
+The reveal cheers by rank: “Oink oink oink!!” for a Mythic, “Oink oink! Big find!” from Epic up,
+“Oink oink! What a find!” from Uncommon up, and “Oink! Truffle time!” for a Common. Then: “It’s in
+tonight’s Settlement. Payouts are fixed at 00:00 UTC.” 
+Verified
+Weight, share and estimated payout
+Every Truffle has three numbers in the Truffles tab. 
+Verified
+Number | 
+What it is | 
+Weight
+ | 
+How big a slice it claims. Shown in ETH | 
+Share
+ | 
+Its weight over the total weight of all Truffles in tonight’s Settlement, shown as ”% of today” | 
+Estimated payout
+ | 
+Its share of tonight’s budget, in $YIELD and USD | 
+Weight.
+ The game shows weight in ETH and converts it to $YIELD at the pool price, so weight is an
+ETH amount. 
+Verified
+ It is most likely the 
+ETH value of the crop
+ the
+Truffle came from: 0.5× to 5× the pack price. 
+Inferred
+ The docs’ Classified
+page says bigger ones “get bigger shares”. 
+Official source
+If weight is crop value, a Diamond Heartbeet Truffle (1.25 ETH) weighs 500 times a Bronze Spinach
+Truffle (0.0025 ETH). 
+Inferred
+Truffle from | 
+Crop value = weight | 
+Bronze Spinach (Common) | 
+0.0025 ETH | 
+Silver Broccoli (Rare) | 
+0.016 ETH | 
+Gold Moonkin (Mythic) | 
+0.25 ETH | 
+Platinum Raydish (Legendary) | 
+0.3 ETH | 
+Diamond Heartbeet (Mythic) | 
+1.25 ETH | 
+Share.
+ The row reads “Weight 0.25 ETH · 1.25 % of today”. The total weight is everyone’s
+Truffles for that night, not just yours. 
+Inferred
+ Your share therefore falls
+during the day as other players find Truffles.
+Estimate.
+ The pill shows ”≈” an amount, with the tip “About $X (N $YIELD) if today’s weight holds.
+Settles at 00:00 UTC.” The estimate refreshes on its own while the tab is open.
+Verified
+The header of the tab shows three stats: 
+Pays out today
+ (the estimate of tonight’s payout, see
+the formula below), 
+Weight today
+ (the total in tonight’s Settlement) and 
+Settles in
+ (a
+countdown to 00:00 UTC). 
+Verified
+The Truffle is the ticket
+There is nothing to buy or hold before a harvest. The Truffle itself is the entry: it is listed in
+tonight’s Settlement automatically, with no “list” step. 
+Verified
+After 00:00 UTC each Truffle has a fixed payout in $YIELD that you claim from the Truffle Pool.
+The nightly Settlement
+“Payouts are fixed at 00:00 UTC.” 
+Verified
+“Every day at 00:00 UTC.” The countdown in the Truffles tab runs to the next UTC midnight.
+Verified
+00:00 UTC is 03:00 in Turkey (UTC+3 all year), 01:00 in Central Europe in winter, 19:00 in New York
+in winter.
+On screen a sign counts down “Truffle settlement in m:ss”, then big seconds, then “Settled!”. The
+lobby tip: “Truffles pay out at midnight UTC. Stick around for the fireworks.”
+Verified
+After midnight the game plays a reveal, “Tonight’s truffle payout” and “Your truffle yield is…”, and
+logs “Settled N truffles · Y $YIELD to claim”. 
+Verified
+What a night pays
+The game’s own words: “Each day pays the launch seed’s release for that day plus 5% of the refill
+balance. 5% of it goes to the Motherlode; the rest is shared by weight, so quiet days pay each truffle
+more. No truffle gets more than 5% of the pool. After day 30, payouts come only from refills.”
+Verified
+day payout = seed release today + 5 % × max(0, refill balance − seed release today)
+day payout = min(day payout, claim limit)
+Motherlode = 5 % × day payout
+budget = day payout − Motherlode
+Input | 
+What it is | 
+Seed release | 
+The part of the 
+launch seed
+ that releases that day. The seed pays out over the first 30 days | 
+Refill balance | 
+What the buybacks have added to the pool. 5 % of what it holds above the day’s seed release pays out each day | 
+Claim limit | 
+An upper clamp on the night, set by the game | 
+Motherlode | 
+A pot that takes 5 % of every night’s payout. What it pays, and to whom, is not known yet | 
+Verified
+For the first 30 days
+ the launch seed carries the payout. After that 
+only refills pay
+, so
+the Truffle payout then depends on how much ETH the game’s fees bring into buybacks.
+Verified
+The size of the seed, its release per day and the claim limit are game settings that are not
+public yet. 
+May change
+This replaces an earlier formula (a fixed Daily rate plus 3 % of the pool above 30 days of it),
+which the game showed until November 2026. 
+Verified
+The game shows its estimate during the day; the final payout is fixed at 00:00 UTC.
+Verified
+Split by weight
+Each kind of Truffle gets the budget in proportion to its weight. 
+Verified
+total weight = Σ (weight × count) over all Truffles tonight
+payout each = min(budget × weight ÷ total weight, 5 % × pool)
+paid tonight = Σ (count × payout each)
+No single Truffle can take more than 5 % of the pool.
+Verified
+The budget is fixed by the seed and the refills, not by how many Truffles are found. The more Truffle weight is
+listed, the thinner each slice: in the game’s words, “quiet days pay each truffle more”.
+Verified
+What happens to a slice cut by the 5 % cap is not shown. Most likely it stays in the pool.
+Inferred
+What you know during the day, and what only at night
+Known during the day | 
+Known only at 00:00 UTC | 
+Tonight’s budget
+: the game shows its estimate during the day; the final payout is fixed at 00:00 UTC | 
+Your final share
+: it falls as other players list Truffles until the close | 
+Your Truffles, their weight and their share so far | 
+The total weight of the night | 
+The estimate “if today’s weight holds” | 
+The final payout
+, fixed at midnight | 
+The estimate only falls during the day (unless the pool grows): every new Truffle anyone finds adds
+weight to the denominator. A Truffle found at 23:50 UTC and one found at 00:10 go into different
+nights; the one at 00:10 is among the first of the next night.
+Worked examples
+In all of these, suppose tonight’s budget is 
+B
+ $YIELD.
+A worked day.
+ You harvest 40 crops from Gold packs during the day. On average 40 × 0.05 =
+2 Truffles
+.
+Suppose you find one Rare Truffle (Gold Squash, weight 0.08 ETH) and one Common (Gold Leek,
+0.025 ETH). Your weight is 0.105 ETH.
+At 18:00 UTC all Truffles listed for tonight weigh 7 ETH. Your share is 0.105 ÷ 7 = 
+1.5 %
+, so
+your estimate shows ≈ 0.015 × B.
+By midnight more Truffles arrive and the total reaches 10.5 ETH. Your final share is 
+1 %
+, and
+you are paid 0.01 × B.
+The numbers in this day are illustrative.
+A busy night and a quiet night.
+ You hold one Truffle of weight 0.25 ETH.
+Night | 
+Total weight listed | 
+Your share | 
+Your payout | 
+Busy | 
+50 ETH | 
+0.5 % | 
+0.005 × B | 
+Normal | 
+20 ETH | 
+1.25 % | 
+0.0125 × B | 
+Quiet | 
+5 ETH | 
+5 % | 
+0.05 × B | 
+The same Truffle earns ten times more on the quiet night than on the busy one.
+The 5 % cap biting.
+ Only one Truffle is found all day, so its share is 100 %. It is paid the
+whole budget B only if B is no more than 5 % of the pool; otherwise it is paid 5 % of the pool.
+Try your own numbers:
+Truffle Pool balance ($YIELD)
+Launch seed released today ($YIELD)
+Refill balance ($YIELD)
+Your Truffles' weight (ETH)
+All Truffles found today (ETH)
+Tonight's budget
+0 $YIELD
+Your share
+0 %
+Your estimated payout
+0 $YIELD
+capped at 5 % of the pool per Truffle, after 5 % to the Motherlode
+The estimator’s fields start empty. Enter the pool, today’s seed release and the refill balance once
+the game shows them, then your Truffles’ weight and tonight’s total weight. It uses the formula above
+with no claim limit and takes off the Motherlode’s 5 %. It treats all your Truffles as one weight and
+applies the 5 % cap to that total. It is an estimate, like the game’s own.
+The Payouts tab
+After a Settlement the payout appears in the Payouts tab. 
+Verified
+Stats: 
+Earned all-time
+, 
+Last payout
+, 
+Settles in
+.
+Groups: “Ready to claim”, “Claim pending”, “Settled (date)”, “Claimed (date)”. Empty state: “No
+Payouts yet”.
+Each Truffle’s payout has a state: unclaimed, held (a claim in progress) or claimed.
+The settled log line adds ”· N more tomorrow” when Truffles are already listed for the next night.
+Claiming $YIELD
+A settled payout sits in the game until you claim it. The game prepares a signed claim; your wallet
+sends it to the Truffle Pool; each claim can be used once and expires. One claim covers every settled
+payout you have. 
+Verified
+Ask for the claim
+The 
+Claim
+ button shows when you have something to claim, with a pill “N $YIELD” and the tip
+“N $YIELD, about $X. One transaction for every settled Payout.” Pressing it asks the game for a
+signed claim. 
+Verified
+The game holds it for you
+The game prepares the signed claim and puts a 
+hold
+ on it. The card reads “Claim your Payout”, “You claim N $YIELD · ≈ $X from the Truffle Pool”, with
+“Every settled Payout, in one claim.” and “Not confirmed in 5 minutes? It’s ready to claim again.”
+Verified
+You send it on chain
+Your wallet sends the claim to the Truffle Pool. It can be used once and expires.
+Verified
+The game confirms it
+The game waits for the transaction to confirm and records it. Then: “Claimed N $YIELD from the Truffle Pool” and the toast “+N $YIELD
+claimed”. 
+Verified
+You pay the gas of the claim transaction. The $YIELD lands in the wallet that sent it.
+If a claim does not go through
+What happened | 
+What you see | 
+You rejected it in the wallet | 
+“Not claimed yet”. The claim is held; try again | 
+The transaction failed | 
+“Claim failed” — “Nothing was paid. Try again with the same claim. When the timer runs out, it’s ready to claim again.” | 
+The hold ran out | 
+Toast “Your Payout is ready to claim again” | 
+The claim ran out of time | 
+“That claim has run out of time” | 
+The claim is already over | 
+“That claim is already over” | 
+No confirmation after 60 s | 
+“Can’t see your claim onchain yet” | 
+All texts are the game’s own. 
+Verified
+Every refusal message
+Message in the game | 
+When | 
+“Claiming is paused. Try later” | 
+Claims are paused | 
+“The Truffle Pool can’t pay this yet. Try later” | 
+The pool holds too little right now | 
+“Nothing to claim yet” | 
+No settled payout is waiting | 
+“Your claim is waiting. Try again from the Vault” | 
+A claim is already in progress | 
+“Claiming is unavailable. Try later” | 
+The game cannot sign claims right now | 
+Verified
+The Truffle Pig
+The 
+Truffle Pig
+ is one per wallet, bought at the CornHub, and 
+it is what finds Truffles
+: “Crops
+planted with it can find Truffles. One per wallet.” Once bought: “Yours: it digs up the Truffles your
+harvests find.” Without a Pig, a wallet finds no Truffles. 
+Verified
+ Its price
+is still REDACTED.
+Fact | 
+Detail | 
+Where it is bought | 
+The 
+CornHub
+, the same place that sells seed packs and buys crops | 
+How | 
+Paid in ETH at the Pig’s price | 
+One per wallet | 
+A second one is refused: “This wallet already has its Truffle Pig.” | 
+Verified
+Buying it
+The button reads “Buy”, then “Buy · confirm in wallet”, then “Buy · confirming”; the price pill shows
+the fee in ETH and USD. The game simulates the purchase first, then sends it. Messages: “The Truffle
+Pig is yours”, “Failed onchain”, “Not confirmed yet. Check your wallet’s activity.”, “The Truffle Pig
+couldn’t be bought. Try again.” 
+Verified
+Refusal | 
+Message | 
+Not on sale | 
+“The Truffle Pig isn’t on sale right now.” | 
+Already bought | 
+“This wallet already has its Truffle Pig.” | 
+CornHub paused | 
+“The CornHub is paused. Try again soon.” | 
+Price changed | 
+“The Truffle Pig’s price just changed. Try again.” | 
+The game can also switch Pig sales off with its own message. 
+Verified
+What it does in the game
+The Pig turns on the Truffle chance for every crop you plant after buying it. The Truffle log reads
+“The Truffle Pig found …”. 
+Verified
+The pettable pig in the Lobby (“The pig loves a good pet. Go on, give it a tap.”) and the music track
+“Old Truffle Pig” are cosmetic. 
+Verified
+Still REDACTED
+How often each Truffle rank turns up: whether the 1-in-20 roll is the same for every rank.
+How the game computes a Truffle’s weight. Crop value is the best reading.
+The size of the launch seed, how much of it releases each day, and how the game sets its claim limit.
+What the Motherlode pays, and to whom.
+Whether a slice cut by the 5 % cap stays in the pool.
+Whether unclaimed payouts ever expire. The game shows no expiry text.
+Who gets a Pig for free (mint participants, Deed holders). There is no trace of a free Pig in the
+game or the docs.
+The Pig’s price.
+Where the ETH paid for a Pig goes. The CornHub has no Pig-specific destination; most likely it stays
+in the CornHub or goes to the fee destination. 
+Inferred
+
+=================== truffles-and-yield_yield-pool-buybacks.txt
+
+$YIELD, the Truffle Pool and buybacks
+$YIELD
+ is the game’s token: an ERC-20 on Robinhood Chain. Truffles pay in it, the Farmer pays in
+it, and later staked Deeds will earn it. The game’s own copy says: “You never need $YIELD to play.
+Earn it from the Farmer, or trade it on Uniswap.” 
+Verified
+Truffles are paid from the 
+Truffle Pool
+, the pot that holds the players’ share of $YIELD. The
+pool is refilled by the 
+Buyback vault
+, which takes the game’s fees in ETH and buys $YIELD with
+them. Every ETH of fees ends up, slowly, as $YIELD for Truffle finders.
+There is no $YIELD on mainnet today. The game has no $YIELD, pool or Truffle Pool on mainnet yet,
+and it says “Trading $YIELD on Uniswap is coming soon”.
+Verified
+Players
+pack ETH
+ →
+CornHub
+pays Market sales in ETH
+Sale fees
+ →
+Buyback vault
+buys $YIELD with the fees, over time
+$YIELD →
+Truffle Pool
+pays $YIELD every night
+→
+Truffle finders
+The $YIELD token
+What the official docs say
+Item | 
+Docs | 
+Chain and standard | 
+Robinhood Chain, ERC-20 | 
+Total supply | 
+Redacted. “Fixed. Minted once, never again” | 
+Team allocation | 
+0 % | 
+Pools | 
+1 official pool | 
+Contract and taxes | 
+“$YIELD isn’t live yet. Contract details and exact taxes are published when it launches.” | 
+Official source
+Taxes, as the docs describe them
+A buy tax and a sell tax (the percentages are redacted). “No LP fee”: the tax is the only cost of a
+trade.
+Heavy selling:
+ once net selling passes a set level, the sell tax climbs to a hard cap and then
+eases back. Buys cancel out sells; splitting a sale does not avoid it.
+Launch protection:
+ right after trading opens, buys pay a much higher tax that “falls steadily
+back to normal”.
+Where taxes go: part of the regular $YIELD tax goes to the Deeds’ Root Cellars (rate not
+announced), with a small cut to the team; the heavy-selling extra goes to the Farmers Co-op; the
+launch tax is “100% put back into the game”. “The tax caps are hard-coded.”
+The token declares its one official Uniswap v4 pool on chain and blocks copycat pools.
+Official source
+What the game shows
+The token is a plain ERC-20 with a fixed supply that holders can burn. There is 
+no
+tax inside the token
+: taxes live in the pool. 
+Verified
+The game’s $YIELD screen shows “Price per $YIELD”, “Your bag”, “Market cap” (supply × price),
+“Supply” and “Volume 24H” (Coming soon), and the fee line “Buying costs X in fees. Selling costs Y,
+up to Z during heavy selling.” 
+Verified
+The Farmer opens on its own switch, with no stated condition: “The Farmer isn’t buying for now. Try again soon.” (An earlier line tied it to the launch tax; it is gone.)
+Verified
+The team’s stated launch plans
+Not confirmed: the team has said it is leaning towards these numbers. 
+May change
+A starting market cap of roughly 
+$250k
+.
+A launch tax that starts around 
+90 %
+ and declines over about 
+24 hours
+.
+How $YIELD is earned
+Way | 
+What it is | 
+Status | 
+Truffles
+ | 
+$YIELD from the Truffle Pool, paid every night by weight. See 
+Truffles and the nightly payout
+ | 
+Not live | 
+Selling crops to the Farmer
+ | 
+Not new $YIELD: the crop’s ETH value, minus the fee, is swapped into $YIELD in the pool. A conversion, and a buy on the pool. See 
+Market and Farmer
+ | 
+Not live | 
+Staked Deeds
+ | 
+Deed rewards shared by Fertility through a release lock (half every 8 hours), with “No back pay”: earning starts at launch. A Deed-reward claim pays a 10 % fee, half back into the lock for all staked Deeds, half to the Silo. See 
+What a Deed earns
+ | 
+Not live | 
+Windfalls
+ | 
+Listed by the docs among the ways to earn | 
+Not live | 
+Trading | 
+Buying on the official pool | 
+Not live (“coming soon”) | 
+Official source
+ The split between new emission (Truffles) and conversion (Farmer) is our
+reading. 
+Inferred
+The Truffle Pool
+Mainnet has no Truffle Pool yet. The Truffle Pool holds the players’ $YIELD and makes the nightly
+payouts. Claims are signed by the game and each one can be used once. 
+Verified
+The Buyback vault
+The Buyback vault uses the game’s fees to buy $YIELD over time and puts all of it in the Truffle
+Pool. The game’s copy: “Every buyback refills the Truffle Pool.” 
+Verified
+The Buybacks tab in the game shows the vault’s balance, “Spends X a day”, “Sent to Truffles” all-time,
+and recent buybacks. Its footer names crop sales and $YIELD trades among the game fees that fill the
+vault: “It buys $YIELD back on Uniswap all day and sends all of it to the Truffle Pool.”
+Verified
+What fills the vault
+Source | 
+Detail | 
+Sale fees
+ | 
+The CornHub’s fee on every crop sale goes to the vault: 
+10 %
+ at the Market and 
+10 %
+ at the Farmer 
+Verified
+May change
+ | 
+$YIELD trades | 
+Named in the vault’s own copy 
+Verified
+ | 
+Pack ETH | 
+No
+: pack ETH stays in the CornHub as the float that pays Market sales 
+Verified
+ | 
+The official docs describe a 
+Farmers Co-op
+ fed by “Co-op Dues from every crop sold” and a share
+of $YIELD taxes. 
+Official source
+ Sale fees go to the Buyback vault, which is most
+likely the docs’ Farmers Co-op. 
+Inferred
+Still REDACTED
+When the token launches on mainnet, and its mainnet supply, tax rates and launch-tax curve.
+How Deed rewards will be funded and shared in detail.
+The Deed reward the docs list next to Deed rewards and the Silo (see 
+What a Deed earns
+).
+Which buyback design ships on mainnet is not announced.
+What the Farmers Co-op is “seeded with on day 1”, and the docs’ classified answer on “volume”.
+How the mainnet Truffle Pool is funded beyond buybacks, and the claim limit the game sets.
+The mainnet sale fees.
+Where the Truffle Pig’s ETH goes.
+
+=================== whats-new.txt
+
+What’s new
+What changed in Yield Fields, newest first. Each entry says what changed in the game and what it
+means for a player and a Deed holder, and links to the page that covers it in full.
+11 November 2026
+The game was updated ahead of its launch: Truffles now need a Truffle Pig, the nightly payout and
+Deed rewards work differently, and the launch countdown is in place.
+A Truffle Pig is now needed to find Truffles.
+ Only crops planted after the Pig is bought can
+turn one up, still with a 1 in 20 chance, rolled just after the harvest. 
+Verified
+For a player: buy the Pig before you plant; without one there are no Truffles.
+→ 
+Truffles and the nightly payout
+Ripe crops spoil for Truffles.
+ After 24 hours ripe a crop shows “Spoiling”, after 48 hours
+“Spoiled”: it can still be sold, at an unchanged price, but finds no Truffle. 
+Verified
+For a player: harvest within 48 hours of ripening.
+→ 
+Growing and harvesting
+A new nightly Truffle payout.
+ Each night pays that day’s release of the launch seed plus 5 % of
+what the refill balance holds above that release; 5 % of it goes to a new pot, the Motherlode. After day 30, payouts come only
+from refills. The old fixed daily rate is gone. 
+Verified
+For a player: the first 30 days are paid from the launch seed; after that, payouts depend on the
+game’s fee volume. 
+Inferred
+→ 
+Truffles and the nightly payout
+Deed rewards go through a release lock.
+ New $YIELD for Deeds is locked and half of it releases
+every 8 hours, about 87 % within a day. It is shared by Fertility, so a Mythic earns 1.8× a Common,
+and pending rewards never go down. The stakers’ half of each claim fee now goes back into the lock.
+Verified
+For a Deed holder: rewards arrive smoothly over the day, and claiming later also collects a share
+of the fees paid by earlier claims. 
+Inferred
+→ 
+What a Deed earns
+Silo and Windfall.
+ The Deed burn pot is called the Silo, and a burned staked Deed “can win” a
+Windfall from it, paid only while the Silo is open. The share is unchanged: 50 % for a Common up
+to 90 % for a Mythic. 
+Verified
+→ 
+What a Deed earns
+Free exports are rounded up.
+ A wallet exports 
+ceil(F / 8)
+ Fertilizer a day at full speed,
+F being its total Fertility: 1 for a single Common to Legendary, 2 for a Mythic, 9 for a wallet of
+Fertility 70. In effect since 8 November. 
+Verified
+For a Deed holder: exporting up to that number never slows your decks. 
+Verified
+→ 
+Exporting and trading
+The Farmer is no longer tied to the launch tax.
+ Selling crops for $YIELD opens on its own switch:
+“The Farmer isn’t buying for now. Try again soon.” When it opens: not known yet.
+Verified
+→ 
+Market and Farmer
+A launch countdown.
+ Until the fields open, buying packs shows “Opening soon” or “Opens in …”
+and the farm reads “The fields open at launch”. 
+Verified
+→ 
+Where the game stands
+Co-op Dues.
+ The game now uses the docs’ name for the fee on a crop sale.
+Verified
+ → 
+Glossary

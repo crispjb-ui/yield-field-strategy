@@ -1,7 +1,7 @@
 # Game-mechanics parameters. Source: https://yieldfields.fun/docs (all pages "Updated 30 Oct 2026").
 # null = redacted in the docs (███) or not yet published. The docs state every number is subject to change.
 source_url: https://yieldfields.fun/docs
-as_of: "2026-11-03"   # docs updated 3 Nov; staking LIVE; owner has 3 Rare decks running
+as_of: "2026-11-11"   # official docs 3/8 Nov + un-redacted mirror (yf-unredacted.vercel.app, testnet defaults, "May change") + bundle checks
 stage: 1                    # Stage One LIVE (staking + Fert Deck + Fertilizer + export). Farming/$YIELD/deed rewards later. No dates published.
 staked_deeds_2026_11_04: 2844   # balanceOf(staking) via RPC; 85.3% of supply
 
@@ -17,6 +17,9 @@ token:                      # /docs/farming-and-yield/yield
   dex: uniswap_v4_single_official_pool_URC5
   lp_control: team_managed  # "can add, remove or rebalance"
   no_lp_fee: true
+  team_leaning_launch_mcap_usd: 250000   # mirror: "team has said it is leaning towards"; May change
+  team_leaning_launch_tax: {start_pct: 90, decay_hours: 24}
+  taxes_live_in_pool_not_token: true     # token is a plain ERC-20 (abi_5); pool contract (abi_3) holds buy/sell fee bps
 
 deed:                       # /docs/deed-gameplay/founding-deeds
   contract: "0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a"   # docs + OpenSea API agree
@@ -70,10 +73,14 @@ fert:                       # /docs/deed-gameplay/fertilizer
   export_cap_per_day_frac: 0.5        # per wallet: half of decks' daily nominal output, decks counted over last 7 days; imports in last 24 h add to cap
   export_cap_per_day_owner: 4.5       # 3 Rares × 1.5
   exporter_slowdown:                  # starts 24 h after staking opened; based on exports in trailing 24 h as % of decks' daily output
-    free_threshold_frac: 0.25         # ≤25%: full speed
+    free_threshold_frac: 0.25         # ≤25%: full speed; FREE UNITS = ceil(F_total/8) per rolling 24 h (owner F=18 → 3/day); hard limit floor(F/4)=4/day
+    rate_formula: "100% - 2 × (share - 25%)"   # linear, floor 50%
+    rolling_24h: true                 # no 00:00 reset; recovery ~25 h after last export
     steps: {0.30: 0.9, 0.40: 0.7, 0.50: 0.5}   # export fraction → deck speed; "50% or more" → 0.5 floor
     bag_and_imports_exempt: true
   network_slowdown:                   # hourly; circulation = claimedTotal - usedTotal (BAG COUNTS); /api/fert-rate
+    rate_formula: "min(1, target/supply), floor 0.5"   # mirror inference; matches 70%@10d, 50%@14d
+    network_daily_export_cap: 60000
     api: https://yieldfields.fun/api/fert-rate
     snapshot_2026_11_04: {supply: 3848, target: 58614.5, output_per_day: 8373.5, staked_fertility: 16747, rate: 1.0}
     projected_floor_date: ~2026-11-21   # 50% speed if nothing consumes Fert
@@ -95,16 +102,24 @@ root_cellar:                # /docs/deed-gameplay/the-root-cellar + on-chain
 silo:                       # /docs/deed-gameplay/the-silo-and-the-windfall
   funded_by: part_of_deed_reward_claim_fees
   payout_asset: YIELD
-  windfall_pct_by_tier: {Common: null, Rare: null, Epic: null, Legendary: null, Mythic: null}   # redacted; on-chain jackpotCurve=(0,1000); quoteBurnForJackpot(ids) gives live quote
+  windfall_pct_by_tier: {Common: 50, Rare: 60, Epic: 70, Legendary: 80, Mythic: 90}   # = min(F×10%,100%); jackpotCurve=(0,1000) confirms 10%/point from base 0
+  sequential_race: true     # each burn takes its share of what the previous burn left; first burn on a fat Silo wins
   never_empties: true
   batch_burns_sequential: true   # each burn takes its share of what the previous left
   burn_min_payout_guard: true
 
-seeds:                      # /docs/farming-and-yield/seeds-and-crops — opens after Stage One
-  packs: {Diamond: null, Platinum: null, Gold: null, Silver: null, Bronze: null}   # ETH prices redacted
+seeds:                      # TESTNET DEFAULTS via mirror (grade B, "May change"); mainnet values come from the Cornhub contract (packPrices / vegetablePrices) at launch
+  packs: {Diamond: 0.25, Platinum: 0.1, Gold: 0.05, Silver: 0.01, Bronze: 0.005}   # ETH
   same_odds_all_packs: true
-  rarities: {Common: {p: null, worth_x: null}, Uncommon: {p: null, worth_x: null}, Rare: {p: null, worth_x: null},
-             Epic: {p: null, worth_x: null}, Legendary: {p: null, worth_x: null}, Mythic: {p: null, worth_x: null}}
+  rarities: {Common: {p: 0.45, worth_x: 0.5}, Uncommon: {p: 0.31, worth_x: 1.0}, Rare: {p: 0.15, worth_x: 1.6},
+             Epic: {p: 0.06, worth_x: 2.0}, Legendary: {p: 0.025, worth_x: 3.0}, Mythic: {p: 0.005, worth_x: 5.0}}
+  ev_worth_x: 0.995         # Σ p × worth = 0.995 → crop value ≈ pack price before fees
+  grow_hours_formula: "worth_x10 × tier_factor / 500"   # bundle-confirmed factors
+  tier_factor: {Bronze: 120, Silver: 116, Gold: 108, Platinum: 104, Diamond: 100}
+  grow_hours_diamond: {Common: 1, Uncommon: 2, Rare: 3.2, Epic: 4, Legendary: 6, Mythic: 10}
+  avg_grow_hours: {Bronze: 2.38, Silver: 2.3, Gold: 2.15, Platinum: 2.07, Diamond: 1.98}
+  rip_batch_max: 1000
+  seeds_crops_packs_exportable: false   # only Fertilizer is on-chain in this build
   common_worth_below_pack: true
   bigger_pack_grows_faster_per_eth: true   # "splitting ETH across lots of small packs never beats 1 bigger pack"
   randomness: drand
@@ -112,16 +127,29 @@ seeds:                      # /docs/farming-and-yield/seeds-and-crops — opens 
 
 farm:                       # /docs/farming-and-yield/growing-and-selling
   plot: free_fixed_grid     # 1 crop per slot, no expansions, no deed needed
-  slots_per_wallet: 25      # OWNER statement 2026-11-05 ('25 slots per plot'); docs say one free plot per WALLET, deed not needed — source/whether deeds add plots unverified
-  grow_hours: [null, null]  # redacted range; rarer = longer, bigger pack = faster
-  ripe_crops_wilt: false
-  farmer_pays_pct_in_yield: null    # redacted; "pays more"; executes a $YIELD buy on the official pool, skips buy tax
-  broker_pays_pct_in_eth: null      # redacted; paid from Cornhub pack-sale ETH
-  coop_dues_farmer_pct: null
-  coop_dues_broker_pct: null        # docs: Farmer charges lower dues than Broker
+  slots_per_wallet: 25      # confirmed by mirror glossary: free plot per WALLET, 25 slots, no deed needed
+  grow_hours: [1, 12]       # Diamond Common 1 h … Bronze Mythic 12 h
+  ripe_crops_wilt: false    # for selling; for TRUFFLES: 'Spoiling' at 24 h ripe, 'Spoiled' (no truffle) at 48 h
+  farmer_pays_pct_in_yield: 90      # testnet default: crop value − 10% fee, swapped on the pool tax-free (docs say Farmer dues will be LOWER on mainnet)
+  broker_pays_pct_in_eth: 90        # testnet default: 10% fee; paid from Cornhub float (pack ETH)
+  coop_dues_farmer_pct: 10
+  coop_dues_broker_pct: 10
+  fees_go_to: buyback_vault         # buys $YIELD on the pool, all of it to the Truffle Pool
+  farmer_opens_on_own_switch: true  # not tied to launch tax; date unknown
+  market_float_risk: true           # 'The Market is short on ETH' stops sales when pack float is low
 
+truffles:                   # mirror + bundle strings (Truffle Pig, 1 in 20, Motherlode, Spoiling all confirmed in bundle)
+  pig_required: true        # one per wallet, bought at Cornhub in ETH; price REDACTED; only crops planted AFTER purchase roll
+  chance_per_harvest: 0.05
+  harvest_within_hours_of_ripe: 48
+  weight: crop_eth_value    # inferred; ranked like the crop
+  settlement_utc: "00:00"
+  payout_formula: "seed_release_today + 5% × max(0, refill_balance − seed_release_today), capped by claim limit; 5% to Motherlode; rest split by weight; ≤5% of pool per truffle"
+  launch_seed_days: 30      # after day 30 only refills (buybacks from fees) pay
+  seed_size: null           # not public
+  claim: signed voucher → Truffle Pool contract, one tx for all settled payouts
 weather: {}                 # not in docs (the "dynamic weather" claim came from a lookalike site)
-leaderboard: {}             # not in docs
+leaderboard: {placeholder: true, boards: [harvest_value, truffle_payouts, burn_value_held]}
 classified: [truffles, volume_incentive_mechanism, extra_deed_reward_stream, fert_deck_boosts, new_structures]
 
 governance:                 # /docs/reference/fees-and-risks

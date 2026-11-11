@@ -270,3 +270,54 @@ def plots_needed(budget_usd: float, pack_price_usd: float, grow_hours: float, wi
             "plots_without_fert": max(1, math.ceil(packs / cap_no)),
             "fert_needed": need, "fert_gap": max(0, need - have),
             "per_cycle_outlay_usd_one_plot": slots * pack_price_usd}
+
+
+# ---- Launch economics (mirror defaults 2026-11-11; recompute from the Cornhub contract at launch) ----
+EV_WORTH_X = 0.995            # Σ p × worth over the 6 seed rarities
+SALE_FEE = 0.10               # Market and Farmer Co-op Dues (testnet default)
+TRUFFLE_P = 0.05
+
+
+def pack_cycle(pack_price_eth: float, fee: float = SALE_FEE, ev_x: float = EV_WORTH_X) -> dict:
+    """One pack → crop → sale. ETH-only loop: payout = ev_x × (1 − fee) per ETH; the rest is the rake."""
+    payout = ev_x * (1 - fee)
+    return {"payout_per_eth": payout, "rake_per_eth": 1 - payout,
+            "expected_truffle_weight_per_eth": TRUFFLE_P * ev_x}
+
+
+def cycling(capital_eth: float, cycles: int, fee: float = SALE_FEE, ev_x: float = EV_WORTH_X) -> dict:
+    """Recycle capital through packs → Market → packs. Total pack spend, truffle weight and what is left."""
+    r = ev_x * (1 - fee)
+    spend = capital_eth * (1 - r ** cycles) / (1 - r)
+    return {"total_pack_spend_eth": spend, "capital_left_eth": capital_eth * r ** cycles,
+            "rake_paid_eth": capital_eth * (1 - r ** cycles),
+            "expected_truffle_weight_eth": TRUFFLE_P * ev_x * spend}
+
+
+def truffle_cycle_ev(budget_yield_tonight: float, yield_eth: float, total_weight_eth: float,
+                     my_pack_spend_eth: float, fee: float = SALE_FEE, ev_x: float = EV_WORTH_X) -> dict:
+    """Is one more ETH of pack spend worth it tonight? Expected truffle share of B vs the rake.
+    Inputs are what the Truffles tab shows live: 'Pays out today' (B), 'Weight today' (W)."""
+    my_w = TRUFFLE_P * ev_x * my_pack_spend_eth
+    share = my_w / (total_weight_eth + my_w) if (total_weight_eth + my_w) > 0 else 0
+    payout_eth = budget_yield_tonight * 0.95 * share * yield_eth      # 5% Motherlode off the top
+    rake = my_pack_spend_eth * (1 - ev_x * (1 - fee))
+    return {"my_truffle_weight_eth": my_w, "share": share, "expected_payout_eth": payout_eth,
+            "rake_eth": rake, "net_eth": payout_eth - rake, "worth_it": payout_eth > rake}
+
+
+def farmer_vs_direct(buy_tax_pct: float, fee: float = SALE_FEE, ev_x: float = EV_WORTH_X) -> dict:
+    """$YIELD per ETH: Farmer route (pack → crop → Farmer swap, tax-free) vs direct pool buy with tax."""
+    farmer = ev_x * (1 - fee)
+    direct = 1 - buy_tax_pct / 100
+    return {"farmer_yield_per_eth": farmer, "direct_yield_per_eth": direct,
+            "farmer_wins": farmer > direct, "breakeven_buy_tax_pct": (1 - farmer) * 100}
+
+
+def windfall_race(silo_yield: float, burns: list[int]) -> list[dict]:
+    """Sequential Silo race: each burn takes min(F×10%,100%) of what is left."""
+    out, left = [], silo_yield
+    for f in burns:
+        share = min(f * 0.10, 1.0); win = left * share; left -= win
+        out.append({"fertility": f, "share": share, "wins": win, "silo_left": left})
+    return out
