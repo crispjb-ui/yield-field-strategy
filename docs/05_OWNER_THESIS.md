@@ -187,3 +187,19 @@ for the launch-week gap.**
 - Farmer beats a direct buy only while buy tax > 10.45%; it opens on its own switch, date unknown; hold crops in Bag if closed.
 - Tranche 1 = 6 Platinum packs (~0.6 ETH), not Diamond. Pool depth, not slots, limits how fast $6k can become $YIELD.
 - Windfall is a race (Rare 60% of the current Silo if first). Monitor `jackpot()` once $YIELD is set.
+
+## Update 2026-11-12: the throttles cap extraction at 25%, so export the free allowance daily
+- Design read: daily limit floor(F/4), exporter slowdown above 25%, network brake, 3-day deck cap. Together they
+  cap what any deed can turn into ETH at ~25% of nominal output per day (25% at full speed = 50% at half speed),
+  force the other 75% into in-game use or the Bag, and make a stockpile un-dumpable. Fert price support = deed
+  floor support = the team's royalty base.
+- Consequence: the Bag stockpile cannot be sold into a launch spike (max 3–4/day). Unused free allowance does not
+  bank (rolling 24 h). The free allowance is ceil(F/8) on NOMINAL Fertility, so it stays 3/day for F=18 even
+  when the network brake halves actual output.
+- **Rule change: export 3 Fertilizer every 24 h starting now and sell at or just above the floor.** Zero
+  production cost, ~$18/day at 6.2 USDG. Never export the 4th (costs ~3.5 units of production). Keep claiming
+  every ≤60 h. The stockpile still grows ≥1.5/day net and covers launch-day needs (~12–40 units).
+- Earlier call that Fert would fall into the 50% regime was wrong: it assumed holders could sell; the throttles
+  are why they cannot. Sellable float ≈ 25% of ~9,000/day network-wide, and most of that stays in Bags.
+- Deed purchases for the Fert coupon: free exports step at F=25 (4/day). A 4th Rare (F=24) adds nothing; a
+  Legendary (F=26) adds 1/day ≈ $6/day on $3.5k. Not compelling. No deed purchases, unchanged.
