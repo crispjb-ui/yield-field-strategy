@@ -106,3 +106,22 @@ Simulated in `scripts/sim_plant_order.py` (4,000 draws, 25 slots, 2 Fert each, w
   exposure on money that is not meant to be deployed before 2026-12-15.
 - Official Robinhood Chain bridge only. Bridge time is unverified here; step 1 measures it. Do not leave step 2
   to launch morning.
+
+## Addendum: ~120 Fertilizer in the Bag, and "most $YIELD value is at go-live" (owner, 2026-11-20)
+- Fert is no longer a constraint. Any plan of ≤25 packs needs ≤50; 120 covers it twice. The cap is 2 per crop,
+  so the extra ~70 has no launch-day use unless more capital is planted.
+- The assumption changes the structure, not the Fert: if early Farmer sales buy the cheapest `$YIELD`, a wave 2
+  planted 1–3 h in sells into an already-moved price. Under the assumption, **everything meant for day 1 goes in
+  ≤25 packs so every seed is planted at minute zero**: **6 Diamond + 19 Platinum = 3.40 ETH ≈ $5,960**, 50 Fert,
+  ±14% on value, worst-case Market exit ≈0.36 ETH (≈$620 at a 10% fee).
+- Ripening schedule with 2 Fert, all planted at T+0 (share of crop value ripe): 23% at ~0.5 h, 54% at ~1 h,
+  78% at ~1.6 h, 90% at ~2 h, 97% at ~3 h, 100% at ~5 h.
+- Illustration only (pool structure unverified): a constant-product pool at a $250k cap is ~143 ETH deep. Own
+  impact of 3.1 ETH ≈ +4%. Crowd impact is what matters: 100 ETH of cumulative Farmer buys ≈ 2.9×, 300 ETH ≈ 9.6×.
+- **Gate (decides between the two plots):** the Farmer must be announced as open at launch. The game used to tie
+  the Farmer to the launch tax settling; that line was removed with no replacement. If the Farmer opens later,
+  speed is worth nothing (everyone's crops wait in the Bag) and the 2.25 ETH plot with a held-back wave is right.
+  If it is open at T+0, use the 3.40 ETH plot.
+- Fert surplus: keep exporting the free 3/day. Option: hold the exported units in the wallet and sell them into
+  launch day, when speed is worth most to other farmers; downside is ~$1/unit if the price keeps drifting.
+- Claim the decks right before launch; do not export in the 24 h before launch if the Bag is under 60.

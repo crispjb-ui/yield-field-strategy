@@ -210,3 +210,4 @@ for the launch-week gap.**
 - Tomorrow: 1 Bronze test pack; Truffle Pig if ≤0.1 ETH. Supersedes the "6 Platinum" tranche-1 rule of 11 Nov.
 - Monitor now auto-reads the Cornhub and `$YIELD` pool the moment their addresses are published.
 - Third-party mirror was taken down on/before 20 Nov; our snapshot is in docs/source/.
+- 2026-11-20 (later): owner holds ~120 Fert and assumes most `$YIELD` value is at go-live. Launch plot is conditional on the Farmer: open at T+0 → 6 Diamond + 19 Platinum (3.40 ETH, all planted at minute zero); not confirmed open → 20 Platinum + 5 Gold (2.25 ETH) and hold the rest. Funds stay in USDC until T−24 h.
