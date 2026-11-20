@@ -7,7 +7,9 @@ Motherlode payout text, Spoiling/Spoiled, "Opening soon", grow-factor table `[12
 defaults that the mainnet Cornhub and pool contracts will set at launch. Recompute everything from
 `packPrices()`, `vegetablePrices()`, `farmerFeeBps()`, `marketFeeBps()`, `buyFeeBps()` on launch day.
 
-## The numbers (defaults)
+## The numbers
+_Update 2026-11-20: pack prices, odds, worth multiples and grow times are now in the official docs (19 Nov) and match the table below exactly → grade A. Sale fees and the launch tax remain unpublished ("announced before farming opens")._
+
 | Item | Value |
 |---|---|
 | Packs (ETH) | Bronze 0.005 · Silver 0.01 · Gold 0.05 · Platinum 0.1 · Diamond 0.25 |

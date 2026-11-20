@@ -1,7 +1,7 @@
 # Game-mechanics parameters. Source: https://yieldfields.fun/docs (all pages "Updated 30 Oct 2026").
 # null = redacted in the docs (███) or not yet published. The docs state every number is subject to change.
 source_url: https://yieldfields.fun/docs
-as_of: "2026-11-11"   # official docs 3/8 Nov + un-redacted mirror (yf-unredacted.vercel.app, testnet defaults, "May change") + bundle checks
+as_of: "2026-11-20"   # official docs 19 Nov publish pack prices/odds/worth/grow times; fees "announced before farming opens"; farming NOT live (used=0, yieldToken unset)
 stage: 1                    # Stage One LIVE (staking + Fert Deck + Fertilizer + export). Farming/$YIELD/deed rewards later. No dates published.
 staked_deeds_2026_11_04: 2844   # balanceOf(staking) via RPC; 85.3% of supply
 
@@ -108,7 +108,7 @@ silo:                       # /docs/deed-gameplay/the-silo-and-the-windfall
   batch_burns_sequential: true   # each burn takes its share of what the previous left
   burn_min_payout_guard: true
 
-seeds:                      # TESTNET DEFAULTS via mirror (grade B, "May change"); mainnet values come from the Cornhub contract (packPrices / vegetablePrices) at launch
+seeds:                      # OFFICIAL as of docs 19 Nov 2026 (grade A): prices, odds, worth, grow times published; identical to the mirror's defaults
   packs: {Diamond: 0.25, Platinum: 0.1, Gold: 0.05, Silver: 0.01, Bronze: 0.005}   # ETH
   same_odds_all_packs: true
   rarities: {Common: {p: 0.45, worth_x: 0.5}, Uncommon: {p: 0.31, worth_x: 1.0}, Rare: {p: 0.15, worth_x: 1.6},

@@ -1,10 +1,9 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-20 00:39 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-20 00:40 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 58%**
-- **Docs page changed: farming-and-yield/seeds-and-crops**
 
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
@@ -27,7 +26,7 @@ Staking: paused=False · backing 31.99 ETH · jackpot 0 · rewardPool 0 · yield
 |---|---|---|---|
 | yield-field-deeds | 0.786 ETH | 10 | 8.012 |
 | yield-fields-items | 5.2 USDG | 91 | 0.6783951026528086 |
-| genesishero-abstract | 0.043645 ETH | 3 | 0.09960000000000001 |
+| genesishero-abstract | 0.0436382 ETH | 3 | 0.09960000000000001 |
 | och-ringbearer | 0.326 ETH | 0 | 0.0 |
 
 ## Docs watch

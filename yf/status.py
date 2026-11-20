@@ -164,13 +164,31 @@ Staking: paused={d['paused']} · backing {d['backing_eth']:.2f} ETH · jackpot {
     return "\n".join(parts), alerts
 
 
+def _alert_key(a: str) -> str:
+    """Condition identity, so a persisting condition does not re-alert every run."""
+    if a.startswith("Network Fert rate is"):
+        return "network_rate_below_100"
+    if a.startswith("Docs page changed"):
+        return a   # a new change is a new key only if the page hash moved again (docs_state handles that)
+    return a
+
+
 def main():
     cfg = config.load_settings()
     md, alerts = build(cfg)
     (ROOT / "STATUS.md").write_text(md)
-    (ROOT / "data" / "alerts.json").write_text(json.dumps({"ts": datetime.now(timezone.utc).isoformat(), "alerts": alerts}, indent=1))
+    path = ROOT / "data" / "alerts.json"
+    prev = json.loads(path.read_text()) if path.exists() else {}
+    prev_keys = set(prev.get("active_keys", []))
+    keys = {_alert_key(a): a for a in alerts}
+    # docs changes are one-shot: they only appear in `alerts` on the run that saw the hash move
+    new = [a for k, a in keys.items() if k not in prev_keys or k.startswith("Docs page changed")]
+    cleared = sorted(k for k in prev_keys if k not in keys and not k.startswith("Docs page changed"))
+    active_keys = sorted(k for k in keys if not k.startswith("Docs page changed"))
+    path.write_text(json.dumps({"ts": datetime.now(timezone.utc).isoformat(), "alerts": alerts,
+                                "new_alerts": new, "cleared": cleared, "active_keys": active_keys}, indent=1))
     print(md)
-    print(f"\n{len(alerts)} alert(s)", file=sys.stderr)
+    print(f"\n{len(alerts)} alert(s), {len(new)} new, {len(cleared)} cleared", file=sys.stderr)
 
 
 if __name__ == "__main__":

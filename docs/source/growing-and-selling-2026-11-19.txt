@@ -1,0 +1,54 @@
+
+Farming and $YIELD
+›
+Growing and selling
+Growing and selling
+In short:
+Plant seeds in your free farm plot, harvest when they're ripe, then sell to the Farmer for $YIELD or the Broker for ETH.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Selling fees will be announced before farming opens.
+Your farm plot
+A grid of slots, free for every wallet. Each slot holds 1 crop at a time
+There are no plot expansions, and you don't need a deed to farm
+Other players can visit your plot and see what you're growing
+Growing
+From 1 to 12 hours, with a live countdown in the game. See every crop's grow time in 
+Seeds and crops
+Rarer crops take longer, and bigger packs grow faster
+Fertilizer cuts 25% of the grow time each, up to 2 per crop. Use it from your Bag. See 
+Fertilizer
+Ripe crops never wilt, so harvest on your own schedule
+Harvesting
+Harvest 1 crop or everything ripe at once. Harvested crops go to your Bag, ready to sell.
+The soil hides more than vegetables. 
+████████████████
+. See 
+Classified
+.
+Selling
+Farmer ($YIELD)
+Pays 
+███
+% of the crop's value in $YIELD, straight to your wallet
+Buys $YIELD for you on the official pool and skips the buy tax, so every Farmer sale is a $YIELD buy
+The app shows a quote first. If the price moves past it, the sale stops instead of paying you less
+Broker (ETH)
+Pays 
+███
+% of the crop's value in ETH, from the ETH that pack sales bring into the Cornhub
+Which one?
+The Farmer pays more
+ and charges lower Co-op Dues, so it's the better deal if you plan to hold $YIELD. 
+The Broker is the simplest way to get ETH,
+ since selling to the Farmer and then selling the $YIELD nets less.
+Whichever you pick, the fee is Co-op Dues, and it goes to the Farmers Co-op. See 
+How the Farmers Co-op works
+.
+Next, 
+$YIELD
+.
+Updated 19 Nov 2026
+Previous
+Seeds and crops
+Next
+$YIELD

@@ -1,0 +1,170 @@
+
+Farming and $YIELD
+›
+Seeds and crops
+Seeds and crops
+In short:
+Buy seed packs at the Cornhub with ETH. Each pack holds 1 random seed. Every pack has the same odds, and bigger packs hold more valuable crops.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Packs
+Pack
+Price
+Diamond
+0.25 ETH
+Platinum
+0.1 ETH
+Gold
+0.05 ETH
+Silver
+0.01 ETH
+Bronze
+0.005 ETH
+Seeds are tradeable items, so you can also buy and sell them.
+Odds
+Every pack uses the same odds. A seed's rarity sets what its crop is worth, as a multiple of the pack's price.
+Rarity
+Chance
+Worth
+Common
+45%
+0.5×
+Uncommon
+31%
+1×
+Rare
+15%
+1.6×
+Epic
+6%
+2×
+Legendary
+2.5%
+3×
+Mythic
+0.5%
+5×
+A Common is worth less than its pack, and rarer seeds are worth more. Mythic is the ultra-rare tier.
+Crops
+Each pack has its own 6 crops, 1 for each rarity. Grow times are before Fertilizer: rarer crops take longer, and bigger packs grow faster.
+Bronze
+Crop
+Rarity
+Grow time
+Spinach
+Common
+1h 12m
+Potato
+Uncommon
+2h 24m
+Cabbage
+Rare
+3h 50m
+Carrot
+Epic
+4h 48m
+Flare Kale
+Legendary
+7h 12m
+Swirlchard
+Mythic
+12h
+Silver
+Crop
+Rarity
+Grow time
+Wheat
+Common
+1h 10m
+Parsnip
+Uncommon
+2h 19m
+Broccoli
+Rare
+3h 43m
+Red Pepper
+Epic
+4h 38m
+Sunchoke
+Legendary
+6h 58m
+Cosmoflower
+Mythic
+11h 36m
+Gold
+Crop
+Rarity
+Grow time
+Leek
+Common
+1h 5m
+Onion
+Uncommon
+2h 10m
+Squash
+Rare
+3h 27m
+Turnip
+Epic
+4h 19m
+Halopeno
+Legendary
+6h 29m
+Moonkin
+Mythic
+10h 48m
+Platinum
+Crop
+Rarity
+Grow time
+Brussels Sprouts
+Common
+1h 2m
+Rhubarb
+Uncommon
+2h 5m
+Tomato
+Rare
+3h 20m
+Red Cabbage
+Epic
+4h 10m
+Raydish
+Legendary
+6h 14m
+Starnip
+Mythic
+10h 24m
+Diamond
+Crop
+Rarity
+Grow time
+Ginger
+Common
+1h
+Beet
+Uncommon
+2h
+Pumpkin
+Rare
+3h 12m
+Eggplant
+Epic
+4h
+Gilded Corn
+Legendary
+6h
+Heartbeet
+Mythic
+10h
+Heartbeet is the most valuable crop in the game.
+Fair randomness
+Every pack is tied to a future draw from drand, a public randomness source. The result is fixed before anyone can see it, and anyone can check it afterwards.
+Bigger packs grow faster for the ETH you put in. Splitting ETH across lots of small packs never beats 1 bigger pack.
+Next, 
+Growing and selling
+.
+Updated 19 Nov 2026
+Previous
+The Silo and the Windfall
+Next
+Growing and selling
