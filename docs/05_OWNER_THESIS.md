@@ -211,3 +211,4 @@ for the launch-week gap.**
 - Monitor now auto-reads the Cornhub and `$YIELD` pool the moment their addresses are published.
 - Third-party mirror was taken down on/before 20 Nov; our snapshot is in docs/source/.
 - 2026-11-20 (later): owner holds ~120 Fert and assumes most `$YIELD` value is at go-live. Launch plot is conditional on the Farmer: open at T+0 → 6 Diamond + 19 Platinum (3.40 ETH, all planted at minute zero); not confirmed open → 20 Platinum + 5 Gold (2.25 ETH) and hold the rest. Funds stay in USDC until T−24 h.
+- 2026-11-20 (exit): owner thesis is now accumulate-at-launch, sell the first run. Hold rule replaced by the ladder in `09_YIELD_EXIT_PLAN` (2.0× sell half, 3.5× sell half again, 30% trailing stop to a 15% moonbag, de-risk before the first 00:00 UTC Truffle settlement). Late-ripening crops go to the Market if the price has already run.

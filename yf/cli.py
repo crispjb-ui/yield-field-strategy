@@ -143,6 +143,13 @@ def cmd_probe(cfg, args):
         print(json.dumps(P.rake_from_cornhub(r), indent=2))
 
 
+def cmd_poolwatch(cfg, args):
+    from .rpc import Rpc
+    from . import poolwatch as W
+    W.watch(Rpc(cfg["chain"]["rpc_url"]), args.pool, args.wallet, args.cost_eth,
+            ROOT / "data" / "poolwatch_state.json", interval=args.interval, once=args.once)
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="yf")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -159,10 +166,13 @@ def main(argv=None):
     s = sub.add_parser("fertrate"); s.add_argument("--save", action="store_true")
     sub.add_parser("deeds")
     s = sub.add_parser("probe"); s.add_argument("address")
+    s = sub.add_parser("poolwatch"); s.add_argument("--pool", required=True); s.add_argument("--wallet", required=True)
+    s.add_argument("--cost-eth", type=float, required=True); s.add_argument("--interval", type=int, default=20)
+    s.add_argument("--once", action="store_true")
     args = p.parse_args(argv)
     cfg = config.load_settings()
     {"market": cmd_market, "positions": cmd_positions, "roi": cmd_roi,
-     "allocate": cmd_allocate, "watch": cmd_watch, "fertrate": cmd_fertrate, "deeds": cmd_deeds, "probe": cmd_probe}[args.cmd](cfg, args)
+     "allocate": cmd_allocate, "watch": cmd_watch, "fertrate": cmd_fertrate, "deeds": cmd_deeds, "probe": cmd_probe, "poolwatch": cmd_poolwatch}[args.cmd](cfg, args)
 
 
 if __name__ == "__main__":
