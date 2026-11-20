@@ -93,3 +93,16 @@ Simulated in `scripts/sim_plant_order.py` (4,000 draws, 25 slots, 2 Fert each, w
   crops while active; and Fert goes furthest on long crops if Fert is ever scarce.
 - Only reason to hold more than 25 pre-ripped: commit the whole bucket to day 1 regardless of live data and avoid
   needing the shop under launch load. Then: 34 Platinum, plant highest first. Cost: the wave-2 option on 1.18 ETH.
+
+## Addendum: funds are in USDC (owner, 2026-11-20)
+- Sizing stands: at ETH $1,752 the $6,000 bucket is 3.43 ETH; T+0 plot 20 Platinum + 5 Gold = 2.25 ETH ≈ $3,940.
+  Re-price in USD on the day: packs are priced in ETH, so the USD cost moves with ETH.
+- **Convert just in time, in three steps, and leave everything else in USDC:**
+  1. Tomorrow: ~0.12 ETH on Robinhood Chain (test pack 0.005 + Truffle Pig cap 0.1 + gas). This doubles as the
+     test of the conversion and bridge path.
+  2. T−24 h: 2.25 ETH for the T+0 plot (+0.01 gas).
+  3. Wave 2: convert up to 1.18 ETH only when the live checks say go.
+- The $2,000 reserve stays in USDC, not ETH (supersedes "reserve as ETH on Robinhood Chain"): no ETH price
+  exposure on money that is not meant to be deployed before 2026-12-15.
+- Official Robinhood Chain bridge only. Bridge time is unverified here; step 1 measures it. Do not leave step 2
+  to launch morning.
