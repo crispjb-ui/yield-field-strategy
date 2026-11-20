@@ -72,3 +72,24 @@ start is thin enough that 3.4 ETH of Farmer sales in one hour moves it materiall
 will be the highest of the month. A worst-case Market exit on 2.25 ETH costs ~0.24 ETH (~$410). That is an
 acceptable price for being in at T+0; 0.36 ETH on the whole bucket buys nothing extra, because the last third
 can follow within the hour once the tabs show real numbers.
+
+## Addendum: stacking high-rarity seeds for the T+0 plot (asked 2026-11-20)
+Simulated in `scripts/sim_plant_order.py` (4,000 draws, 25 slots, 2 Fert each, whole bucket pre-ripped).
+
+| 34 Platinum, plant order | Value-weighted mean hours to harvest | % of value harvested by 1 h | by 2 h | All done |
+|---|---|---|---|---|
+| Highest rarity first | 1.52 | 10% | 79% | 3.0 h |
+| Random | 1.57 | 17% | 72% | 3.3 h |
+| Shortest first | 1.68 | 23% | 57% | 3.6 h |
+
+- Grow time is proportional to worth, so every rarity in a tier earns the same value per slot-hour. A plot of
+  Mythics is not a better plot; it is the same value arriving later in one lump.
+- Cherry-picking does not remove the low seeds. They cannot be sold or exported; they still have to be planted.
+  Total value is set by packs bought, not by which 25 go first.
+- Rare-or-better is 24% of pulls: 25 such seeds needs ~105 packs (10.5 ETH in Platinum). The bucket buys 34.
+- Order moves the average by ~3–10 minutes. Highest-first finishes sooner overall; shortest-first gets more value
+  to the Farmer in the first hour. Neither is material.
+- Real uses of order: longest crops before going offline (fewer check-ins, inside the 48 h Truffle window), short
+  crops while active; and Fert goes furthest on long crops if Fert is ever scarce.
+- Only reason to hold more than 25 pre-ripped: commit the whole bucket to day 1 regardless of live data and avoid
+  needing the shop under launch load. Then: 34 Platinum, plant highest first. Cost: the wave-2 option on 1.18 ETH.
