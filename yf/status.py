@@ -12,6 +12,7 @@ import requests
 from . import config, fertrate
 from .abi import Contract
 from .rpc import Rpc, selector, enc_uint
+from . import probe as probe_mod
 
 ROOT = config.ROOT
 SNAP = ROOT / "data" / "snapshots"
@@ -90,7 +91,8 @@ def section_docs() -> tuple[dict, list[str]]:
     prev = json.loads(state_path.read_text()) if state_path.exists() else {}
     cur = {}
     for page in ("reference/official-links-and-contracts", "reference/patch-notes", "farming-and-yield/yield",
-                 "farming-and-yield/seeds-and-crops"):
+                 "farming-and-yield/seeds-and-crops", "farming-and-yield/growing-and-selling",
+                 "reference/fees-and-risks", "farming-and-yield/classified", "getting-started/whats-coming"):
         try:
             html = _get(f"https://yieldfields.fun/docs/{page}").text
             text = re.sub(r"<[^>]+>", " ", re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S))
@@ -109,7 +111,34 @@ def section_docs() -> tuple[dict, list[str]]:
             cur[page] = {"error": str(e)[:80]}
     state_path.write_text(json.dumps(cur, indent=1))
     out["pages"] = cur
+    new_all = set()
+    for v in cur.values():
+        new_all |= set(v.get("addresses", [])) - KNOWN_ADDRESSES
+    out["new_addresses"] = sorted(new_all)
     return out, alerts
+
+
+def section_new_contracts(cfg, addrs: list[str]) -> tuple[str, list[str]]:
+    if not addrs:
+        return "", []
+    rpc = Rpc(cfg["chain"]["rpc_url"])
+    lines, alerts, found = ["## Newly published contracts"], [], []
+    for a in addrs:
+        try:
+            r = probe_mod.probe(rpc, a)
+        except Exception as e:
+            r = {"kind": "error", "address": a, "error": str(e)[:80]}
+        found.append(r)
+        lines.append(f"### {r['kind']} `{a}`")
+        lines.append("```json\n" + json.dumps(r, indent=1, default=str) + "\n```")
+        if r["kind"] == "cornhub":
+            ek = probe_mod.rake_from_cornhub(r)
+            lines.append(f"Loop economics at live fees: Market rake {ek['market_rake_pct']:.2f}% per cycle; Farmer beats a direct buy while buy tax > {ek['farmer_breakeven_buy_tax_pct']:.2f}%. Truffle Pig {r['truffle_pig_eth']} ETH. Float {r['float_eth']} ETH.")
+            alerts.append(f"CORNHUB LIVE at {a}: farmer fee {r['farmer_fee_pct']}%, market fee {r['market_fee_pct']}%, pig {r['truffle_pig_eth']} ETH")
+        if r["kind"] == "yield_pool":
+            alerts.append(f"$YIELD POOL LIVE at {a}: buy tax {r['buy_fee_pct']}%, sell tax {r['sell_fee_pct']}% (max {r['max_sell_fee_pct']}%), ETH reserve {r['eth_reserve']:.3f}")
+    _append("contracts", {"contracts": found})
+    return "\n".join(lines) + "\n", alerts
 
 
 def build(cfg) -> tuple[str, list[str]]:
@@ -158,6 +187,12 @@ Staking: paused={d['paused']} · backing {d['backing_eth']:.2f} ETH · jackpot {
 |---|---|---|
 {rows}
 """)
+        try:
+            nc, a = section_new_contracts(cfg, dd.get("new_addresses", [])); alerts += a
+            if nc:
+                parts.append(nc)
+        except Exception as e:
+            parts.append(f"## Newly published contracts\nERROR: {e}\n")
     except Exception as e:
         parts.append(f"## Docs watch\nERROR: {e}\n")
     parts.insert(1, "## Alerts\n" + ("\n".join(f"- **{x}**" for x in alerts) if alerts else "- none") + "\n")
@@ -168,6 +203,12 @@ def _alert_key(a: str) -> str:
     """Condition identity, so a persisting condition does not re-alert every run."""
     if a.startswith("Network Fert rate is"):
         return "network_rate_below_100"
+    if a.startswith("CORNHUB LIVE"):
+        return "cornhub_live"
+    if a.startswith("$YIELD POOL LIVE"):
+        return "yield_pool_live"
+    if a.startswith("New contract address"):
+        return a
     if a.startswith("Docs page changed"):
         return a   # a new change is a new key only if the page hash moved again (docs_state handles that)
     return a

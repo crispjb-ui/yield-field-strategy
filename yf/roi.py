@@ -321,3 +321,29 @@ def windfall_race(silo_yield: float, burns: list[int]) -> list[dict]:
         share = min(f * 0.10, 1.0); win = left * share; left -= win
         out.append({"fertility": f, "share": share, "wins": win, "silo_left": left})
     return out
+
+
+# ---- Pre-launch pack sizing (official prices/odds, docs 19 Nov) ----
+PACK_ETH = {"Bronze": 0.005, "Silver": 0.01, "Gold": 0.05, "Platinum": 0.1, "Diamond": 0.25}
+ODDS = [(0.45, 0.5), (0.31, 1.0), (0.15, 1.6), (0.06, 2.0), (0.025, 3.0), (0.005, 5.0)]
+TIER_FACTOR = {"Bronze": 120, "Silver": 116, "Gold": 108, "Platinum": 104, "Diamond": 100}
+
+
+def pack_mix(mix: dict, fert_per_crop: int = 2, slots: int = 25, fee: float = SALE_FEE) -> dict:
+    """mix = {"Platinum": 20, "Gold": 5}. Cost, expected crop value, 1-sigma, truffle odds, Fert, timing."""
+    import math
+    ev = sum(p * w for p, w in ODDS)
+    var_w = sum(p * w * w for p, w in ODDS) - ev * ev
+    n = sum(mix.values())
+    cost = sum(PACK_ETH[t] * q for t, q in mix.items())
+    value = ev * cost
+    sd = math.sqrt(sum(q * (PACK_ETH[t] ** 2) * var_w for t, q in mix.items()))
+    speed = 1 - 0.25 * fert_per_crop
+    slot_hours = sum(q * sum(p * w * 10 * TIER_FACTOR[t] / 500 for p, w in ODDS) for t, q in mix.items()) * speed
+    longest = max(5.0 * 10 * TIER_FACTOR[t] / 500 for t in mix) * speed
+    return {"packs": n, "cost_eth": cost, "expected_crop_value_eth": value, "sd_eth": sd,
+            "sd_pct": sd / value * 100 if value else 0, "after_fee_eth": value * (1 - fee),
+            "p_no_truffle": 0.95 ** n, "expected_truffles": 0.05 * n, "expected_truffle_weight_eth": 0.05 * value,
+            "fert_needed": fert_per_crop * n, "plots_at_once": n / slots,
+            "avg_hours_first_cycle": slot_hours / n if n else 0, "approx_hours_to_clear": max(slot_hours / slots, 0),
+            "longest_possible_hours": longest, "worst_case_market_exit_loss_eth": cost - value * (1 - fee)}

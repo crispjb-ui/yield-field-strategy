@@ -203,3 +203,10 @@ for the launch-week gap.**
   are why they cannot. Sellable float ≈ 25% of ~9,000/day network-wide, and most of that stays in Bags.
 - Deed purchases for the Fert coupon: free exports step at F=25 (4/day). A 4th Rare (F=24) adds nothing; a
   Legendary (F=26) adds 1/day ≈ $6/day on $3.5k. Not compelling. No deed purchases, unchanged.
+
+## Update 2026-11-20: pre-launch (see 08_PRELAUNCH_PACK_PLAN)
+- Shop opening ≠ reason to buy. Pre-buy only the T+0 plot (≤25 packs), ~24 h before launch, after fees are public.
+- T+0 plot: 20 Platinum + 5 Gold = 2.25 ETH (66% of the farming bucket at ETH $1,752). Wave 2 (1.18 ETH) on live data.
+- Tomorrow: 1 Bronze test pack; Truffle Pig if ≤0.1 ETH. Supersedes the "6 Platinum" tranche-1 rule of 11 Nov.
+- Monitor now auto-reads the Cornhub and `$YIELD` pool the moment their addresses are published.
+- Third-party mirror was taken down on/before 20 Nov; our snapshot is in docs/source/.

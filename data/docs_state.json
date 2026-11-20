@@ -22,5 +22,25 @@
   "hash": "abc6f07622e8655c",
   "addresses": [],
   "updated": "19 Nov 2026"
+ },
+ "farming-and-yield/growing-and-selling": {
+  "hash": "870cc655ff9ed15f",
+  "addresses": [],
+  "updated": "19 Nov 2026"
+ },
+ "reference/fees-and-risks": {
+  "hash": "09b7d9f7e6a6a352",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "farming-and-yield/classified": {
+  "hash": "8e61d69fe89734f7",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "getting-started/whats-coming": {
+  "hash": "823d7f0643c21259",
+  "addresses": [],
+  "updated": "3 Nov 2026"
  }
 }

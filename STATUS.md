@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-20 00:41 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-20 00:47 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 58%**
@@ -25,8 +25,8 @@ Staking: paused=False · backing 31.99 ETH · jackpot 0 · rewardPool 0 · yield
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.786 ETH | 10 | 8.012 |
-| yield-fields-items | 5.2 USDG | 91 | 0.6783951026528086 |
-| genesishero-abstract | 0.0436314 ETH | 3 | 0.09960000000000001 |
+| yield-fields-items | 5.2 USDG | 93 | 0.6845163316437544 |
+| genesishero-abstract | 0.043598 ETH | 3 | 0.09960000000000001 |
 | och-ringbearer | 0.326 ETH | 0 | 0.0 |
 
 ## Docs watch
@@ -36,3 +36,7 @@ Staking: paused=False · backing 31.99 ETH · jackpot 0 · rewardPool 0 · yield
 | reference/patch-notes | 3 Nov 2026 | 0 |
 | farming-and-yield/yield | 3 Nov 2026 | 0 |
 | farming-and-yield/seeds-and-crops | 19 Nov 2026 | 0 |
+| farming-and-yield/growing-and-selling | 19 Nov 2026 | 0 |
+| reference/fees-and-risks | 3 Nov 2026 | 0 |
+| farming-and-yield/classified | 3 Nov 2026 | 0 |
+| getting-started/whats-coming | 3 Nov 2026 | 0 |

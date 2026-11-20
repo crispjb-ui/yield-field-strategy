@@ -134,6 +134,15 @@ def cmd_deeds(cfg, args):
                       "reward_pool": S.call("rewardPool"), "paused": S.call("paused")}, indent=2))
 
 
+def cmd_probe(cfg, args):
+    from .rpc import Rpc
+    from . import probe as P
+    r = P.probe(Rpc(cfg["chain"]["rpc_url"]), args.address)
+    print(json.dumps(r, indent=2, default=str))
+    if r["kind"] == "cornhub":
+        print(json.dumps(P.rake_from_cornhub(r), indent=2))
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="yf")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -149,10 +158,11 @@ def main(argv=None):
     s = sub.add_parser("watch"); s.add_argument("--once", action="store_true")
     s = sub.add_parser("fertrate"); s.add_argument("--save", action="store_true")
     sub.add_parser("deeds")
+    s = sub.add_parser("probe"); s.add_argument("address")
     args = p.parse_args(argv)
     cfg = config.load_settings()
     {"market": cmd_market, "positions": cmd_positions, "roi": cmd_roi,
-     "allocate": cmd_allocate, "watch": cmd_watch, "fertrate": cmd_fertrate, "deeds": cmd_deeds}[args.cmd](cfg, args)
+     "allocate": cmd_allocate, "watch": cmd_watch, "fertrate": cmd_fertrate, "deeds": cmd_deeds, "probe": cmd_probe}[args.cmd](cfg, args)
 
 
 if __name__ == "__main__":
