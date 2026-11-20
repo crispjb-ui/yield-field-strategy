@@ -1,16 +1,16 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-20 12:27 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-20 18:24 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
-- **Network Fert rate is 57%**
+- **Network Fert rate is 56%**
 
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 112,733 | 12.38 | 57% | 9,106 | 18,213 |
+| 113,596 | 12.47 | 56% | 9,106 | 18,213 |
 
-Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 4 d.
+Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 3 d.
 
 ## Deeds (#537, #660, #661)
 | Deed | Fertility | Structure | Staker | Root Cellar ETH |
@@ -19,14 +19,14 @@ Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 4
 | #660 | 6 | Fert Deck | owner | 0.00973 |
 | #661 | 6 | Fert Deck | owner | 0.00973 |
 
-Staking: paused=False · backing 32.07 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
+Staking: paused=False · backing 32.08 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.786 ETH | 11 | 8.45 |
-| yield-fields-items | 4.99 USDG | 96 | 0.7279628568998682 |
-| genesishero-abstract | 0.0417081 ETH | 3 | 0.09960000000000001 |
+| yield-field-deeds | 0.799 ETH | 12 | 9.241 |
+| yield-fields-items | 4.7 USDG | 90 | 0.6139483402285197 |
+| genesishero-abstract | 0.0415179 ETH | 2 | 0.06670000000000001 |
 | och-ringbearer | error | | |
 
 ## Docs watch
