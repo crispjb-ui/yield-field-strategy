@@ -1,6 +1,6 @@
 {
  "reference/official-links-and-contracts": {
-  "hash": "8ff20e7650669705",
+  "hash": "969baaab76cde95c",
   "addresses": [
    "0x0acfcd1483686fcd94dabea03714321d0e05fc8d",
    "0x231142e88f523b0a4f46d2d79faab2ce1828e43a",
@@ -9,37 +9,37 @@
   "updated": "3 Nov 2026"
  },
  "reference/patch-notes": {
-  "hash": "95db7f1163761d9d",
+  "hash": "2a31770b634d14d5",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
  "farming-and-yield/yield": {
-  "hash": "696af1c15f6b00ca",
+  "hash": "2bc20208c265274b",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
  "farming-and-yield/seeds-and-crops": {
-  "hash": "abc6f07622e8655c",
+  "hash": "f558bc2cc46a2ecd",
   "addresses": [],
   "updated": "19 Nov 2026"
  },
  "farming-and-yield/growing-and-selling": {
-  "hash": "870cc655ff9ed15f",
+  "hash": "9d34d10d75dba59e",
   "addresses": [],
   "updated": "19 Nov 2026"
  },
  "reference/fees-and-risks": {
-  "hash": "09b7d9f7e6a6a352",
+  "hash": "1f04372d09e593a5",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
  "farming-and-yield/classified": {
-  "hash": "8e61d69fe89734f7",
+  "hash": "b7744257916c69eb",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
  "getting-started/whats-coming": {
-  "hash": "823d7f0643c21259",
+  "hash": "33bc0bfadbd552bf",
   "addresses": [],
   "updated": "3 Nov 2026"
  }

@@ -1,33 +1,41 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-20 18:24 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-21 00:40 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
-- **Network Fert rate is 56%**
+- **Network Fert rate is 55%**
+- **Docs page changed: reference/official-links-and-contracts**
+- **Docs page changed: reference/patch-notes**
+- **Docs page changed: farming-and-yield/yield**
+- **Docs page changed: farming-and-yield/seeds-and-crops**
+- **Docs page changed: farming-and-yield/growing-and-selling**
+- **Docs page changed: reference/fees-and-risks**
+- **Docs page changed: farming-and-yield/classified**
+- **Docs page changed: getting-started/whats-coming**
 
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 113,596 | 12.47 | 56% | 9,106 | 18,213 |
+| 115,968 | 12.78 | 55% | 9,078 | 18,155 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 3 d.
 
 ## Deeds (#537, #660, #661)
 | Deed | Fertility | Structure | Staker | Root Cellar ETH |
 |---|---|---|---|---|
-| #537 | 6 | Fert Deck | owner | 0.00973 |
-| #660 | 6 | Fert Deck | owner | 0.00973 |
-| #661 | 6 | Fert Deck | owner | 0.00973 |
+| #537 | 6 | Fert Deck | owner | 0.00974 |
+| #660 | 6 | Fert Deck | owner | 0.00974 |
+| #661 | 6 | Fert Deck | owner | 0.00974 |
 
-Staking: paused=False · backing 32.08 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
+Staking: paused=False · backing 32.09 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.799 ETH | 12 | 9.241 |
-| yield-fields-items | 4.7 USDG | 90 | 0.6139483402285197 |
-| genesishero-abstract | 0.0415179 ETH | 2 | 0.06670000000000001 |
-| och-ringbearer | error | | |
+| yield-field-deeds | 0.77 ETH | 8 | 6.432 |
+| yield-fields-items | 4.45 USDG | 81 | 0.5823333147102182 |
+| genesishero-abstract | 0.0394091 ETH | 3 | 0.09480000000000001 |
+| och-ringbearer | 0.325 ETH | 2 | 0.525 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
