@@ -1,26 +1,9 @@
 {
- "ts": "2026-11-21T00:40:07.097557+00:00",
+ "ts": "2026-11-21T06:28:32.736998+00:00",
  "alerts": [
-  "Network Fert rate is 55%",
-  "Docs page changed: reference/official-links-and-contracts",
-  "Docs page changed: reference/patch-notes",
-  "Docs page changed: farming-and-yield/yield",
-  "Docs page changed: farming-and-yield/seeds-and-crops",
-  "Docs page changed: farming-and-yield/growing-and-selling",
-  "Docs page changed: reference/fees-and-risks",
-  "Docs page changed: farming-and-yield/classified",
-  "Docs page changed: getting-started/whats-coming"
+  "Network Fert rate is 54%"
  ],
- "new_alerts": [
-  "Docs page changed: reference/official-links-and-contracts",
-  "Docs page changed: reference/patch-notes",
-  "Docs page changed: farming-and-yield/yield",
-  "Docs page changed: farming-and-yield/seeds-and-crops",
-  "Docs page changed: farming-and-yield/growing-and-selling",
-  "Docs page changed: reference/fees-and-risks",
-  "Docs page changed: farming-and-yield/classified",
-  "Docs page changed: getting-started/whats-coming"
- ],
+ "new_alerts": [],
  "cleared": [],
  "active_keys": [
   "network_rate_below_100"

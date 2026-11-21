@@ -1,22 +1,14 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-21 00:40 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-21 06:28 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
-- **Network Fert rate is 55%**
-- **Docs page changed: reference/official-links-and-contracts**
-- **Docs page changed: reference/patch-notes**
-- **Docs page changed: farming-and-yield/yield**
-- **Docs page changed: farming-and-yield/seeds-and-crops**
-- **Docs page changed: farming-and-yield/growing-and-selling**
-- **Docs page changed: reference/fees-and-risks**
-- **Docs page changed: farming-and-yield/classified**
-- **Docs page changed: getting-started/whats-coming**
+- **Network Fert rate is 54%**
 
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 115,968 | 12.78 | 55% | 9,078 | 18,155 |
+| 117,476 | 12.94 | 54% | 9,077 | 18,154 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 3 d.
 
@@ -27,15 +19,15 @@ Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 3
 | #660 | 6 | Fert Deck | owner | 0.00974 |
 | #661 | 6 | Fert Deck | owner | 0.00974 |
 
-Staking: paused=False · backing 32.09 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
+Staking: paused=False · backing 32.11 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 0.0034 ETH
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.77 ETH | 8 | 6.432 |
-| yield-fields-items | 4.45 USDG | 81 | 0.5823333147102182 |
-| genesishero-abstract | 0.0394091 ETH | 3 | 0.09480000000000001 |
-| och-ringbearer | 0.325 ETH | 2 | 0.525 |
+| yield-field-deeds | 0.767 ETH | 10 | 8.931000000000001 |
+| yield-fields-items | 4.1 USDG | 85 | 0.6508497768627819 |
+| genesishero-abstract | 0.0392439 ETH | 3 | 0.09480000000000001 |
+| och-ringbearer | error | | |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
