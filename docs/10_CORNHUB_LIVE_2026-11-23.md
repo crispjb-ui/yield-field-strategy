@@ -64,3 +64,35 @@ shows when you buy, and with that page once it is listed.
   `withdraw`. But launch may come with short notice, so **prove the USDC → ETH → Robinhood Chain path now** with
   ~0.02 ETH and one Bronze pack, and convert the plot's ETH the moment a launch time is announced.
 - Check the shop for the Truffle Pig: the contract fee reads 0, meaning not on sale yet or free.
+
+## PostHog dashboard (owner link, read 2026-11-23 15:09 UTC refresh)
+`https://us.posthog.com/shared/j1Rfb8MVeDSZdJEQKx2Pud2FlDtCWw` — titled "Yield Fields", "updated hourly from the
+game". Snapshot: `data/snapshots/posthog-dashboard-2026-11-23.json`. Its totals match the chain within the hourly
+lag (6,734 packs / 494.8 ETH vs 6,759 / 496.1 on-chain), so it reads as genuine game data (grade B: provenance
+of the link itself unverified).
+
+| Fact | Value |
+|---|---|
+| Packs opened | 7,055 (more than sold, because of reward packs) |
+| **Reward Packs given** | **352**, backed by "ETH added by the team" 17.6 ETH → 0.05 ETH each = **Gold packs**. Gold seeds opened exceed Gold packs sold by 326, consistent. Who received them and why: not stated |
+| Observed seed odds vs published | Common 45.6% (45) · Uncommon 30.6% (31) · Rare 14.9% (15) · Epic 5.5% (6) · Legendary 2.9% (2.5) · Mythic 0.51% (0.5): fair |
+| Seeds in existence | 7,055: Diamond 1,426 · Platinum 682 · Gold 1,158 · Silver 1,910 · Bronze 1,879 |
+| **Crop value already ripped** | **513.1 ETH** (Common 115.7 · Uncommon 153.7 · Rare 127.7 · Epic 57.1 · Legendary 44.7 · Mythic 14.3); Diamond is 70% of it |
+| Diamond Commons | 635 seeds = 79.4 ETH: the first crops that can ripen in the whole game |
+
+Exact harvest schedule for the seeds that already exist (cumulative crop value ripe after planting at launch):
+
+| Time | Everyone uses 2 Fert | Nobody uses Fert |
+|---|---|---|
+| 30 min | 79 ETH (15%) | 0 |
+| ~33 min | 109 ETH (21%) | 0 |
+| 1 h | 223 ETH (43%) | 79 ETH (15%) |
+| 2 h | 436 ETH (85%) | 223 ETH (43%) |
+| 3 h | 487 ETH (95%) | 269 ETH (52%) |
+| 4 h | 499 ETH (97%) | 436 ETH (85%) |
+| 6 h | 513 ETH (100%) | 487 ETH (95%) |
+
+Reality sits between the columns. This is the buying the pool will see if crops go to the Farmer, against a
+rumoured ~140 ETH starting cap. It confirms the T+3 h exit rule and the case for Diamond + Fert at launch.
+
+**Owner action:** open the Bag and check for Reward Packs. The game tracks them per account (`rewardSeedPacks`).
