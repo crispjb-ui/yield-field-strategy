@@ -1,0 +1,343 @@
+[
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "packId",
+    "internalType": "uint8",
+    "type": "uint8"
+   },
+   {
+    "name": "qty",
+    "internalType": "uint32",
+    "type": "uint32"
+   }
+  ],
+  "name": "buyPacks",
+  "outputs": [],
+  "stateMutability": "payable"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "owner",
+  "outputs": [
+   {
+    "name": "result",
+    "internalType": "address",
+    "type": "address"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "packFeeBps",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "packId",
+    "internalType": "uint8",
+    "type": "uint8"
+   }
+  ],
+  "name": "packPrice",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "packIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   }
+  ],
+  "name": "packPrices",
+  "outputs": [
+   {
+    "name": "prices",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [],
+  "name": "paused",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "bps",
+    "internalType": "uint16",
+    "type": "uint16"
+   }
+  ],
+  "name": "setPackFeeBps",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "packIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   },
+   {
+    "name": "prices",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "setPackPrices",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "paused_",
+    "internalType": "bool",
+    "type": "bool"
+   }
+  ],
+  "name": "setPaused",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "vegetableIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   },
+   {
+    "name": "prices",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "name": "setVegetablePrices",
+  "outputs": [],
+  "stateMutability": "nonpayable"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "vegetableId",
+    "internalType": "uint8",
+    "type": "uint8"
+   }
+  ],
+  "name": "vegetablePrice",
+  "outputs": [
+   {
+    "name": "",
+    "internalType": "uint256",
+    "type": "uint256"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "function",
+  "inputs": [
+   {
+    "name": "vegetableIds",
+    "internalType": "uint8[]",
+    "type": "uint8[]"
+   }
+  ],
+  "name": "vegetablePrices",
+  "outputs": [
+   {
+    "name": "prices",
+    "internalType": "uint256[]",
+    "type": "uint256[]"
+   }
+  ],
+  "stateMutability": "view"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "bps",
+    "internalType": "uint16",
+    "type": "uint16",
+    "indexed": false
+   }
+  ],
+  "name": "PackFeeBpsSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "packId",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": true
+   },
+   {
+    "name": "price",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "PackPriceUpdated"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "purchaser",
+    "internalType": "address",
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "name": "packId",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": true
+   },
+   {
+    "name": "qty",
+    "internalType": "uint32",
+    "type": "uint32",
+    "indexed": false
+   },
+   {
+    "name": "paid",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "PacksPurchased"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "paused",
+    "internalType": "bool",
+    "type": "bool",
+    "indexed": false
+   }
+  ],
+  "name": "PausedSet"
+ },
+ {
+  "type": "event",
+  "anonymous": false,
+  "inputs": [
+   {
+    "name": "vegetableId",
+    "internalType": "uint8",
+    "type": "uint8",
+    "indexed": true
+   },
+   {
+    "name": "price",
+    "internalType": "uint256",
+    "type": "uint256",
+    "indexed": false
+   }
+  ],
+  "name": "VegetablePriceUpdated"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "EmptyBatch"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "IncorrectValue"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "InvalidFeeBps"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "LengthMismatch"
+ },
+ {
+  "type": "error",
+  "inputs": [
+   {
+    "name": "packId",
+    "internalType": "uint8",
+    "type": "uint8"
+   }
+  ],
+  "name": "PackNotOnSale"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Paused"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Reentrancy"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "Unauthorized"
+ },
+ {
+  "type": "error",
+  "inputs": [],
+  "name": "ZeroQuantity"
+ }
+]

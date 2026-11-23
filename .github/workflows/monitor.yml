@@ -24,7 +24,7 @@ jobs:
         run: |
           git config user.name "yf-monitor"
           git config user.email "yf-monitor@users.noreply.github.com"
-          git add STATUS.md data/snapshots data/docs_state.json data/alerts.json
+          git add STATUS.md data/snapshots data/docs_state.json data/alerts.json data/cornhub_state.json
           git diff --cached --quiet || git commit -m "monitor: $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
           git push
       - name: Open alert issue

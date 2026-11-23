@@ -78,9 +78,14 @@ class Rpc:
 
     def call(self, method: str, params: list):
         self._id += 1
-        r = requests.post(self.url, json={"jsonrpc": "2.0", "id": self._id,
-                                          "method": method, "params": params},
-                          timeout=self.timeout)
+        import time
+        for attempt in range(6):
+            r = requests.post(self.url, json={"jsonrpc": "2.0", "id": self._id,
+                                              "method": method, "params": params},
+                              timeout=self.timeout)
+            if r.status_code != 429:
+                break
+            time.sleep(1.5 * (attempt + 1))     # public RPC rate limit
         r.raise_for_status()
         j = r.json()
         if "error" in j:

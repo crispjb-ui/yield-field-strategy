@@ -274,7 +274,7 @@ def plots_needed(budget_usd: float, pack_price_usd: float, grow_hours: float, wi
 
 # ---- Launch economics (mirror defaults 2026-11-11; recompute from the Cornhub contract at launch) ----
 EV_WORTH_X = 0.995            # Σ p × worth over the 6 seed rarities
-SALE_FEE = 0.10               # Market and Farmer Co-op Dues (testnet default)
+SALE_FEE = 0.08               # Market fee on mainnet CornHub (2026-11-23); Farmer fee is 0.06
 TRUFFLE_P = 0.05
 
 

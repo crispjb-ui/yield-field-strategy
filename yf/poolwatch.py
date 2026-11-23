@@ -17,6 +17,8 @@ class Rules:
     moonbag_frac: float = 0.15      # of the original bag, kept with no target
     presettle_minutes: int = 45     # before the first 00:00 UTC Truffle settlement
     presettle_min_multiple: float = 1.2
+    inflow_end_hours: float = 3.0   # presale crops are ~97% ripe (with Fert) by then: the pre-committed Farmer buying is spent
+    inflow_end_min_multiple: float = 1.2
 
 
 @dataclass
@@ -25,6 +27,7 @@ class State:
     peak_multiple: float = 0.0
     realized_eth: float = 0.0
     presettle_done: bool = False
+    launch_ts: float = 0.0          # unix time farming opened; set it in the state file on launch day
 
 
 def minutes_to_next_settlement(now: datetime | None = None) -> float:
@@ -34,7 +37,8 @@ def minutes_to_next_settlement(now: datetime | None = None) -> float:
 
 
 def decide(cost_eth: float, bag_exit_eth: float, st: State, r: Rules = Rules(),
-           mins_to_settlement: float | None = None, first_settlement_pending: bool = True) -> dict:
+           mins_to_settlement: float | None = None, first_settlement_pending: bool = True,
+           hours_since_launch: float | None = None) -> dict:
     """Pure decision. Returns the multiple, the action (or None) and the reason."""
     m = (st.realized_eth + bag_exit_eth) / cost_eth if cost_eth else 0.0
     st.peak_multiple = max(st.peak_multiple, m)
@@ -45,6 +49,10 @@ def decide(cost_eth: float, bag_exit_eth: float, st: State, r: Rules = Rules(),
         action, reason = "SELL 50% OF BAG", f"multiple {m:.2f} ≥ {r.t1_multiple}: principal back"
     elif st.stage == 1 and m >= r.t2_multiple:
         action, reason = "SELL 50% OF REMAINING", f"multiple {m:.2f} ≥ {r.t2_multiple}"
+    elif (st.stage == 0 and hours_since_launch is not None and hours_since_launch >= r.inflow_end_hours
+          and m >= r.inflow_end_min_multiple):
+        action, reason = "SELL 50% OF BAG", (f"{hours_since_launch:.1f} h since launch: the presale's Farmer buying is "
+                                              f"mostly spent and outside buyers still face the launch tax; multiple {m:.2f}")
     elif (st.stage == 0 and first_settlement_pending and not st.presettle_done and mins_to_settlement is not None
           and mins_to_settlement <= r.presettle_minutes and m >= r.presettle_min_multiple):
         action, reason = "SELL 50% OF BAG", (f"{mins_to_settlement:.0f} min to the first Truffle settlement "
@@ -74,7 +82,8 @@ def watch(rpc, pool_addr: str, wallet: str, cost_eth: float, state_file: Path, i
             sell, buy = pool.call("sellFeeBps") / 100, pool.call("buyFeeBps") / 100
             base_sell = sell if base_sell is None else min(base_sell, sell)
             d = decide(cost_eth, exit_eth, st, mins_to_settlement=minutes_to_next_settlement(),
-                       first_settlement_pending=launch_day_first_settlement)
+                       first_settlement_pending=launch_day_first_settlement,
+                       hours_since_launch=((time.time() - st.launch_ts) / 3600) if st.launch_ts else None)
             line = (f"{datetime.now(timezone.utc):%H:%M:%S}Z bag {bal/1e18:,.0f} $YIELD → {exit_eth:.4f} ETH net | "
                     f"multiple {d['multiple']:.2f} (peak {d['peak']:.2f}) | buy tax {buy:.1f}% sell tax {sell:.1f}%"
                     f"{' HEAVY-SELLING TAX ON' if sell > base_sell else ''} | spot {pool.call('spotPrice')}")

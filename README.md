@@ -18,6 +18,7 @@ stage launches. Stage One (staking + Fert Deck) is the only live loop.
 | `docs/02_STRATEGY_FRAMEWORK.md` | Game summary, decision rules, $8k allocation, exit plan, risk register |
 | `docs/03_AUTOMATION_PLAN.md` | Infrastructure build plan, phased |
 | `docs/05_OWNER_THESIS.md` | Owner's token thesis, the docs-based challenge to it, and the operating rules in force |
+| `docs/10_CORNHUB_LIVE_2026-11-23.md` | CornHub on-chain: live fees, 496 ETH presale, what it changes |
 | `docs/09_YIELD_EXIT_PLAN_2026-11-20.md` | $YIELD exit ladder, why the sell tax forces selling into strength, launch-day watcher command |
 | `docs/08_PRELAUNCH_PACK_PLAN_2026-11-20.md` | What to buy when the shop opens, the T+0 plot, wave-2 gates |
 | `docs/07_LAUNCH_ECONOMICS_2026-11-11.md` | Pack EV, rake, truffle payout math, Farmer-vs-direct, Windfall race, launch-day playbook |

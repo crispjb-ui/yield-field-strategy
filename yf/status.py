@@ -20,7 +20,15 @@ KNOWN_ADDRESSES = {
     "0x231142e88f523b0a4f46d2d79faab2ce1828e43a",  # deeds
     "0x0acfcd1483686fcd94dabea03714321d0e05fc8d",  # staking
     "0xd9d6d0557f3479e801a967eb693ebe1ada6e5317",  # items
+    "0x8c1e23bc90f88ddc8cba7256798acbd745072524",  # cornhub (game mainnet config, 2026-11-23)
 }
+ALL_DOC_PAGES = (
+    "reference/official-links-and-contracts", "reference/patch-notes", "reference/fees-and-risks", "reference/faq",
+    "reference/glossary", "getting-started/about-yield-fields", "getting-started/quick-start",
+    "getting-started/whats-coming", "deed-gameplay/founding-deeds", "deed-gameplay/staking-and-the-fert-deck",
+    "deed-gameplay/fertilizer", "deed-gameplay/the-root-cellar", "deed-gameplay/the-silo-and-the-windfall",
+    "farming-and-yield/seeds-and-crops", "farming-and-yield/growing-and-selling", "farming-and-yield/yield",
+    "farming-and-yield/classified", "the-farmers-co-op/how-the-farmers-co-op-works", "the-farmers-co-op/flywheels")
 OWNER = "0x139e79b0d01148712528d56625a2a59f676e3952"
 DEEDS = [537, 660, 661]
 
@@ -90,9 +98,7 @@ def section_docs() -> tuple[dict, list[str]]:
     state_path = ROOT / "data" / "docs_state.json"
     prev = json.loads(state_path.read_text()) if state_path.exists() else {}
     cur = {}
-    for page in ("reference/official-links-and-contracts", "reference/patch-notes", "farming-and-yield/yield",
-                 "farming-and-yield/seeds-and-crops", "farming-and-yield/growing-and-selling",
-                 "reference/fees-and-risks", "farming-and-yield/classified", "getting-started/whats-coming"):
+    for page in ALL_DOC_PAGES:
         try:
             html = _get(f"https://yieldfields.fun/docs/{page}").text
             text = re.sub(r"<[^>]+>", " ", re.sub(r"<script.*?</script>|<style.*?</style>", "", html, flags=re.S))
@@ -141,6 +147,34 @@ def section_new_contracts(cfg, addrs: list[str]) -> tuple[str, list[str]]:
     return "\n".join(lines) + "\n", alerts
 
 
+def section_cornhub(cfg) -> tuple[str, list[str]]:
+    from . import cornhub
+    rpc = Rpc(cfg["chain"]["rpc_url"], timeout=40)
+    c = probe_mod.probe(rpc, cornhub.MAINNET)
+    sales = cornhub.scan(rpc, ROOT / "data" / "cornhub_state.json")
+    _append("cornhub", {"fees": {k: c.get(k) for k in ("farmer_fee_pct", "market_fee_pct", "pack_fee_pct", "truffle_pig_eth", "paused")},
+                        **{k: sales[k] for k in ("balance_eth", "total_paid_eth", "purchases", "unique_buyers", "diamond_share_pct")}})
+    alerts = []
+    if c.get("kind") == "cornhub":
+        if c.get("paused"):
+            alerts.append("CornHub is PAUSED")
+        if c.get("truffle_pig_eth"):
+            alerts.append(f"Truffle Pig on sale: {c['truffle_pig_eth']} ETH")
+        if sales["total_paid_eth"] - sales["balance_eth"] > 1:
+            alerts.append(f"CornHub balance {sales['balance_eth']:.1f} ETH is below pack sales {sales['total_paid_eth']:.1f} ETH (selling has started or ETH was withdrawn)")
+    rows = "\n".join(f"| {k} | {v['packs']:,} | {v['eth']:,.2f} |" for k, v in sales["by_pack"].items())
+    md = f"""## CornHub `{cornhub.MAINNET}`
+Fees: Farmer {c.get('farmer_fee_pct')}% · Market {c.get('market_fee_pct')}% · pack {c.get('pack_fee_pct')}% · Truffle Pig {c.get('truffle_pig_eth')} ETH · paused={c.get('paused')}
+
+Pack sales: **{sales['total_paid_eth']:,.1f} ETH** from {sales['unique_buyers']:,} wallets in {sales['purchases']:,} purchases · contract balance {sales['balance_eth']:,.1f} ETH · Diamond {sales['diamond_share_pct']:.0f}% · top-10 wallets {sales['top10_share_pct']:.0f}%
+
+| Pack | Packs | ETH |
+|---|---|---|
+{rows}
+"""
+    return md, alerts
+
+
 def build(cfg) -> tuple[str, list[str]]:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     alerts: list[str] = []
@@ -169,6 +203,11 @@ Staking: paused={d['paused']} · backing {d['backing_eth']:.2f} ETH · jackpot {
 """)
     except Exception as e:
         parts.append(f"## Deeds\nERROR: {e}\n"); alerts.append(f"deeds read failed: {e}")
+    try:
+        ch, a = section_cornhub(cfg); alerts += a
+        parts.append(ch)
+    except Exception as e:
+        parts.append(f"## CornHub\nERROR: {e}\n")
     try:
         m, a = section_markets(); alerts += a
         rows = "\n".join(f"| {k} | {v.get('floor')} {v.get('symbol','')} | {v.get('sales_24h')} | {v.get('volume_24h')} |" if "error" not in v else f"| {k} | error | | |" for k, v in m.items())
@@ -203,6 +242,10 @@ def _alert_key(a: str) -> str:
     """Condition identity, so a persisting condition does not re-alert every run."""
     if a.startswith("Network Fert rate is"):
         return "network_rate_below_100"
+    if a.startswith("CornHub balance"):
+        return "cornhub_balance_below_sales"
+    if a.startswith("Truffle Pig on sale"):
+        return "pig_on_sale"
     if a.startswith("CORNHUB LIVE"):
         return "cornhub_live"
     if a.startswith("$YIELD POOL LIVE"):

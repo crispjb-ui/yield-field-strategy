@@ -30,3 +30,10 @@ def test_breakeven():
     b = roundtrip_breakeven(5)
     assert abs(b["beat_market_multiple"] - 1/0.95) < 1e-9 and 1.17 < b["recover_pack_eth_multiple"] < 1.18
     assert roundtrip_breakeven(25)["recover_pack_eth_multiple"] > 1.48
+
+def test_inflow_end_rule():
+    st = State()
+    assert decide(3.25, 4.5, st, hours_since_launch=1.0)["action"] is None             # 1.38x, too early
+    assert decide(3.25, 4.5, st, hours_since_launch=3.2)["action"] == "SELL 50% OF BAG"
+    st = State()
+    assert decide(3.25, 3.4, st, hours_since_launch=3.2)["action"] is None             # 1.05x < 1.2

@@ -5,11 +5,11 @@ def test_pack_ev_from_mirror_defaults():
     m = config.load_mechanics()["seeds"]
     ev = seed_pack_ev(0.25, m["rarities"], payout_pct=90)
     assert abs(ev["ev_crop_value_eth"] - 0.24875) < 1e-9 and abs(ev["ev_ratio"] - 0.8955) < 1e-9
-    assert abs(pack_cycle(0.25)["rake_per_eth"] - 0.1045) < 1e-9
+    assert abs(pack_cycle(0.25)["rake_per_eth"] - 0.0846) < 1e-9          # live Market fee 8%
 
 def test_cycling_burns_capital():
     c = cycling(2.7, 12)
-    assert 0.7 < c["capital_left_eth"] < 0.75 and 18 < c["total_pack_spend_eth"] < 20
+    assert 0.9 < c["capital_left_eth"] < 0.97 and 20 < c["total_pack_spend_eth"] < 22
 
 def test_truffle_ev_rule():
     # big budget, small network weight → worth it; tiny budget → not
@@ -19,7 +19,8 @@ def test_truffle_ev_rule():
 def test_farmer_vs_direct():
     assert farmer_vs_direct(90)["farmer_wins"] is True
     assert farmer_vs_direct(5)["farmer_wins"] is False
-    assert abs(farmer_vs_direct(0)["breakeven_buy_tax_pct"] - 10.45) < 1e-9
+    assert abs(farmer_vs_direct(0)["breakeven_buy_tax_pct"] - 8.46) < 1e-9          # at the default (Market) fee
+    assert abs(farmer_vs_direct(0, fee=0.06)["breakeven_buy_tax_pct"] - 6.47) < 1e-9  # at the live Farmer fee
 
 def test_windfall_race_order_matters():
     a = windfall_race(10000, [9, 5, 8]); b = windfall_race(10000, [5, 9, 8])

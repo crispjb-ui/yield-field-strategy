@@ -130,10 +130,13 @@ farm:                       # /docs/farming-and-yield/growing-and-selling
   slots_per_wallet: 25      # confirmed by mirror glossary: free plot per WALLET, 25 slots, no deed needed
   grow_hours: [1, 12]       # Diamond Common 1 h … Bronze Mythic 12 h
   ripe_crops_wilt: false    # for selling; for TRUFFLES: 'Spoiling' at 24 h ripe, 'Spoiled' (no truffle) at 48 h
-  farmer_pays_pct_in_yield: 90      # testnet default: crop value − 10% fee, swapped on the pool tax-free (docs say Farmer dues will be LOWER on mainnet)
-  broker_pays_pct_in_eth: 90        # testnet default: 10% fee; paid from Cornhub float (pack ETH)
-  coop_dues_farmer_pct: 10
-  coop_dues_broker_pct: 10
+  farmer_pays_pct_in_yield: 94      # MAINNET CornHub farmerFeeBps=600 (read 2026-11-23)
+  broker_pays_pct_in_eth: 92        # MAINNET marketFeeBps=800; paid from the CornHub ETH balance
+  coop_dues_farmer_pct: 6
+  coop_dues_broker_pct: 8
+  cornhub: "0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524"   # from the game's mainnet config; not yet on the official links page
+  presale_2026_11_23: {eth: 496.1, wallets: 502, purchases: 1760, diamond_share: 0.72, first_sale_utc: "2026-11-20 19:56"}
+  coop_buys_split: [truffles_most, coop_rewards_staked_deeds, burn_rest]   # docs 20 Nov
   fees_go_to: buyback_vault         # buys $YIELD on the pool, all of it to the Truffle Pool
   farmer_opens_on_own_switch: true  # not tied to launch tax; date unknown
   market_float_risk: true           # 'The Market is short on ETH' stops sales when pack float is low

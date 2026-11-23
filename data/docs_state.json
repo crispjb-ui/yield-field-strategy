@@ -13,8 +13,60 @@
   "addresses": [],
   "updated": "3 Nov 2026"
  },
- "farming-and-yield/yield": {
-  "hash": "2bc20208c265274b",
+ "reference/fees-and-risks": {
+  "hash": "1f04372d09e593a5",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "reference/faq": {
+  "hash": "e464520f7df1f83d",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "reference/glossary": {
+  "hash": "12cce1177b32d16a",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "getting-started/about-yield-fields": {
+  "hash": "83d975d202346d38",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "getting-started/quick-start": {
+  "hash": "0f07214d3ad6d74b",
+  "addresses": [],
+  "updated": "8 Nov 2026"
+ },
+ "getting-started/whats-coming": {
+  "hash": "33bc0bfadbd552bf",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "deed-gameplay/founding-deeds": {
+  "hash": "eb8960363f9d5108",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "deed-gameplay/staking-and-the-fert-deck": {
+  "hash": "aa18ea85359845e2",
+  "addresses": [],
+  "updated": "8 Nov 2026"
+ },
+ "deed-gameplay/fertilizer": {
+  "hash": "4a4d634d3f53fe9b",
+  "addresses": [
+   "0xd9d6d0557f3479e801a967eb693ebe1ada6e5317"
+  ],
+  "updated": "8 Nov 2026"
+ },
+ "deed-gameplay/the-root-cellar": {
+  "hash": "0a683272e8fb8234",
+  "addresses": [],
+  "updated": "3 Nov 2026"
+ },
+ "deed-gameplay/the-silo-and-the-windfall": {
+  "hash": "cb417e26866c7260",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
@@ -28,8 +80,8 @@
   "addresses": [],
   "updated": "19 Nov 2026"
  },
- "reference/fees-and-risks": {
-  "hash": "1f04372d09e593a5",
+ "farming-and-yield/yield": {
+  "hash": "2bc20208c265274b",
   "addresses": [],
   "updated": "3 Nov 2026"
  },
@@ -38,9 +90,14 @@
   "addresses": [],
   "updated": "3 Nov 2026"
  },
- "getting-started/whats-coming": {
-  "hash": "33bc0bfadbd552bf",
+ "the-farmers-co-op/how-the-farmers-co-op-works": {
+  "hash": "2e980b3beb128a3b",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "20 Nov 2026"
+ },
+ "the-farmers-co-op/flywheels": {
+  "hash": "e50d52eafaa589ec",
+  "addresses": [],
+  "updated": "20 Nov 2026"
  }
 }
