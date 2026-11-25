@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-25 12:28 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-25 18:23 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-25 12:28 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 135,169 | 14.84 | 50% | 9,110 | 18,220 |
+| 135,981 | 14.92 | 50% | 9,114 | 18,227 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,23 +24,23 @@ Staking: paused=False · backing 32.60 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **648.3 ETH** from 561 wallets in 2,174 purchases · contract balance 648.3 ETH · Diamond 73% · top-10 wallets 31%
+Pack sales: **652.7 ETH** from 566 wallets in 2,200 purchases · contract balance 652.7 ETH · Diamond 74% · top-10 wallets 31%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,236 | 11.18 |
-| Silver | 2,278 | 22.78 |
-| Gold | 1,143 | 57.15 |
+| Bronze | 2,282 | 11.41 |
+| Silver | 2,335 | 23.35 |
+| Gold | 1,145 | 57.25 |
 | Platinum | 807 | 80.70 |
-| Diamond | 1,906 | 476.50 |
+| Diamond | 1,920 | 480.00 |
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.71 ETH | 9 | 6.71499 |
-| yield-fields-items | 3.86 USDG | 70 | 0.5191209210517694 |
-| genesishero-abstract | 0.042 ETH | 34 | 1.364 |
-| och-ringbearer | 0.295 ETH | 1 | 0.27 |
+| yield-field-deeds | 0.707 ETH | 8 | 5.524990000000001 |
+| yield-fields-items | 3.84 USDG | 76 | 0.6023436155033457 |
+| genesishero-abstract | 0.042 ETH | 21 | 0.8440000000000002 |
+| och-ringbearer | error | | |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
