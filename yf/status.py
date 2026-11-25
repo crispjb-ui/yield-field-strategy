@@ -171,6 +171,8 @@ Pack sales: **{sales['total_paid_eth']:,.1f} ETH** from {sales['unique_buyers']:
 | Pack | Packs | ETH |
 |---|---|---|
 {rows}
+
+Owner wallet pack spend so far: **{sales['owner_spend_eth']:.3f} ETH** ({sales['owner_spend_eth'] / sales['total_paid_eth'] * 100 if sales['total_paid_eth'] else 0:.2f}% of all sales)
 """
     return md, alerts
 

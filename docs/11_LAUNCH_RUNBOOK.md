@@ -11,6 +11,15 @@ Both are now resolved (ETH is bridged; docs land a full day before launch). Frid
 questions that set the size: is the Farmer open at launch, the buy/sell tax and launch-tax curve, `$YIELD` supply
 and pool, Truffle Pig price, launch seed. Packs cost the same on Friday. So: test today, size and buy Friday.
 
+## Owner decision (25 Nov): staggered buying
+Owner chose to buy 5 Diamond today, a few on Thursday, and the rest before Saturday, instead of waiting for
+Friday's docs. Accepted; the downside is bounded (Market exit ≈ −8.5%). Guard rails:
+- Keep the **last 4 packs (1.0 ETH) unbought until Friday's docs are read**, so the size can still respond to the
+  Farmer / tax news. Cap before docs: 9 Diamond (2.25 ETH).
+- Wallet has 3.0034 ETH: 5 today leaves 1.75; 13 Diamond + Pig + gas needs a ~0.4–0.5 ETH top-up.
+- Rip each batch the day it is bought and record the pulls (rarity counts) so the launch timing is known.
+- `STATUS.md` shows the owner wallet's pack spend from chain.
+
 ## Wednesday 25 Nov (today)
 - [ ] Buy **1 Bronze pack** (0.005 ETH). Confirm the wallet shows contract `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`. Rip it. Open "Verify the draw".
 - [ ] Check the Bag for a Reward Pack. Look at the Truffle Pig screen.

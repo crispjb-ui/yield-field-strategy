@@ -37,6 +37,7 @@ def scan(rpc: Rpc, state_path: Path, addr: str = MAINNET) -> dict:
     return {"address": addr, "balance_eth": rpc.balance_eth(addr), "total_paid_eth": total,
             "purchases": st["purchases"], "unique_buyers": len(st["buyers"]),
             "by_pack": {PACKS[i]: {"packs": st["packs"][i], "eth": round(st["eth"][i], 3)} for i in range(5)},
+            "owner_spend_eth": st["buyers"].get("0x139e79b0d01148712528d56625a2a59f676e3952", 0.0),
             "diamond_share_pct": st["eth"][4] / total * 100 if total else 0,
             "top10_share_pct": sum(top) / total * 100 if total else 0}
 
