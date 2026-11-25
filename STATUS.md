@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-25 22:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-25 23:20 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-25 22:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 136,994 | 14.98 | 50% | 9,143 | 18,286 |
+| 137,124 | 14.99 | 50% | 9,148 | 18,297 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,15 +24,15 @@ Staking: paused=False · backing 32.73 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **657.8 ETH** from 570 wallets in 2,236 purchases · contract balance 657.8 ETH · Diamond 73% · top-10 wallets 31%
+Pack sales: **658.2 ETH** from 570 wallets in 2,238 purchases · contract balance 658.2 ETH · Diamond 73% · top-10 wallets 31%
 
 | Pack | Packs | ETH |
 |---|---|---|
 | Bronze | 2,328 | 11.64 |
 | Silver | 2,352 | 23.52 |
 | Gold | 1,163 | 58.15 |
-| Platinum | 820 | 82.00 |
-| Diamond | 1,930 | 482.50 |
+| Platinum | 821 | 82.10 |
+| Diamond | 1,931 | 482.75 |
 
 Owner wallet pack spend so far: **1.250 ETH** (0.19% of all sales)
 
@@ -40,9 +40,9 @@ Owner wallet pack spend so far: **1.250 ETH** (0.19% of all sales)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.707 ETH | 6 | 4.2129900000000005 |
-| yield-fields-items | 3.78 USDG | 76 | 0.5939043517383206 |
-| genesishero-abstract | 0.042 ETH | 21 | 0.8440000000000002 |
-| och-ringbearer | 0.3 ETH | 1 | 0.27 |
+| yield-fields-items | 3.78 USDG | 78 | 0.5730251730372096 |
+| genesishero-abstract | error | | |
+| och-ringbearer | error | | |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
