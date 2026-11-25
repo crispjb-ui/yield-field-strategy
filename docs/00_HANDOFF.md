@@ -4,6 +4,7 @@ Everything about this position lives in this repository. A new Claude session
 (any subscription) can resume from here with no other context.
 
 ## Read in this order
+0. **`docs/11_LAUNCH_RUNBOOK.md` — dated checklist for docs drop (Fri 27 Nov) and launch (Sat 28 Nov).**
 0. `docs/08_PRELAUNCH_PACK_PLAN_2026-11-20.md` and `docs/09_YIELD_EXIT_PLAN_2026-11-20.md` — the current action plan (entry and exit).
 1. `docs/05_OWNER_THESIS.md` — the owner's thesis, the operating rules in force, dated updates.
 2. `docs/01_VERIFIED_FACTS.md` — fact ledger with sources and confidence grades.

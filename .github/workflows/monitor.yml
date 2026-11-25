@@ -1,7 +1,7 @@
 name: monitor
 on:
   schedule:
-    - cron: "17 */6 * * *"      # every 6 h UTC
+    - cron: "17 * * * *"        # hourly through launch week (was every 6 h; revert after 2026-12-05)
   workflow_dispatch:
 permissions:
   contents: write
