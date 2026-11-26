@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 20:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-26 21:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 20:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 140,209 | 15.32 | 50% | 9,154 | 18,308 |
+| 140,696 | 15.36 | 50% | 9,159 | 18,318 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,25 +24,25 @@ Staking: paused=False · backing 32.77 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **685.5 ETH** from 583 wallets in 2,330 purchases · contract balance 685.5 ETH · Diamond 73% · top-10 wallets 32%
+Pack sales: **686.2 ETH** from 583 wallets in 2,335 purchases · contract balance 686.2 ETH · Diamond 73% · top-10 wallets 32%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,426 | 12.13 |
+| Bronze | 2,429 | 12.14 |
 | Silver | 2,451 | 24.51 |
-| Gold | 1,195 | 59.75 |
-| Platinum | 856 | 85.60 |
-| Diamond | 2,014 | 503.50 |
+| Gold | 1,199 | 59.95 |
+| Platinum | 858 | 85.80 |
+| Diamond | 2,015 | 503.75 |
 
 Owner wallet pack spend so far: **2.000 ETH** (0.29% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.698 ETH | 4 | 2.92 |
-| yield-fields-items | 3.75 USDG | 72 | 0.501207698385833 |
-| genesishero-abstract | error | | |
-| och-ringbearer | 0.3567 ETH | 4 | 1.2 |
+| yield-field-deeds | 0.699 ETH | 4 | 2.92 |
+| yield-fields-items | 3.75 USDG | 70 | 0.48204546954399735 |
+| genesishero-abstract | 0.042 ETH | 5 | 0.18099999999999994 |
+| och-ringbearer | 0.35 ETH | 7 | 2.0999999999999996 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |

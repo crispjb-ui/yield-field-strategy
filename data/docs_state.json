@@ -1,6 +1,6 @@
 {
  "reference/official-links-and-contracts": {
-  "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  "error": "'hash'"
  },
  "reference/patch-notes": {
   "hash": "2a31770b634d14d5",
