@@ -1,12 +1,6 @@
 {
  "reference/official-links-and-contracts": {
-  "hash": "969baaab76cde95c",
-  "addresses": [
-   "0x0acfcd1483686fcd94dabea03714321d0e05fc8d",
-   "0x231142e88f523b0a4f46d2d79faab2ce1828e43a",
-   "0xd9d6d0557f3479e801a967eb693ebe1ada6e5317"
-  ],
-  "updated": "3 Nov 2026"
+  "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
  },
  "reference/patch-notes": {
   "hash": "2a31770b634d14d5",
