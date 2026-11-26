@@ -64,9 +64,9 @@ Friday's docs. Accepted; the downside is bounded (Market exit ≈ −8.5%). Guar
 - `STATUS.md` shows the owner wallet's pack spend from chain.
 
 ## Seeds held (see `data/seeds.csv`)
-**Holding 8 Diamond (2.0 ETH paid): 3 Ginger (Common), 4 Beet (Uncommon), 1 Eggplant (Epic) = 1.875 ETH crop value (−6.3% vs paid; expected 1.99).**
-With 2 Fert (16 total): 0.375 ETH ripe at 14:30 UTC, 1.0 ETH at 15:00, 0.5 ETH at 16:00. Farmer swap-in 1.7625 ETH; Market 1.725 ETH.
-26 Nov batch: 1 Ginger, 2 Beet.
+**Holding 8 Diamond (2.0 ETH paid): 4 Ginger (Common), 3 Beet (Uncommon), 1 Eggplant (Epic) = 1.75 ETH crop value (−12.5% vs paid; expected 1.99).**
+With 2 Fert (16 total): 0.50 ETH ripe at 14:30 UTC, 0.75 ETH at 15:00, 0.50 ETH at 16:00. Farmer swap-in 1.645 ETH; Market 1.61 ETH.
+26 Nov batch (corrected by owner): 2 Ginger, 1 Beet.
 25 Nov, 5 Diamond for 1.25 ETH → 2 Ginger (Common), 2 Beet (Uncommon), 1 Eggplant (Epic) = **1.25 ETH crop value**
 (expected 1.244). With 2 Fert: 0.25 ETH ripe at 30 min, 0.50 ETH at 60 min, 0.50 ETH at 2 h. 10 Fert needed.
 
