@@ -141,16 +141,26 @@ farm:                       # /docs/farming-and-yield/growing-and-selling
   farmer_opens_on_own_switch: true  # not tied to launch tax; date unknown
   market_float_risk: true           # 'The Market is short on ETH' stops sales when pack float is low
 
-truffles:                   # mirror + bundle strings (Truffle Pig, 1 in 20, Motherlode, Spoiling all confirmed in bundle)
-  pig_required: true        # one per wallet, bought at Cornhub in ETH; price REDACTED; only crops planted AFTER purchase roll
-  chance_per_harvest: 0.05
+truffles:                   # official X thread 2026-11-26 + earlier bundle strings
+  pig_required: true        # one per wallet; price unpublished; only crops planted AFTER purchase roll
+  chance_per_harvest: 0.10  # "Each crop: 1 in 10 Truffle chance" (was 1 in 20)
   harvest_within_hours_of_ripe: 48
-  weight: crop_eth_value    # inferred; ranked like the crop
-  settlement_utc: "00:00"
-  payout_formula: "seed_release_today + 5% × max(0, refill_balance − seed_release_today), capped by claim limit; 5% to Motherlode; rest split by weight; ≤5% of pool per truffle"
-  launch_seed_days: 30      # after day 30 only refills (buybacks from fees) pay
-  seed_size: null           # not public
-  claim: signed voucher → Truffle Pool contract, one tx for all settled payouts
+  weight: crop_value        # "more valuable crops make heavier Truffles"
+  settlement_utc: "14:00"   # daily
+  seed_yield: 10000000      # 10% of supply over 30 days, front-weighted (linear shape assumed from the chart)
+  after_day_30: coop_buys_refill
+launch:
+  utc: "2026-11-28T14:00:00Z"
+  yield_total_supply: 100000000        # implied by 10M = 10%
+  coop_seed_usd: 500000                # in ETH; 250k on day 1
+  coop_buys_start_hours_after_launch: 6
+  coop_split: null                     # docs 27 Nov
+deed_tending:               # Co-op Rewards
+  rule: "each seed planted on your own plot tends 1 staked deed for 7 days"
+  fert_deck_required: false
+  claim: daily
+  weighting: rarer_deeds_get_more
+  seed_tier_matters: null   # docs 27 Nov
 weather: {}                 # not in docs (the "dynamic weather" claim came from a lookalike site)
 leaderboard: {placeholder: true, boards: [harvest_value, truffle_payouts, burn_value_held]}
 classified: [truffles, volume_incentive_mechanism, extra_deed_reward_stream, fert_deck_boosts, new_structures]

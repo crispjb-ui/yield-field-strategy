@@ -275,7 +275,7 @@ def plots_needed(budget_usd: float, pack_price_usd: float, grow_hours: float, wi
 # ---- Launch economics (mirror defaults 2026-11-11; recompute from the Cornhub contract at launch) ----
 EV_WORTH_X = 0.995            # Σ p × worth over the 6 seed rarities
 SALE_FEE = 0.08               # Market fee on mainnet CornHub (2026-11-23); Farmer fee is 0.06
-TRUFFLE_P = 0.05
+TRUFFLE_P = 0.10              # official X thread 2026-11-26: "Each crop: 1 in 10 Truffle chance" (was 1 in 20)
 
 
 def pack_cycle(pack_price_eth: float, fee: float = SALE_FEE, ev_x: float = EV_WORTH_X) -> dict:
@@ -343,7 +343,33 @@ def pack_mix(mix: dict, fert_per_crop: int = 2, slots: int = 25, fee: float = SA
     longest = max(5.0 * 10 * TIER_FACTOR[t] / 500 for t in mix) * speed
     return {"packs": n, "cost_eth": cost, "expected_crop_value_eth": value, "sd_eth": sd,
             "sd_pct": sd / value * 100 if value else 0, "after_fee_eth": value * (1 - fee),
-            "p_no_truffle": 0.95 ** n, "expected_truffles": 0.05 * n, "expected_truffle_weight_eth": 0.05 * value,
+            "p_no_truffle": (1 - TRUFFLE_P) ** n, "expected_truffles": TRUFFLE_P * n, "expected_truffle_weight_eth": TRUFFLE_P * value,
             "fert_needed": fert_per_crop * n, "plots_at_once": n / slots,
             "avg_hours_first_cycle": slot_hours / n if n else 0, "approx_hours_to_clear": max(slot_hours / slots, 0),
             "longest_possible_hours": longest, "worst_case_market_exit_loss_eth": cost - value * (1 - fee)}
+
+
+# ---- First Harvest (official X thread 2026-11-26) ----
+TRUFFLE_SEED = 10_000_000       # $YIELD in the Truffle Pool = 10% of supply → total supply 100M
+YIELD_SUPPLY = 100_000_000
+
+
+def seed_release(day: int, days: int = 30, seed: float = TRUFFLE_SEED) -> float:
+    """Daily Truffle release, front-weighted. Linear decline is an ASSUMPTION read off the announcement's bar chart."""
+    if not 1 <= day <= days:
+        return 0.0
+    return seed * (days + 1 - day) / (days * (days + 1) / 2)
+
+
+def truffle_day_ev(my_crop_value_eth: float, network_crop_value_eth: float, yield_price_eth: float, day: int = 1,
+                   fee: float = SALE_FEE, motherlode: float = 0.05) -> dict:
+    """Expected Truffle income for one day's harvests vs the sale fee paid on them. Share is pro-rata on crop
+    value harvested by Pig owners that day (expected-value view; the 1-in-10 roll makes any single day lumpy)."""
+    budget = seed_release(day) * (1 - motherlode)
+    share = my_crop_value_eth / network_crop_value_eth if network_crop_value_eth else 0.0
+    tokens = budget * share
+    fee_eth = my_crop_value_eth * fee
+    return {"budget_yield": budget, "share_pct": share * 100, "expected_tokens": tokens,
+            "expected_eth": tokens * yield_price_eth, "fee_eth": fee_eth,
+            "breakeven_price_eth": fee_eth / tokens if tokens else None,
+            "breakeven_mcap_eth": (fee_eth / tokens * YIELD_SUPPLY) if tokens else None}

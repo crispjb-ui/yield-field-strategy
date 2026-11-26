@@ -29,6 +29,8 @@ jobs:
           {
             echo "**Claim now in the Yield Fields app: Manage Deeds → Claim All.** Decks stop at 9/9 (72 h)."
             echo
+            echo "**After launch (28 Nov 14:00 UTC):** claim Co-op Rewards daily, and keep the 3 deeds tended: each seed planted tends 1 deed for 7 days, so plant at least 3 seeds every 7 days. Harvest ripe crops within 48 h."
+            echo
             echo '```json'; cat /tmp/fert.json; echo '```'
             echo '```json'; cat /tmp/deeds.json; echo '```'
             echo

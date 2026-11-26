@@ -8,6 +8,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+SETTLEMENT_HOUR_UTC = 14        # Truffle rewards go out daily at 14:00 UTC (official X, 2026-11-26)
+
+
 @dataclass
 class Rules:
     t1_multiple: float = 2.0        # sell half: principal back
@@ -15,7 +18,7 @@ class Rules:
     trail_drop: float = 0.30        # after the peak, a 30% fall in total multiple → cut to the moonbag
     trail_arm_multiple: float = 1.5 # trailing stop only arms once the position has been this far up
     moonbag_frac: float = 0.15      # of the original bag, kept with no target
-    presettle_minutes: int = 45     # before the first 00:00 UTC Truffle settlement
+    presettle_minutes: int = 45     # before the first 14:00 UTC Truffle settlement (= T+24 h)
     presettle_min_multiple: float = 1.2
     inflow_end_hours: float = 3.0   # presale crops are ~97% ripe (with Fert) by then: the pre-committed Farmer buying is spent
     inflow_end_min_multiple: float = 1.2
@@ -32,7 +35,9 @@ class State:
 
 def minutes_to_next_settlement(now: datetime | None = None) -> float:
     now = now or datetime.now(timezone.utc)
-    nxt = (now.replace(hour=0, minute=0, second=0, microsecond=0)).timestamp() + 86400
+    nxt = now.replace(hour=SETTLEMENT_HOUR_UTC, minute=0, second=0, microsecond=0).timestamp()
+    if nxt <= now.timestamp():
+        nxt += 86400
     return (nxt - now.timestamp()) / 60
 
 
@@ -56,7 +61,7 @@ def decide(cost_eth: float, bag_exit_eth: float, st: State, r: Rules = Rules(),
     elif (st.stage == 0 and first_settlement_pending and not st.presettle_done and mins_to_settlement is not None
           and mins_to_settlement <= r.presettle_minutes and m >= r.presettle_min_multiple):
         action, reason = "SELL 50% OF BAG", (f"{mins_to_settlement:.0f} min to the first Truffle settlement "
-                                              f"(new $YIELD reaches farmers at 00:00 UTC) and multiple {m:.2f} > {r.presettle_min_multiple}")
+                                              f"(new $YIELD reaches farmers at 14:00 UTC) and multiple {m:.2f} > {r.presettle_min_multiple}")
     return {"multiple": m, "peak": st.peak_multiple, "action": action, "reason": reason, "stage": st.stage}
 
 

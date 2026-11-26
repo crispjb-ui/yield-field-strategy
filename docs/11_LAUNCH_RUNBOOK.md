@@ -1,4 +1,44 @@
-# Launch runbook (written Wed 2026-11-25)
+# Launch runbook (written Wed 2026-11-25; updated Thu 26 Nov with the official "First Harvest" thread)
+
+## Official announcement, @YieldFields_RH, 26 Nov (owner screenshots; grade A)
+| Fact | Value |
+|---|---|
+| **Launch** | **Sat 28 Nov, 14:00 UTC** (9:00 Eastern, 8:00 Central, 6:00 Pacific) |
+| Truffle Pool seed | 10M `$YIELD` = 10% of supply → **total supply 100M**. Paid daily for 30 days, front-weighted ("biggest rewards first"); after day 30, Co-op buys refill it |
+| Truffle chance | **1 in 10 per crop** (was 1 in 20). Truffle Pig required before planting. Harvest within 48 h of ripening. Heavier Truffles from more valuable crops |
+| Truffle payouts | **daily at 14:00 UTC** (not 00:00). First payout Sun 29 Nov 14:00 UTC |
+| Farmers Co-op | **$500k in ETH, $250k of it on day 1.** Buys `$YIELD` every day, **starting 6 h after launch (Sat 20:00 UTC)**. Buys feed the Truffle Pool and Co-op Rewards. Exact split "in the docs tomorrow" |
+| **Co-op Rewards for deeds** | Stake the deed (no Fert Deck needed). **Each seed planted on your own plot tends 1 staked deed for 7 days.** Only tended deeds get that day's rewards; claim daily; rarer deeds get more |
+
+What it changes:
+1. **Your deeds only earn Co-op Rewards while tended.** 3 deeds need 3 plantings every 7 days. The launch planting
+   covers 28 Nov → 5 Dec; plant 3 more seeds by Sat 5 Dec (whether a Bronze seed is enough: check Friday's docs).
+2. **A known buyer arrives at T+6 h.** $250k is ~147 ETH, against ~682 ETH of presale crop value. The gap with no
+   committed buying is roughly T+4 h to T+6 h. The ladder already sells half at T+3 h and lets the rest ride into
+   the Co-op's buying; unchanged. How fast the Co-op spends is unpublished.
+3. **First new-supply event is T+24 h** (Sun 14:00 UTC), when day-1 Truffle rewards (~645k `$YIELD` on a linear
+   reading of the chart) are paid. The "45 min before settlement" rule now points at Sun 13:15 UTC.
+4. **Truffles are a small bonus on day 1.** With ~682 ETH of crops harvested, 8 Diamond is 0.29% of the weight:
+   ~1,800 tokens expected (43% chance of none). That is ~$4 at a $250k cap, ~$45 at $2.5M, ~$180 at $10M. Day-1
+   Truffles only cover the sale fee above a ~$15M cap. They get interesting on **quiet later days**: 1 ETH of
+   crops on a day when the network harvests 30 ETH would earn ~17,700 tokens, break-even at a ~$0.8M cap.
+   The Pig is therefore an option on later-day farming: buy at ≤0.1 ETH.
+
+## Saturday timeline in UTC
+| Time | Event |
+|---|---|
+| 13:00 | Claim decks, Fert in Bag, Pig owned, wallet gas, game open |
+| **14:00** | **Launch. Plant all, fertilize Commons first** |
+| 14:30 | Diamond Commons ripe → harvest, sell to Farmer |
+| 15:00 | Uncommons ripe |
+| 15:36 / 16:00 | Rares / Epics ripe |
+| 17:00 | T+3 h: ladder time rule; Legendaries ripe |
+| 19:00 | Mythics ripe |
+| 20:00 | Co-op begins buying |
+| Sun 13:15 | Pre-settlement rule |
+| Sun 14:00 | First Truffle payout; claim |
+| Sat 5 Dec 14:00 | Deeds need re-tending by now |
+
 
 Owner report: **full docs Friday 27 Nov, game live Saturday 28 Nov.** Launch hour not yet known.
 State today: wallet `0x139e…3952` holds 3.0034 ETH on Robinhood Chain, no packs bought, ~120 Fertilizer,
@@ -21,6 +61,7 @@ Friday's docs. Accepted; the downside is bounded (Market exit ≈ −8.5%). Guar
 - `STATUS.md` shows the owner wallet's pack spend from chain.
 
 ## Seeds held (see `data/seeds.csv`)
+26 Nov: chain shows 2.0 ETH spent = 8 Diamond; pulls for the 3 newest not yet recorded.
 25 Nov, 5 Diamond for 1.25 ETH → 2 Ginger (Common), 2 Beet (Uncommon), 1 Eggplant (Epic) = **1.25 ETH crop value**
 (expected 1.244). With 2 Fert: 0.25 ETH ripe at 30 min, 0.50 ETH at 60 min, 0.50 ETH at 2 h. 10 Fert needed.
 
@@ -73,11 +114,12 @@ Friday's docs. Accepted; the downside is bounded (Market exit ≈ −8.5%). Guar
 | ≥ 3.5× | sell half of the rest |
 | −30% from peak after ≥ 1.5× | sell down to a 15% keeper |
 | T+3 h, nothing sold, ≥ 1.2× | sell half |
-| 45 min before the first 00:00 UTC, nothing sold, ≥ 1.2× | sell half |
+| Sun 13:15 UTC (45 min before the first Truffle payout), nothing sold, ≥ 1.2× | sell half |
 | < 0.9× and never ≥ 1.5× | stop; no forced sale into a raised sell tax |
 
 **After**
-- [ ] Harvest everything within 48 h of ripening (Truffle rolls). Claim Truffle payouts after 00:00 UTC.
+- [ ] Harvest everything within 48 h of ripening (Truffle rolls). Claim Truffle payouts after 14:00 UTC.
+- [ ] Re-tend the deeds: plant ≥3 seeds every 7 days; claim Co-op Rewards daily.
 - [ ] Deed rewards start at launch: check pending `$YIELD` on the three deeds; 10% claim fee.
 - [ ] Revert the monitor cron to every 6 h after 5 Dec.
 
