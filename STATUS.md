@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 18:24 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-26 19:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 18:24 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 139,891 | 15.28 | 50% | 9,154 | 18,308 |
+| 140,059 | 15.30 | 50% | 9,154 | 18,308 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,14 +24,14 @@ Staking: paused=False · backing 32.75 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **685.1 ETH** from 582 wallets in 2,325 purchases · contract balance 685.1 ETH · Diamond 73% · top-10 wallets 32%
+Pack sales: **685.4 ETH** from 583 wallets in 2,328 purchases · contract balance 685.4 ETH · Diamond 73% · top-10 wallets 32%
 
 | Pack | Packs | ETH |
 |---|---|---|
 | Bronze | 2,425 | 12.12 |
 | Silver | 2,451 | 24.51 |
 | Gold | 1,195 | 59.75 |
-| Platinum | 852 | 85.20 |
+| Platinum | 855 | 85.50 |
 | Diamond | 2,014 | 503.50 |
 
 Owner wallet pack spend so far: **2.000 ETH** (0.29% of all sales)
@@ -39,9 +39,9 @@ Owner wallet pack spend so far: **2.000 ETH** (0.29% of all sales)
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.698 ETH | 4 | 2.92 |
-| yield-fields-items | 3.75 USDG | 77 | 0.511543228925766 |
-| genesishero-abstract | 0.042 ETH | 4 | 0.1449999999999999 |
+| yield-field-deeds | 0.698 ETH | 4 | 2.9186436891091785 |
+| yield-fields-items | 3.75 USDG | 77 | 0.5198040565308848 |
+| genesishero-abstract | error | | |
 | och-ringbearer | error | | |
 
 ## Docs watch
