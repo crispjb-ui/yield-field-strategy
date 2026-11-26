@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 22:20 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-26 23:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 22:20 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 141,028 | 15.39 | 50% | 9,166 | 18,332 |
+| 141,278 | 15.40 | 50% | 9,174 | 18,347 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,25 +24,25 @@ Staking: paused=False · backing 32.82 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **690.6 ETH** from 583 wallets in 2,350 purchases · contract balance 690.6 ETH · Diamond 73% · top-10 wallets 32%
+Pack sales: **703.9 ETH** from 585 wallets in 2,363 purchases · contract balance 703.9 ETH · Diamond 74% · top-10 wallets 31%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,438 | 12.19 |
+| Bronze | 2,448 | 12.24 |
 | Silver | 2,454 | 24.54 |
-| Gold | 1,215 | 60.75 |
-| Platinum | 861 | 86.10 |
-| Diamond | 2,028 | 507.00 |
+| Gold | 1,220 | 61.00 |
+| Platinum | 864 | 86.40 |
+| Diamond | 2,079 | 519.75 |
 
-Owner wallet pack spend so far: **2.000 ETH** (0.29% of all sales)
+Owner wallet pack spend so far: **2.000 ETH** (0.28% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.689 ETH | 7 | 5.335 |
-| yield-fields-items | 3.75 USDG | 67 | 0.4445354082767602 |
+| yield-fields-items | 3.75 USDG | 67 | 0.4589717291458217 |
 | genesishero-abstract | 0.042 ETH | 5 | 0.18099999999999994 |
-| och-ringbearer | 0.344 ETH | 7 | 2.0999999999999996 |
+| och-ringbearer | error | | |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
