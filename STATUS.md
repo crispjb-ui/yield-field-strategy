@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 12:28 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-26 13:22 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 12:28 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 138,973 | 15.18 | 50% | 9,156 | 18,313 |
+| 139,089 | 15.19 | 50% | 9,156 | 18,313 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,14 +24,14 @@ Staking: paused=False · backing 32.75 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **677.0 ETH** from 579 wallets in 2,298 purchases · contract balance 677.0 ETH · Diamond 73% · top-10 wallets 32%
+Pack sales: **678.4 ETH** from 580 wallets in 2,300 purchases · contract balance 678.4 ETH · Diamond 73% · top-10 wallets 32%
 
 | Pack | Packs | ETH |
 |---|---|---|
 | Bronze | 2,379 | 11.89 |
 | Silver | 2,423 | 24.23 |
-| Gold | 1,189 | 59.45 |
-| Platinum | 839 | 83.90 |
+| Gold | 1,194 | 59.70 |
+| Platinum | 851 | 85.10 |
 | Diamond | 1,990 | 497.50 |
 
 Owner wallet pack spend so far: **1.250 ETH** (0.18% of all sales)
@@ -39,9 +39,9 @@ Owner wallet pack spend so far: **1.250 ETH** (0.18% of all sales)
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.7 ETH | 4 | 2.92 |
-| yield-fields-items | 3.76 USDG | 78 | 0.5462355698144491 |
-| genesishero-abstract | 0.042 ETH | 1 | 0.03699999999999998 |
+| yield-field-deeds | 0.699 ETH | 4 | 2.92 |
+| yield-fields-items | 3.76 USDG | 73 | 0.5796216824264839 |
+| genesishero-abstract | 0.042 ETH | 1 | 0.03699022927461897 |
 | och-ringbearer | error | | |
 
 ## Docs watch
