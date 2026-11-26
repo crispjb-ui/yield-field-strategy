@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 00:40 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-26 01:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 00:40 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 137,253 | 15.00 | 50% | 9,148 | 18,297 |
+| 137,320 | 15.01 | 50% | 9,148 | 18,297 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -19,30 +19,30 @@ Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1
 | #660 | 6 | Fert Deck | owner | 0.00993 |
 | #661 | 6 | Fert Deck | owner | 0.00993 |
 
-Staking: paused=False · backing 32.73 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 1.7534 ETH
+Staking: paused=False · backing 32.74 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 1.7534 ETH
 
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **658.3 ETH** from 570 wallets in 2,242 purchases · contract balance 658.3 ETH · Diamond 73% · top-10 wallets 31%
+Pack sales: **659.1 ETH** from 571 wallets in 2,248 purchases · contract balance 659.1 ETH · Diamond 73% · top-10 wallets 31%
 
 | Pack | Packs | ETH |
 |---|---|---|
 | Bronze | 2,328 | 11.64 |
-| Silver | 2,358 | 23.58 |
-| Gold | 1,165 | 58.25 |
+| Silver | 2,368 | 23.68 |
+| Gold | 1,173 | 58.65 |
 | Platinum | 821 | 82.10 |
-| Diamond | 1,931 | 482.75 |
+| Diamond | 1,932 | 483.00 |
 
 Owner wallet pack spend so far: **1.250 ETH** (0.19% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.707 ETH | 4 | 2.89499 |
-| yield-fields-items | 3.78 USDG | 73 | 0.5460052789664201 |
+| yield-field-deeds | 0.707 ETH | 5 | 3.76499 |
+| yield-fields-items | 3.78 USDG | 70 | 0.5189888776364227 |
 | genesishero-abstract | 0.042 ETH | 22 | 0.8810000000000001 |
-| och-ringbearer | 0.3 ETH | 1 | 0.27 |
+| och-ringbearer | error | | |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
