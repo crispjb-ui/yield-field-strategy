@@ -8,6 +8,9 @@
 | Truffle chance | **1 in 10 per crop** (was 1 in 20). Truffle Pig required before planting. Harvest within 48 h of ripening. Heavier Truffles from more valuable crops |
 | Truffle payouts | **daily at 14:00 UTC** (not 00:00). First payout Sun 29 Nov 14:00 UTC |
 | Farmers Co-op | **$500k in ETH, $250k of it on day 1.** Buys `$YIELD` every day, **starting 6 h after launch (Sat 20:00 UTC)**. Buys feed the Truffle Pool and Co-op Rewards. Exact split "in the docs tomorrow" |
+| Docs | **Launch docs go live Fri 27 Nov, 14:00 UTC** (9:00 ET), "final numbers" |
+| Co-op buying style | "Every day, in steady buys"; `$YIELD` trading taxes go "most of them to the Co-op" |
+| First daily settlement | Sun 29 Nov, 14:00 UTC |
 | **Co-op Rewards for deeds** | Stake the deed (no Fert Deck needed). **Each seed planted on your own plot tends 1 staked deed for 7 days.** Only tended deeds get that day's rewards; claim daily; rarer deeds get more |
 
 What it changes:
@@ -75,7 +78,7 @@ Friday's docs. Accepted; the downside is bounded (Market exit ≈ −8.5%). Guar
 - [ ] Claim Fertilizer. Keep ≥60 in the Bag from here on (26 needed for 13 Diamond, 50 for a full plot).
 - [ ] If you want all 13 Diamond plus the Pig and gas: bridge ~0.4–0.5 ETH more (3.25 + Pig + ~0.05 gas).
 
-## Friday 27 Nov — docs drop (monitor is hourly; it opens an alert issue when any page changes)
+## Friday 27 Nov — docs drop at 14:00 UTC / 9:00 ET (monitor is hourly; it opens an alert issue when any page changes)
 - [ ] Tell Claude "docs are out" (or paste the alert). Claude re-reads all pages and the contracts, fills
       `config/mechanics.yaml`, re-runs `seed_pack_ev`, `farmer_vs_direct`, `roundtrip_breakeven`, the flow
       illustration with the real pool depth, and gives the final plot and ladder.
