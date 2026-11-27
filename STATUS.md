@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-27 16:22 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-27 17:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -10,7 +10,7 @@ _Auto-generated 2026-11-27 16:22 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 143,975 | 15.73 | 50% | 9,152 | 18,304 |
+| 144,639 | 15.77 | 50% | 9,170 | 18,341 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -26,25 +26,25 @@ Staking: paused=False · backing 32.96 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,033.4 ETH** from 657 wallets in 2,786 purchases · contract balance 1,033.4 ETH · Diamond 80% · top-10 wallets 24%
+Pack sales: **1,051.9 ETH** from 666 wallets in 2,837 purchases · contract balance 1,051.9 ETH · Diamond 80% · top-10 wallets 23%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,738 | 13.69 |
-| Silver | 2,832 | 28.32 |
-| Gold | 1,398 | 69.90 |
-| Platinum | 975 | 97.50 |
-| Diamond | 3,296 | 824.00 |
+| Bronze | 2,784 | 13.92 |
+| Silver | 3,058 | 30.58 |
+| Gold | 1,410 | 70.50 |
+| Platinum | 984 | 98.40 |
+| Diamond | 3,354 | 838.50 |
 
-Owner wallet pack spend so far: **2.750 ETH** (0.27% of all sales)
+Owner wallet pack spend so far: **2.750 ETH** (0.26% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.75 ETH | 9 | 6.5809999999999995 |
-| yield-fields-items | 4.99 USDG | 119 | 0.8405799165764545 |
+| yield-fields-items | 4.85 USDG | 126 | 0.9016745655441141 |
 | genesishero-abstract | error | | |
-| och-ringbearer | 0.33 ETH | 9 | 2.652 |
+| och-ringbearer | 0.2999 ETH | 9 | 2.652 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
