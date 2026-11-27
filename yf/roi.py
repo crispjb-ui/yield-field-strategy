@@ -373,3 +373,12 @@ def truffle_day_ev(my_crop_value_eth: float, network_crop_value_eth: float, yiel
             "expected_eth": tokens * yield_price_eth, "fee_eth": fee_eth,
             "breakeven_price_eth": fee_eth / tokens if tokens else None,
             "breakeven_mcap_eth": (fee_eth / tokens * YIELD_SUPPLY) if tokens else None}
+
+
+def deed_coop_value(coop_inflow_usd: float, deed_share: float, fertility: int = 6,
+                    tended_fertility: float = 18_235, deed_price_usd: float = 1186.0) -> dict:
+    """What one deed receives if the Co-op routes `deed_share` of `coop_inflow_usd` to tended deeds by Fertility.
+    Valued at the Co-op's own purchase cost (token price moves after that are a separate bet)."""
+    usd = coop_inflow_usd * deed_share * fertility / tended_fertility
+    return {"usd_to_this_deed": usd, "pct_of_deed_price": usd / deed_price_usd * 100,
+            "coop_inflow_needed_for_payback_usd": deed_price_usd * tended_fertility / fertility / deed_share}
