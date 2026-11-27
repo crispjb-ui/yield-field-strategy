@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-27 22:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-27 23:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -10,7 +10,7 @@ _Auto-generated 2026-11-27 22:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 145,606 | 15.88 | 50% | 9,170 | 18,341 |
+| 145,870 | 15.91 | 50% | 9,170 | 18,341 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -26,23 +26,23 @@ Staking: paused=False · backing 32.98 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,197.4 ETH** from 695 wallets in 2,985 purchases · contract balance 1,197.4 ETH · Diamond 82% · top-10 wallets 20%
+Pack sales: **1,242.2 ETH** from 702 wallets in 3,027 purchases · contract balance 1,242.2 ETH · Diamond 82% · top-10 wallets 20%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,934 | 14.67 |
-| Silver | 3,346 | 33.46 |
-| Gold | 1,450 | 72.50 |
-| Platinum | 990 | 99.00 |
-| Diamond | 3,911 | 977.75 |
+| Bronze | 3,001 | 15.01 |
+| Silver | 3,383 | 33.83 |
+| Gold | 1,458 | 72.90 |
+| Platinum | 992 | 99.20 |
+| Diamond | 4,085 | 1,021.25 |
 
-Owner wallet pack spend so far: **2.750 ETH** (0.23% of all sales)
+Owner wallet pack spend so far: **2.750 ETH** (0.22% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.7 ETH | 6 | 4.1659999999999995 |
-| yield-fields-items | 4.36 USDG | 133 | 1.2787974126814825 |
+| yield-fields-items | 4.33 USDG | 130 | 1.3516219559527287 |
 | genesishero-abstract | 0.0415 ETH | 8 | 0.288 |
 | och-ringbearer | 0.2999 ETH | 3 | 0.8230000000000001 |
 
