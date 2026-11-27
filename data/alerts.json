@@ -1,14 +1,16 @@
 {
- "ts": "2026-11-27T15:21:29.958037+00:00",
+ "ts": "2026-11-27T16:22:41.164138+00:00",
  "alerts": [
   "Network Fert rate is 50%",
+  "$YIELD token set on staking contract: 0x5cdb7aff68bf216cc4cfbf42771c54312cf6eea1",
   "Truffle Pig on sale: 0.01 ETH"
  ],
  "new_alerts": [
-  "Truffle Pig on sale: 0.01 ETH"
+  "$YIELD token set on staking contract: 0x5cdb7aff68bf216cc4cfbf42771c54312cf6eea1"
  ],
  "cleared": [],
  "active_keys": [
+  "$YIELD token set on staking contract: 0x5cdb7aff68bf216cc4cfbf42771c54312cf6eea1",
   "network_rate_below_100",
   "pig_on_sale"
  ]

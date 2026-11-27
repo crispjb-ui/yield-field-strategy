@@ -1,48 +1,49 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-27 15:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-27 16:22 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
+- **$YIELD token set on staking contract: 0x5cdb7aff68bf216cc4cfbf42771c54312cf6eea1**
 - **Truffle Pig on sale: 0.01 ETH**
 
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 143,631 | 15.69 | 50% | 9,152 | 18,304 |
+| 143,975 | 15.73 | 50% | 9,152 | 18,304 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
 ## Deeds (#537, #660, #661)
 | Deed | Fertility | Structure | Staker | Root Cellar ETH |
 |---|---|---|---|---|
-| #537 | 6 | Fert Deck | owner | 0.00998 |
-| #660 | 6 | Fert Deck | owner | 0.00998 |
-| #661 | 6 | Fert Deck | owner | 0.00998 |
+| #537 | 6 | Fert Deck | owner | 0.01000 |
+| #660 | 6 | Fert Deck | owner | 0.01000 |
+| #661 | 6 | Fert Deck | owner | 0.01000 |
 
-Staking: paused=False · backing 32.88 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x0000000000000000000000000000000000000000 · owner wallet 1.0034 ETH
+Staking: paused=False · backing 32.96 ETH · jackpot 0 · rewardPool 0 · yieldToken 0x5cdb7aff68bf216cc4cfbf42771c54312cf6eea1 · owner wallet 0.2434 ETH
 
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,005.6 ETH** from 639 wallets in 2,703 purchases · contract balance 1,005.6 ETH · Diamond 80% · top-10 wallets 24%
+Pack sales: **1,033.4 ETH** from 657 wallets in 2,786 purchases · contract balance 1,033.4 ETH · Diamond 80% · top-10 wallets 24%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,646 | 13.23 |
-| Silver | 2,745 | 27.45 |
-| Gold | 1,345 | 67.25 |
-| Platinum | 954 | 95.40 |
-| Diamond | 3,209 | 802.25 |
+| Bronze | 2,738 | 13.69 |
+| Silver | 2,832 | 28.32 |
+| Gold | 1,398 | 69.90 |
+| Platinum | 975 | 97.50 |
+| Diamond | 3,296 | 824.00 |
 
-Owner wallet pack spend so far: **2.000 ETH** (0.20% of all sales)
+Owner wallet pack spend so far: **2.750 ETH** (0.27% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.75 ETH | 9 | 6.5809999999999995 |
-| yield-fields-items | 4.68 USDG | 95 | 0.6979796945089917 |
-| genesishero-abstract | 0.0415 ETH | 11 | 0.39599999999999996 |
+| yield-fields-items | 4.99 USDG | 119 | 0.8405799165764545 |
+| genesishero-abstract | error | | |
 | och-ringbearer | 0.33 ETH | 9 | 2.652 |
 
 ## Docs watch
