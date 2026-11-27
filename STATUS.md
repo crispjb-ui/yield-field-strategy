@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-26 23:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-27 00:41 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -8,7 +8,7 @@ _Auto-generated 2026-11-26 23:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 141,278 | 15.40 | 50% | 9,174 | 18,347 |
+| 141,413 | 15.42 | 50% | 9,170 | 18,341 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -24,25 +24,25 @@ Staking: paused=False · backing 32.82 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.0 ETH · paused=False
 
-Pack sales: **703.9 ETH** from 585 wallets in 2,363 purchases · contract balance 703.9 ETH · Diamond 74% · top-10 wallets 31%
+Pack sales: **781.5 ETH** from 592 wallets in 2,397 purchases · contract balance 781.5 ETH · Diamond 76% · top-10 wallets 30%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,448 | 12.24 |
-| Silver | 2,454 | 24.54 |
-| Gold | 1,220 | 61.00 |
+| Bronze | 2,453 | 12.27 |
+| Silver | 2,474 | 24.74 |
+| Gold | 1,221 | 61.05 |
 | Platinum | 864 | 86.40 |
-| Diamond | 2,079 | 519.75 |
+| Diamond | 2,388 | 597.00 |
 
-Owner wallet pack spend so far: **2.000 ETH** (0.28% of all sales)
+Owner wallet pack spend so far: **2.000 ETH** (0.26% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.689 ETH | 7 | 5.335 |
-| yield-fields-items | 3.75 USDG | 67 | 0.4589717291458217 |
-| genesishero-abstract | 0.042 ETH | 5 | 0.18099999999999994 |
-| och-ringbearer | error | | |
+| yield-fields-items | 3.75 USDG | 71 | 0.5165508831500837 |
+| genesishero-abstract | error | | |
+| och-ringbearer | 0.34 ETH | 7 | 2.0999999999999996 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
