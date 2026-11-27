@@ -354,19 +354,20 @@ TRUFFLE_SEED = 10_000_000       # $YIELD in the Truffle Pool = 10% of supply →
 YIELD_SUPPLY = 100_000_000
 
 
-def seed_release(day: int, days: int = 30, seed: float = TRUFFLE_SEED) -> float:
-    """Daily Truffle release, front-weighted. Linear decline is an ASSUMPTION read off the announcement's bar chart."""
+def seed_release(day: int, days: int = 30, first: float = 441_000, last: float = 226_000) -> float:
+    """Daily Truffle release from the 10M launch seed. Official docs 27 Nov: "about 441,000 on day one,
+    easing to about 226,000 on day 30" (linear between them sums to ~10.0M)."""
     if not 1 <= day <= days:
         return 0.0
-    return seed * (days + 1 - day) / (days * (days + 1) / 2)
+    return first + (last - first) * (day - 1) / (days - 1)
 
 
 def truffle_day_ev(my_crop_value_eth: float, network_crop_value_eth: float, yield_price_eth: float, day: int = 1,
-                   fee: float = SALE_FEE, motherlode: float = 0.05) -> dict:
+                   fee: float = SALE_FEE, motherlode: float = 0.05, pig_size: float = 1.0) -> dict:
     """Expected Truffle income for one day's harvests vs the sale fee paid on them. Share is pro-rata on crop
     value harvested by Pig owners that day (expected-value view; the 1-in-10 roll makes any single day lumpy)."""
     budget = seed_release(day) * (1 - motherlode)
-    share = my_crop_value_eth / network_crop_value_eth if network_crop_value_eth else 0.0
+    share = my_crop_value_eth * pig_size / network_crop_value_eth if network_crop_value_eth else 0.0   # network weight already includes others' pig sizes
     tokens = budget * share
     fee_eth = my_crop_value_eth * fee
     return {"budget_yield": budget, "share_pct": share * 100, "expected_tokens": tokens,
@@ -382,3 +383,45 @@ def deed_coop_value(coop_inflow_usd: float, deed_share: float, fertility: int = 
     usd = coop_inflow_usd * deed_share * fertility / tended_fertility
     return {"usd_to_this_deed": usd, "pct_of_deed_price": usd / deed_price_usd * 100,
             "coop_inflow_needed_for_payback_usd": deed_price_usd * tended_fertility / fertility / deed_share}
+
+
+# ---- Launch docs 27 Nov 2026 ----
+LAUNCH_TAX_POINTS = [(0, 90.0), (1, 63.0), (2, 41.0), (3, 24.0), (4, 12.0), (6, 2.0)]   # % on buys, hours after launch
+BUY_TAX, SELL_TAX, SELL_TAX_MAX = 2.0, 3.0, 20.0
+FARMER_FEE, BROKER_FEE = 0.06, 0.08
+PIG_SIZE = {1: 1.0, 2: 1.35, 3: 1.7, 4: 2.05, 5: 2.4, 6: 2.52, 7: 2.64, 8: 2.76, 9: 2.88, 10: 3.0}
+
+
+def launch_buy_tax(hours: float) -> float:
+    """Buy tax (%) for a market buyer at `hours` after launch (docs points, linear between; 2% after hour 6)."""
+    return _interp(hours, LAUNCH_TAX_POINTS)
+
+
+def farmer_edge(hours: float, ev_x: float = EV_WORTH_X) -> dict:
+    """$YIELD per ETH: Farmer (6% dues, no tax) vs a market buy at that hour."""
+    farmer, direct = ev_x * (1 - FARMER_FEE), 1 - launch_buy_tax(hours) / 100
+    return {"buy_tax_pct": launch_buy_tax(hours), "farmer_per_eth": farmer, "direct_per_eth": direct,
+            "farmer_advantage_x": farmer / direct if direct else float("inf")}
+
+
+def pig_plan(fert_available: int, target_level: int = 10) -> dict:
+    """Fully fed pig: each level L costs 3 feeds × L Fertilizer and waits 16 h × L × 25%."""
+    fert = hours = 0.0; level = 1; rows = []
+    while level < target_level and fert + 3 * level <= fert_available:
+        fert += 3 * level; hours += 16 * level * 0.25; level += 1
+        rows.append({"level": level, "size": PIG_SIZE[level], "hours_after_launch": hours, "fert_used": fert})
+    return {"reaches_level": level, "size": PIG_SIZE[level], "fert_used": fert, "hours": hours, "steps": rows}
+
+
+def coop_daily(fund_usd: float, tended_fertility: float = 18_235, fertility: int = 6, spend_rate: float = 0.03,
+               deed_share: float = 0.30) -> dict:
+    """Co-op spends 3% of its fund a day; 30% of each buy goes to tended deeds by Fertility, 70% to truffles."""
+    buy = fund_usd * spend_rate
+    return {"coop_buy_usd_per_day": buy, "to_truffles_usd": buy * (1 - deed_share), "to_deeds_usd": buy * deed_share,
+            "per_deed_usd_per_day": buy * deed_share * fertility / tended_fertility,
+            "per_deed_after_claim_fee": buy * deed_share * fertility / tended_fertility * 0.9}
+
+
+def exit_breakeven(paid_eth: float, crop_value_eth: float, sell_tax_pct: float = SELL_TAX) -> float:
+    """Price multiple vs your Farmer entry needed to get `paid_eth` back out, net of the sell tax."""
+    return paid_eth / (crop_value_eth * (1 - FARMER_FEE) * (1 - sell_tax_pct / 100))

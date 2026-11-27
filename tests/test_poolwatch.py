@@ -27,9 +27,9 @@ def test_presettlement_rule():
     assert decide(3.4, 4.5, st, mins_to_settlement=300)["action"] is None
 
 def test_breakeven():
-    b = roundtrip_breakeven(5)
-    assert abs(b["beat_market_multiple"] - 1/0.95) < 1e-9 and 1.17 < b["recover_pack_eth_multiple"] < 1.18
-    assert roundtrip_breakeven(25)["recover_pack_eth_multiple"] > 1.48
+    b = roundtrip_breakeven(3)
+    assert abs(b["beat_market_multiple"] - 1/0.97) < 1e-9 and 1.09 < b["recover_pack_eth_multiple"] < 1.11
+    assert 1.33 < roundtrip_breakeven(20)["recover_pack_eth_multiple"] < 1.35
 
 def test_inflow_end_rule():
     st = State()

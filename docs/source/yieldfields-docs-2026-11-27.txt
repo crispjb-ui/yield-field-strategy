@@ -1,0 +1,1952 @@
+
+=================== https://yieldfields.fun/docs/deed-gameplay/co-op-rewards
+
+Deed Gameplay
+›
+Co-op Rewards
+Co-op Rewards
+In short:
+Staked deeds get Co-op Rewards in $YIELD, from the Farmers Co-op's daily buys, on every day they're tended. Plant 1 seed on your own plot and it tends 1 of your staked deeds for 7 days.
+Co-op Rewards start with the game on Sat 28 Nov at 14:00 UTC. You can stake now, and deeds are tended by seeds planted from then on.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Plant a seed, tend a deed
+1
+Stake a deed.
+ No Fert Deck needed. See 
+Staking and the Fert Deck
+2
+Plant a seed
+ on your own plot. It tends 1 of your staked deeds for the day you plant and the 6 days after
+3
+At 14:00 UTC each day,
+ that day's Co-op Rewards are split by Fertility among the deeds tended that day
+4
+Claim
+ whenever you like. 1 claim covers all your deeds
+The Farmers Co-op starts buying 6 hours after launch, when the launch tax ends.
+Any seed tends, and your least-tended deed goes first
+Any seed counts,
+ whatever its tier. Planting tends. Harvesting, Fertilizer and selling don't
+Fewest days first.
+ Each seed goes to your deed with the fewest tended days left. On a tie, the rarer deed goes first
+Up to 7 days ahead.
+ Once all your deeds are tended that far, more seeds just farm
+Your own plot only.
+ Seeds planted from another wallet don't tend the staking wallet's deeds, even from a linked wallet
+25 slots a plot.
+ 1 full plot a week tends 25 deeds. A full plot every day tends 175, and twice a day 350
+Tended and staked all day means a part of that day
+Staked all day.
+ A deed counts on a day it's tended and staked from 14:00 to 14:00 UTC by the wallet that tended it
+New stakes
+ count from their next full day
+Fertility sets the split.
+ A tended Mythic gets 1.8× what a tended Common does
+Unstaking, selling or burning
+ ends a deed's tended days, and it gets nothing for that day
+Nobody tended?
+ That day's Co-op Rewards roll into the next day
+Settled means yours.
+ Settled Co-op Rewards are never taken back and never expire
+1 claim pays out every deed
+Straight to your wallet.
+ 1 claim pays out every deed's settled Co-op Rewards in $YIELD
+Every deed listed.
+ The claim shows what each deed got, including deeds you've since sold, unstaked or burned
+10% claim fee.
+ 5% goes to the next day's Co-op Rewards for tended deeds, and 5% into the Silo. See 
+The Silo and the Windfall
+The Farmers Co-op's daily buys fund them
+30% of every Co-op buy.
+ Each day the Farmers Co-op buys $YIELD, and 30% of every buy goes to tended deeds as Co-op Rewards. See 
+How the Farmers Co-op works
+Plus fees and rollovers.
+ A day's Co-op Rewards also include the previous day's claim fees and anything rolled over
+Held onchain.
+ The deed staking contract holds them until you claim, and pays each claim onchain. A claim never draws on the Silo
+Next, 
+Seeds and crops
+.
+Updated 27 Nov 2026
+Previous
+The Silo and the Windfall
+Next
+Seeds and crops
+
+=================== https://yieldfields.fun/docs/deed-gameplay/fertilizer
+
+Deed Gameplay
+›
+Fertilizer
+Fertilizer
+In short:
+Fertilizer makes crops grow faster, never expires, and only Fert Decks make it. Use it on your own farm, or export it and sell it to farmers on OpenSea.
+Making, claiming and exporting Fertilizer are live now. Using it on crops and Truffle Pigs starts with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Cut a crop's grow time
+25% faster.
+ Each Fertilizer cuts 25% of a crop's total grow time
+Up to 2 per crop.
+ So a crop can grow in half the time
+Instant ripen.
+ Use one with less than a quarter of the time left and the crop ripens at once
+Used up when applied.
+ Until then it keeps in your Bag or wallet
+Feeds your Truffle Pig.
+ Each feed skips 25% of its current level's wait. See 
+Pig Levels
+Sourced from deeds.
+ Every farmer who wants faster harvests gets it from deed holders
+Export it and trade it on OpenSea
+1
+Claim
+ Fertilizer from your Fert Deck. It goes to your Bag.
+2
+Export
+ it from your Bag. This mints it to your wallet as an onchain item.
+3
+Trade
+ it on 
+OpenSea
+, like any other item.
+4
+Import
+ it back into your Bag when you want to use it in the game. Importing doesn't lift an exporter slowdown (see "Decks slow down, never stop" below).
+Export is live now. Items in your wallet can't be used in the game until you import them.
+From launch, every item exports the same way as Fertilizer: Seed Packs, Seeds and Crops too. Import an item back into your Bag to plant, open or sell it.
+Exported items only move between standard wallets. Smart-contract wallets and wallets upgraded with EIP-7702 can't transfer them, so export to a standard wallet.
+Link a second wallet to share one Bag
+Before the game begins.
+ Linked wallets go live before the game opens on Sat 28 Nov at 14:00 UTC
+2 wallets, 1 Bag.
+ Link 2 wallets you own and they share one Bag: Fertilizer, Seed Packs, Seeds and Crops
+How to link.
+ Your first wallet enters the second wallet's address and signs. The second wallet signs to accept, and sharing starts at once
+Your share first.
+ Either wallet can plant, use Fertilizer, feed its Truffle Pig and open Seed Packs from the shared Bag. It uses its own share first, then its partner's
+Selling and exporting
+ use each wallet's own share
+Still separate.
+ Each wallet keeps its own plot, Truffle Pig, deeds, export limit and payouts
+Unlinking
+ takes effect 72 hours after you ask. Each wallet takes back its own share. After an unlink, linking again waits 7 days
+Only link a wallet you control. A linked wallet can use your share of the Bag, and the team will never ask you to link a wallet.
+Run more Fert Decks, export more each day
+Daily limit.
+ Each wallet can export a set amount of Fertilizer every 24 hours
+Half your Decks' output.
+ The limit is half of what your Fert Decks make in a day, counting every Fert Deck you've run in the last 7 days
+Per deck.
+ Each Common's Fert Deck adds 1.25 a day and each Mythic's adds 2.25
+Whole Fertilizer.
+ The limit rounds down, so a single Common, Rare or Epic exports 1 a day and a single Legendary or Mythic 2
+Imports add to it.
+ Fertilizer you imported in the last 24 hours adds to your limit
+No check, no export.
+ If the game can't check your limit, export pauses until it can
+Decks slow down, never stop
+A network-wide slowdown keeps Fertilizer from piling up. Fertilizer used on crops leaves circulation, so only what piles up counts.
+Network rate.
+ Every hour, if circulation is above 7 days of the network's output, every Fert Deck slows: 70% speed at 10 days, and 50% at 14 days or more
+Exporter rate.
+ If a wallet exports more than 25% of its Decks' daily output in any 24 hours, its Decks slow: 90% speed at 30%, 70% at 40% and 50% at 50% or more
+Your first 25% is free.
+ It rounds up to whole Fertilizer, so a single Common, Rare, Epic or Legendary always exports 1 a day at full speed, and a single Mythic 2
+When it counts.
+ Each export counts from the moment you make it, and importing back doesn't undo it
+It recovers on its own
+ once those exports are more than 24 hours old. The rate updates every hour
+Keeping it never slows you.
+ Fertilizer you keep in your Bag never counts toward your exporter rate
+Never below half speed.
+ A Deck runs at the lower of the 2 rates. Fertilizer you hold is never taken away
+Public numbers.
+ The circulation number, the target and the current network rate are public. These are launch settings
+Item details
+Item
+Value
+Item
+Fertilizer
+Standard
+ERC-1155C
+Chain
+Robinhood Chain
+Royalty
+5%
+Contract
+0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317
+The items contract is also listed on 
+Official links and contracts
+.
+Next, 
+The Root Cellar
+.
+Updated 27 Nov 2026
+Previous
+Staking and the Fert Deck
+Next
+The Root Cellar
+
+=================== https://yieldfields.fun/docs/deed-gameplay/founding-deeds
+
+Deed Gameplay
+›
+Founding Deeds
+Founding Deeds
+In short:
+Founding Deeds are the land of Yield Fields: 3,333 plots on Robinhood Chain. A deed makes Fertilizer, gets Co-op Rewards when it's tended, holds its own Root Cellar of ETH and can take a Windfall from the Silo.
+Staking, Fert Decks and Fertilizer are live now. Co-op Rewards, the Silo and burns start with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+A deed does 4 things, and Fertility sets how much
+Makes Fertilizer.
+ Stake it, build a Fert Deck, and it makes Fertilizer around the clock. See 
+Staking and the Fert Deck
+Gets Co-op Rewards.
+ On every day it's tended, a staked deed gets part of that day's Co-op Rewards in $YIELD. See 
+Co-op Rewards
+Holds a Root Cellar.
+ Every deed has its own cellar of ETH that fees fill, paid out when you burn it. See 
+The Root Cellar
+Takes a Windfall.
+ Burn a staked deed and it gets a fixed part of the Silo in $YIELD. See 
+The Silo and the Windfall
+Higher Fertility means more Fertilizer, a bigger part of each day's Co-op Rewards, a deeper Root Cellar and a bigger Windfall. Rarity is the raw score, and it carries into all 4.
+Rarer land, higher Fertility
+Rarity
+Biome
+Fertility
+Deeds
+Common
+Meadow
+5
+1,557
+Rare
+Frost
+6
+888
+Epic
+Blight
+7
+555
+Legendary
+Radiant
+8
+222
+Mythic
+Astral
+9
+111
+Same rarity, same Fertility.
+ A Mythic has 1.8× the Fertility of a Common
+Random rarity.
+ It was assigned at random, and it's shown in each deed's metadata and on OpenSea
+Biomes are the look.
+ Fertility does the work
+Every plot is its own pixel art
+Animated plot.
+ An isometric pixel art plot, 180×180, laid out as a 4×4 grid
+Build site.
+ The top of the plot is empty in the art, and the game draws your structure there
+Generated terrain.
+Open Field
+, 
+Pond
+ or 
+River
+, with big decor, water decor and small decor
+Specials.
+ Rarer deeds tend to roll more decor and more specials. A special never repeats on the same plot
+Visual only.
+ Plot art doesn't change what a deed produces
+Metadata.
+ Lists 
+Tier
+, 
+Biome
+, 
+Fertility
+, 
+Terrain
+, each decor piece, each special, and its decor and special counts
+Collection details
+Item
+Value
+Supply
+3,333
+Standard
+ERC-721C
+Chain
+Robinhood Chain
+Royalty
+5%
+Marketplace
+OpenSea
+Contract
+Listed on Official links and contracts
+Check the contract
+ on 
+Official links and contracts
+ before you sign anything
+ERC-721C.
+ The collection controls which marketplaces can trade it, so royalties are respected on every resale
+Next, 
+Staking and the Fert Deck
+.
+Updated 27 Nov 2026
+Previous
+First Harvest
+Next
+Staking and the Fert Deck
+
+=================== https://yieldfields.fun/docs/deed-gameplay/staking-and-the-fert-deck
+
+Deed Gameplay
+›
+Staking and the Fert Deck
+Staking and the Fert Deck
+In short:
+Stake a Founding Deed, build a Fert Deck on it, and it makes Fertilizer around the clock. Staked deeds are also the ones that get Co-op Rewards and can burn for a Windfall.
+Staking, Fert Decks and Fertilizer are live now. Co-op Rewards and burns start with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Stake for free, unstake any time
+Free apart from gas.
+ Stake any number of deeds in 1 transaction
+One step.
+ Stake and build in the same step
+Still yours.
+ The staking contract holds your deed while it's staked
+Unstake any time,
+ even while the game is paused
+Unstaking destroys the structure on the deed and ends its tended days. Any Fertilizer it made that you hadn't claimed goes into your Bag for you.
+Build a Fert Deck for 0.01 ETH
+1 structure per deed.
+ The Fert Deck is the first, and more types are planned
+Price shown first.
+ You see the fee before you confirm. That's the launch price, and the team can change it
+The fee stays with the deeds.
+ It fills the deeds' Root Cellars. See 
+The Root Cellar
+Drawn on your plot.
+ Structures aren't part of the NFT. The game draws them
+Your Fert Deck makes Fertilizer around the clock
+Half a Fertilizer a day per point of Fertility.
+ From 2.5 a day on a Common to 4.5 on a Mythic
+3 days of storage.
+ From 7.5 on a Common to 13.5 on a Mythic. When it's full, the deck stops until you claim
+Claim to your Bag.
+ Claimed Fertilizer goes to your in-game 
+Bag
+. Partial progress carries over
+Check in at least every 3 days to keep your deck running.
+Staked deeds get more than Fertilizer
+Co-op Rewards,
+ on the days a deed is tended. Each seed you plant tends 1 staked deed for 7 days, and no Fert Deck is needed. See 
+Co-op Rewards
+Root Cellar and Windfall.
+ Only a staked deed can burn. A burn pays out its Root Cellar in ETH plus its Windfall from the Silo
+Planned:
+ Fert Deck boosts and new structures
+Next, 
+Fertilizer
+.
+Updated 27 Nov 2026
+Previous
+Founding Deeds
+Next
+Fertilizer
+
+=================== https://yieldfields.fun/docs/deed-gameplay/the-root-cellar
+
+Deed Gameplay
+›
+The Root Cellar
+The Root Cellar
+In short:
+Every Founding Deed has its own Root Cellar of ETH, filled by fees and sized by its Fertility, and burning a staked deed pays it out. A Root Cellar has no set amount and isn't a price for your deed.
+Fert Deck build fees fill the Root Cellars now. $YIELD trading taxes and burns start with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+“Nobody remembers who dug the cellars under the Founding Deeds. They fill slowly, and rarer land runs deeper.”
+Fees fill it, Fertility sizes it
+Every deed has one,
+ staked or not. Higher Fertility means a deeper cellar
+Build fees.
+ Every Fert Deck build fee goes into the deeds' cellars
+$YIELD trades.
+ 35% of the base $YIELD buy and sell taxes goes to the Root Cellars
+NFT royalties.
+ 2.25% of every NFT sale, out of the 5% royalty, goes to the Root Cellars
+The launch tax.
+ 40% of the launch tax on $YIELD buys in the first 6 hours goes to the Root Cellars
+Fewer deeds over time.
+ Burned deeds are gone for good, so future fees go to fewer deeds
+Burn a staked deed to open it
+Burning is the only way in.
+ Only a staked deed can burn, and its cellar pays out in ETH
+Plus a Windfall.
+ Every burn pays the Root Cellar's ETH plus a Windfall from the Silo, for any staked deed, tended or not. See 
+The Silo and the Windfall
+ for how to burn
+It moves with the game.
+ What's in a cellar follows how much is built and traded
+Next, 
+The Silo and the Windfall
+.
+Updated 27 Nov 2026
+Previous
+Fertilizer
+Next
+The Silo and the Windfall
+
+=================== https://yieldfields.fun/docs/deed-gameplay/the-silo-and-the-windfall
+
+Deed Gameplay
+›
+The Silo and the Windfall
+The Silo and the Windfall
+In short:
+Burn a staked deed and it gets its Windfall: a fixed part of the Silo, set by its Fertility and paid in $YIELD. Only deed holders fill the Silo, and it refills after every burn.
+The Silo, Co-op Rewards claims and burns start with the game on Sat 28 Nov at 14:00 UTC. This page explains how they work from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Only deed holders fill the Silo
+Claim fees fill it.
+ Every Co-op Rewards claim pays a 10% fee: 5% into the Silo, and 5% to the next day's Co-op Rewards for tended deeds
+Held onchain.
+ The deed staking contract holds the Silo, and takes the 5% as each claim is paid
+Only burns draw on it.
+ The Silo pays out only when a staked deed is burned. Any staked deed can burn, tended or not
+It refills.
+ A Windfall never empties the Silo, and every claim grows it again
+Your Windfall is a fixed part, set by Fertility
+A burn's Windfall is 10% of the Silo's balance at that moment for each point of the deed's Fertility. Nothing about it is random, and a burn never takes more than the whole Silo. Every burn also pays out the deed's 
+The Root Cellar
+ in ETH.
+Common:
+ 50%
+Rare:
+ 60%
+Epic:
+ 70%
+Legendary:
+ 80%
+Mythic:
+ 90%
+Burn in 3 steps
+1
+Pick a staked deed and choose 
+Burn Deeds…
+. The app shows your Root Cellar and Windfall first.
+2
+Hold to Burn
+, then confirm in your wallet. You can burn several deeds in one go. They're processed 1 at a time, and each takes its part of what the last one left.
+3
+Your Windfall arrives in $YIELD and your Root Cellar in ETH, straight to your wallet.
+Structure and tended days end.
+ Stored Fertilizer moves to your Bag
+Settled Co-op Rewards stay yours
+ to claim
+Payout check.
+ Each burn checks its payout against what the app showed you, and fails rather than pay less
+Paused game, paused burns.
+ Burns wait until the game resumes. Unstaking doesn't
+Burning is permanent. The deed is gone for good, and there is no undo.
+Next, 
+Co-op Rewards
+.
+Updated 27 Nov 2026
+Previous
+The Root Cellar
+Next
+Co-op Rewards
+
+=================== https://yieldfields.fun/docs/farming-and-yield/growing-and-selling
+
+Farming and $YIELD
+›
+Growing and selling
+Growing and selling
+In short:
+Your farm plot is free. Plant seeds, harvest them ripe, and sell to the Farmer for $YIELD or the Broker for ETH.
+Farming and selling open with the game on Sat 28 Nov at 14:00 UTC. This page explains how they work from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+A free plot for every wallet
+Slots:
+ your plot is a 5×5 grid of slots (25 crops), and each holds 1 crop at a time
+No deed needed:
+ every wallet farms, and there are no plot expansions
+Visitors:
+ other players can drop by and see what you're growing
+Crops ripen in hours, not days
+Grow time:
+ 1 to 12 hours, with a live countdown in the game. See every crop in 
+Seeds and crops
+Rarity and pack size:
+ rarer crops take longer, and bigger packs grow faster
+Fertilizer:
+ each one cuts 25% of the grow time, up to a cap per crop. Use it from your Bag. See 
+Fertilizer
+Always sellable:
+ ripe crops never wilt, so you can always harvest and sell them. Harvest within 48 hours of ripening to keep the truffle chance
+Harvest the whole plot at once
+Pick 1 crop or everything ripe in one go. Harvested crops land in your Bag, ready to sell.
+The soil hides more than vegetables. With a Truffle Pig, every harvest has a 1 in 10 chance of a truffle, paid in $YIELD. See 
+Truffles
+.
+Sell for $YIELD or ETH
+Farmer
+Broker
+Pays in
+$YIELD, straight to your wallet
+ETH
+Co-op Dues
+6%
+8%
+You get
+About 94% of the crop's value in $YIELD, less any slippage
+92% of the crop's value in ETH
+$YIELD buy tax (2%)
+None
+Doesn't apply (paid in ETH)
+Launch tax (first 6 hours)
+None
+Doesn't apply (paid in ETH)
+Example: a 1 ETH crop
+0.94 ETH worth of $YIELD
+0.92 ETH
+Farmer ($YIELD)
+Pays more:
+ about 94% of the crop's value in $YIELD, straight to your wallet, after 6% Co-op Dues and less any slippage
+No buy tax:
+ the Farmer buys your $YIELD on the official pool, tax-free
+No launch tax:
+ Farmer sales skip the 6-hour launch tax too
+Quote first:
+ if the price moves more than 1% past the quote, the sale stops instead of paying you less
+Broker (ETH)
+Pays in ETH:
+ 92% of the crop's value after 8% Co-op Dues, from the ETH that pack sales bring into The Cornhub
+Farmer to hold $YIELD, Broker for ETH
+Holding $YIELD?
+ Pick the Farmer. It pays more and charges lower Co-op Dues
+Want ETH?
+ Pick the Broker. Selling to the Farmer and then selling the $YIELD nets less
+Co-op Dues:
+ either way, the fee goes to the Farmers Co-op. See 
+How the Farmers Co-op works
+.
+Next, 
+$YIELD
+.
+Updated 27 Nov 2026
+Previous
+Seeds and crops
+Next
+$YIELD
+
+=================== https://yieldfields.fun/docs/farming-and-yield/pig-levels
+
+Farming and $YIELD
+›
+Pig Levels
+Pig Levels
+In short:
+Your Truffle Pig levels up for free, from Level 1 to Level 10. Every level grows bigger truffles, up to 3× at Level 10, for a bigger share of the daily payout.
+Truffle Pigs are on sale now. Truffles and Pig Levels start with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Free levels you never lose
+Free:
+ no level payments and no upkeep
+Permanent:
+ a pig never loses a level
+Bigger truffles:
+ each level raises your truffles' size, so they get a bigger share of the daily payout
+Same chance:
+ truffles still drop on 1 in 10 harvests at every level
+Evolves at 5 and 10:
+ your pig's look changes at Level 5 and Level 10
+Level
+Truffle size
+Wait to next level
+Reached without Fertilizer
+Reached fully fed
+1
+1×
+16 h
+Day 0
+Day 0
+2
+1.35×
+1 d 8 h
+Day 0.7
+Day 0.2
+3
+1.7×
+2 d
+Day 2
+Day 0.5
+4
+2.05×
+2 d 16 h
+Day 4
+Day 1
+5
+2.4×
+3 d 8 h
+Day 6.7
+Day 1.7
+6
+2.52×
+4 d
+Day 10
+Day 2.5
+7
+2.64×
+4 d 16 h
+Day 14
+Day 3.5
+8
+2.76×
+5 d 8 h
+Day 18.7
+Day 4.7
+9
+2.88×
+6 d
+Day 24
+Day 6
+10
+3×
+Max level
+Day 30
+Day 7.5
+Days count from buying the pig, or from launch (Sat 28 Nov, 14:00 UTC) for a pig bought before then, with the Normal trainer picked as soon as each wait ends.
+Train your pig when the wait ends
+1
+Wait:
+ each level's wait is 16 hours × your pig's current level. The game shows "Trainable in" with a countdown. A pig bought before launch starts its Level 1 wait when the game opens, and Fertilizer fed before then doesn't skip any of it
+2
+Pick a trainer:
+ trainers are free
+3
+Level up:
+ the next wait starts as soon as your pig levels up
+Guaranteed (Normal):
+ +1 level, every time
+50/50 chance (Lucky):
+ +2 levels or none. On a miss, that level's wait and Fertilizer feeds both start again
+Level 9:
+ Lucky isn't offered, so Level 10 is always a guaranteed step
+Feed Fertilizer to skip the wait
+Skip 25%:
+ each feed skips 25% of that level's wait
+Cost:
+ each feed costs as many Fertilizer as your pig's level, up to 3 feeds per level
+Fast track:
+ fully fed, a pig reaches Level 10 in about 7.5 days for 135 Fertilizer
+New looks at Level 5 and Level 10
+Level 5:
+ your pig evolves into a new look
+Level 10:
+ its top-level look, to go with the biggest truffles
+Deed minters get a pig cosmetic at launch.
+ Every wallet that minted a Founding Deed gets one. It changes your pig's look, not its truffles
+Revealed in the game:
+ level up to see your pig's new looks
+Good to know
+Per plot:
+ levels belong to your plot's pig, and each wallet has 1 pig
+Size counts at the find:
+ a truffle takes your pig's size at the moment it's found
+Same payout, bigger share:
+ levels don't add to the daily truffle payout. A bigger truffle takes a bigger share of the same payout
+Next, 
+How the Farmers Co-op works
+.
+Updated 27 Nov 2026
+Previous
+Truffles
+Next
+How the Farmers Co-op works
+
+=================== https://yieldfields.fun/docs/farming-and-yield/seeds-and-crops
+
+Farming and $YIELD
+›
+Seeds and crops
+Seeds and crops
+In short:
+Grab a seed pack at The Cornhub with ETH and open it for 1 random seed, from Common up to ultra-rare Mythic. Every pack uses the same chances, and bigger packs hold more valuable crops.
+Seed packs are on sale now. Planting and growing open with the game on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+5 packs, from Bronze to Diamond
+Pack
+Price
+Diamond
+0.25 ETH
+Platinum
+0.1 ETH
+Gold
+0.05 ETH
+Silver
+0.01 ETH
+Bronze
+0.005 ETH
+Export to OpenSea:
+ at launch, every item exports from your Bag to your wallet: Fertilizer, Seed Packs, Seeds and Crops
+Trade them:
+ exported items are tradeable, so you can buy and sell them on OpenSea too. Only standard wallets can move them: smart-contract and EIP-7702 wallets can't
+Import to use:
+ an item in your wallet goes back into your Bag before you plant, open or sell it
+Rarity sets the value
+Every pack uses the same chances. A seed's rarity sets its crop's value, as a multiple of the pack's price.
+Rarity
+Chance
+Worth
+Common
+45%
+0.5×
+Uncommon
+31%
+1×
+Rare
+15%
+1.6×
+Epic
+6%
+2×
+Legendary
+2.5%
+3×
+Mythic
+0.5%
+5×
+On average, a seed is worth 99.5% of its pack price. Mythic is the ultra-rare tier: 1 in every 200 packs.
+6 crops in every pack
+Each pack has its own 6 crops, 1 for each rarity. Rarer crops take longer, and bigger packs grow faster for the ETH you put in. Grow times are before Fertilizer.
+One seed, one crop:
+ a seed is used up when you plant it.
+Tip:
+ splitting ETH across many small packs never beats putting it into one bigger pack.
+Bronze
+Crop
+Rarity
+Grow time
+Spinach
+Common
+1h 12m
+Potato
+Uncommon
+2h 24m
+Cabbage
+Rare
+3h 50m
+Carrot
+Epic
+4h 48m
+Flare Kale
+Legendary
+7h 12m
+Swirlchard
+Mythic
+12h
+Silver
+Crop
+Rarity
+Grow time
+Wheat
+Common
+1h 10m
+Parsnip
+Uncommon
+2h 19m
+Broccoli
+Rare
+3h 43m
+Red Pepper
+Epic
+4h 38m
+Sunchoke
+Legendary
+6h 58m
+Cosmoflower
+Mythic
+11h 36m
+Gold
+Crop
+Rarity
+Grow time
+Leek
+Common
+1h 5m
+Onion
+Uncommon
+2h 10m
+Squash
+Rare
+3h 27m
+Turnip
+Epic
+4h 19m
+Halopeno
+Legendary
+6h 29m
+Moonkin
+Mythic
+10h 48m
+Platinum
+Crop
+Rarity
+Grow time
+Brussels Sprouts
+Common
+1h 2m
+Rhubarb
+Uncommon
+2h 5m
+Tomato
+Rare
+3h 20m
+Red Cabbage
+Epic
+4h 10m
+Raydish
+Legendary
+6h 14m
+Starnip
+Mythic
+10h 24m
+Diamond
+Crop
+Rarity
+Grow time
+Ginger
+Common
+1h
+Beet
+Uncommon
+2h
+Pumpkin
+Rare
+3h 12m
+Eggplant
+Epic
+4h
+Gilded Corn
+Legendary
+6h
+Heartbeet
+Mythic
+10h
+Heartbeet is the most valuable crop in the game.
+Verifiable randomness on every pack
+Every pack is tied to a future draw from drand, a public randomness source. The result is fixed before anyone can see it, and anyone can check it afterwards.
+Next, 
+Growing and selling
+.
+Updated 27 Nov 2026
+Previous
+Co-op Rewards
+Next
+Growing and selling
+
+=================== https://yieldfields.fun/docs/farming-and-yield/truffles
+
+Farming and $YIELD
+›
+Truffles
+Truffles
+In short:
+Give your plot a Truffle Pig and every harvest has a 1 in 10 chance of a truffle. Each day's truffle payout is split by weight and paid in $YIELD, ready to claim from the Truffle Vault.
+Truffle Pigs are on sale now. Truffles start with the game on Sat 28 Nov at 14:00 UTC. This page explains how they work from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Get a pig, find truffles
+1
+Get a Truffle Pig
+ for your plot at The Cornhub, before you plant. Pigs are on sale now, ahead of the game's start
+2
+Plant and harvest
+ as usual. Every crop planted once you have your pig can turn up a truffle
+3
+Claim
+ your payout from the Truffle Vault once the day settles
+1 pig, a 1 in 10 chance at every harvest
+Truffle Pig:
+ a one-off 0.01 ETH per plot, paid to the Farmers Co-op. No pig, no truffles
+Pig first, then plant:
+ a crop's truffle chance is set when you plant it, so crops planted before you had your pig find no truffle
+1 in 10:
+ every harvest has the same chance, whatever the crop
+Verifiable randomness:
+ each roll comes from drand after the harvest, so nobody knows in advance which crops hold one
+Bigger with levels:
+ your pig grows bigger truffles as it levels up. See 
+Pig Levels
+Rarer crops, heavier truffles
+Named by rarity:
+ from Common Truffle to Mythic Truffle, after the crop it came from
+Weight:
+ a truffle weighs its crop's value times your pig's size when it's found, so truffle value per ETH farmed comes out the same whatever you plant. See 
+Pig Levels
+Example:
+ a Gold pack's Squash is worth 0.08 ETH. Found by a Level 10 pig (3×), its truffle weighs 0.24
+A fresh payout every day
+Each day runs from 14:00 to 14:00 UTC and settles at 14:00 UTC. That day's payout is split by weight among the truffles found that day.
+Launch seed:
+ 10M $YIELD over the first 30 days, about 441,000 on day one, easing to about 226,000 on day 30. After day 30, the Co-op's refills fund each day's payout
+Refills:
+ the Farmers Co-op refills the Truffle Pool, and 5% of the refill balance pays out each day
+Set aside:
+ 5% of each day's payout is set aside for 
+████████
+ (classified until day 14)
+Cap:
+ no single truffle gets more than 5% of the pool. Anything above it stays in the pool
+Fixed at settlement:
+ your amount is locked in when the day settles, so when you claim doesn't change it
+Quiet days pay more per truffle
+The day's payout doesn't depend on how many truffles turn up. On a quiet day each truffle gets a bigger share, and on a busy day a smaller one.
+Claim from the Truffle Vault
+Claim your truffle payouts from the Truffle Vault. They're paid in $YIELD, straight to your wallet.
+Pool and Vault:
+ the Truffle Pool holds the $YIELD that pays each day's truffles. The Truffle Vault is where you claim your share.
+Harvest within 48 hours to keep the chance
+24 hours after ripening:
+ the crop shows a warning
+48 hours after ripening:
+ the crop finds no truffle. You can still harvest it and sell it
+Next, 
+Pig Levels
+. Back to 
+Growing and selling
+.
+Updated 27 Nov 2026
+Previous
+$YIELD
+Next
+Pig Levels
+
+=================== https://yieldfields.fun/docs/farming-and-yield/yield
+
+Farming and $YIELD
+›
+$YIELD
+$YIELD
+In short:
+$YIELD is the token of Yield Fields. Farmers get it from the Farmer, deed holders get it from the land, and you can spend it on optional items and events. Its trading taxes feed the Farmers Co-op and the deeds, and you never need it to play.
+$YIELD launches with the game on Sat 28 Nov at 14:00 UTC. This page explains how it works from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+$YIELD's price can go up or down, and it isn't an investment.
+Item
+Detail
+Ticker
+$YIELD
+Network
+Robinhood Chain
+Standard
+ERC-20
+Total supply
+100,000,000 $YIELD
+Supply
+Fixed. Minted once, never again
+Allocation
+80M single-sided in the pool, 10M Truffle Pool seed, 10M Treasury reserve for live ops and events (never sold by the team)
+Team allocation
+0%
+Where it trades
+1 official pool
+Contract
+Listed on 
+Untitled
+How you get it
+Farmer sales:
+ sell crops to the Farmer and $YIELD goes straight to your wallet
+Co-op Rewards:
+ stake a Founding Deed and tend it by planting. See 
+Founding Deeds
+Windfalls:
+ burning a staked deed pays out its Windfall from the Silo
+Truffles:
+ with a Truffle Pig, harvests can turn up truffles, paid in $YIELD. See 
+Truffles
+Trade with hard-capped taxes
+Taxes:
+ 2% on buys and 3% on sells. No LP fee, so the tax is the only cost of a trade
+Heavy selling:
+ once net selling passes a set level, the sell tax climbs, up to 20% in total, then eases back over time. Buys cancel out sells, and splitting a sale doesn't avoid it
+Launch protection:
+ for the first 6 hours, buys pay a launch tax that starts at 90% and eases to 2% by hour 6 (about 63% at 1 hour, 24% at 3 hours and 12% at 4 hours), so bots can't snipe the opening price. Sells and Farmer sales skip it
+Where taxes go:
+ base taxes go 55% to the Farmers Co-op, 35% to the deeds' Root Cellars and 10% to the team. The heavy-selling extra goes 100% to the Farmers Co-op. Launch tax above 2% is split 40% to the deeds' Root Cellars and 60% to the Treasury, where it is reserved for the Farmers Co-op and released over time. None of it goes to the team
+Limits:
+ the base buy and sell taxes can never go above 5%, hard-coded
+Built on URC-5, so every trade counts
+$YIELD uses URC-5, the Token Venue Policy standard built by The Standard Reserve and now part of Uniswap's URC repository.
+1 official pool.
+ $YIELD declares its official Uniswap v4 pool onchain and blocks copycat pools
+Taxes always apply.
+ All trading runs through that pool, so every trade feeds the Farmers Co-op and the deeds
+Smooth routing.
+ Wallets and routers read the policy onchain and route trades to the right place
+Next, 
+Truffles
+.
+Updated 27 Nov 2026
+Previous
+Growing and selling
+Next
+Truffles
+
+=================== https://yieldfields.fun/docs/getting-started/about-yield-fields
+
+Getting Started
+›
+About Yield Fields
+About Yield Fields
+In short:
+Farm the fields for crops and truffles, or own the land that makes them grow. Yield Fields is an onchain farming protocol on Robinhood Chain, and its fees flow back into the game.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Deeds opened first. Farming, $YIELD, the Farmers Co-op, truffles and Co-op Rewards go live on Sat 28 Nov at 14:00 UTC.
+“Scouts camped in an unexplored land. By morning, the seeds from their last meal had sprouted into crops. They called it the Yield Fields.”
+Dewey
+, the game's guide, shows new Yielders around.
+Farm the fields, own the land, or both
+The 2 sides feed each other. 
+Farmers
+ grow crops and hunt truffles, and 
+deed holders
+ own the land that makes crops grow faster.
+Farm the fields: open to everyone
+No deed needed.
+1
+Buy a seed pack
+ at The Cornhub with ETH, from 0.005 ETH.
+2
+Plant it
+ in your free farm plot. Crops grow in 1 to 12 hours.
+3
+Harvest
+ once it's ripe. Fertilizer gets you there faster.
+4
+Sell
+ to the Farmer for $YIELD, or to the Broker for ETH.
+Hunt truffles with a Truffle Pig
+1 in 10 harvests finds a truffle
+ for crops planted after your plot gets its Truffle Pig, a one-off 0.01 ETH, on sale now.
+Paid every day in $YIELD.
+ Each day's truffle payout is split by weight among the truffles found that day.
+Bigger truffles as your pig levels up.
+ Free Pig Levels grow truffles up to 3×.
+The full guide is in 
+Truffles
+.
+Own the land
+For Founding Deed holders.
+ Don't have one? Get a deed on 
+OpenSea
+.
+1
+Stake your deed.
+ It's free apart from gas.
+2
+Build a Fert Deck.
+ It costs 0.01 ETH.
+3
+Make Fertilizer
+ around the clock. Higher Fertility makes more.
+4
+Plant to tend it.
+ Each seed on your own plot tends 1 staked deed for 7 days, Fert Deck or not, and tended deeds get Co-op Rewards.
+5
+Use or trade your Fertilizer.
+ Claim it to your Bag, or export it and sell it to farmers.
+Farmers need Fertilizer, and only deeds make it
+Fertilizer flows to the fields.
+ Deeds make it, and farmers use it to grow faster and level their pigs.
+Crop sales fill the Farmers Co-op.
+ Its daily $YIELD buys go 70% to truffles and 30% to Co-op Rewards.
+$YIELD trades fill the Root Cellars.
+ 35% of the base trading taxes go to the deeds.
+Most fees stay in the game
+0% team allocation.
+ 100,000,000 $YIELD, minted once, and 100% goes to the game.
+$500k seeds the Co-op, $250k of it on day one.
+ It starts buying 6 hours after launch, when the launch tax ends, and spends 3% of the Co-op Fund a day.
+Heavy selling feeds the Farmers Co-op.
+ The 3% base sell tax rises up to 20% during heavy selling, and the extra goes straight to it.
+Burned deeds are gone for good.
+ Future fees go to fewer deeds.
+Verifiable randomness.
+ Every pack and truffle roll comes from drand, public randomness anyone can check.
+Before you play
+Farming is a game of chance.
+ Every seed is random, so results vary. Read 
+Fees and risks
+ before you play.
+You don't need $YIELD to play.
+ You pay for everything in ETH.
+Who can play.
+ Yield Fields isn't available to US persons or in restricted regions. By playing you agree to the 
+Terms of Service
+.
+Staked deeds get more.
+ Co-op Rewards for tended deeds, and a burn that pays out the deed's Root Cellar in ETH plus a Windfall from the Silo.
+Where to go next
+Quick start
+: your first steps
+Seeds and crops
+: packs, odds and every crop
+Truffles
+: the Truffle Pig, Pig Levels and daily payouts
+Staking and the Fert Deck
+: staking, building and making Fertilizer
+Co-op Rewards
+: plant a seed, tend a deed
+The Root Cellar
+: the ETH each deed builds up
+The Silo and the Windfall
+: the $YIELD reserve only staked deeds can tap
+How the Farmers Co-op works
+: how every part feeds the next
+Flywheels
+: how the land, the fields and the fees keep each other spinning
+Live now and what's next
+: what's live and what's coming
+Official links and contracts
+: the only official links and addresses
+Updated 27 Nov 2026
+Next
+Quick start
+
+=================== https://yieldfields.fun/docs/getting-started/first-harvest
+
+Getting Started
+›
+First Harvest
+First Harvest
+In short:
+For the first 30 days, a launch seed of 10% of all $YIELD fills the Truffle Pool, paid out a little each day to the truffles farmers find. The Farmers Co-op starts with $500k behind it. First Harvest starts Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+What's in it
+Launch seed:
+ 10,000,000 $YIELD, 10% of the total supply, goes into the Truffle Pool
+Paid daily for 30 days:
+ about 441,000 on day one, easing to about 226,000 on day 30, so earlier days pay a little more. Nothing from the seed after day 30
+Farmers Co-op:
+ $500k seeds the Co-op, $250k of it on day one. The Co-op buys $YIELD and refills the Truffle Pool, which keeps paying after the seed ends
+Co-op Rewards for deed owners:
+ every Co-op buy pays Co-op Rewards to staked deeds on the days they're tended. Plant a seed on your own plot and it tends 1 staked deed for 7 days. See 
+Co-op Rewards
+How to take part
+1
+Get a Truffle Pig before you plant.
+ Truffle Pigs are on sale now at The Cornhub, for 0.01 ETH. A crop's truffle chance is set when you plant it, so plant after your pig arrives
+2
+Harvest within 48 hours of ripening.
+ After 48 hours a crop finds no truffle, though it still sells as normal
+3
+Claim each day.
+ Every day settles at 14:00 UTC, and that day's payout is split by weight among the truffles found. Claim yours from the Truffle Vault
+Dates
+Starts:
+ Sat 28 Nov 2026, 14:00 UTC
+First payout:
+ Sun 29 Nov, 14:00 UTC, when the first day settles
+Seed ends:
+ day 30. From then on, the Co-op's refills fund each day's payout
+For the full picture, see 
+Truffles
+ and 
+How the Farmers Co-op works
+.
+What keeps it going
+Fees from farming fill the Farmers Co-op, and its daily buys go back to active players: truffle payouts for farmers and Co-op Rewards for tended deeds. See 
+Flywheels
+.
+Updated 27 Nov 2026
+Previous
+Live now and what's next
+Next
+Founding Deeds
+
+=================== https://yieldfields.fun/docs/getting-started/live-now-and-whats-next
+
+Getting Started
+›
+Live now and what's next
+Live now and what's next
+In short:
+The land, seed packs and Truffle Pigs are live now. Farming, $YIELD, truffles and Co-op Rewards go live on Sat 28 Nov at 14:00 UTC.
+Live now
+The land.
+ Deeds opened first: staking, the Fert Deck, Fertilizer and export.
+Seed packs.
+ On sale at The Cornhub, from 0.005 to 0.25 ETH.
+Truffle Pigs.
+ On sale at The Cornhub for 0.01 ETH, so your pig is ready before you plant. A pig bought before launch starts its Level 1 wait when the game opens.
+Before the game begins
+Linked wallets.
+ 2 wallets you own can share one Bag. They go live before the game begins. See 
+Fertilizer
+.
+From Sat 28 Nov, 14:00 UTC
+Farming.
+ Plant your seeds, and crops grow in 1 to 12 hours.
+Selling.
+ The Farmer pays about 94% of a crop's value in $YIELD, and the Broker pays 92% in ETH.
+Truffles.
+ With a Truffle Pig, 1 in 10 harvests finds a truffle, paid every day in $YIELD. See 
+Truffles
+.
+Pig Levels.
+ Free levels 1 to 10 that grow truffles up to 3×.
+$YIELD.
+ 100,000,000 minted once, with 0% to the team.
+The Farmers Co-op.
+ Seeded with $500k ($250k on day one), and buying $YIELD from 6 hours after launch.
+Deed rewards.
+ Co-op Rewards for tended deeds, the Silo and burns.
+Planned
+More for deed holders.
+ Fert Deck boosts and new structures.
+The key numbers stay in the open
+Farmers Co-op balance:
+ shown in the game
+Rate and fee changes:
+ every one is logged in 
+Patch notes
+Regular updates:
+ the key numbers, posted on X
+Plans can shift as the game grows. Follow 
+@YieldFields_RH on X
+ to hear first.
+Updated 27 Nov 2026
+Previous
+Quick start
+Next
+First Harvest
+
+=================== https://yieldfields.fun/docs/getting-started/quick-start
+
+Getting Started
+›
+Quick start
+Quick start
+In short:
+Connect a wallet and grab a seed pack now, then start farming when the game opens on Sat 28 Nov at 14:00 UTC. Add a Truffle Pig to hunt truffles, and stake a Founding Deed to make Fertilizer and get Co-op Rewards.
+Seed packs and Truffle Pigs are on sale now. Linked wallets go live before the game begins. Farming, $YIELD, truffles, the Farmers Co-op and Co-op Rewards open on Sat 28 Nov at 14:00 UTC, so steps 5, 6 and 10 start then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+What you need
+A wallet on Robinhood Chain.
+ Robinhood Wallet, MetaMask, Rabby or any wallet that connects through WalletConnect. Abstract Global Wallet (AGW) doesn't work on Robinhood Chain. To trade exported items, use a standard wallet: smart-contract wallets and wallets upgraded with EIP-7702 can't move them.
+A little ETH on Robinhood Chain.
+ For seed packs, gas and fees. Bridge it over with the official Robinhood Chain bridge.
+A Founding Deed, for the land.
+ Farming doesn't need one. Get one on 
+OpenSea
+.
+To be outside the US and restricted regions.
+ Yield Fields isn't available to US persons or in restricted regions. By playing you agree to the 
+Terms of Service
+.
+Only use the official bridge. ETH sent to the wrong network or address can't be recovered.
+1
+Check the official addresses
+Before you sign anything, check the contract against 
+Official links and contracts
+. The team will never DM you first.
+2
+Connect your wallet
+Go to 
+yieldfields.fun/play
+ and connect your wallet.
+3
+Buy a seed pack
+Pick one at 
+The Cornhub
+, from 0.005 ETH. Each pack holds 1 random seed. See 
+Seeds and crops
+.
+4
+Get a Truffle Pig before you plant
+A one-off 0.01 ETH at The Cornhub, on sale now. A crop's truffle chance is set when you plant it, so seeds planted before your pig arrives never find a truffle. With a pig, 1 in 10 harvests finds a truffle, paid every day in $YIELD. No pig, no truffles. See 
+Truffles
+.
+5
+Plant and grow
+Plant your seed in your free farm plot. Crops grow in 1 to 12 hours, and each Fertilizer cuts 25% off, up to 2 per crop.
+6
+Harvest and sell
+Harvest once it's ripe. Sell to the 
+Farmer
+ for $YIELD, or to the 
+Broker
+ for ETH. See 
+Growing and selling
+.
+7
+Stake your deed
+Free apart from gas. Stake several deeds in 1 transaction.
+8
+Build a Fert Deck
+It costs 0.01 ETH. Stake and build in one go.
+9
+Claim your Fertilizer
+Claimed Fertilizer goes to your Bag. Check in regularly, since your deck stops when its storage is full. The full guide is in 
+Staking and the Fert Deck
+.
+10
+Plant a seed, tend a deed
+Each seed you plant on your own plot tends 1 of your staked deeds for 7 days. Tended deeds get Co-op Rewards, with 1 claim for all of them, and no Fert Deck is needed. See 
+Co-op Rewards
+.
+Updated 27 Nov 2026
+Previous
+About Yield Fields
+Next
+Live now and what's next
+
+=================== https://yieldfields.fun/docs/reference/faq
+
+Reference
+›
+FAQ
+FAQ
+In short:
+The questions new Yielders ask first, each answered in a line or two with a link to the full page.
+Seed packs and Truffle Pigs are on sale now. Linked wallets go live before the game begins. Farming, $YIELD, truffles, the Farmers Co-op and Co-op Rewards open on Sat 28 Nov at 14:00 UTC.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Getting started
+How do I start?
+Buy a Seed Pack, plant it, harvest, sell.
+ Seed packs are on sale now, and planting opens with the game on Sat 28 Nov at 14:00 UTC. Open the game at 
+yieldfields.fun/play
+, buy a Seed Pack at The Cornhub with ETH, and plant its seed on your free 5×5 plot. Harvest the crop once it's grown, then sell it to the Farmer or the Broker. See 
+Quick start
+.
+Do I need a deed to play?
+No.
+ Farming is open to everyone. A Founding Deed adds the land game: stake it, build a Fert Deck, make Fertilizer and get Co-op Rewards. Founding Deeds trade on OpenSea. See 
+Founding Deeds
+.
+Do I need $YIELD to play?
+No.
+ Everything you need is paid in ETH. $YIELD is what the Farmer and truffles pay out, and an in-game currency for optional items and events. See 
+$YIELD
+.
+Are seeds single-use?
+Yes.
+ Each seed grows one crop. Planting uses it up, and the crop is yours to sell. See 
+Seeds and crops
+.
+Should I sell to the Farmer or the Broker?
+The Farmer for $YIELD, the Broker for ETH.
+ The Farmer takes 6% Co-op Dues and buys $YIELD with the other 94%, sent straight to your wallet. The Broker takes 8% and pays the other 92% in ETH. See 
+Growing and selling
+.
+Is farming a game of chance?
+Yes.
+ Every seed is random, so results vary widely. Truffles are the bonus on top. Read 
+Fees and risks
+ before you play.
+Who can play?
+Anyone outside the US and restricted regions.
+ Yield Fields isn't available to US persons or in sanctioned or embargoed countries. By playing you agree to the 
+Terms of Service
+.
+Truffles and payouts
+What does a Truffle Pig do?
+It finds truffles.
+ With a pig, every harvest has a 1 in 10 chance of a truffle, paid in $YIELD. A plot without a pig finds none. A pig is a one-off 0.01 ETH, paid to the Farmers Co-op, and pigs are on sale now. It levels up for free to grow truffles up to 3× bigger. A pig bought before launch starts its Level 1 wait when the game opens. Get your pig before you plant: crops planted before it find no truffle. See 
+Truffles
+ and 
+Pig Levels
+.
+When are payouts?
+Every day at 14:00 UTC.
+ The first is on Sun 29 Nov, a day after launch. Each day's truffle payout and Co-op Rewards are split then, and your amount is fixed. Claim truffle payouts from the Truffle Vault and Co-op Rewards from the deed staking contract whenever you like. Crop sales pay at once.
+$YIELD and the launch
+What's the launch tax?
+A tax on $YIELD buys for the first 6 hours of trading.
+ It starts at 90% and eases along a curve to 2% at hour 6: about 63% at 1 hour, 41% at 2 hours, 24% at 3 hours and 12% at 4 hours. Sells never pay it. Everything above 2% is split 40% to the deeds' Root Cellars and 60% to the Treasury, where it is reserved for the Farmers Co-op and released over time. None of it goes to the team.
+Does the Farmer skip the launch tax?
+Yes.
+ The Farmer pays no launch tax and no buy tax, from the first minute. Farmers get $YIELD for the 6% Co-op Dues while market buyers pay the launch tax. The first Farmer sales are possible from about minute 30, when the first fertilized crops are ready.
+What happens during heavy selling?
+The sell surge kicks in.
+ The 3% base sell tax climbs up to 20% in total during heavy selling, and all of the surge goes to the Farmers Co-op. Splitting a sale or using many wallets saves nothing.
+Does the team get any $YIELD?
+No allocation.
+ The team gets 0% of the supply, and 100% goes to the game: 80M to the pool, 10M to the Truffle Pool and 10M to the Treasury for player rewards and live ops.
+Items
+Can I sell my items?
+Yes.
+ Sell crops in the game to the Farmer or the Broker. Export any item from your Bag to your wallet (Fertilizer, Seed Packs, Seeds and Crops), then trade it on OpenSea (5% royalty). Only standard wallets can move exported items: smart-contract wallets and wallets upgraded with EIP-7702 can't. See 
+Fertilizer
+.
+Does Fertilizer expire?
+No.
+ Stock up whenever you like.
+Can 2 of my wallets share a Bag?
+Yes, with linked wallets.
+ They go live before the game begins. Link 2 wallets you own and they share one Bag. Each uses its own share first, and selling and exporting use each wallet's own share. Plots, pigs, deeds, export limits and payouts stay separate. Unlinking takes effect 72 hours after you ask, and linking again then waits 7 days. See 
+Fertilizer
+.
+Deeds
+What happens when I burn a deed?
+It's gone for good, and it pays out.
+ Only a staked deed can be burned. It pays its Root Cellar ETH plus its Windfall from the Silo: 10% of the Silo per point of Fertility, from 50% (Common) to 90% (Mythic), in $YIELD, in the same transaction. Its structure is destroyed and its tended days end. Co-op Rewards already settled stay yours. See 
+The Silo and the Windfall
+.
+What do staked deeds get?
+Fertilizer
+ with a Fert Deck, 
+Co-op Rewards
+ in $YIELD on the days they're tended, and when burned, their Root Cellar ETH plus a Windfall. See 
+Co-op Rewards
+.
+Do I need a Fert Deck to get Co-op Rewards?
+No.
+ Any staked deed can be tended. Each seed you plant on your own plot tends 1 of your staked deeds for 7 days.
+How do I claim Co-op Rewards?
+In 1 claim for all your deeds.
+ A 10% claim fee goes half to the next day's Co-op Rewards and half to the Silo. Settled Co-op Rewards never expire.
+Does staking cost anything?
+No.
+ Only gas. Building a Fert Deck is 0.01 ETH. See 
+Staking and the Fert Deck
+.
+Can I sell a staked deed?
+No.
+ Unstake it first. Unstaking destroys its structure and ends its tended days, and any unclaimed Fertilizer goes into your Bag for you.
+Can I unstake while the game is paused?
+Yes.
+ Unstaking always works. Burns wait until the game resumes.
+Does a higher rarity produce more?
+Yes.
+ Fert Deck output scales with Fertility, from 5 for a Common to 9 for a Mythic: 2.5 to 4.5 Fertilizer a day.
+What happens if I don't claim my Fertilizer?
+Your Fert Deck pauses.
+ Storage fills at 3 days of production, so check in regularly.
+Safety and changes
+Can the team rig a pack?
+No.
+ Every pack is tied to a future draw from drand, a public randomness source. The result is fixed before anyone can see it, and anyone can check it. Truffle rolls work the same way.
+How do I spot a scam?
+Check every link and address
+ against 
+Official links and contracts
+. The team will never DM you first, and never asks you to link a wallet. Only link a wallet you control.
+Can the numbers change?
+Yes.
+ Current rates and fees are shown in the app, and every change is logged in 
+Patch notes
+.
+Why are some features blacked out?
+Some features are still classified.
+ They're revealed as they go live. Follow 
+@YieldFields_RH on X
+ to see them first.
+Updated 27 Nov 2026
+Previous
+Fees and risks
+Next
+Glossary
+
+=================== https://yieldfields.fun/docs/reference/fees-and-risks
+
+Reference
+›
+Fees and risks
+Fees and risks
+In short:
+Game fees flow back into the game, to the Farmers Co-op, the Root Cellars (see 
+The Root Cellar
+) and the Silo. This page lists every fee, where it goes, where the team's share comes from and what to know before you put ETH in.
+Most of these fees start with the game on Sat 28 Nov at 14:00 UTC. Seed pack sales, Truffle Pig sales and Fert Deck builds are live now.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Every fee, and where it goes
+Where every fee goes
+Fee
+Amount
+Goes to
+Selling to the Farmer
+6% Co-op Dues
+The Farmers Co-op
+Selling to the Broker
+8% Co-op Dues
+The Farmers Co-op
+Buying $YIELD
+2%
+55% to the Farmers Co-op, 35% to the Root Cellars, 10% to the team
+Selling $YIELD
+3%, rising to up to 20% in total during heavy selling
+The base 3% splits like the buy tax. The extra from heavy selling all goes to the Farmers Co-op
+Launch tax
+Buys only, for the first 6 hours: starts at 90% and eases to 2% by hour 6. The Farmer is exempt
+Everything above 2%: 40% to the Root Cellars, 60% to the Treasury, reserved for the Farmers Co-op and released over time. None to the team
+Truffle Pig
+0.01 ETH, one-off
+The Farmers Co-op
+Claiming Co-op Rewards
+10%
+5% to the next day's Co-op Rewards for tended deeds, 5% to the Silo
+Building a Fert Deck
+0.01 ETH
+The deed staking contract, as the deeds' Root Cellars
+Royalties on Founding Deeds and items
+5%
+2.25% to the Root Cellars, 2.25% to the Farmers Co-op and 0.5% to the team. The split can change
+There's no LP fee, so the taxes above are the only trading fees.
+Where the team's share comes from
+The mint:
+ part of the Founding Deed mint
+Trading taxes:
+ 10% of the base $YIELD buy and sell taxes, so 0.2% of a buy and 0.3% of a sell
+Royalties:
+ 0.5% of each Founding Deed and item sale, out of the 5% royalty
+Not team revenue:
+ build fees and the launch tax
+Know the risks before you play
+Farming is a game of chance.
+ Every seed is random, and on average farming returns a little less than it costs: a seed is worth 99.5% of its pack price on average, and selling costs 6% at the Farmer or 8% at the Broker. Truffles are a bonus on top.
+Randomness.
+ Seed rarity and truffle finds are random, so results vary widely.
+Truffle payouts.
+ For the first 30 days the launch seed adds to them, and after that they come from the Co-op's refills alone, so they move with activity in the game.
+Token price.
+ $YIELD's price can go up or down, and it isn't an investment. Farmer sales, truffle payouts and Co-op Rewards are paid in $YIELD, so their value moves with it.
+Values move.
+ Founding Deeds, Fertilizer and rewards move with the market, and rates can change up or down. Nothing here is guaranteed.
+Liquidity and trading costs.
+ The pool starts single-sided ($YIELD only), so early trades move the price more. Sells cost more during heavy selling, and big trades move the price.
+Smart contracts.
+ Like any onchain game, the contracts could have bugs.
+Setting changes and upgrades.
+ The team can change settings and pause contracts, and changes take effect at once. The game contracts can be upgraded, including deed staking, which holds the Root Cellars, Co-op Rewards and the Silo. Updates apply to staked deeds too.
+Pauses.
+ If the game is paused for maintenance or safety, you can still unstake. Burns wait until it's back.
+Root Cellars.
+ A Root Cellar grows with fees. It has no set amount and isn't guaranteed to reach any amount.
+The game server.
+ Co-op Rewards and truffle payouts are counted by the game server and claimed with its signature, so they rely on it.
+Burning a deed is permanent.
+Dependencies.
+ The game runs on Robinhood Chain, Uniswap v4, drand and other third-party infrastructure.
+Regulation.
+ Rules for digital assets and online games vary by country and can change.
+Who can play.
+ Yield Fields isn't available to US persons or in sanctioned or embargoed countries, and wallets may be screened against sanctions lists. See the 
+Terms of Service
+ and 
+Privacy Policy
+.
+Linked wallets.
+ A linked wallet can use your share of the Bag. Only link a wallet you control.
+Exported items.
+ Only standard wallets can move exported items. Smart-contract wallets and wallets upgraded with EIP-7702 can't transfer them.
+Who controls settings
+Settings are changed by the owner, a 2-of-3 team multisig (Safe)
+Changes take effect onchain when they're made, with no timelock, and every one is logged in Patch notes
+The base buy and sell taxes can never go above 5%, hard-coded
+The launch tax timing is fixed. The Co-op Rewards claim fee is 10% and can never go above 20%, hard-coded
+The $YIELD token, pool hook and registry can't be paused, so nobody can halt trading or transfers. Pausing the Farmers Co-op stops its buys. Pausing deed staking stops everything except unstaking
+The $YIELD contracts, the Farmers Co-op's included, can't be upgraded. The team can replace the Farmers Co-op contract with a new one
+Liquidity can only be added to the pool, never withdrawn. The contract that manages it can be upgraded by the owner
+Nothing in these docs is financial advice.
+Next, 
+FAQ
+.
+Updated 27 Nov 2026
+Previous
+Flywheels
+Next
+FAQ
+
+=================== https://yieldfields.fun/docs/reference/glossary
+
+Reference
+›
+Glossary
+Glossary
+In short:
+Look up any Yield Fields name in seconds. Each has one meaning.
+The land
+Founding Deed:
+ 1 of 3,333 NFT plots of land in the Yield Fields. See 
+Founding Deeds
+Tier:
+ a deed's rarity (Common to Mythic) or a seed pack's level (Bronze to Diamond)
+Biome:
+ a deed's look, set by its rarity: Meadow, Frost, Blight, Radiant or Astral
+Fertility:
+ a deed's power in the game, from 5 (Common) to 9 (Mythic)
+Structure:
+ a building on a staked deed's build site. 1 per deed
+Fert Deck:
+ the first structure. It makes Fertilizer
+Root Cellar:
+ the ETH a deed builds up in the deed staking contract, weighted by its Fertility. A burn pays it out
+Silo:
+ a $YIELD reserve, filled by Co-op Rewards claim fees, that only staked deeds can tap, by burning
+Windfall:
+ the $YIELD a staked deed gets from the Silo, set by its Fertility. Every burn gets one, paid to your wallet in the burn transaction along with the deed's Root Cellar
+Co-op Rewards:
+ the 30% of the Farmers Co-op's $YIELD buys that goes to staked deeds, split each day by Fertility among the staked deeds tended that day. See 
+Co-op Rewards
+Tending:
+ each seed you plant on your own plot tends 1 of your staked deeds for 7 days
+Items
+Fertilizer:
+ an item that cuts a crop's grow time or a pig's level wait. Used up when applied
+Bag:
+ your in-game inventory
+Export:
+ moving an item from your Bag to your wallet, so you can trade it
+Import:
+ moving an item from your wallet back into your Bag, so you can use it
+Linked wallets:
+ 2 wallets you own that share one Bag. Each keeps its own plot, Truffle Pig, deeds and payouts
+The fields
+Yielder:
+ you, a player
+Dewey:
+ your guide around the fields
+Farm plot:
+ the free 5×5 plot every wallet gets for growing crops
+The Cornhub:
+ the shop where you buy seed packs and your Truffle Pig
+Seed pack:
+ bought with ETH, holds 1 random seed
+drand:
+ a public randomness source. Every pack and truffle roll is tied to a future drand draw, so nobody knows the result in advance and anyone can check it
+Farmer:
+ buys crops for $YIELD
+Broker:
+ buys crops for ETH
+Truffles
+Truffle:
+ a bonus find on 1 in 10 harvests from a plot with a Truffle Pig. It's named after its crop's rarity and weighs that crop's value times your pig's size. See 
+Truffles
+Truffle Pig:
+ your plot's truffle hunter, a one-off 0.01 ETH. No pig, no truffles
+Truffle Pool:
+ the $YIELD pot that pays truffles. It's seeded at launch and refilled by the Farmers Co-op. You claim from it in the Truffle Vault
+Truffle Vault:
+ where you claim your daily truffle payouts, in $YIELD
+Daily settlement:
+ each day runs from 14:00 to 14:00 UTC and closes at 14:00 UTC. The day's truffle payout and Co-op Rewards are split then, and your amount is fixed
+Pig Levels:
+ free levels 1 to 10 that grow your pig's truffles up to 3×
+Trainer:
+ how a pig levels up, free. Normal is a guaranteed +1 level, and Lucky is a 50/50 chance of +2 or none
+$YIELD
+$YIELD:
+ the game's hybrid token, a reward and an in-game currency for optional items and events
+Farmers Co-op:
+ the farmers' collective. It uses the Co-op Fund to buy $YIELD, sending 70% to the Truffle Pool for truffles and 30% to staked deeds as Co-op Rewards
+Co-op Fund:
+ the Farmers Co-op's ETH balance, shown in the game
+Co-op Dues:
+ the fee on every crop sale. It goes to the Co-op Fund
+Launch tax:
+ a tax on $YIELD buys for the first 6 hours of trading. It starts at 90% and eases to 2% by hour 6. The Farmer is exempt. Everything above 2% goes 40% to the deeds' Root Cellars and 60% to the Treasury, reserved for the Farmers Co-op. None goes to the team
+Sell surge:
+ the extra sell tax during heavy selling, up to 20% in total with the 3% base. It eases as selling calms, and all of it goes to the Farmers Co-op
+Treasury:
+ funds held apart from the team's, reserved for player rewards and live ops. It holds 60% of the launch tax for the Farmers Co-op and releases it over time
+Back to 
+About Yield Fields
+.
+Updated 27 Nov 2026
+Previous
+FAQ
+Next
+Patch notes
+
+=================== https://yieldfields.fun/docs/reference/media-kit
+
+Reference
+›
+Media kit
+Media kit
+In short:
+Logos, characters and game art for anyone making content about Yield Fields. Everything is a PNG or GIF, sized up and ready to post.
+Download
+Yield Fields media kit on Google Drive
+drive.google.com
+What's inside
+What
+Includes
+Logos
+Wordmarks, submark and profile pictures
+Key art
+The banner and the farm scene
+Characters
+Dewey, the Truffle Pig, the Farmer and Broker cards
+Crops and seeds
+All 30 of each, plain and as NFT cards
+Items
+Truffles, Seed Packs, tier badges, Fertilizer, $YIELD and the Fert Deck
+Founding Deeds
+Every rarity, animated and still
+Farmer avatars
+30 farmers, ready to use as profile pictures
+Using the art
+Pixel art stays sharp when you scale it by whole numbers (2×, 3×, 4×) with no smoothing.
+Keep the logo as it is: no recolours, stretching or effects.
+Don't make your post look like it comes from the team.
+Everything is in the Google Drive folder above.
+Updated 27 Nov 2026
+Previous
+Official links and contracts
+
+=================== https://yieldfields.fun/docs/reference/official-links-and-contracts
+
+Reference
+›
+Official links and contracts
+Official links and contracts
+In short:
+These are the only official Yield Fields links and contracts. Anything else is a scam.
+Official links
+Channel
+Link
+Website
+yieldfields.fun
+Play the game
+yieldfields.fun/play
+Docs
+yieldfields.fun/docs
+X
+@YieldFields_RH
+Discord
+discord.gg/onchainheroes
+Founding Deeds on OpenSea
+opensea.io/collection/yield-field-deeds
+Yield Fields items on OpenSea
+opensea.io/collection/yield-fields-items
+Contracts on Robinhood Chain
+Contract
+Address
+Founding Deeds
+0x231142E88f523B0a4F46D2D79FAAB2cE1828E43a
+Deed staking
+0x0AcFcD1483686fcd94DABeA03714321d0E05fc8D
+Yield Fields items
+0xd9d6d0557F3479e801a967eb693ebE1ADA6E5317
+The Cornhub
+0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524
+$YIELD
+Published when $YIELD launches
+The team will never DM you first. Before you sign anything, check the address against this page, character by character. Never share your recovery phrase.
+Updated 27 Nov 2026
+Previous
+Patch notes
+Next
+Media kit
+
+=================== https://yieldfields.fun/docs/reference/patch-notes
+
+Reference
+›
+Patch notes
+Patch notes
+In short:
+Every change to the game, newest first.
+Version
+When
+Change
+v1.1
+Sat 28 Nov 2026, 14:00 UTC
+Launch: farming, $YIELD, the Farmers Co-op, Co-op Rewards, burns and truffles go live. Each day settles at 14:00 UTC, the first on 29 Nov. The launch tax on $YIELD buys lasts 6 hours: everything above the 2% buy tax goes 40% to the deeds' Root Cellars and 60% to the Treasury for the Farmers Co-op. Farmers Co-op buys start 6 hours after launch, 70% to truffles and 30% to staked deeds as Co-op Rewards. Each harvest from a plot with a Truffle Pig has a 1 in 10 truffle chance. Pig Levels grow its truffles up to 3×. Every item can be exported and traded like Fertilizer: Seed Packs, Seeds and Crops.
+v1.0.1
+27 Nov 2026
+Truffle Pig sales open: 0.01 ETH, one-off, paid to the Farmers Co-op. A pig bought before launch starts its Level 1 wait when the game opens. Linked wallets go live before the game begins: 2 wallets can share one Bag. Unlinking takes effect 72 hours after it's asked for, and linking again then waits 7 days.
+v1.0
+3 Nov 2026
+Phase 1, the land opens first: deed staking, the Fert Deck, Fertilizer and Fertilizer export. A Fert Deck costs 0.01 ETH to build.
+Updated 27 Nov 2026
+Previous
+Glossary
+Next
+Official links and contracts
+
+=================== https://yieldfields.fun/docs/the-farmers-co-op/flywheels
+
+The Farmers Co-op
+›
+Flywheels
+Flywheels
+In short:
+Every harvest you sell pays Co-op Dues into the Farmers Co-op, and the Farmers Co-op puts them back into truffles and Co-op Rewards. More farming means more fees into the Co-op, and more for it to put back.
+Farming, $YIELD, truffles, the Farmers Co-op and Co-op Rewards open on Sat 28 Nov at 14:00 UTC. This page explains how they work together from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+Farm, sell, feed the Co-op
+1
+The Farmers Co-op starts full.
+ $500k seeds it, $250k of that on day one, and it starts buying 6 hours after launch, when the launch tax ends.
+2
+Farmers plant and sell.
+ Every harvest sold pays Co-op Dues: 6% at the Farmer, 8% at the Broker.
+3
+The Farmers Co-op buys $YIELD every day.
+ It spends 3% of its fund a day: 70% refills the Truffle Pool and 30% goes to Co-op Rewards for tended deeds. None of it is burned.
+4
+Truffles and rewards bring farmers back to the fields.
+ More planting, more sales, more Co-op Dues. Back to step 2.
+$YIELD trading adds fees too.
+ Buys pay 2% and sells 3%: 55% to the Farmers Co-op, 35% to the Root Cellars and 10% to the team. The extra from heavy selling all goes to the Farmers Co-op.
+Truffles keep the fields busy
+Every flywheel needs a push. Most onchain games and protocols never figured out how to reward the activity that turns theirs. Yield Fields answers with truffles.
+Get a Truffle Pig.
+ It's 0.01 ETH, one-off, paid straight into the Farmers Co-op
+Every harvest can find one.
+ Each crop planted after your pig arrives has a 1 in 10 chance of a truffle at harvest
+Every day pays out.
+ The day's truffle payout is split by weight among the truffles found that day
+Quiet days pay more per truffle,
+ which draws farmers back when the fields slow down
+The Co-op keeps it topped up.
+ Its buys refill the Truffle Pool every day
+See 
+Truffles
+.
+Three more flywheels feed the main one
+1. The land feeds the fields
+1
+Stake a Founding Deed
+ and build a Fert Deck for 0.01 ETH.
+2
+It makes Fertilizer
+ around the clock. Higher Fertility makes more, and claimed Fertilizer never expires.
+3
+Farmers use it
+ for faster harvests. Deed holders use it themselves, or export it and sell it to farmers.
+4
+Faster harvests
+ mean more planting and more sales.
+What it feeds:
+ every extra sale pays Co-op Dues into the Farmers Co-op.
+2. The fields feed the Farmers Co-op
+1
+Farmers buy seed packs
+ at The Cornhub with ETH, plant them and harvest.
+2
+Every sale pays Co-op Dues,
+ to the Farmer for $YIELD or to the Broker for ETH.
+3
+The Farmers Co-op grows
+ with every sale, and feeds it back into the farm and its rewards.
+The full picture is on 
+How the Farmers Co-op works
+.
+3. Fees come back to deed holders
+Build fees
+ stay in the deed staking contract and fill the deeds' Root Cellars, alongside 35% of the base trading tax, 2.25% of every Founding Deed and item sale (from royalties) and 40% of the launch tax
+Claim fees:
+ every Co-op Rewards claim pays a 10% fee. 5% goes to the next day's Co-op Rewards for tended deeds, and 5% goes into the Silo
+The Farmers Co-op:
+ 30% of every daily $YIELD buy goes to staked deeds as Co-op Rewards, on the days they're tended
+What it feeds:
+ the Root Cellars, the Silo and Co-op Rewards, all from activity in the game.
+See 
+The Root Cellar
+.
+Burn a deed for its Root Cellar and Windfall
+Burn a staked deed:
+ its Root Cellar pays out in ETH
+It also takes its Windfall:
+ part of the Silo in $YIELD, paid straight to your wallet in the burn transaction
+Higher Fertility, bigger Windfall:
+ 10% of the Silo per point of Fertility, from 50% for a Common to 90% for a Mythic
+The Silo never empties.
+ What a burn leaves keeps growing with every claim
+Burned deeds are gone for good,
+ so future fees go to fewer deeds
+How to burn is on 
+The Silo and the Windfall
+.
+Burning is permanent. The deed is gone for good, and there is no undo.
+Fees keep working inside the game
+Busy days fund quiet ones.
+ What the Farmers Co-op collects on a busy day keeps working for the fields long after
+Heavy selling feeds the Farmers Co-op.
+ The extra sell tax lands there exactly when selling spikes
+Royalties and the launch tax stay in the game.
+ Of the 5% royalty, 2.25% goes to the Root Cellars, 2.25% to the Farmers Co-op and 0.5% to the team. The launch tax is split 40% to the deeds' Root Cellars and 60% to the Treasury, where it is reserved for the Farmers Co-op and released over time. None of the launch tax goes to the team
+More markets.
+ Every item exports to your wallet (Fertilizer, Seed Packs, Seeds and Crops), so they all trade on OpenSea from launch
+None of these flywheels guarantees a price or any amount of rewards. They show how fees move through the game.
+Next, 
+Fees and risks
+.
+Updated 27 Nov 2026
+Previous
+How the Farmers Co-op works
+Next
+Fees and risks
+
+=================== https://yieldfields.fun/docs/the-farmers-co-op/how-the-farmers-co-op-works
+
+The Farmers Co-op
+›
+How the Farmers Co-op works
+How the Farmers Co-op works
+In short:
+Sell a harvest and you're a member. The Farmers Co-op collects fees from across the game and spends 3% of its fund every day buying $YIELD for farmers and deed holders.
+The Farmers Co-op opens with the game on Sat 28 Nov at 14:00 UTC and starts buying 6 hours later. This page explains how it works from then.
+Everything in Yield Fields is subject to change, including these numbers and mechanics. We'll give players ample notice before any change.
+“The Farmers Co-op doesn't farm. It keeps the fields fed.”
+Every sale fills the Co-op Fund
+Co-op Dues:
+ 6% of every sale to the Farmer, 8% at the Broker
+Trading taxes:
+ 55% of the base $YIELD buy and sell taxes, plus all of the extra that heavy selling pays
+Royalties:
+ 2.25% of every Founding Deed and item sale
+Truffle Pigs:
+ the full 0.01 ETH of every pig sold
+The launch tax:
+ 60% of it is held in the Treasury, reserved for the Farmers Co-op and released into it over time
+Fert Deck boosts,
+ once they arrive
+Its daily buys go back to players
+70% to truffles:
+ it refills the Truffle Pool, which pays farmers
+30% to Co-op Rewards:
+ sent straight to the deed staking contract, for staked deeds on the days they're tended
+Nothing is burned.
+ Every buy goes back to players
+It runs in the open
+It starts with $500k,
+ $250k of it on day one, seeded from deed mint funds
+It starts buying 6 hours after launch,
+ when the launch tax ends
+It spends 3% of its fund a day,
+ in steady buys rather than all at once
+Anyone can trigger a buy
+ and gets 0.1% of it
+It's all onchain.
+ Its balance is shown at the Farmers Co-op in the game
+It buys without the buy tax.
+ Its buys also don't count toward easing the higher sell tax during heavy selling
+More farming, more for the Co-op to put back
+Deeds make Fertilizer.
+ Farmers use it, or buy it from deed holders, to grow faster
+Farmers sell their harvest.
+ Every sale pays Co-op Dues into the Farmers Co-op
+The Farmers Co-op feeds the farm.
+ Its buys go back into truffles and Co-op Rewards
+Root Cellars fill too.
+ Build fees, royalties, trading taxes and 40% of the launch tax add to them
+Burned deeds are gone for good,
+ so future fees go to fewer deeds
+Good to know
+What the Farmers Co-op gives back depends on how much the game collects. It doesn't set or support the price of $YIELD.
+Next, 
+Flywheels
+.
+Updated 27 Nov 2026
+Previous
+Pig Levels
+Next
+Flywheels

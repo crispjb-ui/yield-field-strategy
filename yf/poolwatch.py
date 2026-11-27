@@ -65,7 +65,7 @@ def decide(cost_eth: float, bag_exit_eth: float, st: State, r: Rules = Rules(),
     return {"multiple": m, "peak": st.peak_multiple, "action": action, "reason": reason, "stage": st.stage}
 
 
-def roundtrip_breakeven(sell_tax_pct: float, farmer_fee_pct: float = 10.0, ev_x: float = 0.995) -> dict:
+def roundtrip_breakeven(sell_tax_pct: float, farmer_fee_pct: float = 6.0, ev_x: float = 0.995) -> dict:
     """Price multiple vs your average Farmer entry needed to (a) beat having sold the crops to the Market,
     (b) get the pack ETH back."""
     keep = 1 - sell_tax_pct / 100

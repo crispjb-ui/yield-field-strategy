@@ -1,5 +1,10 @@
 # Launch runbook (written Wed 2026-11-25; updated Thu 26 Nov with the official "First Harvest" thread)
 
+## UPDATE Fri 27 Nov: launch docs are out → see `12_LAUNCH_DOCS_2026-11-27.md` (it supersedes the notes below where they differ)
+Key changes: Farmer open from minute one; Truffle Pig 0.01 ETH **on sale now**; Pig Levels (Fertilizer-fed, up to 3×);
+Co-op spends only 3%/day (70% truffles / 30% tended deeds); sell tax 3% → 20%; launch buy tax 90% → 2% over 6 h;
+any seed tends a deed; **not available to US persons per the docs**.
+
 ## Official announcement, @YieldFields_RH, 26 Nov (owner screenshots; grade A)
 | Fact | Value |
 |---|---|

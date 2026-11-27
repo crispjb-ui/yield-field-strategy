@@ -1,7 +1,7 @@
 # Game-mechanics parameters. Source: https://yieldfields.fun/docs (all pages "Updated 30 Oct 2026").
 # null = redacted in the docs (███) or not yet published. The docs state every number is subject to change.
 source_url: https://yieldfields.fun/docs
-as_of: "2026-11-20"   # official docs 19 Nov publish pack prices/odds/worth/grow times; fees "announced before farming opens"; farming NOT live (used=0, yieldToken unset)
+as_of: "2026-11-27"   # LAUNCH DOCS: see docs/12 and the block `launch_docs_2026_11_27` at the end of this file; it overrides earlier values #   # official docs 19 Nov publish pack prices/odds/worth/grow times; fees "announced before farming opens"; farming NOT live (used=0, yieldToken unset)
 stage: 1                    # Stage One LIVE (staking + Fert Deck + Fertilizer + export). Farming/$YIELD/deed rewards later. No dates published.
 staked_deeds_2026_11_04: 2844   # balanceOf(staking) via RPC; 85.3% of supply
 
@@ -191,3 +191,25 @@ unreleased_abis:            # shipped in the frontend bundle; values unknown unt
 owner:
   wallet: "0x139e79b0d01148712528d56625a2a59f676e3952"   # read-only
   deeds: [537, 660, 661]
+
+launch_docs_2026_11_27:      # official, all 23 pages "Updated 27 Nov 2026" — overrides anything above
+  eligibility: "not available to US persons or sanctioned/embargoed countries; wallets may be screened"
+  launch_utc: "2026-11-28T14:00:00Z"
+  day_boundary_utc: "14:00"
+  yield: {supply: 100000000, pool_single_sided: 80000000, truffle_seed: 10000000, treasury: 10000000, team: 0,
+          buy_tax_pct: 2, sell_tax_pct: 3, sell_tax_max_pct: 20, base_tax_cap_pct: 5,
+          tax_split: {coop: 0.55, root_cellars: 0.35, team: 0.10},
+          launch_tax_points_pct: {0: 90, 1: 63, 2: 41, 3: 24, 4: 12, 6: 2}, launch_tax_split: {root_cellars: 0.4, treasury_for_coop: 0.6},
+          liquidity_withdrawable: false, pausable: false, upgradeable: false, starting_price: null, contract: null}
+  farmer: {open_at_launch: true, dues_pct: 6, pays_pct: 94, buy_tax: 0, launch_tax: 0, slippage_guard_pct: 1}
+  broker: {dues_pct: 8, pays_pct: 92}
+  truffle_pig: {price_eth: 0.01, on_sale: true, per_plot: 1, must_precede_planting: true, chance: 0.10,
+                sizes: {1: 1.0, 2: 1.35, 3: 1.7, 4: 2.05, 5: 2.4, 6: 2.52, 7: 2.64, 8: 2.76, 9: 2.88, 10: 3.0},
+                wait_hours_per_level: 16, feed_skip: 0.25, feeds_per_level: 3, fert_per_feed: level, fert_to_max: 135, days_to_max_fed: 7.5}
+  truffles: {seed_day1: 441000, seed_day30: 226000, set_aside_pct: 5, per_truffle_cap_pct_of_pool: 5, refill_payout_pct_per_day: 5, weight: "crop value × pig size at find"}
+  coop: {seed_usd: 500000, day1_usd: 250000, starts_hours_after_launch: 6, spend_pct_per_day: 3, to_truffles: 0.70, to_deeds: 0.30, burned: 0, caller_reward_pct: 0.1}
+  coop_rewards: {any_seed_tends: true, days_per_seed: 7, own_plot_only: true, split: fertility, claim_fee_pct: 10, claim_fee_split: {next_day_rewards: 0.5, silo: 0.5}}
+  royalty_split_pct: {root_cellars: 2.25, coop: 2.25, team: 0.5}
+  items_exportable_at_launch: [fertilizer, seed_packs, seeds, crops]
+  linked_wallets: {max: 2, shared_bag: true, unlink_delay_hours: 72, relink_wait_days: 7}
+  governance: {owner: "2-of-3 Safe", timelock: false, game_contracts_upgradeable: true, payouts_signed_by_game_server: true}
