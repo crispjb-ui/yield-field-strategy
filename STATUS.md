@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-27 19:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-27 20:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -10,7 +10,7 @@ _Auto-generated 2026-11-27 19:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 145,188 | 15.83 | 50% | 9,170 | 18,341 |
+| 145,378 | 15.85 | 50% | 9,170 | 18,341 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -26,25 +26,25 @@ Staking: paused=False · backing 32.97 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,073.7 ETH** from 677 wallets in 2,897 purchases · contract balance 1,073.7 ETH · Diamond 80% · top-10 wallets 23%
+Pack sales: **1,139.8 ETH** from 683 wallets in 2,920 purchases · contract balance 1,139.8 ETH · Diamond 81% · top-10 wallets 21%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 2,861 | 14.30 |
-| Silver | 3,143 | 31.43 |
-| Gold | 1,442 | 72.10 |
+| Bronze | 2,863 | 14.31 |
+| Silver | 3,176 | 31.76 |
+| Gold | 1,443 | 72.15 |
 | Platinum | 986 | 98.60 |
-| Diamond | 3,429 | 857.25 |
+| Diamond | 3,692 | 923.00 |
 
-Owner wallet pack spend so far: **2.750 ETH** (0.26% of all sales)
+Owner wallet pack spend so far: **2.750 ETH** (0.24% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | 0.75 ETH | 9 | 6.574503999186403 |
-| yield-fields-items | 4.7 USDG | 128 | 1.2286285958879983 |
-| genesishero-abstract | 0.0415 ETH | 9 | 0.324 |
-| och-ringbearer | 0.2999 ETH | 9 | 2.652 |
+| yield-field-deeds | 0.75 ETH | 9 | 6.5809999999999995 |
+| yield-fields-items | 4.38 USDG | 132 | 1.2649595878281654 |
+| genesishero-abstract | 0.0415 ETH | 8 | 0.288 |
+| och-ringbearer | 0.2999 ETH | 6 | 1.7229999999999999 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
