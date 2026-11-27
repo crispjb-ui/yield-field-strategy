@@ -3,95 +3,95 @@
   "error": "'hash'"
  },
  "reference/patch-notes": {
-  "hash": "2a31770b634d14d5",
+  "hash": "e83e06a191cd9b8e",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "reference/fees-and-risks": {
-  "hash": "1f04372d09e593a5",
+  "hash": "d6b79e3b280a480d",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "reference/faq": {
-  "hash": "e464520f7df1f83d",
+  "hash": "e19a0de4717742cd",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "reference/glossary": {
-  "hash": "12cce1177b32d16a",
+  "hash": "f1c64260d00861a7",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "getting-started/about-yield-fields": {
-  "hash": "83d975d202346d38",
+  "hash": "74debd34a3c5a9fe",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "getting-started/quick-start": {
-  "hash": "0f07214d3ad6d74b",
+  "hash": "18cf3d3b092771b4",
   "addresses": [],
-  "updated": "8 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "getting-started/whats-coming": {
-  "hash": "33bc0bfadbd552bf",
+  "hash": "86c95559b2fe96cb",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "deed-gameplay/founding-deeds": {
-  "hash": "eb8960363f9d5108",
+  "hash": "4bb8d014ba68aef5",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "deed-gameplay/staking-and-the-fert-deck": {
-  "hash": "aa18ea85359845e2",
+  "hash": "3b9caa171a8fa160",
   "addresses": [],
-  "updated": "8 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "deed-gameplay/fertilizer": {
-  "hash": "4a4d634d3f53fe9b",
+  "hash": "b6cac4edcee72793",
   "addresses": [
    "0xd9d6d0557f3479e801a967eb693ebe1ada6e5317"
   ],
-  "updated": "8 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "deed-gameplay/the-root-cellar": {
-  "hash": "0a683272e8fb8234",
+  "hash": "c0f9593836d94b54",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "deed-gameplay/the-silo-and-the-windfall": {
-  "hash": "cb417e26866c7260",
+  "hash": "a780d944e09d907f",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "farming-and-yield/seeds-and-crops": {
-  "hash": "f558bc2cc46a2ecd",
+  "hash": "d49e2f0ec738b510",
   "addresses": [],
-  "updated": "19 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "farming-and-yield/growing-and-selling": {
-  "hash": "9d34d10d75dba59e",
+  "hash": "71437b3629fae046",
   "addresses": [],
-  "updated": "19 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "farming-and-yield/yield": {
-  "hash": "2bc20208c265274b",
+  "hash": "de713830378fb939",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "farming-and-yield/classified": {
-  "hash": "b7744257916c69eb",
+  "hash": "cecb5836ec17348f",
   "addresses": [],
-  "updated": "3 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "the-farmers-co-op/how-the-farmers-co-op-works": {
-  "hash": "2e980b3beb128a3b",
+  "hash": "91de1649f9c18cb9",
   "addresses": [],
-  "updated": "20 Nov 2026"
+  "updated": "27 Nov 2026"
  },
  "the-farmers-co-op/flywheels": {
-  "hash": "e50d52eafaa589ec",
+  "hash": "4f69eaa9a5bd498f",
   "addresses": [],
-  "updated": "20 Nov 2026"
+  "updated": "27 Nov 2026"
  }
 }
