@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-28 04:22 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-28 05:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -10,7 +10,7 @@ _Auto-generated 2026-11-28 04:22 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 147,157 | 16.04 | 50% | 9,174 | 18,348 |
+| 147,222 | 16.05 | 50% | 9,174 | 18,348 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -26,14 +26,14 @@ Staking: paused=False · backing 33.02 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,345.1 ETH** from 724 wallets in 3,165 purchases · contract balance 1,345.1 ETH · Diamond 83% · top-10 wallets 20%
+Pack sales: **1,345.5 ETH** from 727 wallets in 3,169 purchases · contract balance 1,345.5 ETH · Diamond 83% · top-10 wallets 20%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 3,093 | 15.46 |
-| Silver | 3,572 | 35.72 |
+| Bronze | 3,143 | 15.71 |
+| Silver | 3,573 | 35.73 |
 | Gold | 1,532 | 76.60 |
-| Platinum | 1,011 | 101.10 |
+| Platinum | 1,012 | 101.20 |
 | Diamond | 4,465 | 1,116.25 |
 
 Owner wallet pack spend so far: **2.750 ETH** (0.20% of all sales)
@@ -42,9 +42,9 @@ Owner wallet pack spend so far: **2.750 ETH** (0.20% of all sales)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
 | yield-field-deeds | 0.695 ETH | 5 | 3.436 |
-| yield-fields-items | 4.47 USDG | 154 | 1.6767266037424164 |
-| genesishero-abstract | 0.0415 ETH | 10 | 0.36 |
-| och-ringbearer | 0.2999 ETH | 3 | 0.8230000000000001 |
+| yield-fields-items | 4.46 USDG | 157 | 1.6888252998452058 |
+| genesishero-abstract | 0.0415 ETH | 4 | 0.144 |
+| och-ringbearer | 0.2999 ETH | 6 | 1.633 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
