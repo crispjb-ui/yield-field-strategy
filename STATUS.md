@@ -1,6 +1,6 @@
 # Yield Fields status
 
-_Auto-generated 2026-11-28 01:21 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
+_Auto-generated 2026-11-28 02:25 UTC by `.github/workflows/monitor.yml`. Read-only. Do not edit by hand._
 
 ## Alerts
 - **Network Fert rate is 50%**
@@ -10,7 +10,7 @@ _Auto-generated 2026-11-28 01:21 UTC by `.github/workflows/monitor.yml`. Read-on
 ## Fertilizer network
 | Circulation | Days of output | Network rate | Output/day | Staked Fertility |
 |---|---|---|---|---|
-| 146,781 | 15.99 | 50% | 9,177 | 18,354 |
+| 146,942 | 16.01 | 50% | 9,177 | 18,354 |
 
 Projected (nothing consumed): slowdown starts in 1 d, 70% in 1 d, 50% floor in 1 d.
 
@@ -26,25 +26,25 @@ Staking: paused=False · backing 33.02 ETH · jackpot 0 · rewardPool 0 · yield
 ## CornHub `0x8C1e23Bc90F88DdC8CBA7256798aCbD745072524`
 Fees: Farmer 6.0% · Market 8.0% · pack 0.0% · Truffle Pig 0.01 ETH · paused=False
 
-Pack sales: **1,299.5 ETH** from 712 wallets in 3,077 purchases · contract balance 1,299.5 ETH · Diamond 83% · top-10 wallets 19%
+Pack sales: **1,332.8 ETH** from 716 wallets in 3,102 purchases · contract balance 1,332.8 ETH · Diamond 83% · top-10 wallets 20%
 
 | Pack | Packs | ETH |
 |---|---|---|
-| Bronze | 3,017 | 15.09 |
-| Silver | 3,465 | 34.65 |
-| Gold | 1,483 | 74.15 |
-| Platinum | 994 | 99.40 |
-| Diamond | 4,305 | 1,076.25 |
+| Bronze | 3,018 | 15.09 |
+| Silver | 3,522 | 35.22 |
+| Gold | 1,493 | 74.65 |
+| Platinum | 1,008 | 100.80 |
+| Diamond | 4,428 | 1,107.00 |
 
 Owner wallet pack spend so far: **2.750 ETH** (0.21% of all sales)
 
 ## Markets (OpenSea)
 | Collection | Floor | 24h sales | 24h volume |
 |---|---|---|---|
-| yield-field-deeds | error | | |
-| yield-fields-items | 4.4 USDG | 142 | 1.514710772680544 |
+| yield-field-deeds | 0.695 ETH | 5 | 3.4769999999999994 |
+| yield-fields-items | 4.47 USDG | 154 | 1.624747514252254 |
 | genesishero-abstract | 0.0415 ETH | 10 | 0.36 |
-| och-ringbearer | error | | |
+| och-ringbearer | 0.2999 ETH | 3 | 0.8230000000000001 |
 
 ## Docs watch
 | Page | "Updated" | Addresses on page |
